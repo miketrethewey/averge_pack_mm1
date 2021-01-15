@@ -1,0 +1,373 @@
+[
+  // Address Bomb
+  {
+    "name": "Address Bomb",
+    "type": "toggle",
+    "img": "images/inventory/address-bomb.png",
+    "codes": "addressbomb"
+  },
+  // Address Disruptor
+  {
+    "name": "Address Disruptor",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      { // No item
+        "img": "images/inventory/address-disruptor-1.png",
+        "img_mods": "@disabled",
+        "codes": "addressdisruptor-item"
+      },
+      { // Address Disruptor 1
+        "img": "images/inventory/address-disruptor-1.png",
+        "codes": "addressdisruptor1,addressdisruptor"
+      },
+      { // Address Disruptor 2
+        "img": "images/inventory/address-disruptor-2.png",
+        "codes": "addressdisruptor2,addressdisruptor"
+      }
+    ]
+  },
+  // Axiom Disruptor
+  {
+    "name": "Axiom Disruptor",
+    "type": "toggle",
+    "img": "images/inventory/axiom-disruptor.png",
+    "codes": "axiomdisruptor,rangelong"
+  },
+  // Bioflux Accelerator 1 (Red)
+  {
+    "name": "Bioflux Accelerator 1",
+    "type": "toggle",
+    "img": "images/inventory/bioflux-accelerator-1.png",
+    "codes": "biofluxaccelerator1,biofluxaccelerator,rangelong"
+  },
+  // Bioflux Accelerator 2 (Purple)
+  {
+    "name": "Bioflux Accelerator 2",
+    "type": "toggle",
+    "img": "images/inventory/bioflux-accelerator-2.png",
+    "codes": "biofluxaccelerator2,biofluxaccelerator,rangelong"
+  },
+  // Clay Tablet
+  {
+    "name": "Clay Tablet",
+    "type": "consumable",
+    "img": "images/inventory/clay-tablet.png",
+    "codes": "claytablet",
+    "max_quantity": 8
+  },
+  // Data Bomb
+  {
+    "name": "Data Bomb",
+    "type": "toggle",
+    "img": "images/inventory/data-bomb.png",
+    "codes": "databomb,rangelong"
+  },
+  // Digital Paper
+  {
+    "name": "Digital Paper",
+    "type": "consumable",
+    "img": "images/inventory/digital-paper.png",
+    "codes": "digitalpaper",
+    "max_quantity": 10
+  },
+  // Distortion Field
+  {
+    "name": "Distortion Field",
+    "type": "toggle",
+    "img": "images/inventory/distortion-field.png",
+    "codes": "distortionfield,rangeshort,wavebeam,wave"
+  },
+  // Drone Teleport : #FIXME Requires Remote Drone
+  {
+    "name": "Drone Teleport",
+    "type": "toggle",
+    "img": "images/inventory/drone-teleport.png",
+    "codes": "droneteleport"
+  },
+  // Remote Drone
+  {
+    "name": "Remote Drone",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      { // No item
+        "img": "images/inventory/remote-drone.png",
+        "img_mods": "@disabled",
+        "codes": "drone"
+      },
+      { // Remote Drone
+        "img": "images/inventory/remote-drone.png",
+        "codes": "remotdrone"
+      },
+      { // Enhanced Drone Launch
+        "img": "images/inventory/enhanced-drone-launch.png",
+        "codes": "enhanceddronelaunch"
+      }
+    ]
+  },
+  // Faded Note
+  {
+    "name": "Faded Note",
+    "type": "consumable",
+    "img": "images/inventory/faded-note.png",
+    "codes": "fadednote",
+    "max_quantity": 1
+  },
+  // Fat Beam
+  {
+    "name": "Fat Beam",
+    "type": "toggle",
+    "img": "images/inventory/fat-beam.png",
+    "codes": "fatbeam,rangelong,wavebeam,wave,widebeam,wide"
+  },
+  // Field Disruptor
+  {
+    "name": "Field Disruptor",
+    "type": "toggle",
+    "img": "images/inventory/field-disruptor.png",
+    "codes": "fielddisruptor,highjump,hijump"
+  },
+  // Firewall
+  {
+    "name": "Firewall",
+    "type": "toggle",
+    "img": "images/inventory/firewall.png",
+    "codes": "firewall,rangemedium,rangemed"
+  },
+  // Flamethrower
+  {
+    "name": "Flamethrower",
+    "type": "toggle",
+    "img": "images/inventory/flamethrower.png",
+    "codes": "flamethrower,rangelong,wavebeam,wave,plasmabeam,plasma"
+  },
+  // Grapple
+  {
+    "name": "Grapple",
+    "type": "toggle",
+    "img": "images/inventory/grapple.png",
+    "codes": "grapple"
+  },
+  // Health Node Fragment
+  {
+    "name": "Health Node Fragment",
+    "type": "consumable",
+    "img": "images/inventory/health-node-fragment.png",
+    "codes": "healthnodefragment",
+    "max_quantity": 25
+  },
+  // Health Node
+  {
+    "name": "Health Node",
+    "type": "consumable",
+    "img": "images/inventory/health-node.png",
+    "codes": "healthnode",
+    "max_quantity": 9
+  },
+  // Heat Seeker
+  {
+    "name": "Heat Seeker",
+    "type": "toggle",
+    "img": "images/inventory/heat-seeker.png",
+    "codes": "heatseeker,rangelong"
+  },
+  // Hypno-Atomizer
+  {
+    "name": "Hypno-Atomizer",
+    "type": "toggle",
+    "img": "images/inventory/hypno-atomizer.png",
+    "codes": "hypnoatomizer,rangelong,splits,split,spazerbeam,spazer,widebeam,wide"
+  },
+  // Inertial Pulse
+  {
+    "name": "Inertial Pulse",
+    "type": "toggle",
+    "img": "images/inventory/inertial-pulse.png",
+    "codes": "inertialpulse,rangelong,plasmabeam,plasma"
+  },
+  // Ion Beam
+  {
+    "name": "Ion Beam",
+    "type": "toggle",
+    "img": "images/inventory/ion-beam.png",
+    "codes": "ionbeam,rangelong"
+  },
+  // Kilver
+  {
+    "name": "Kilver",
+    "type": "toggle",
+    "img": "images/inventory/kilver.png",
+    "codes": "kilver,rangeshort,wavebeam,wave,widebeam,wide"
+  },
+  // Laser Drill
+  {
+    "name": "Laser Drill",
+    "type": "toggle",
+    "img": "images/inventory/laser-drill.png",
+    "codes": "laserdrill"
+  },
+  // Lightning Gun
+  {
+    "name": "Lightning Gun",
+    "type": "toggle",
+    "img": "images/inventory/lightning-gun.png",
+    "codes": "lightninggun,rangelong"
+  },
+  // Coats
+  {
+    "name": "Coat",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      { // No item
+        "img": "images/inventory/modified-lab-coat.png",
+        "img_mods": "@disabled",
+        "codes": "coats,coat0"
+      },
+      { // Modified Lab Coat
+        "img": "images/inventory/modified-lab-coat.png",
+        "codes": "coat1,coat"
+      },
+      { // Trench Coat
+        "img": "images/inventory/trench-coat.png",
+        "codes": "coat2,coat"
+      },
+      { // Red Coat
+        "img": "images/inventory/red-coat.png",
+        "codes": "coat3,coat"
+      }
+    ]
+  },
+  // Multi-Disruptor
+  {
+    "name": "Multi-Disruptor",
+    "type": "toggle",
+    "img": "images/inventory/multi-disruptor.png",
+    "codes": "multidisruptor,rangeshort,split,splits,spazerbeam,spazer,widebeam,wide"
+  },
+  // Nova
+  {
+    "name": "Nova",
+    "type": "toggle",
+    "img": "images/inventory/nova.png",
+    "codes": "nova,rangelong,split,splits,spazerbeam,spazer,widebeam,wide"
+  },
+  // Orbital Discharge
+  {
+    "name": "Orbital Discharge",
+    "type": "toggle",
+    "img": "images/inventory/orbital-discharge.png",
+    "codes": "orbitaldischarge,rangelong,snakeshooter,snake"
+  },
+  // Passcode Tool
+  {
+    "name": "Passcode Tool",
+    "type": "toggle",
+    "img": "images/inventory/passcode-tool.png",
+    "codes": "passcodetool"
+  },
+  // Power Node Fragment
+  {
+    "name": "Power Node Fragment",
+    "type": "consumable",
+    "img": "images/inventory/power-node-fragment.png",
+    "codes": "powernodefragment",
+    "max_quantity": 18
+  },
+  // Power Node
+  {
+    "name": "Power Node",
+    "type": "consumable",
+    "img": "images/inventory/power-node.png",
+    "codes": "powernode",
+    "max_quantity": 6
+  },
+  // Quantum Variegator
+  {
+    "name": "Quantum Variegator",
+    "type": "toggle",
+    "img": "images/inventory/quantum-variegator.png",
+    "codes": "quantumvariegator,rangelong,widebeam,wide"
+  },
+  // Range Node
+  {
+    "name": "Range Node",
+    "type": "consumable",
+    "img": "images/inventory/range-node.png",
+    "codes": "rangenode",
+    "max_quantity": 6
+  },
+  // Reflector
+  {
+    "name": "Reflector",
+    "type": "toggle",
+    "img": "images/inventory/reflector.png",
+    "codes": "reflector,rangelong,bounce"
+  },
+  // Reverse Slicer
+  {
+    "name": "Reverse Slicer",
+    "type": "toggle",
+    "img": "images/inventory/reverse-slicer.png",
+    "codes": "reverseslicer,rangemedium,rangemed,wavebeam,wave"
+  },
+  // Rusalka Tablet
+  {
+    "name": "Rusalka Tablet",
+    "type": "consumable",
+    "img": "images/inventory/rusalka-tablet.png",
+    "codes": "rusalkatablet",
+    "max_quantity": 9
+  },
+  // Scissor Beam
+  {
+    "name": "Scissor Beam",
+    "type": "toggle",
+    "img": "images/inventory/scissor-beam.png",
+    "codes": "scissorbeam,rangelong,wavebeam,wave,widebeam,wide"
+  },
+  // Shards
+  {
+    "name": "Shards",
+    "type": "toggle",
+    "img": "images/inventory/shards.png",
+    "codes": "shards,rangeshort,split,splits,spazerbeam,spazer,widebeam,wide"
+  },
+  // Size Node
+  {
+    "name": "Size Node",
+    "type": "consumable",
+    "img": "images/inventory/size-node.png",
+    "codes": "sizenode",
+    "max_quantity": 6
+  },
+  // Sudran Key
+  {
+    "name": "Sudran Key",
+    "type": "toggle",
+    "img": "images/inventory/sudran-key.png",
+    "codes": "sudrankey"
+  },
+  // Tethered Charge
+  {
+    "name": "Tethered Charge",
+    "type": "toggle",
+    "img": "images/inventory/tethered-charge.png",
+    "codes": "tetheredcharge,rangelong,widebeam,wide"
+  },
+  // Turbine Pulse
+  {
+    "name": "Turbine Pulse",
+    "type": "toggle",
+    "img": "images/inventory/turbine-pulse.png",
+    "codes": "turbinepulse,rangelong,widebeam,wide"
+  },
+  // Voranj
+  {
+    "name": "Voranj",
+    "type": "toggle",
+    "img": "images/inventory/voranj.png",
+    "codes": "voranj,rangelong,splits,split,spazerbeam,spazer,widebeam,wide"
+  }
+]

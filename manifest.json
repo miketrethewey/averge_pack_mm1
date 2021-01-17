@@ -6,9 +6,6 @@
   "package_uid": "averge_pack_mm1",
   "author": "Seraphin Eveles & Mike Trethewey",
   "variants": {
-    "standard": {
-      "display_name": "Standard Map Tracker"
-    },
     "items_only": {
       "display_name": "Items-Only"
     }

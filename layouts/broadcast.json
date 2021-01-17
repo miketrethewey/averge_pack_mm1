@@ -1,8 +1,8 @@
 {
-  "tracker_default": {
+  "tracker_broadcast": {
     "type": "container",
-    "width": 800,
-    "height": 600,
+    "width": 300,
+    "height": 450,
     "content": {
       "type": "layout",
       "key": "shared_item_grid"

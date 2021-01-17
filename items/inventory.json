@@ -13,15 +13,18 @@
     "allow_disabled": false,
     "stages": [
       { // No item
+        "name": "No Address Disruptor",
         "img": "images/inventory/address-disruptor-1.png",
         "img_mods": "@disabled",
         "codes": "addressdisruptor-item"
       },
       { // Address Disruptor 1
+        "name": "Address Disruptor 1",
         "img": "images/inventory/address-disruptor-1.png",
         "codes": "addressdisruptor1,addressdisruptor"
       },
       { // Address Disruptor 2
+        "name": "Address Disruptor 2",
         "img": "images/inventory/address-disruptor-2.png",
         "codes": "addressdisruptor2,addressdisruptor"
       }
@@ -87,20 +90,23 @@
   },
   // Remote Drone
   {
-    "name": "Remote Drone",
+    "name": "Remote Drone/Enhanced Drone Launch",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       { // No item
+        "name": "No Drone",
         "img": "images/inventory/remote-drone.png",
         "img_mods": "@disabled",
         "codes": "drone"
       },
       { // Remote Drone
+        "name": "Remote Drone",
         "img": "images/inventory/remote-drone.png",
         "codes": "remotdrone"
       },
       { // Enhanced Drone Launch
+        "name": "Enhanced Drone Launch",
         "img": "images/inventory/enhanced-drone-launch.png",
         "codes": "enhanceddronelaunch"
       }
@@ -216,24 +222,28 @@
   },
   // Coats
   {
-    "name": "Coat",
+    "name": "Coats",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       { // No item
+        "name": "No Coat",
         "img": "images/inventory/modified-lab-coat.png",
         "img_mods": "@disabled",
         "codes": "coats,coat0"
       },
       { // Modified Lab Coat
+        "name": "Modified Lab Coat",
         "img": "images/inventory/modified-lab-coat.png",
         "codes": "coat1,coat"
       },
       { // Trench Coat
+        "name": "Trench Coat",
         "img": "images/inventory/trench-coat.png",
         "codes": "coat2,coat"
       },
       { // Red Coat
+        "name": "Red Coat",
         "img": "images/inventory/red-coat.png",
         "codes": "coat3,coat"
       }

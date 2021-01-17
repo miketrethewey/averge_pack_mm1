@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Zone",
+    "children": [
+      {
+        "name": "Subzone",
+        "children": [
+          {
+            "name": "Location",
+            "short_name": "Loc",
+            "map_locations": [
+              {
+                "map": "sudra",
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "sections": [
+              {
+                "name": "Section",
+                "access_rules": [ "" ],
+                "item_count": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

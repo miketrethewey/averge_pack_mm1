@@ -172,12 +172,12 @@
     "img": "images/inventory/heat-seeker.png",
     "codes": "heatseeker,rangelong"
   },
-  // Hypno-Atomizer
+  // Hypo-Atomizer
   {
-    "name": "Hypno-Atomizer",
+    "name": "Hypo-Atomizer",
     "type": "toggle",
-    "img": "images/inventory/hypno-atomizer.png",
-    "codes": "hypnoatomizer,rangelong,splits,split,spazerbeam,spazer,widebeam,wide"
+    "img": "images/inventory/hypo-atomizer.png",
+    "codes": "hypoatomizer,rangelong,splits,split,spazerbeam,spazer,widebeam,wide"
   },
   // Inertial Pulse
   {

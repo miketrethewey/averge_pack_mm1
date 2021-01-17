@@ -1,0 +1,20 @@
+{
+  "shared_item_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "layout",
+        "key": "weapons_grid"
+      },
+      {
+        "type": "layout",
+        "key": "upgrades_grid"
+      },
+      {
+        "type": "layout",
+        "key": "powerups_grid"
+      }
+    ]
+  }
+}

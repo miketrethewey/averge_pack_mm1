@@ -1,0 +1,11 @@
+{
+  "tracker_default": {
+    "type": "container",
+    "width": 800,
+    "height": 600,
+    "content": {
+      "type": "layout",
+      "key": "shared_item_grid"
+    }
+  }
+}

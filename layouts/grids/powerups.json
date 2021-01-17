@@ -1,0 +1,10 @@
+{
+  "powerups_grid": {
+    "type": "itemgrid",
+    "rows": [
+      [ "health-node", "health-node-fragment" ],
+      [ "power-node", "power-node-fragment" ],
+      [ "size-node", "range-node" ]
+    ]
+  }
+}

@@ -8,6 +8,9 @@
   "variants": {
     "standard": {
       "display_name": "Standard Map Tracker"
+    },
+    "items_only": {
+      "display_name": "Items-Only"
     }
   }
 }

@@ -1,46 +1,68 @@
 [
   {
     "name": "sudra",
-    "img": "images/maps/sudra.png"
+    "img": "images/maps/sudra.png",
+    "location_size": 16,
+    "location_border_thickness": 1
   },
   {
     "name": "eribu",
-    "img": "images/maps/eribu.png"
+    "img": "images/maps/eribu.png",
+    "location_size": 16,
+    "location_border_thickness": 1
   },
   {
     "name": "absu",
-    "img": "images/maps/absu.png"
+    "img": "images/maps/absu.png",
+    "location_size": 16,
+    "location_border_thickness": 1
   },
   {
     "name": "zi",
-    "img": "images/maps/zi.png"
+    "img": "images/maps/zi.png",
+    "location_size": 16,
+    "location_border_thickness": 1
   },
   {
     "name": "kur",
-    "img": "images/maps/kur.png"
+    "img": "images/maps/kur.png",
+    "location_size": 16,
+    "location_border_thickness": 1
   },
   {
     "name": "indi",
-    "img": "images/maps/indi.png"
+    "img": "images/maps/indi.png",
+    "location_size": 16,
+    "location_border_thickness": 1
   },
   {
     "name": "edin",
-    "img": "images/maps/edin.png"
+    "img": "images/maps/edin.png",
+    "location_size": 16,
+    "location_border_thickness": 1
   },
   {
     "name": "ukkinna",
-    "img": "images/maps/ukkinna.png"
+    "img": "images/maps/ukkinna.png",
+    "location_size": 16,
+    "location_border_thickness": 1
   },
   {
     "name": "ekurmah",
-    "img": "images/maps/ekurmah.png"
+    "img": "images/maps/ekurmah.png",
+    "location_size": 16,
+    "location_border_thickness": 1
   },
   {
     "name": "maruru",
-    "img": "images/maps/maruru.png"
+    "img": "images/maps/maruru.png",
+    "location_size": 16,
+    "location_border_thickness": 1
   },
   {
     "name": "secretworld",
-    "img": "images/maps/secretworld.png"
+    "img": "images/maps/secretworld.png",
+    "location_size": 16,
+    "location_border_thickness": 1
   }
 ]

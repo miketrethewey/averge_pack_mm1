@@ -8,11 +8,11 @@ Tracker:AddLayouts("layouts/grids/weapons.json")  -- Weapons grid
 
 Tracker:AddLayouts("layouts/grids/grids.json") -- Combined grid
 
--- Locations
-Tracker:AddLocations("locations/locations.json")
-
 -- Maps
 Tracker:AddMaps("maps/maps.json")
+
+-- Locations
+Tracker:AddLocations("locations/locations.json")
 
 if string.find(Tracker.ActiveVariantUID, "items_only") then
   -- Default/Items-Only

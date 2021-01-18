@@ -14,6 +14,15 @@ Tracker:AddLocations("locations/locations.json")
 -- Maps
 Tracker:AddMaps("maps/maps.json")
 
--- Default/Items-Only
-Tracker:AddLayouts("layouts/tracker.json") -- Main Tracker
-Tracker:AddLayouts("layouts/broadcast.json") -- Broadcast View
+if string.find(Tracker.ActiveVariantUID, "items_only") then
+  -- Default/Items-Only
+  Tracker:AddLayouts("layouts/tracker.json") -- Main Tracker
+  Tracker:AddLayouts("layouts/broadcast.json") -- Broadcast View
+end
+
+if string.find(Tracker.ActiveVariantUID, "standard_map") then
+  -- Standard with Map
+  Tracker:AddLayouts("layouts/maps/sudra.json") -- Sudra Map
+  Tracker:AddLayouts("variants/standard_map/layouts/tracker.json") -- Main Tracker
+  Tracker:AddLayouts("variants/standard_map/layouts/broadcast.json") -- Broadcast View
+end

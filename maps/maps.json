@@ -1,6 +1,46 @@
 [
   {
-    "name": "Sudra",
+    "name": "sudra",
     "img": "images/maps/sudra.png"
+  },
+  {
+    "name": "eribu",
+    "img": "images/maps/eribu.png"
+  },
+  {
+    "name": "absu",
+    "img": "images/maps/absu.png"
+  },
+  {
+    "name": "zi",
+    "img": "images/maps/zi.png"
+  },
+  {
+    "name": "kur",
+    "img": "images/maps/kur.png"
+  },
+  {
+    "name": "indi",
+    "img": "images/maps/indi.png"
+  },
+  {
+    "name": "edin",
+    "img": "images/maps/edin.png"
+  },
+  {
+    "name": "ukkinna",
+    "img": "images/maps/ukkinna.png"
+  },
+  {
+    "name": "ekurmah",
+    "img": "images/maps/ekurmah.png"
+  },
+  {
+    "name": "maruru",
+    "img": "images/maps/maruru.png"
+  },
+  {
+    "name": "secretworld",
+    "img": "images/maps/secretworld.png"
   }
 ]

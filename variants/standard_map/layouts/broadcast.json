@@ -1,0 +1,31 @@
+{
+  "tracker_broadcast": {
+    "type": "container",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "left",
+          "v_alignment": "stretch",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "shared_item_grid"
+              }
+            }
+          ]
+        },
+        {
+          "type": "map",
+          "maps": ["sudra"]
+        }
+      ]
+    }
+  }
+}

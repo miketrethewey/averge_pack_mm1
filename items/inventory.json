@@ -3,6 +3,7 @@
   {
     "name": "Address Bomb",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/address-bomb.png",
     "codes": "addressbomb"
   },
@@ -10,6 +11,7 @@
   {
     "name": "Address Disruptor",
     "type": "progressive",
+    "loop": true,
     "allow_disabled": false,
     "stages": [
       { // No item
@@ -34,6 +36,7 @@
   {
     "name": "Axiom Disruptor",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/axiom-disruptor.png",
     "codes": "axiomdisruptor,rangelong"
   },
@@ -41,6 +44,7 @@
   {
     "name": "Bioflux Accelerator 1",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/bioflux-accelerator-1.png",
     "codes": "biofluxaccelerator1,biofluxaccelerator,rangelong"
   },
@@ -48,6 +52,7 @@
   {
     "name": "Bioflux Accelerator 2",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/bioflux-accelerator-2.png",
     "codes": "biofluxaccelerator2,biofluxaccelerator,rangelong"
   },
@@ -55,6 +60,7 @@
   {
     "name": "Clay Tablet",
     "type": "consumable",
+    "loop": true,
     "img": "images/inventory/clay-tablet.png",
     "codes": "claytablet",
     "max_quantity": 8
@@ -63,6 +69,7 @@
   {
     "name": "Data Bomb",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/data-bomb.png",
     "codes": "databomb,rangelong"
   },
@@ -70,6 +77,7 @@
   {
     "name": "Digital Paper",
     "type": "consumable",
+    "loop": true,
     "img": "images/inventory/digital-paper.png",
     "codes": "digitalpaper",
     "max_quantity": 10
@@ -78,6 +86,7 @@
   {
     "name": "Distortion Field",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/distortion-field.png",
     "codes": "distortionfield,rangeshort,wavebeam,wave"
   },
@@ -85,6 +94,7 @@
   {
     "name": "Drone Teleport",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/drone-teleport.png",
     "codes": "droneteleport"
   },
@@ -92,6 +102,7 @@
   {
     "name": "Remote Drone/Enhanced Drone Launch",
     "type": "progressive",
+    "loop": true,
     "allow_disabled": false,
     "stages": [
       { // No item
@@ -116,6 +127,7 @@
   {
     "name": "Faded Note",
     "type": "consumable",
+    "loop": true,
     "img": "images/inventory/faded-note.png",
     "codes": "fadednote",
     "max_quantity": 1
@@ -124,6 +136,7 @@
   {
     "name": "Fat Beam",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/fat-beam.png",
     "codes": "fatbeam,rangelong,wavebeam,wave,widebeam,wide"
   },
@@ -131,6 +144,7 @@
   {
     "name": "Field Disruptor",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/field-disruptor.png",
     "codes": "fielddisruptor,highjump,hijump"
   },
@@ -138,6 +152,7 @@
   {
     "name": "Firewall",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/firewall.png",
     "codes": "firewall,rangemedium,rangemed"
   },
@@ -145,6 +160,7 @@
   {
     "name": "Flamethrower",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/flamethrower.png",
     "codes": "flamethrower,rangelong,wavebeam,wave,plasmabeam,plasma"
   },
@@ -152,6 +168,7 @@
   {
     "name": "Grapple",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/grapple.png",
     "codes": "grapple"
   },
@@ -159,6 +176,7 @@
   {
     "name": "Health Node Fragment",
     "type": "consumable",
+    "loop": true,
     "img": "images/inventory/health-node-fragment.png",
     "codes": "healthnodefragment",
     "max_quantity": 25
@@ -167,6 +185,7 @@
   {
     "name": "Health Node",
     "type": "consumable",
+    "loop": true,
     "img": "images/inventory/health-node.png",
     "codes": "healthnode",
     "max_quantity": 9
@@ -175,6 +194,7 @@
   {
     "name": "Heat Seeker",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/heat-seeker.png",
     "codes": "heatseeker,rangelong"
   },
@@ -182,6 +202,7 @@
   {
     "name": "Hypo-Atomizer",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/hypo-atomizer.png",
     "codes": "hypoatomizer,rangelong,splits,split,spazerbeam,spazer,widebeam,wide"
   },
@@ -189,6 +210,7 @@
   {
     "name": "Inertial Pulse",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/inertial-pulse.png",
     "codes": "inertialpulse,rangelong,plasmabeam,plasma"
   },
@@ -196,6 +218,7 @@
   {
     "name": "Ion Beam",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/ion-beam.png",
     "codes": "ionbeam,rangelong"
   },
@@ -203,6 +226,7 @@
   {
     "name": "Kilver",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/kilver.png",
     "codes": "kilver,rangeshort,wavebeam,wave,widebeam,wide"
   },
@@ -210,6 +234,7 @@
   {
     "name": "Laser Drill",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/laser-drill.png",
     "codes": "laserdrill"
   },
@@ -217,6 +242,7 @@
   {
     "name": "Lightning Gun",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/lightning-gun.png",
     "codes": "lightninggun,rangelong"
   },
@@ -224,6 +250,7 @@
   {
     "name": "Coats",
     "type": "progressive",
+    "loop": true,
     "allow_disabled": false,
     "stages": [
       { // No item
@@ -253,6 +280,7 @@
   {
     "name": "Multi-Disruptor",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/multi-disruptor.png",
     "codes": "multidisruptor,rangeshort,split,splits,spazerbeam,spazer,widebeam,wide"
   },
@@ -260,6 +288,7 @@
   {
     "name": "Nova",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/nova.png",
     "codes": "nova,rangelong,split,splits,spazerbeam,spazer,widebeam,wide"
   },
@@ -267,6 +296,7 @@
   {
     "name": "Orbital Discharge",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/orbital-discharge.png",
     "codes": "orbitaldischarge,rangelong,snakeshooter,snake"
   },
@@ -274,6 +304,7 @@
   {
     "name": "Passcode Tool",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/passcode-tool.png",
     "codes": "passcodetool"
   },
@@ -281,6 +312,7 @@
   {
     "name": "Power Node Fragment",
     "type": "consumable",
+    "loop": true,
     "img": "images/inventory/power-node-fragment.png",
     "codes": "powernodefragment",
     "max_quantity": 18
@@ -289,6 +321,7 @@
   {
     "name": "Power Node",
     "type": "consumable",
+    "loop": true,
     "img": "images/inventory/power-node.png",
     "codes": "powernode",
     "max_quantity": 6
@@ -297,6 +330,7 @@
   {
     "name": "Quantum Variegator",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/quantum-variegator.png",
     "codes": "quantumvariegator,rangelong,widebeam,wide"
   },
@@ -304,6 +338,7 @@
   {
     "name": "Range Node",
     "type": "consumable",
+    "loop": true,
     "img": "images/inventory/range-node.png",
     "codes": "rangenode",
     "max_quantity": 6
@@ -312,6 +347,7 @@
   {
     "name": "Reflector",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/reflector.png",
     "codes": "reflector,rangelong,bounce"
   },
@@ -319,6 +355,7 @@
   {
     "name": "Reverse Slicer",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/reverse-slicer.png",
     "codes": "reverseslicer,rangemedium,rangemed,wavebeam,wave"
   },
@@ -326,6 +363,7 @@
   {
     "name": "Rusalka Tablet",
     "type": "consumable",
+    "loop": true,
     "img": "images/inventory/rusalka-tablet.png",
     "codes": "rusalkatablet",
     "max_quantity": 9
@@ -334,6 +372,7 @@
   {
     "name": "Scissor Beam",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/scissor-beam.png",
     "codes": "scissorbeam,rangelong,wavebeam,wave,widebeam,wide"
   },
@@ -341,6 +380,7 @@
   {
     "name": "Shards",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/shards.png",
     "codes": "shards,rangeshort,split,splits,spazerbeam,spazer,widebeam,wide"
   },
@@ -348,6 +388,7 @@
   {
     "name": "Size Node",
     "type": "consumable",
+    "loop": true,
     "img": "images/inventory/size-node.png",
     "codes": "sizenode",
     "max_quantity": 6
@@ -356,6 +397,7 @@
   {
     "name": "Sudran Key",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/sudran-key.png",
     "codes": "sudrankey"
   },
@@ -363,6 +405,7 @@
   {
     "name": "Tethered Charge",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/tethered-charge.png",
     "codes": "tetheredcharge,rangelong,widebeam,wide"
   },
@@ -370,6 +413,7 @@
   {
     "name": "Turbine Pulse",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/turbine-pulse.png",
     "codes": "turbinepulse,rangelong,widebeam,wide"
   },
@@ -377,6 +421,7 @@
   {
     "name": "Voranj",
     "type": "toggle",
+    "loop": true,
     "img": "images/inventory/voranj.png",
     "codes": "voranj,rangelong,splits,split,spazerbeam,spazer,widebeam,wide"
   }

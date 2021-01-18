@@ -12,8 +12,19 @@
         "key": "upgrades_grid"
       },
       {
-        "type": "layout",
-        "key": "powerups_grid"
+        "type": "array",
+        "h_alignment": "center",
+        "orientation": "horizontal",
+        "content": [
+          {
+            "type": "layout",
+            "key": "powerups_grid"
+          },
+          {
+            "type": "layout",
+            "key": "notes_grid"
+          }
+        ]
       }
     ]
   }

@@ -2,6 +2,7 @@
 Tracker:AddItems("items/inventory.json") -- All Inventory items
 
 -- Grids
+Tracker:AddLayouts("layouts/grids/notes.json") -- Notes grid
 Tracker:AddLayouts("layouts/grids/powerups.json") -- Powerups grid
 Tracker:AddLayouts("layouts/grids/upgrades.json") -- Upgrades grid
 Tracker:AddLayouts("layouts/grids/weapons.json")  -- Weapons grid

@@ -1,0 +1,9 @@
+{
+  "notes_grid": {
+    "type": "itemgrid",
+    "rows": [
+      [ "digitalpaper", "rusalkatablet" ],
+      [ "claytablet", "fadednote" ]
+    ]
+  }
+}

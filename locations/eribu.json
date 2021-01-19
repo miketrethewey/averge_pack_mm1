@@ -2,6 +2,7 @@
   // Eribu
   {
     "name": "Eribu",
+    "color": "#A81468",
     "parent": "Sudra",
     "children": [
       // Health Node (Eribu top)

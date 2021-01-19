@@ -424,5 +424,13 @@
     "loop": true,
     "img": "images/inventory/voranj.png",
     "codes": "voranj,rangelong,splits,split,spazerbeam,spazer,widebeam,wide"
+  },
+  // Secret World
+  {
+    "name": "Secret World",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/breach-attractor.png",
+    "codes": "secretworld,breachattractor"
   }
 ]

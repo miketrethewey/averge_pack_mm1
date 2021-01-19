@@ -2,8 +2,8 @@
   "upgrades_grid": {
     "type": "itemgrid",
     "rows": [
-      [ "laserdrill", "fielddisruptor", "biofluxaccelerator1", "biofluxaccelerator2", "coats", "drone" ],
-      [ "droneteleport", "sudrankey", "passcodetool", "addressdisruptor", "grapple", "addressbomb" ]
+      [ "laserdrill", "addressdisruptor", "fielddisruptor", "coats", "biofluxaccelerator1", "biofluxaccelerator2" ],
+      [ "drone", "droneteleport", "grapple", "addressbomb", "sudrankey", "passcodetool" ]
     ]
   }
 }

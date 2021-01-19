@@ -13,9 +13,12 @@ Tracker:AddLayouts("layouts/grids/grids.json") -- Combined grid
 Tracker:AddMaps("maps/maps.json")
 
 -- Locations
-Tracker:AddLocations("locations/locations.json")
+--- Item Locations
+Tracker:AddLocations("locations/sudra.json") -- Sudra
 Tracker:AddLocations("locations/eribu.json") -- Eribu
-Tracker:AddLocations("locations/absu.json") -- Absu
+Tracker:AddLocations("locations/absu.json")  -- Absu
+--- Secret World Locations
+Tracker:AddLocations("locations/secret-maruru.json") -- Mar-Uru
 
 if string.find(Tracker.ActiveVariantUID, "items_only") then
   -- Default/Items-Only

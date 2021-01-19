@@ -1,0 +1,12 @@
+{
+  "weapons_grid": {
+    "type": "itemgrid",
+    "rows": [
+      [ "axiomdisruptor", "nova", "multidisruptor", "kilver", "hypoatomizer" ],
+      [ "reflector", "inertialpulse", "voranj", "shards", "turbinepulse" ],
+      [ "quantumvariegator", "tetheredcharge", "databomb", "lightninggun", "heatseeker" ],
+      [ "reverseslicer", "firewall", "ionbeam", "distortionfield", "flamethrower" ],
+      [ "orbitaldischarge", "scissorbeam", "fatbeam" ]
+    ]
+  }
+}

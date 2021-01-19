@@ -1,0 +1,295 @@
+[
+  // Edin
+  {
+    "name": "Edin",
+    "color": "#3A16A0",
+    "parent": "Sudra",
+    "children": [
+      // Drone Teleport
+      {
+        "name": "Drone Teleport",
+        "short_name": "Drone Teleport",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 585,
+            "y": 639
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Clay Tablet (Edin)
+      {
+        "name": "Clay Tablet (Edin)",
+        "short_name": "Clay Tablet (Edin)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 639,
+            "y": 675
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Distortion Field
+      {
+        "name": "Distortion Field",
+        "short_name": "Distortion Field",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 729,
+            "y": 675
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Power Node Fragment (Edin top)
+      {
+        "name": "Power Node Fragment (Edin top)",
+        "short_name": "Power Node Fragment (Edin ^)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 639,
+            "y": 693
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Edin top)
+      {
+        "name": "Health Node Fragment (Edin top)",
+        "short_name": "Health Node Fragment (Edin ^)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 711,
+            "y": 693
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node (Edin)
+      {
+        "name": "Health Node (Edin)",
+        "short_name": "Health Node (Edin)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 603,
+            "y": 711
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Rusalka Tablet (Edin)
+      {
+        "name": "Rusalka Tablet (Edin)",
+        "short_name": "Rusalka Tablet (Edin)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 657,
+            "y": 747
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Digital Paper (Edin top)
+      {
+        "name": "Digital Paper (Edin top)",
+        "short_name": "Digital Paper (Edin ^)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 711,
+            "y": 747
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Edin left)
+      {
+        "name": "Health Node Fragment (Edin left)",
+        "short_name": "Health Node Fragment (Edin <)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 531,
+            "y": 765
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Bioflux Accelerator 2
+      {
+        "name": "Bioflux Accelerator 2",
+        "short_name": "Bioflux Accelerator 2",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 585,
+            "y": 765
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Digital Paper (Edin bottom)
+      {
+        "name": "Digital Paper (Edin bottom)",
+        "short_name": "Digital Paper (Edin v)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 729,
+            "y": 765
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Edin right) (2 items)
+      {
+        "name": "Health Node Fragment (Edin right) (2 items)",
+        "short_name": "Health Node Fragment (Edin >) (2 items)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 765,
+            "y": 765
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 2
+          }
+        ]
+      },
+      // Shards
+      {
+        "name": "Shards",
+        "short_name": "Shards",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 639,
+            "y": 801
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Range Node (Edin)
+      {
+        "name": "Range Node (Edin)",
+        "short_name": "Range Node (Edin)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 675,
+            "y": 801
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Address Bomb
+      {
+        "name": "Address Bomb",
+        "short_name": "Address Bomb",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 785,
+            "y": 801
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

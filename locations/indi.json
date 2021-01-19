@@ -1,0 +1,48 @@
+[
+  // Indi
+  {
+    "name": "Indi",
+    "color": "#00AD8C",
+    "parent": "Sudra",
+    "children": [
+      // Rusalka Tablet (Indi)
+      {
+        "name": "Rusalka Tablet (Indi)",
+        "short_name": "Rusalka Tablet (Indi)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 711,
+            "y": 837
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Digital Paper (Indi)
+      {
+        "name": "Digital Paper (Indi)",
+        "short_name": "Digital Paper (Indi)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 297,
+            "y": 853
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

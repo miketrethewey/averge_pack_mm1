@@ -1,0 +1,200 @@
+[
+  // Ukkin-Na
+  {
+    "name": "Ukkin-Na",
+    "color": "#015EA5",
+    "parent": "Sudra",
+    "children": [
+      // Turbine Pulse
+      {
+        "name": "Turbine Pulse",
+        "short_name": "Turbine Pulse",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 459,
+            "y": 459
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Ukkin-Na top)
+      {
+        "name": "Health Node Fragment (Ukkin-Na top)",
+        "short_name": "Health Node Fragment (Ukkin-Na ^)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 423,
+            "y": 549
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Rusalka Tablet (Ukkin-Na top)
+      {
+        "name": "Rusalka Tablet (Ukkin-Na top)",
+        "short_name": "Rusalka Tablet (Ukkin-Na ^)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 333,
+            "y": 537
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Power Node Fragment (Ukkin-Na top)
+      {
+        "name": "Power Node Fragment (Ukkin-Na top)",
+        "short_name": "Power Node Fragment (Ukkin-Na ^)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 459,
+            "y": 585
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node (Ukkin-Na)
+      {
+        "name": "Health Node (Ukkin-Na)",
+        "short_name": "Health Node (Ukkin-Na)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 351,
+            "y": 603
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Trenchcoat
+      {
+        "name": "Trenchcoat",
+        "short_name": "Trenchcoat",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 423,
+            "y": 621
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Power Node Fragment (Ukkin-Na middle)
+      {
+        "name": "Power Node Fragment (Ukkin-Na middle)",
+        "short_name": "Power Node Fragment (Ukkin-Na =)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 423,
+            "y": 693
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Digital Paper (Ukkin-Na)
+      {
+        "name": "Digital Paper (Ukkin-Na)",
+        "short_name": "Digital Paper (Ukkin-Na)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 405,
+            "y": 747
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Rusalka Tablet (Ukkin-Na bottom) (2 items)
+      {
+        "name": "Rusalka Tablet (Ukkin-Na bottom) (2 items)",
+        "short_name": "Rusalka Tablet (Ukkin-Na v) (2 items)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 351,
+            "y": 763
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 2
+          }
+        ]
+      },
+      // Power Node Fragment (bottom)
+      {
+        "name": "Power Node Fragment (bottom)",
+        "short_name": "Power Node Fragment (v)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 441,
+            "y": 783
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

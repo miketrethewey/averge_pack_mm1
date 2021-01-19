@@ -1,0 +1,428 @@
+[
+  // Kur
+  {
+    "name": "Kur",
+    "color": "#8B176E",
+    "parent": "Sudra",
+    "children": [
+      // Clay Tablet (Kur top)
+      {
+        "name": "Clay Tablet (Kur top)",
+        "short_name": "Clay Tablet (Kur ^)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 1035,
+            "y": 513
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Power Node Fragment (Kur)
+      {
+        "name": "Power Node Fragment (Kur)",
+        "short_name": "Power Node Fragment (Kur)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 981,
+            "y": 549
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Power Node (Kur top)
+      {
+        "name": "Power Node (Kur top)",
+        "short_name": "Power Node (Kur ^)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 1197,
+            "y": 549
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Clay Tablet (Kur middle)
+      {
+        "name": "Clay Tablet (Kur middle)",
+        "short_name": "Clay Tablet (Kur =)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 981,
+            "y": 567
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Reflector
+      {
+        "name": "Reflector",
+        "short_name": "Reflector",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 1107,
+            "y": 567
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Enhanced Drone Launch
+      {
+        "name": "Enhanced Drone Launch",
+        "short_name": "Enhanced Drone Launch",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 1089,
+            "y": 585
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Kur top right)
+      {
+        "name": "Health Node Fragment (Kur top right)",
+        "short_name": "Health Node Fragment (Kur ^>)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 1197,
+            "y": 585
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Kur top left)
+      {
+        "name": "Health Node Fragment (Kur top left)",
+        "short_name": "Health Node Fragment (Kur <^)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 1071,
+            "y": 603
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Grapple
+      {
+        "name": "Grapple",
+        "short_name": "Grapple",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 1197,
+            "y": 603
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Clay Tablet (Kur bottom)
+      {
+        "name": "Clay Tablet (Kur bottom)",
+        "short_name": "Clay Tablet (Kur v)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 1053,
+            "y": 621
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Kur middle left)
+      {
+        "name": "Health Node Fragment (Kur middle left)",
+        "short_name": "Health Node Fragment (Kur <=)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 963,
+            "y": 675
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node (Kur)
+      {
+        "name": "Health Node (Kur)",
+        "short_name": "Health Node (Kur)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 1071,
+            "y": 675
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Ion Beam
+      {
+        "name": "Ion Beam",
+        "short_name": "Ion Beam",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 981,
+            "y": 693
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Remote Drone
+      {
+        "name": "Remote Drone",
+        "short_name": "Remote Drone",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 1017,
+            "y": 693
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Hypo-Atomizer
+      {
+        "name": "Hypo-Atomizer",
+        "short_name": "Hypo-Atomizer",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 999,
+            "y": 747
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Kur middle right)
+      {
+        "name": "Health Node Fragment (Kur middle right)",
+        "short_name": "Health Node Fragment (Kur =>)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 1017,
+            "y": 747
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Power Node (Kur bottom)
+      {
+        "name": "Power Node (Kur bottom)",
+        "short_name": "Power Node (Kur v)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 909,
+            "y": 853
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Kur bottom)
+      {
+        "name": "Health Node Fragment (Kur bottom)",
+        "short_name": "Health Node Fragment (Kur v)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 999,
+            "y": 855
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Firewall
+      {
+        "name": "Firewall",
+        "short_name": "Firewall",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 981,
+            "y": 873
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Address Disrupter 2
+      {
+        "name": "Address Disrupter 2",
+        "short_name": "Address Disrupter 2",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 927,
+            "y": 909
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Field Disruptor
+      {
+        "name": "Field Disruptor",
+        "short_name": "Field Disruptor",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 999,
+            "y": 909
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Tethered Charge
+      {
+        "name": "Tethered Charge",
+        "short_name": "Tethered Charge",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map":"sudra",
+            "x": 1071,
+            "y": 909
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

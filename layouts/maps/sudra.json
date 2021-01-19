@@ -1,0 +1,84 @@
+{
+  "sudra_map": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Sudra",
+        "content": {
+          "type": "map",
+          "maps": [ "sudra" ]
+        }
+      },
+      {
+        "title": "Eribu",
+        "content": {
+          "type": "map",
+          "maps": [ "eribu" ]
+        }
+      },
+      {
+        "title": "Absu",
+        "content": {
+          "type": "map",
+          "maps": [ "absu" ]
+        }
+      },
+      {
+        "title": "Zi",
+        "content": {
+          "type": "map",
+          "maps": [ "zi" ]
+        }
+      },
+      {
+        "title": "Kur",
+        "content": {
+          "type": "map",
+          "maps": [ "kur" ]
+        }
+      },
+      {
+        "title": "Indi",
+        "content": {
+          "type": "map",
+          "maps": [ "indi" ]
+        }
+      },
+      {
+        "title": "Edin",
+        "content": {
+          "type": "map",
+          "maps": [ "edin" ]
+        }
+      },
+      {
+        "title": "Ukkin-Na",
+        "content": {
+          "type": "map",
+          "maps": [ "ukkinna" ]
+        }
+      },
+      {
+        "title": "E-Kur-Mah",
+        "content": {
+          "type": "map",
+          "maps": [ "ekurmah" ]
+        }
+      },
+      {
+        "title": "Mar-Uru",
+        "content": {
+          "type": "map",
+          "maps": [ "maruru" ]
+        }
+      // },
+      // {
+      //   "title": "Secret World",
+      //   "content": {
+      //     "type": "map",
+      //     "maps": [ "secretworld" ]
+      //   }
+      }
+    ]
+  }
+}

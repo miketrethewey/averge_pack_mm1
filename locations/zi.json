@@ -1,0 +1,293 @@
+[
+  // Zi
+  {
+    "name": "Zi",
+    "color": "#2933FD",
+    "parent": "sudra",
+    "children": [
+      // Power Node Fragment
+      {
+        "name": "Power Node Fragment (Zi top) #1",
+        "short_name": "Power Node Fragment (Zi ^) #1",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 855,
+            "y": 909
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node
+      {
+        "name": "Health Node (Zi)",
+        "short_name": "Health Node (Zi)",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 819,
+            "y": 927
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Modified Lab Coat
+      {
+        "name": "Modified Lab Coat",
+        "short_name": "Modified Lab Coat",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 873,
+            "y": 927
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Digital Paper Zi #1
+      {
+        "name": "Digital Paper (Zi) #1",
+        "short_name": "Digital Paper (Zi) #1",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 783,
+            "y": 963
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Zi) #1
+      {
+        "name": "Health Node Fragment (Zi) #1",
+        "short_name": "Health Node Fragment (Zi) #1",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 819,
+            "y": 981
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Rusalka Tablet (Zi)
+      {
+        "name": "Rusalka Tablet (Zi)",
+        "short_name": "Rusalka Tablet (Zi)",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 675,
+            "y": 999
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Voranj
+      {
+        "name": "Voranj",
+        "short_name": "Voranj",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 729,
+            "y": 1017
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Power Node Fragment (Zi) #2
+      {
+        "name": "Power Node Fragment (Zi) #2",
+        "short_name": "Power Node Fragment (Zi) #2",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 657,
+            "y": 1053
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Size Node (Zi)
+      {
+        "name": "Size Node (Zi)",
+        "short_name": "Size Node (Zi)",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 801,
+            "y": 1053
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Bioflux Accelerator #1
+      {
+        "name": "Bioflux Accelerator #1",
+        "short_name": "Bioflux Accelerator #1",
+        "access_rules": [],
+        "map_locations": [{
+          "map": "sudra",
+          "x": 693,
+          "y": 1071
+        }],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Zi middle)
+      {
+        "name": "Health Node Fragment (Zi middle)",
+        "short_name": "Health Node Fragment (Zi =)",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 837,
+            "y": 1071
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Zi bottom)
+      {
+        "name": "Health Node Fragment (Zi bottom)",
+        "short_name": "Health Node Fragment (Zi v)",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 747,
+            "y": 1089
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Range Node (Zi)
+      {
+        "name": "Range Node (Zi)",
+        "short_name": "Range Node (Zi)",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 711,
+            "y": 1107
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Passcode Tool
+      {
+        "name": "Passcode Tool",
+        "short_name": "Passcode Tool",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 801,
+            "y": 1125
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Digital Paper (Zi) #2
+      {
+        "name": "Digital Paper (Zi) #2",
+        "short_name": "Digital Paper (Zi) #2",
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 837,
+            "y": 1125
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

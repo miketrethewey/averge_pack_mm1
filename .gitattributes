@@ -1,0 +1,2 @@
+# Make JSON files highlight as JSON with Comments
+*.json linguist-language=JSON-with-Comments

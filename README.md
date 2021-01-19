@@ -1,3 +1,5 @@
-# averge_pack_mm1
+# Axiom Verge EmoTracker Pack *by Serpahin Eveles & Mike Trethewey*
 
-Axiom Verge EmoTracker Pack
+## Known Issues
+
+* No Access Logic for any locations yet

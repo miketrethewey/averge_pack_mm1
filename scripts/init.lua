@@ -22,6 +22,7 @@ Tracker:AddLocations("locations/kur.json")     -- Kur
 Tracker:AddLocations("locations/ekurmah.json") -- E-Kur-Mah
 Tracker:AddLocations("locations/edin.json")    -- Edin
 Tracker:AddLocations("locations/indi.json")    -- Indi
+Tracker:AddLocations("locations/maruru.json")  -- Mar-Uru
 --- Secret World Locations
 Tracker:AddLocations("locations/secret-maruru.json") -- Mar-Uru
 

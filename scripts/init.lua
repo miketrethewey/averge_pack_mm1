@@ -14,11 +14,12 @@ Tracker:AddMaps("maps/maps.json")
 
 -- Locations
 --- Item Locations
-Tracker:AddLocations("locations/sudra.json") -- Sudra
-Tracker:AddLocations("locations/eribu.json") -- Eribu
-Tracker:AddLocations("locations/absu.json")  -- Absu
-Tracker:AddLocations("locations/zi.json")    -- Zi
-Tracker:AddLocations("locations/kur.json")   -- Kur
+Tracker:AddLocations("locations/sudra.json")   -- Sudra
+Tracker:AddLocations("locations/eribu.json")   -- Eribu
+Tracker:AddLocations("locations/absu.json")    -- Absu
+Tracker:AddLocations("locations/zi.json")      -- Zi
+Tracker:AddLocations("locations/kur.json")     -- Kur
+Tracker:AddLocations("locations/ekurmah.json") -- E-Kur-Mah
 --- Secret World Locations
 Tracker:AddLocations("locations/secret-maruru.json") -- Mar-Uru
 

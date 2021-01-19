@@ -1,0 +1,181 @@
+[
+  //E-Kur-Mah
+  {
+    "name": "E-Kur-Mah",
+    "color": "#2C6D59",
+    "parent": "Sudra",
+    "children": [
+      // Power Node (E-Kur-Mah)
+      {
+        "name": "Power Node (E-Kur-Mah)",
+        "short_name": "Power Node (E-Kur-Mah)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 1143,
+            "y": 459
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Sudran Key
+      {
+        "name": "Sudran Key",
+        "short_name": "Sudran Key",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 1215,
+            "y": 477
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Clay Tablet (E-Kur-Mah top right)
+      {
+        "name": "Clay Tablet (E-Kur-Mah top right)",
+        "short_name": "Clay Tablet (E-Kur-Mah ^>)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 1233,
+            "y": 495
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Clay Tablet (E-Kur-Mah top left)
+      {
+        "name": "Clay Tablet (E-Kur-Mah top left)",
+        "short_name": "Clay Tablet (E-Kur-Mah <^)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 1143,
+            "y": 513
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Clay Tablet (E-Kur-Mah bottom)
+      {
+        "name": "Clay Tablet (E-Kur-Mah bottom)",
+        "short_name": "Clay Tablet (E-Kur-Mah v)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 1233,
+            "y": 585
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Quantum Veriegator
+      {
+        "name": "Quantum Veriegator",
+        "short_name": "Quantum Veriegator",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 1161,
+            "y": 729
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (E-Kur-Mah)
+      {
+        "name": "Health Node Fragment (E-Kur-Mah)",
+        "short_name": "Health Node Fragment (E-Kur-Mah)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 1197,
+            "y": 747
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Red Coat
+      {
+        "name": "Red Coat",
+        "short_name": "Red Coat",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 1161,
+            "y": 801
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Power Node Fragment (E-Kur-Mah)
+      {
+        "name": "Power Node Fragment (E-Kur-Mah)",
+        "short_name": "Power Node Fragment (E-Kur-Mah)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 1179,
+            "y": 819
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

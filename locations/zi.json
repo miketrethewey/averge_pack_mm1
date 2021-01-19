@@ -1,20 +1,20 @@
 [
-  // Eribu
+  // Zi
   {
-    "name": "Eribu",
-    "color": "#A81468",
-    "parent": "Sudra",
+    "name": "Zi",
+    "color": "#2933FD",
+    "parent": "sudra",
     "children": [
-      // Health Node (Eribu top)
+      // Power Node Fragment
       {
-        "name": "Health Node (Eribu top)",
-        "short_name": "Health Node (Eribu ^)",
-        "access_rules": [ ],
+        "name": "Power Node Fragment (Zi top) #1",
+        "short_name": "Power Node Fragment (Zi ^) #1",
+        "access_rules": [],
         "map_locations": [
           {
             "map": "sudra",
-            "x": 243,
-            "y": 603
+            "x": 855,
+            "y": 909
           }
         ],
         "sections": [
@@ -24,16 +24,16 @@
           }
         ]
       },
-      // Nova
+      // Health Node
       {
-        "name": "Nova",
-        "short_name": "Nova",
-        "access_rules": [ ],
+        "name": "Health Node (Zi)",
+        "short_name": "Health Node (Zi)",
+        "access_rules": [],
         "map_locations": [
           {
             "map": "sudra",
-            "x": 279,
-            "y": 639
+            "x": 819,
+            "y": 927
           }
         ],
         "sections": [
@@ -43,16 +43,16 @@
           }
         ]
       },
-      // Power Node Fragment (Eribu top)
+      // Modified Lab Coat
       {
-        "name": "Power Node Fragment (Eribu top)",
-        "short_name": "Power Node Fragment (Eribu ^)",
-        "access_rules": [ "passcodetool" ],
+        "name": "Modified Lab Coat",
+        "short_name": "Modified Lab Coat",
+        "access_rules": [],
         "map_locations": [
           {
             "map": "sudra",
-            "x":  99,
-            "y": 657
+            "x": 873,
+            "y": 927
           }
         ],
         "sections": [
@@ -62,16 +62,16 @@
           }
         ]
       },
-      // Multi-Disruptor
+      // Digital Paper Zi #1
       {
-        "name": "Multi-Disruptor",
-        "short_name": "Multi-Disruptor",
-        "access_rules": [ ],
+        "name": "Digital Paper (Zi) #1",
+        "short_name": "Digital Paper (Zi) #1",
+        "access_rules": [],
         "map_locations": [
           {
             "map": "sudra",
-            "x": 153,
-            "y": 657
+            "x": 783,
+            "y": 963
           }
         ],
         "sections": [
@@ -81,16 +81,16 @@
           }
         ]
       },
-      // Flamethrower
+      // Health Node Fragment (Zi) #1
       {
-        "name": "Flamethrower",
-        "short_name": "Flamethrower",
-        "access_rules": [ ],
+        "name": "Health Node Fragment (Zi) #1",
+        "short_name": "Health Node Fragment (Zi) #1",
+        "access_rules": [],
         "map_locations": [
           {
             "map": "sudra",
-            "x":  27,
-            "y": 675
+            "x": 819,
+            "y": 981
           }
         ],
         "sections": [
@@ -100,16 +100,16 @@
           }
         ]
       },
-      // Size Node (Eribu)
+      // Rusalka Tablet (Zi)
       {
-        "name": "Size Node (Eribu)",
-        "short_name": "Size Node (Eribu)",
-        "access_rules": [ ],
+        "name": "Rusalka Tablet (Zi)",
+        "short_name": "Rusalka Tablet (Zi)",
+        "access_rules": [],
         "map_locations": [
           {
             "map": "sudra",
-            "x": 135,
-            "y": 693
+            "x": 675,
+            "y": 999
           }
         ],
         "sections": [
@@ -119,16 +119,16 @@
           }
         ]
       },
-      // Note (Eribu)
+      // Voranj
       {
-        "name": "Note (Eribu)",
-        "short_name": "Note (Eribu)",
-        "access_rules": [ ],
+        "name": "Voranj",
+        "short_name": "Voranj",
+        "access_rules": [],
         "map_locations": [
           {
             "map": "sudra",
-            "x": 135,
-            "y": 729
+            "x": 729,
+            "y": 1017
           }
         ],
         "sections": [
@@ -138,16 +138,16 @@
           }
         ]
       },
-      // Laser Drill
+      // Power Node Fragment (Zi) #2
       {
-        "name": "Laser Drill",
-        "short_name": "Laser Drill",
-        "access_rules": [ ],
+        "name": "Power Node Fragment (Zi) #2",
+        "short_name": "Power Node Fragment (Zi) #2",
+        "access_rules": [],
         "map_locations": [
           {
             "map": "sudra",
-            "x": 279,
-            "y": 729
+            "x": 657,
+            "y": 1053
           }
         ],
         "sections": [
@@ -157,16 +157,16 @@
           }
         ]
       },
-      // Power Node (Eribu)
+      // Size Node (Zi)
       {
-        "name": "Power Node (Eribu)",
-        "short_name": "Power Node (Eribu)",
-        "access_rules": [ ],
+        "name": "Size Node (Zi)",
+        "short_name": "Size Node (Zi)",
+        "access_rules": [],
         "map_locations": [
           {
             "map": "sudra",
-            "x": 243,
-            "y": 747
+            "x": 801,
+            "y": 1053
           }
         ],
         "sections": [
@@ -176,16 +176,33 @@
           }
         ]
       },
-      // Health Node Fragment (Eribu top)
+      // Bioflux Accelerator #1
       {
-        "name": "Health Node Fragment (Eribu top)",
-        "short_name": "Health Node Fragment (Eribu ^)",
-        "access_rules": [ ],
+        "name": "Bioflux Accelerator #1",
+        "short_name": "Bioflux Accelerator #1",
+        "access_rules": [],
+        "map_locations": [{
+          "map": "sudra",
+          "x": 693,
+          "y": 1071
+        }],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Zi middle)
+      {
+        "name": "Health Node Fragment (Zi middle)",
+        "short_name": "Health Node Fragment (Zi =)",
+        "access_rules": [],
         "map_locations": [
           {
             "map": "sudra",
-            "x":  27,
-            "y": 765
+            "x": 837,
+            "y": 1071
           }
         ],
         "sections": [
@@ -195,16 +212,16 @@
           }
         ]
       },
-      // Axiom Disruptor
+      // Health Node Fragment (Zi bottom)
       {
-        "name": "Axiom Disruptor",
-        "short_name": "Axiom Disruptor",
-        "access_rules": [ ],
+        "name": "Health Node Fragment (Zi bottom)",
+        "short_name": "Health Node Fragment (Zi v)",
+        "access_rules": [],
         "map_locations": [
           {
             "map": "sudra",
-            "x":  81,
-            "y": 765
+            "x": 747,
+            "y": 1089
           }
         ],
         "sections": [
@@ -214,16 +231,16 @@
           }
         ]
       },
-      // Lightning Gun
+      // Range Node (Zi)
       {
-        "name": "Lightning Gun",
-        "short_name": "Lightning Gun",
-        "access_rules": [ ],
+        "name": "Range Node (Zi)",
+        "short_name": "Range Node (Zi)",
+        "access_rules": [],
         "map_locations": [
           {
             "map": "sudra",
-            "x": 171,
-            "y": 801
+            "x": 711,
+            "y": 1107
           }
         ],
         "sections": [
@@ -233,16 +250,16 @@
           }
         ]
       },
-      // Orbital Discharge
+      // Passcode Tool
       {
-        "name": "Orbital Discharge",
-        "short_name": "Orbital Discharge",
-        "access_rules": [ "passcodetool" ],
+        "name": "Passcode Tool",
+        "short_name": "Passcode Tool",
+        "access_rules": [],
         "map_locations": [
           {
             "map": "sudra",
-            "x": 189,
-            "y": 837
+            "x": 801,
+            "y": 1125
           }
         ],
         "sections": [
@@ -252,35 +269,16 @@
           }
         ]
       },
-      // Power Node Fragment (Eribu bottom)
+      // Digital Paper (Zi) #2
       {
-        "name": "Power Node Fragment (Eribu bottom)",
-        "short_name": "Power Node Fragment (Eribu v)",
-        "access_rules": [ ],
+        "name": "Digital Paper (Zi) #2",
+        "short_name": "Digital Paper (Zi) #2",
+        "access_rules": [],
         "map_locations": [
           {
             "map": "sudra",
-            "x": 261,
-            "y": 855
-          }
-        ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
-      },
-      // Health Node Fragment (Eribu bottom)
-      {
-        "name": "Health Node Fragment (Eribu bottom)",
-        "short_name": "Health Node Fragment (Eribu v)",
-        "access_rules": [ ],
-        "map_locations": [
-          {
-            "map": "sudra",
-            "x": 261,
-            "y": 891
+            "x": 837,
+            "y": 1125
           }
         ],
         "sections": [

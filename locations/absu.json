@@ -2,6 +2,7 @@
   // Absu
   {
     "name": "Absu",
+    "color": "#6B09AE",
     "parent": "Sudra",
     "children": [
       // Health Node Fragment (Absu top)

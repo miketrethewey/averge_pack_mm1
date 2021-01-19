@@ -1,0 +1,143 @@
+[
+  // Mar-Uru
+  {
+    "name": "Mar-Uru",
+    "color": "#C72FFF",
+    "parent": "Sudra",
+    "children": [
+      // Digital Paper (Mar-Uru top)
+      {
+        "name": "Digital Paper (Mar-Uru top)",
+        "short_name": "Digital Paper (Mar-Uru ^)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 387,
+            "y": 153
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Digital Paper (Mar-Uru bottom)
+      {
+        "name": "Digital Paper (Mar-Uru bottom)",
+        "short_name": "Digital Paper (Mar-Uru v)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 369,
+            "y": 207
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Reverse Slicer
+      {
+        "name": "Reverse Slicer",
+        "short_name": "Reverse Slicer",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 351,
+            "y": 243
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Size Node (Mar-Uru)
+      {
+        "name": "Size Node (Mar-Uru)",
+        "short_name": "Size Node (Mar-Uru)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 423,
+            "y": 243
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node (Mar-Uru)
+      {
+        "name": "Health Node (Mar-Uru)",
+        "short_name": "Health Node (Mar-Uru)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 369,
+            "y": 333
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Power Node Fragment (Mar-Uru top)
+      {
+        "name": "Power Node Fragment (Mar-Uru top)",
+        "short_name": "Power Node Fragment (Mar-Uru ^)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 405,
+            "y": 333
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Clay Tablet (Mar-Uru) (2 items)
+      {
+        "name": "Clay Tablet (Mar-Uru) (2 items)",
+        "short_name": "Clay Tablet (Mar-Uru) (2 items)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 405,
+            "y": 351
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 2
+          }
+        ]
+      }
+    ]
+  }
+]

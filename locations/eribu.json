@@ -7,7 +7,7 @@
       // Health Node (Eribu top)
       {
         "name": "Health Node (Eribu top)",
-        "short_name": "Health Node (Eribu)",
+        "short_name": "Health Node (Eribu ^)",
         "access_rules": [ ],
         "map_locations": [
           {
@@ -45,8 +45,8 @@
       // Power Node Fragment (Eribu top)
       {
         "name": "Power Node Fragment (Eribu top)",
-        "short_name": "Power Node Fragment (Eribu)",
-        "access_rules": [ ],
+        "short_name": "Power Node Fragment (Eribu ^)",
+        "access_rules": [ "passcodetool" ],
         "map_locations": [
           {
             "map": "sudra",
@@ -178,7 +178,7 @@
       // Health Node Fragment (Eribu top)
       {
         "name": "Health Node Fragment (Eribu top)",
-        "short_name": "Health Node Fragment (Eribu top)",
+        "short_name": "Health Node Fragment (Eribu ^)",
         "access_rules": [ ],
         "map_locations": [
           {
@@ -236,7 +236,7 @@
       {
         "name": "Orbital Discharge",
         "short_name": "Orbital Discharge",
-        "access_rules": [ ],
+        "access_rules": [ "passcodetool" ],
         "map_locations": [
           {
             "map": "sudra",
@@ -254,7 +254,7 @@
       // Power Node Fragment (Eribu bottom)
       {
         "name": "Power Node Fragment (Eribu bottom)",
-        "short_name": "Power Node Fragment (Eribu bottom)",
+        "short_name": "Power Node Fragment (Eribu v)",
         "access_rules": [ ],
         "map_locations": [
           {
@@ -273,7 +273,7 @@
       // Health Node Fragment (Eribu bottom)
       {
         "name": "Health Node Fragment (Eribu bottom)",
-        "short_name": "Health Node Fragment (Eribu bottom)",
+        "short_name": "Health Node Fragment (Eribu v)",
         "access_rules": [ ],
         "map_locations": [
           {

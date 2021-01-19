@@ -15,6 +15,7 @@ Tracker:AddMaps("maps/maps.json")
 -- Locations
 Tracker:AddLocations("locations/locations.json")
 Tracker:AddLocations("locations/eribu.json") -- Eribu
+Tracker:AddLocations("locations/absu.json") -- Absu
 
 if string.find(Tracker.ActiveVariantUID, "items_only") then
   -- Default/Items-Only

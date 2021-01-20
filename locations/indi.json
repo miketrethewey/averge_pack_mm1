@@ -24,6 +24,25 @@
           }
         ]
       },
+      // Health Node Fragment (Slug Glitch)
+      {
+        "name": "Health Node Fragment (Slug Glitch)",
+        "short_name": "Health Node Fragment (Slug Glitch)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 837,
+            "y": 873
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
       // Digital Paper (Indi)
       {
         "name": "Digital Paper (Indi)",
@@ -33,7 +52,7 @@
           {
             "map": "sudra",
             "x": 297,
-            "y": 853
+            "y": 855
           }
         ],
         "sections": [

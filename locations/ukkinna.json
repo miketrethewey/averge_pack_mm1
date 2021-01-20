@@ -171,8 +171,12 @@
         ],
         "sections": [
           {
-            "name": "Item",
-            "item_count": 2
+            "name": "Item 1",
+            "item_count": 1
+          },
+          {
+            "name": "Item 2",
+            "item_count": 1
           }
         ]
       },

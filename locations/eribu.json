@@ -317,16 +317,21 @@
           }
         ]
       },
-      // Health Node Fragment (Eribu Bottom-Left)
+      // Health Node Fragment (Eribu bottom left)
       {
-        "name": "Health Node Fragment (Eribu Bottom-Left)",
-        "short_name": "Health Node Fragment (Eribu Bottom-Left)",
+        "name": "Health Node Fragment (Eribu bottom left)",
+        "short_name": "Health Node Fragment (Eribu <v)",
         "access_rules": [ ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 207,
             "y": 873
+          },
+          {
+            "map": "eribu",
+            "x": 386,
+            "y": 375
           }
         ],
         "sections": [
@@ -360,10 +365,10 @@
           }
         ]
       },
-      // Health Node Fragment (Eribu bottom-right)
+      // Health Node Fragment (Eribu bottom right)
       {
-        "name": "Health Node Fragment (Eribu bottom-right)",
-        "short_name": "Health Node Fragment (Eribu bottom-right)",
+        "name": "Health Node Fragment (Eribu bottom right)",
+        "short_name": "Health Node Fragment (Eribu v>)",
         "access_rules": [ ],
         "map_locations": [
           {

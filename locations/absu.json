@@ -195,6 +195,25 @@
           }
         ]
       },
+      // Health Node (Absu)
+      {
+        "name": "Health Node (Absu)",
+        "short_name": "Health Node (Absu)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x":  477,
+            "y": 1053
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
       // Inertial Pulse
       {
         "name": "Inertial Pulse",
@@ -261,7 +280,7 @@
           {
             "map": "sudra",
             "x":  333,
-            "y": 1071
+            "y": 1089
           }
         ],
         "sections": [

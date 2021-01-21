@@ -25,7 +25,7 @@ Tracker:AddLocations("locations/ukkinna.json")  -- Ukkin-Na
 Tracker:AddLocations("locations/ekurmah.json")  -- E-Kur-Mah
 Tracker:AddLocations("locations/maruru.json")   -- Mar-Uru
 --- Secret World Locations
-Tracker:AddLocations("locations/secret-maruru.json") -- Mar-Uru
+Tracker:AddLocations("locations/secretworld/secret-maruru.json") -- Mar-Uru
 
 if string.find(Tracker.ActiveVariantUID, "items_only") then
   -- Default/Items-Only

@@ -430,7 +430,31 @@
     "name": "Secret World",
     "type": "toggle",
     "loop": true,
-    "img": "images/inventory/breach-attractor.png",
-    "codes": "secretworld,breachattractor"
+    "img": "images/chests/secretworld.png",
+    "codes": "secretworld"
+  },
+  // Secret World - Easy
+  {
+    "name": "Secret World - Easy",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/chests/secretworld-easy.png",
+    "codes": "secretworld-easy"
+  },
+  // Secret World - Medium
+  {
+    "name": "Secret World - Medium",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/chests/secretworld-medium.png",
+    "codes": "secretworld-medium"
+  },
+  // Secret World - Hard
+  {
+    "name": "Secret World - Hard",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/chests/secretworld-hard.png",
+    "codes": "secretworld-hard"
   }
 ]

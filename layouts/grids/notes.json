@@ -4,7 +4,8 @@
     "rows": [
       [ "digitalpaper", "rusalkatablet" ],
       [ "claytablet", "fadednote" ],
-      [ "secretworld" ]
+      [ "secretworld", "secretworld-easy" ],
+      [ "secretworld-medium", "secretworld-hard" ]
     ]
   }
 }

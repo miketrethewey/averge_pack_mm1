@@ -2,10 +2,11 @@
 Tracker:AddItems("items/inventory.json") -- All Inventory items
 
 -- Grids
-Tracker:AddLayouts("layouts/grids/notes.json") -- Notes grid
-Tracker:AddLayouts("layouts/grids/powerups.json") -- Powerups grid
-Tracker:AddLayouts("layouts/grids/upgrades.json") -- Upgrades grid
-Tracker:AddLayouts("layouts/grids/weapons.json")  -- Weapons grid
+Tracker:AddLayouts("layouts/grids/notes.json")        -- Notes grid
+Tracker:AddLayouts("layouts/grids/powerups.json")     -- Powerups grid
+Tracker:AddLayouts("layouts/grids/secretworlds.json") -- Secret Worlds grid
+Tracker:AddLayouts("layouts/grids/upgrades.json")     -- Upgrades grid
+Tracker:AddLayouts("layouts/grids/weapons.json")      -- Weapons grid
 
 Tracker:AddLayouts("layouts/grids/grids.json") -- Combined grid
 
@@ -29,13 +30,14 @@ Tracker:AddLocations("locations/secretworld/secret-maruru.json") -- Mar-Uru
 
 if string.find(Tracker.ActiveVariantUID, "items_only") then
   -- Default/Items-Only
-  Tracker:AddLayouts("layouts/tracker.json") -- Main Tracker
-  Tracker:AddLayouts("layouts/broadcast.json") -- Broadcast View
+  Tracker:AddLayouts("layouts/tracker.json")    -- Main Tracker
+  Tracker:AddLayouts("layouts/broadcast.json")  -- Broadcast View
+  Tracker:AddLayouts("layouts/capture.json")    -- Capture Grid
 end
 
 if string.find(Tracker.ActiveVariantUID, "standard_map") then
   -- Standard with Map
-  Tracker:AddLayouts("layouts/maps/sudra.json") -- Sudra Map
-  Tracker:AddLayouts("variants/standard_map/layouts/tracker.json") -- Main Tracker
-  Tracker:AddLayouts("variants/standard_map/layouts/broadcast.json") -- Broadcast View
+  Tracker:AddLayouts("layouts/maps/sudra.json")                       -- Sudra Map
+  Tracker:AddLayouts("variants/standard_map/layouts/tracker.json")    -- Main Tracker
+  Tracker:AddLayouts("variants/standard_map/layouts/broadcast.json")  -- Broadcast View
 end

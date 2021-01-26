@@ -21,15 +21,22 @@
             "key": "powerups_grid"
           },
           {
-            "type": "layout",
-            "key": "notes_grid"
+            "type": "array",
+            "orientation": "vertical",
+            "content": [
+              {
+                "type": "layout",
+                "key": "notes_grid"
+              },
+              {
+                "type": "layout",
+                "key": "secretworlds_grid",
+                "margin": "0, -10, 0, 0"
+              }
+            ]
           }
         ]
       }
     ]
-  },
-  "tracker_capture_item": {
-    "type": "layout",
-    "key": "shared_item_grid"
   }
 }

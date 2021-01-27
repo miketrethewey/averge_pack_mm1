@@ -1,10 +1,11 @@
 {
   "name": "Axiom Verge Tracker",
+  "author": "Seraphin Eveles & Mike Trethewey",
   "game_name": "Axiom Verge",
-  "platform": "pc",
   "package_version": "0.1",
   "package_uid": "averge_pack_mm1",
-  "author": "Seraphin Eveles & Mike Trethewey",
+  "platform": "pc",
+  "documentation_url": "https://github.com/miketrethewey/averge_pack_mm1/blob/master/README.md",
   "variants": {
     "items_only": {
       "display_name": "Items-Only"

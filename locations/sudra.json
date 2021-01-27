@@ -3,9 +3,8 @@
   {
     "name": "Sudra",
     "color": "#7372C0",
+    "chest_unavailable_img": "images/chests/unavailable.png",
     "chest_unopened_img": "images/chests/available.png",
-    "chest_opened_img": "images/chests/opened.png",
-    "children": [
-    ]
+    "chest_opened_img": "images/chests/opened.png"
   }
 ]

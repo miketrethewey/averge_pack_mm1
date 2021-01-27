@@ -15,6 +15,11 @@
             "map": "sudra",
             "x": 243,
             "y": 603
+          },
+          {
+            "map": "eribu",
+            "x": 422,
+            "y": 105
           }
         ],
         "sections": [
@@ -28,12 +33,22 @@
       {
         "name": "Nova",
         "short_name": "Nova",
-        "access_rules": [ ],
+        "access_rules": [
+          "rangeshort",
+          "rangemed",
+          "rangelong"
+        ],
+        // Return needs Split or Wave
         "map_locations": [
           {
             "map": "sudra",
             "x": 279,
             "y": 639
+          },
+          {
+            "map": "eribu",
+            "x": 458,
+            "y": 141
           }
         ],
         "sections": [
@@ -47,12 +62,20 @@
       {
         "name": "Power Node Fragment (Eribu top)",
         "short_name": "Power Node Fragment (Eribu ^)",
-        "access_rules": [ "passcodetool" ],
+        "access_rules": [
+          "spazer,laserdrill,passcodetool",
+          "wave,laserdrill,passcodetool"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  99,
             "y": 657
+          },
+          {
+            "map": "eribu",
+            "x": 278,
+            "y": 159
           }
         ],
         "sections": [
@@ -66,12 +89,20 @@
       {
         "name": "Multi-Disruptor",
         "short_name": "Multi-Disruptor",
-        "access_rules": [ ],
+        "access_rules": [
+          "spazer,laserdrill",
+          "wave,laserdrill"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 153,
             "y": 657
+          },
+          {
+            "map": "eribu",
+            "x": 332,
+            "y": 159
           }
         ],
         "sections": [
@@ -91,6 +122,11 @@
             "map": "sudra",
             "x":  27,
             "y": 675
+          },
+          {
+            "map": "eribu",
+            "x": 206,
+            "y": 177
           }
         ],
         "sections": [
@@ -104,12 +140,20 @@
       {
         "name": "Size Node (Eribu)",
         "short_name": "Size Node (Eribu)",
-        "access_rules": [ ],
+        "access_rules": [
+          "spazer",
+          "wave"
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 135,
             "y": 693
+          },
+          {
+            "map": "eribu",
+            "x": 314,
+            "y": 195
           }
         ],
         "sections": [
@@ -129,6 +173,11 @@
             "map": "sudra",
             "x": 135,
             "y": 729
+          },
+          {
+            "map": "eribu",
+            "x": 314,
+            "y": 231
           }
         ],
         "sections": [
@@ -142,12 +191,20 @@
       {
         "name": "Laser Drill",
         "short_name": "Laser Drill",
-        "access_rules": [ ],
+        "access_rules": [
+          "spazer",
+          "wave"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 279,
             "y": 729
+          },
+          {
+            "map": "eribu",
+            "x": 458,
+            "y": 231
           }
         ],
         "sections": [
@@ -161,18 +218,29 @@
       {
         "name": "Power Node (Eribu)",
         "short_name": "Power Node (Eribu)",
-        "access_rules": [ ],
+        "access_rules": [
+          "{spazer}",
+          "spazer,laserdrill",
+          "{wave}",
+          "wave,laserdrill"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 243,
             "y": 747
+          },
+          {
+            "map": "eribu",
+            "x": 422,
+            "y": 249
           }
         ],
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -186,6 +254,11 @@
             "map": "sudra",
             "x":  27,
             "y": 765
+          },
+          {
+            "map": "eribu",
+            "x": 206,
+            "y": 267
           }
         ],
         "sections": [
@@ -205,6 +278,11 @@
             "map": "sudra",
             "x":  81,
             "y": 765
+          },
+          {
+            "map": "eribu",
+            "x": 260,
+            "y": 267
           }
         ],
         "sections": [
@@ -224,6 +302,11 @@
             "map": "sudra",
             "x": 171,
             "y": 801
+          },
+          {
+            "map": "eribu",
+            "x": 350,
+            "y": 303
           }
         ],
         "sections": [
@@ -237,18 +320,56 @@
       {
         "name": "Orbital Discharge",
         "short_name": "Orbital Discharge",
-        "access_rules": [ "passcodetool" ],
+        "access_rules": [
+          "spazer,laserdrill,hijump,passcodetool",
+          "wave,laserdrill,hijump,passcodetool"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 189,
             "y": 837
+          },
+          {
+            "map": "eribu",
+            "x": 368,
+            "y": 339
           }
         ],
         "sections": [
           {
             "name": "Item",
             "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Eribu bottom left)
+      {
+        "name": "Health Node Fragment (Eribu bottom left)",
+        "short_name": "Health Node Fragment (Eribu <v)",
+        "access_rules": [
+          "spazer,laserdrill,hijump",
+          "wave,laserdrill,hijump",
+          "{spazer,laserdrill}",
+          "{wave,laserdrill}"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 207,
+            "y": 873
+          },
+          {
+            "map": "eribu",
+            "x": 386,
+            "y": 375
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -256,12 +377,20 @@
       {
         "name": "Power Node Fragment (Eribu bottom)",
         "short_name": "Power Node Fragment (Eribu v)",
-        "access_rules": [ ],
+        "access_rules": [
+          "spazer,laserdrill,hijump",
+          "wave,laserdrill,hijump"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 261,
             "y": 855
+          },
+          {
+            "map": "eribu",
+            "x": 440,
+            "y": 357
           }
         ],
         "sections": [
@@ -271,16 +400,24 @@
           }
         ]
       },
-      // Health Node Fragment (Eribu bottom)
+      // Health Node (Eribu bottom)
       {
-        "name": "Health Node Fragment (Eribu bottom)",
-        "short_name": "Health Node Fragment (Eribu v)",
-        "access_rules": [ ],
+        "name": "Health Node (Eribu bottom)",
+        "short_name": "Health Node (Eribu v)",
+        "access_rules": [
+          "spazer,laserdrill",
+          "wave,laserdrill"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 261,
             "y": 891
+          },
+          {
+            "map": "eribu",
+            "x": 440,
+            "y": 393
           }
         ],
         "sections": [

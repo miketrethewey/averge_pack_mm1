@@ -1,6 +1,6 @@
 # Axiom Verge EmoTracker Pack
 
-## *Designed & written by Serpahin Eveles & Mike Trethewey*
+## *Designed & written by Seraphin Eveles & Mike Trethewey*
 
 ## Usage
 
@@ -9,3 +9,7 @@
 ## Known Issues
 
 * No Access Logic for any locations yet
+
+## TODO
+
+* Add Secret World entrances

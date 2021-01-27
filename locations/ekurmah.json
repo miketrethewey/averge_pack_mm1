@@ -15,6 +15,11 @@
             "map": "sudra",
             "x": 1143,
             "y": 459
+          },
+          {
+            "map": "ekurmah",
+            "x": 290,
+            "y": 79
           }
         ],
         "sections": [
@@ -34,6 +39,11 @@
             "map": "sudra",
             "x": 1215,
             "y": 477
+          },
+          {
+            "map": "ekurmah",
+            "x": 362,
+            "y": 97
           }
         ],
         "sections": [
@@ -53,6 +63,11 @@
             "map": "sudra",
             "x": 1233,
             "y": 495
+          },
+          {
+            "map": "ekurmah",
+            "x": 380,
+            "y": 115
           }
         ],
         "sections": [
@@ -72,6 +87,11 @@
             "map": "sudra",
             "x": 1143,
             "y": 513
+          },
+          {
+            "map": "ekurmah",
+            "x": 290,
+            "y": 133
           }
         ],
         "sections": [
@@ -91,6 +111,11 @@
             "map": "sudra",
             "x": 1233,
             "y": 585
+          },
+          {
+            "map": "ekurmah",
+            "x": 380,
+            "y": 205
           }
         ],
         "sections": [
@@ -110,6 +135,11 @@
             "map": "sudra",
             "x": 1161,
             "y": 729
+          },
+          {
+            "map": "ekurmah",
+            "x": 308,
+            "y": 349
           }
         ],
         "sections": [
@@ -129,6 +159,11 @@
             "map": "sudra",
             "x": 1197,
             "y": 747
+          },
+          {
+            "map": "ekurmah",
+            "x": 344,
+            "y": 367
           }
         ],
         "sections": [
@@ -148,6 +183,11 @@
             "map": "sudra",
             "x": 1161,
             "y": 801
+          },
+          {
+            "map": "ekurmah",
+            "x": 308,
+            "y": 421
           }
         ],
         "sections": [
@@ -167,6 +207,11 @@
             "map": "sudra",
             "x": 1179,
             "y": 819
+          },
+          {
+            "map": "ekurmah",
+            "x": 326,
+            "y": 439
           }
         ],
         "sections": [

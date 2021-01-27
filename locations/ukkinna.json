@@ -15,25 +15,11 @@
             "map": "sudra",
             "x": 459,
             "y": 459
-          }
-        ],
-        "sections": [
+          },
           {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
-      },
-      // Health Node Fragment (Ukkin-Na top)
-      {
-        "name": "Health Node Fragment (Ukkin-Na top)",
-        "short_name": "Health Node Fragment (Ukkin-Na ^)",
-        "access_rules": [ ],
-        "map_locations": [
-          {
-            "map": "sudra",
-            "x": 423,
-            "y": 549
+            "map": "ukkinna",
+            "x": 388,
+            "y": 79
           }
         ],
         "sections": [
@@ -53,6 +39,35 @@
             "map": "sudra",
             "x": 333,
             "y": 537
+          },
+          {
+            "map": "ukkinna",
+            "x": 262,
+            "y": 169
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Ukkin-Na top)
+      {
+        "name": "Health Node Fragment (Ukkin-Na top)",
+        "short_name": "Health Node Fragment (Ukkin-Na ^)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 423,
+            "y": 549
+          },
+          {
+            "map": "ukkinna",
+            "x": 352,
+            "y": 169
           }
         ],
         "sections": [
@@ -72,6 +87,11 @@
             "map": "sudra",
             "x": 459,
             "y": 585
+          },
+          {
+            "map": "ukkinna",
+            "x": 388,
+            "y": 205
           }
         ],
         "sections": [
@@ -91,6 +111,11 @@
             "map": "sudra",
             "x": 351,
             "y": 603
+          },
+          {
+            "map": "ukkinna",
+            "x": 280,
+            "y": 223
           }
         ],
         "sections": [
@@ -110,6 +135,11 @@
             "map": "sudra",
             "x": 423,
             "y": 621
+          },
+          {
+            "map": "ukkinna",
+            "x": 352,
+            "y": 241
           }
         ],
         "sections": [
@@ -129,6 +159,11 @@
             "map": "sudra",
             "x": 423,
             "y": 693
+          },
+          {
+            "map": "ukkinna",
+            "x": 352,
+            "y": 313
           }
         ],
         "sections": [
@@ -148,6 +183,11 @@
             "map": "sudra",
             "x": 405,
             "y": 747
+          },
+          {
+            "map": "ukkinna",
+            "x": 334,
+            "y": 367
           }
         ],
         "sections": [
@@ -167,12 +207,21 @@
             "map": "sudra",
             "x": 351,
             "y": 763
+          },
+          {
+            "map": "ukkinna",
+            "x": 280,
+            "y": 385
           }
         ],
         "sections": [
           {
-            "name": "Item",
-            "item_count": 2
+            "name": "Item 1",
+            "item_count": 1
+          },
+          {
+            "name": "Item 2",
+            "item_count": 1
           }
         ]
       },
@@ -186,6 +235,11 @@
             "map": "sudra",
             "x": 441,
             "y": 783
+          },
+          {
+            "map": "ukkinna",
+            "x": 370,
+            "y": 403
           }
         ],
         "sections": [

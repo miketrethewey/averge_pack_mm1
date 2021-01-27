@@ -15,6 +15,11 @@
             "map": "sudra",
             "x": 1035,
             "y": 513
+          },
+          {
+            "map": "kur",
+            "x": 308,
+            "y": 34
           }
         ],
         "sections": [
@@ -34,6 +39,11 @@
             "map": "sudra",
             "x": 981,
             "y": 549
+          },
+          {
+            "map": "kur",
+            "x": 254,
+            "y": 70
           }
         ],
         "sections": [
@@ -53,6 +63,11 @@
             "map": "sudra",
             "x": 1197,
             "y": 549
+          },
+          {
+            "map": "kur",
+            "x": 470,
+            "y": 70
           }
         ],
         "sections": [
@@ -69,9 +84,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 981,
             "y": 567
+          },
+          {
+            "map": "kur",
+            "x": 254,
+            "y": 88
           }
         ],
         "sections": [
@@ -88,9 +108,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1107,
             "y": 567
+          },
+          {
+            "map": "kur",
+            "x": 380,
+            "y": 88
           }
         ],
         "sections": [
@@ -107,9 +132,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1089,
             "y": 585
+          },
+          {
+            "map": "kur",
+            "x": 362,
+            "y": 106
           }
         ],
         "sections": [
@@ -126,9 +156,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1197,
             "y": 585
+          },
+          {
+            "map": "kur",
+            "x": 470,
+            "y": 106
           }
         ],
         "sections": [
@@ -145,9 +180,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1071,
             "y": 603
+          },
+          {
+            "map": "kur",
+            "x": 344,
+            "y": 124
           }
         ],
         "sections": [
@@ -164,9 +204,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1197,
             "y": 603
+          },
+          {
+            "map": "kur",
+            "x": 470,
+            "y": 124
           }
         ],
         "sections": [
@@ -183,9 +228,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1053,
             "y": 621
+          },
+          {
+            "map": "kur",
+            "x": 326,
+            "y": 142
           }
         ],
         "sections": [
@@ -202,9 +252,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 963,
             "y": 675
+          },
+          {
+            "map": "kur",
+            "x": 236,
+            "y": 196
           }
         ],
         "sections": [
@@ -221,9 +276,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1071,
             "y": 675
+          },
+          {
+            "map": "kur",
+            "x": 344,
+            "y": 196
           }
         ],
         "sections": [
@@ -240,9 +300,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 981,
             "y": 693
+          },
+          {
+            "map": "kur",
+            "x": 254,
+            "y": 214
           }
         ],
         "sections": [
@@ -259,9 +324,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1017,
             "y": 693
+          },
+          {
+            "map": "kur",
+            "x": 290,
+            "y": 214
           }
         ],
         "sections": [
@@ -278,9 +348,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 999,
             "y": 747
+          },
+          {
+            "map": "kur",
+            "x": 272,
+            "y": 268
           }
         ],
         "sections": [
@@ -297,9 +372,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1017,
             "y": 747
+          },
+          {
+            "map": "kur",
+            "x": 290,
+            "y": 268
           }
         ],
         "sections": [
@@ -316,9 +396,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 909,
             "y": 853
+          },
+          {
+            "map": "kur",
+            "x": 182,
+            "y": 376
           }
         ],
         "sections": [
@@ -335,9 +420,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 999,
             "y": 855
+          },
+          {
+            "map": "kur",
+            "x": 272,
+            "y": 376
           }
         ],
         "sections": [
@@ -354,9 +444,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 981,
             "y": 873
+          },
+          {
+            "map": "kur",
+            "x": 254,
+            "y": 394
           }
         ],
         "sections": [
@@ -373,9 +468,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 927,
             "y": 909
+          },
+          {
+            "map": "kur",
+            "x": 200,
+            "y": 430
           }
         ],
         "sections": [
@@ -392,9 +492,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 999,
             "y": 909
+          },
+          {
+            "map": "kur",
+            "x": 272,
+            "y": 430
           }
         ],
         "sections": [
@@ -411,9 +516,14 @@
         "access_rules": [ ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1071,
             "y": 909
+          },
+          {
+            "map": "kur",
+            "x": 344,
+            "y": 430
           }
         ],
         "sections": [

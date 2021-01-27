@@ -15,6 +15,35 @@
             "map": "sudra",
             "x": 711,
             "y": 837
+          },
+          {
+            "map": "indi",
+            "x": 442,
+            "y": 232
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
+      },
+      // Health Node Fragment (Slug Glitch)
+      {
+        "name": "Health Node Fragment (Slug Glitch)",
+        "short_name": "Health Node Fragment (Slug Glitch)",
+        "access_rules": [ ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 837,
+            "y": 873
+          },
+          {
+            "map": "indi",
+            "x": 568,
+            "y": 268
           }
         ],
         "sections": [
@@ -33,7 +62,12 @@
           {
             "map": "sudra",
             "x": 297,
-            "y": 853
+            "y": 855
+          },
+          {
+            "map": "indi",
+            "x": 28,
+            "y": 250
           }
         ],
         "sections": [

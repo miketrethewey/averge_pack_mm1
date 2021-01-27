@@ -3,8 +3,7 @@
     "type": "itemgrid",
     "rows": [
       [ "digitalpaper", "rusalkatablet" ],
-      [ "claytablet", "fadednote" ],
-      [ "secretworld" ]
+      [ "claytablet", "fadednote" ]
     ]
   }
 }

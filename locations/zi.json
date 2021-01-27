@@ -4,8 +4,11 @@
     "name": "Zi",
     "color": "#2933FD",
     "parent": "sudra",
+    "access_rules": [ // Eribu -> Absu, Absu -> Zi
+      "spazer,laserdrill, addressdisruptor"
+    ],
     "children": [
-      // Power Node Fragment
+      // Power Node Fragment (Zi top) #1
       {
         "name": "Power Node Fragment (Zi top) #1",
         "short_name": "Power Node Fragment (Zi ^) #1",
@@ -15,6 +18,11 @@
             "map": "sudra",
             "x": 855,
             "y": 909
+          },
+          {
+            "map": "zi",
+            "x": 406,
+            "y": 134
           }
         ],
         "sections": [
@@ -24,7 +32,7 @@
           }
         ]
       },
-      // Health Node
+      // Health Node (Zi)
       {
         "name": "Health Node (Zi)",
         "short_name": "Health Node (Zi)",
@@ -34,6 +42,11 @@
             "map": "sudra",
             "x": 819,
             "y": 927
+          },
+          {
+            "map": "zi",
+            "x": 370,
+            "y": 152
           }
         ],
         "sections": [
@@ -53,6 +66,11 @@
             "map": "sudra",
             "x": 873,
             "y": 927
+          },
+          {
+            "map": "zi",
+            "x": 424,
+            "y": 152
           }
         ],
         "sections": [
@@ -72,6 +90,11 @@
             "map": "sudra",
             "x": 783,
             "y": 963
+          },
+          {
+            "map": "zi",
+            "x": 334,
+            "y": 188
           }
         ],
         "sections": [
@@ -91,6 +114,11 @@
             "map": "sudra",
             "x": 819,
             "y": 981
+          },
+          {
+            "map": "zi",
+            "x": 370,
+            "y": 206
           }
         ],
         "sections": [
@@ -110,6 +138,11 @@
             "map": "sudra",
             "x": 675,
             "y": 999
+          },
+          {
+            "map": "zi",
+            "x": 208,
+            "y": 224
           }
         ],
         "sections": [
@@ -129,6 +162,11 @@
             "map": "sudra",
             "x": 729,
             "y": 1017
+          },
+          {
+            "map": "zi",
+            "x": 280,
+            "y": 242
           }
         ],
         "sections": [
@@ -148,6 +186,11 @@
             "map": "sudra",
             "x": 657,
             "y": 1053
+          },
+          {
+            "map": "zi",
+            "x": 208,
+            "y": 278
           }
         ],
         "sections": [
@@ -167,6 +210,11 @@
             "map": "sudra",
             "x": 801,
             "y": 1053
+          },
+          {
+            "map": "zi",
+            "x": 352,
+            "y": 278
           }
         ],
         "sections": [
@@ -181,11 +229,18 @@
         "name": "Bioflux Accelerator #1",
         "short_name": "Bioflux Accelerator #1",
         "access_rules": [],
-        "map_locations": [{
-          "map": "sudra",
-          "x": 693,
-          "y": 1071
-        }],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 693,
+            "y": 1071
+          },
+          {
+            "map": "zi",
+            "x": 244,
+            "y": 296
+          }
+        ],
         "sections": [
           {
             "name": "Item",
@@ -203,6 +258,11 @@
             "map": "sudra",
             "x": 837,
             "y": 1071
+          },
+          {
+            "map": "zi",
+            "x": 388,
+            "y": 296
           }
         ],
         "sections": [
@@ -222,6 +282,11 @@
             "map": "sudra",
             "x": 747,
             "y": 1089
+          },
+          {
+            "map": "zi",
+            "x": 298,
+            "y": 314
           }
         ],
         "sections": [
@@ -241,6 +306,11 @@
             "map": "sudra",
             "x": 711,
             "y": 1107
+          },
+          {
+            "map": "zi",
+            "x": 262,
+            "y": 332
           }
         ],
         "sections": [
@@ -260,6 +330,11 @@
             "map": "sudra",
             "x": 801,
             "y": 1125
+          },
+          {
+            "map": "zi",
+            "x": 352,
+            "y": 350
           }
         ],
         "sections": [
@@ -279,6 +354,11 @@
             "map": "sudra",
             "x": 837,
             "y": 1125
+          },
+          {
+            "map": "zi",
+            "x": 388,
+            "y": 350
           }
         ],
         "sections": [

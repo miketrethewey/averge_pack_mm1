@@ -40,4 +40,5 @@ if string.find(Tracker.ActiveVariantUID, "standard_map") then
   Tracker:AddLayouts("layouts/maps/sudra.json")                       -- Sudra Map
   Tracker:AddLayouts("variants/standard_map/layouts/tracker.json")    -- Main Tracker
   Tracker:AddLayouts("variants/standard_map/layouts/broadcast.json")  -- Broadcast View
+  Tracker:AddLayouts("layouts/capture.json")                          -- Capture Grid
 end

@@ -38,5 +38,47 @@
         ]
       }
     ]
+  },
+  "shared_item_grid_horizontal": {
+    "type": "array",
+    "orientation": "horizontal",
+    "content": [
+      {
+        "type": "layout",
+        "key": "weapons_grid"
+      },
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "layout",
+            "key": "upgrades_grid"
+          },
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "content": [
+              {
+                "type": "layout",
+                "key": "powerups_grid"
+              },
+              {
+                "type": "layout",
+                "key": "notes_grid"
+              },
+              {
+                "type": "layout",
+                "key": "secretworlds_grid"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "shared_item_grid_vertical": {
+    "type": "layout",
+    "key": "shared_item_grid"
   }
 }

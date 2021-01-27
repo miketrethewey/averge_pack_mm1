@@ -4,6 +4,9 @@
     "name": "Absu",
     "color": "#6B09AE",
     "parent": "Sudra",
+    "access_rules": [ // Eribu -> Absu
+      "spazer,laserdrill"
+    ],
     "children": [
       // Health Node Fragment (Absu top)
       {
@@ -129,7 +132,10 @@
       {
         "name": "Health Node Fragment (Absu middle 1)",
         "short_name": "Health Node Fragment (Absu = 1)",
-        "access_rules": [ ],
+        "access_rules": [
+          "{}",
+          "wave"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -145,7 +151,8 @@
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -177,7 +184,9 @@
       {
         "name": "Address Disruptor 1",
         "short_name": "Address Disruptor 1",
-        "access_rules": [ ],
+        "access_rules": [
+          "wave"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -249,7 +258,9 @@
       {
         "name": "Health Node (Absu)",
         "short_name": "Health Node (Absu)",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressdisruptor"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -345,7 +356,9 @@
       {
         "name": "Rusalka Tablet (Absu top left)",
         "short_name": "Rusalka Tablet (Absu <^)",
-        "access_rules": [ ],
+        "access_rules": [
+          "{wave}"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -361,7 +374,8 @@
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -369,7 +383,9 @@
       {
         "name": "Size Node (Absu)",
         "short_name": "Size Node (Absu)",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressdisruptor"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -465,7 +481,9 @@
       {
         "name": "Digital Paper (Absu bottom)",
         "short_name": "Digital Paper (Absu v)",
-        "access_rules": [ ],
+        "access_rules": [
+          "{wave}"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -481,7 +499,12 @@
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "access_rules": [
+              "addressdisruptor",
+              "hijump"
+            ],
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -513,7 +536,9 @@
       {
         "name": "Rusalka Tablet (Absu bottom right)",
         "short_name": "Rusalka Tablet (Absu v>)",
-        "access_rules": [ ],
+        "access_rules": [
+          "{}"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -529,7 +554,8 @@
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -537,7 +563,9 @@
       {
         "name": "Power Node (Absu)",
         "short_name": "Power Node (Absu)",
-        "access_rules": [ ],
+        "access_rules": [
+          "{}"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -553,7 +581,8 @@
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },

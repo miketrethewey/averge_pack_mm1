@@ -9,3 +9,7 @@
 ## Known Issues
 
 * No Access Logic for any locations yet
+
+## TODO
+
+* Add Secret World entrances

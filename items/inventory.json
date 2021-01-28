@@ -120,12 +120,12 @@
       { // Remote Drone
         "name": "Remote Drone",
         "img": "images/inventory/remote-drone.png",
-        "codes": "remotdrone"
+        "codes": "remotedrone,excavate,rangeshort"
       },
       { // Enhanced Drone Launch
         "name": "Enhanced Drone Launch",
         "img": "images/inventory/enhanced-drone-launch.png",
-        "codes": "enhanceddronelaunch"
+        "codes": "enhanceddronelaunch,excavate,rangeshort"
       }
     ]
   },
@@ -242,7 +242,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/laser-drill.png",
-    "codes": "laserdrill"
+    "codes": "laserdrill,rangeshort,excavate"
   },
   // Lightning Gun
   {
@@ -278,7 +278,7 @@
       { // Red Coat
         "name": "Red Coat",
         "img": "images/inventory/red-coat.png",
-        "codes": "coat3,coat"
+        "codes": "coat3,coat,excavate"
       }
     ]
   },

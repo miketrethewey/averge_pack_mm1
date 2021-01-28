@@ -343,13 +343,14 @@
           }
         ]
       },
-      // Orbital Discharge
+      // Orbital Discharge (DALHKU-SUBTUM)
       {
-        "name": "Orbital Discharge",
-        "short_name": "Orbital Discharge",
+        "name": "Orbital Discharge (DALHKU-SUBTUM)",
+        "short_name": "Orbital Discharge (DALHKU-SUBTUM)",
         "access_rules": [
-          "spazer,laserdrill,hijump,passcodetool",
-          "wave,laserdrill,hijump,passcodetool"
+          "passcodetool,coat2,highjump",
+          "coat3,passcodetool",
+          "passcodetool,grapple"
         ],
         "map_locations": [
           {

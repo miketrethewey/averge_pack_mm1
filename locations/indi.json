@@ -9,7 +9,10 @@
       {
         "name": "Rusalka Tablet (Indi)",
         "short_name": "Rusalka Tablet (Indi)",
-        "access_rules": [ ],
+        "access_rules": [
+          "{}",
+          "airport2"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -25,7 +28,8 @@
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },

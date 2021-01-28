@@ -12,7 +12,7 @@
       {
         "name": "Health Node Fragment (Absu top)",
         "short_name": "Health Node Fragment (Absu)",
-        "access_rules": [ 
+        "access_rules": [
           "coat1,addressdisruptor,grapple",
           "coat2,highjump"
         ],
@@ -65,7 +65,7 @@
       {
         "name": "Power Node Fragment (Absu top 2)",
         "short_name": "Power Node Fragment (Absu ^ 2)",
-        "access_rules": [ 
+        "access_rules": [
           "addressdisruptor2,remotedrone"
         ],
         "map_locations": [
@@ -91,7 +91,7 @@
       {
         "name": "Power Node Fragment (Absu top 3)",
         "short_name": "Power Node Fragment (Absu ^ 3)",
-        "access_rules": [ 
+        "access_rules": [
           "addressbomb"
         ],
         "map_locations": [
@@ -117,7 +117,7 @@
       {
         "name": "Power Node Fragment (Absu top 4)",
         "short_name": "Power Node Fragment (Absu ^ 4)",
-        "access_rules": [ 
+        "access_rules": [
           "addressbomb"
         ],
         "map_locations": [
@@ -145,7 +145,8 @@
         "short_name": "Health Node Fragment (Absu = 1)",
         "access_rules": [
           "{}",
-          "wave"
+          "wave",
+          "teleport1"
         ],
         "map_locations": [
           {
@@ -171,7 +172,7 @@
       {
         "name": "Health Node Fragment (Absu middle 2)",
         "short_name": "Health Node Fragment (Absu = 2)",
-        "access_rules": [ 
+        "access_rules": [
           "excavate"
         ],
         "map_locations": [
@@ -224,7 +225,7 @@
       {
         "name": "Power Node Fragment (Absu middle left)",
         "short_name": "Power Node Fragment (Absu <=)",
-        "access_rules": [ 
+        "access_rules": [
           "addressdisruptor,wave",
           "addressdisruptor,coat",
           "coat3"
@@ -303,7 +304,7 @@
       {
         "name": "Inertial Pulse",
         "short_name": "Inertial Pulse",
-        "access_rules": [ 
+        "access_rules": [
           "addressdisruptor2,coat2,excavate",
           "addressdisruptor2,coat3"
         ],
@@ -385,7 +386,7 @@
         "short_name": "Rusalka Tablet (Absu <^)",
         "access_rules": [
           "{wave}",
-          "coat"
+          "teleport1"
         ],
         "map_locations": [
           {
@@ -438,7 +439,7 @@
       {
         "name": "Health Node Fragment (Absu bottom)",
         "short_name": "Health Node Fragment (Absu v)",
-        "access_rules": [ 
+        "access_rules": [
           "wave,addressdisruptor",
           "coat1,addressdisruptor",
           "coat2",
@@ -467,7 +468,7 @@
       {
         "name": "Data Bomb",
         "short_name": "Data Bomb",
-        "access_rules": [ 
+        "access_rules": [
           "remotedrone,coat2",
           "remotedrone,coat3"
         ],
@@ -494,7 +495,7 @@
       {
         "name": "Range Node (Absu left)",
         "short_name": "Range Node (Absu <)",
-        "access_rules": [ 
+        "access_rules": [
           "addressdisruptor2,remotedrone,coat"
         ],
         "map_locations": [
@@ -649,7 +650,7 @@
       {
         "name": "Power Node Fragment (Absu bottom)",
         "short_name": "Power Node Fragment (Absu v)",
-        "access_rules": [ 
+        "access_rules": [
           "coat2,highjump",
           "coat2,grapple",
           "coat3",

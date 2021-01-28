@@ -105,7 +105,9 @@
       {
         "name": "Clay Tablet (E-Kur-Mah bottom)",
         "short_name": "Clay Tablet (E-Kur-Mah v)",
-        "access_rules": [ ],
+        "access_rules": [
+          "teleport3"
+        ],
         "map_locations": [
           {
             "map": "sudra",

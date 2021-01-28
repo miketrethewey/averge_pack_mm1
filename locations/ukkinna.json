@@ -57,7 +57,9 @@
       {
         "name": "Health Node Fragment (Ukkin-Na top)",
         "short_name": "Health Node Fragment (Ukkin-Na ^)",
-        "access_rules": [ ],
+        "access_rules": [
+          "remotedrone,airport2"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -153,7 +155,10 @@
       {
         "name": "Power Node Fragment (Ukkin-Na middle)",
         "short_name": "Power Node Fragment (Ukkin-Na =)",
-        "access_rules": [ ],
+        "access_rules": [
+          "{}",
+          "airport2"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -169,7 +174,8 @@
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -229,7 +235,9 @@
       {
         "name": "Power Node Fragment (bottom)",
         "short_name": "Power Node Fragment (v)",
-        "access_rules": [ ],
+        "access_rules": [
+          "teleport3"
+        ],
         "map_locations": [
           {
             "map": "sudra",

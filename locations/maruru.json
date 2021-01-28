@@ -153,7 +153,9 @@
       {
         "name": "Clay Tablet (Mar-Uru) (2 items)",
         "short_name": "Clay Tablet (Mar-Uru) (2 items)",
-        "access_rules": [ ],
+        "access_rules": [
+          "airport3"
+        ],
         "map_locations": [
           {
             "map": "sudra",

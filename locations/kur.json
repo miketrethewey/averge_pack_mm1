@@ -301,7 +301,9 @@
       {
         "name": "Ion Beam",
         "short_name": "Ion Beam",
-        "access_rules": [ ],
+        "access_rules": [
+          "teleport3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -326,7 +328,8 @@
         "name": "Remote Drone",
         "short_name": "Remote Drone",
         "access_rules": [
-          "coat"
+          "teleport1",
+          "teleport2"
         ],
         "map_locations": [
           {
@@ -405,7 +408,7 @@
         "short_name": "Power Node (Kur v)",
         "access_rules": [
           "{}",
-          "coat"
+          "teleport1"
         ],
         "map_locations": [
           {
@@ -534,7 +537,8 @@
         "name": "Tethered Charge",
         "short_name": "Tethered Charge",
         "access_rules": [
-          "remotedrone,droneteleport"
+          "remotedrone,droneteleport",
+          "teleport3"
         ],
         "map_locations": [
           {

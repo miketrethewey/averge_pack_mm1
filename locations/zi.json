@@ -40,7 +40,7 @@
         "name": "Health Node (Zi)",
         "short_name": "Health Node (Zi)",
         "access_rules": [
-          "{addressdisruptor},coat"
+          "{addressdisruptor},teleport1"
         ],
         "map_locations": [
           {
@@ -118,7 +118,8 @@
         "name": "Health Node Fragment (Zi) #1",
         "short_name": "Health Node Fragment (Zi) #1",
         "access_rules": [
-          "{hijump}"
+          "{hijump}",
+          "hijump,teleport1"
         ],
         "map_locations": [
           {
@@ -323,7 +324,7 @@
         "name": "Range Node (Zi)",
         "short_name": "Range Node (Zi)",
         "access_rules": [
-          "hijump,coat"
+          "hijump,teleport1"
         ],
         "map_locations": [
           {

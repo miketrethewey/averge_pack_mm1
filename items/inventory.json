@@ -268,17 +268,17 @@
       { // Modified Lab Coat
         "name": "Modified Lab Coat",
         "img": "images/inventory/modified-lab-coat.png",
-        "codes": "coat1,coat"
+        "codes": "coat1,coat,teleport1"
       },
       { // Trench Coat
         "name": "Trench Coat",
         "img": "images/inventory/trench-coat.png",
-        "codes": "coat2,coat"
+        "codes": "coat2,coat,teleport1,teleport2,airport1,airport2"
       },
       { // Red Coat
         "name": "Red Coat",
         "img": "images/inventory/red-coat.png",
-        "codes": "coat3,coat,excavate"
+        "codes": "coat3,coat,excavate,teleport1,teleport2,teleport3,airport1,airport2,airport3"
       }
     ]
   },

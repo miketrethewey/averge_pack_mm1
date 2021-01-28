@@ -1,5 +1,6 @@
 -- Items
-Tracker:AddItems("items/inventory.json") -- All Inventory items
+Tracker:AddItems("items/inventory.json")        -- All Inventory items
+ScriptHost:LoadScript("scripts/inventory.lua")  -- Inventory Logic
 
 -- Grids
 Tracker:AddLayouts("layouts/grids/notes.json")        -- Notes grid

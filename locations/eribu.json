@@ -9,7 +9,11 @@
       {
         "name": "Health Node (Eribu top)",
         "short_name": "Health Node (Eribu ^)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "addressbomb,rangeshort",
+          "addressbomb,rangemed",
+          "addressbomb,rangelong"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -64,7 +68,8 @@
         "short_name": "Power Node Fragment (Eribu ^)",
         "access_rules": [
           "spazer,laserdrill,passcodetool",
-          "wave,laserdrill,passcodetool"
+          "wave,laserdrill,passcodetool",
+          "fatbeam"
         ],
         "map_locations": [
           {
@@ -90,8 +95,9 @@
         "name": "Multi-Disruptor",
         "short_name": "Multi-Disruptor",
         "access_rules": [
-          "spazer,laserdrill",
-          "wave,laserdrill"
+          "spazer,excavate",
+          "wave,excavate",
+          "remotedrone"
         ],
         "map_locations": [
           {
@@ -116,7 +122,9 @@
       {
         "name": "Flamethrower",
         "short_name": "Flamethrower",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "coat3,enhanceddronelaunch,droneteleport,passcodetool"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -142,7 +150,9 @@
         "short_name": "Size Node (Eribu)",
         "access_rules": [
           "spazer",
-          "wave"
+          "wave",
+          "remotedrone",
+          "reflector"
          ],
         "map_locations": [
           {
@@ -167,7 +177,9 @@
       {
         "name": "Note (Eribu)",
         "short_name": "Note (Eribu)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "remotedrone,droneteleport,coat"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -193,7 +205,9 @@
         "short_name": "Laser Drill",
         "access_rules": [
           "spazer",
-          "wave"
+          "wave",
+          "reflector",
+          "remotedrone"
         ],
         "map_locations": [
           {
@@ -220,9 +234,9 @@
         "short_name": "Power Node (Eribu)",
         "access_rules": [
           "{spazer}",
-          "spazer,laserdrill",
+          "spazer,excavate",
           "{wave}",
-          "wave,laserdrill"
+          "wave,excavate"
         ],
         "map_locations": [
           {
@@ -248,7 +262,11 @@
       {
         "name": "Health Node Fragment (Eribu top)",
         "short_name": "Health Node Fragment (Eribu ^)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "remotedrone,coat3",
+          "remotedrone,highjump,coat2",
+          "remotedrone,highjump,grapple"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -296,7 +314,9 @@
       {
         "name": "Lightning Gun",
         "short_name": "Lightning Gun",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressbomb"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -348,10 +368,13 @@
         "name": "Health Node Fragment (Eribu bottom left)",
         "short_name": "Health Node Fragment (Eribu <v)",
         "access_rules": [
-          "spazer,laserdrill,hijump",
-          "wave,laserdrill,hijump",
-          "{spazer,laserdrill}",
-          "{wave,laserdrill}"
+          "spazer,drill,hijump",
+          "wave,drill,hijump",
+          "spazer,drill,addressdisruptor",
+          "wave,drill,addressdisruptor",
+          "remotedrone",
+          "{spazer,drill}",
+          "{wave,drill}"
         ],
         "map_locations": [
           {
@@ -378,8 +401,8 @@
         "name": "Power Node Fragment (Eribu bottom)",
         "short_name": "Power Node Fragment (Eribu v)",
         "access_rules": [
-          "spazer,laserdrill,hijump",
-          "wave,laserdrill,hijump"
+          "coat3,highjump",
+          "remotedrone,droneteleport,coat"
         ],
         "map_locations": [
           {
@@ -405,8 +428,7 @@
         "name": "Health Node (Eribu bottom)",
         "short_name": "Health Node (Eribu v)",
         "access_rules": [
-          "spazer,laserdrill",
-          "wave,laserdrill"
+          "excavate"
         ],
         "map_locations": [
           {

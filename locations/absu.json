@@ -654,7 +654,7 @@
           "coat2,highjump",
           "coat2,grapple",
           "coat3",
-          "coat2,remotedrone,droneteleport"
+          "coat2,$canDroneTeleport"
         ],
         "map_locations": [
           {

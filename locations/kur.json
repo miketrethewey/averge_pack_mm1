@@ -6,7 +6,7 @@
     "parent": "Sudra",
     "access_rules": [ // Eribu -> Absu, Absu -> Zi, Zi -> Kur
       // Zi -> Kur: A gun
-      "spazer,laserdrill, addressdisruptor, rangeshort"
+      "spazer,laserdrill, addressdisruptor, $canShootShort"
     ],
     "children": [
       // Clay Tablet (Kur top)
@@ -355,7 +355,7 @@
         "name": "Hypo-Atomizer",
         "short_name": "Hypo-Atomizer",
         "access_rules": [
-          "coat,laserdrill,remotedrone,droneteleport"
+          "coat,laserdrill,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -435,7 +435,7 @@
         "name": "Health Node Fragment (Kur bottom)",
         "short_name": "Health Node Fragment (Kur v)",
         "access_rules": [
-          "remotedrone,droneteleport"
+          "$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -537,7 +537,7 @@
         "name": "Tethered Charge",
         "short_name": "Tethered Charge",
         "access_rules": [
-          "remotedrone,droneteleport",
+          "$canDroneTeleport",
           "teleport3"
         ],
         "map_locations": [

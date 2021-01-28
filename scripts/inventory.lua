@@ -11,7 +11,7 @@ function has(code, level)
   end
 end
 
-function canTeleportDrone()
+function canDroneTeleport()
   if has("remotedrone") and has("droneteleport") then
     return 1
   else

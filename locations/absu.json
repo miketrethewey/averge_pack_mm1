@@ -168,11 +168,12 @@
         ]
       },
       // Health Node Fragment (Absu middle 2)
-      // No special access requirement except excavate
       {
         "name": "Health Node Fragment (Absu middle 2)",
         "short_name": "Health Node Fragment (Absu = 2)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "excavate"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -494,7 +495,7 @@
         "name": "Range Node (Absu left)",
         "short_name": "Range Node (Absu <)",
         "access_rules": [ 
-          "addressdisruptor2,remotedrone,coat1"
+          "addressdisruptor2,remotedrone,coat"
         ],
         "map_locations": [
           {

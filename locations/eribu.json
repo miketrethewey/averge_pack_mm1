@@ -314,7 +314,7 @@
       {
         "name": "Lightning Gun",
         "short_name": "Lightning Gun",
-        "access_rules": [
+        "access_rules": [ //Needs additional Logic added
           "addressbomb"
          ],
         "map_locations": [
@@ -368,13 +368,12 @@
         "name": "Health Node Fragment (Eribu bottom left)",
         "short_name": "Health Node Fragment (Eribu <v)",
         "access_rules": [
-          "spazer,drill,hijump",
-          "wave,drill,hijump",
-          "spazer,drill,addressdisruptor",
-          "wave,drill,addressdisruptor",
+          "addressdisruptor,excavate",
+          "grapple,excavate",
+          "highjump,excavate",
           "remotedrone",
-          "{spazer,drill}",
-          "{wave,drill}"
+          "coat3",
+          "{excavate}"
         ],
         "map_locations": [
           {

@@ -36,7 +36,9 @@
       {
         "name": "Health Node (Zi)",
         "short_name": "Health Node (Zi)",
-        "access_rules": [],
+        "access_rules": [
+          "{addressdisruptor},coat"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -60,7 +62,9 @@
       {
         "name": "Modified Lab Coat",
         "short_name": "Modified Lab Coat",
-        "access_rules": [],
+        "access_rules": [
+          "addressdisruptor"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -84,7 +88,9 @@
       {
         "name": "Digital Paper (Zi) #1",
         "short_name": "Digital Paper (Zi) #1",
-        "access_rules": [],
+        "access_rules": [
+          "hijump,laserdrill"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -108,7 +114,9 @@
       {
         "name": "Health Node Fragment (Zi) #1",
         "short_name": "Health Node Fragment (Zi) #1",
-        "access_rules": [],
+        "access_rules": [
+          "{hijump}"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -124,7 +132,8 @@
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -132,7 +141,9 @@
       {
         "name": "Rusalka Tablet (Zi)",
         "short_name": "Rusalka Tablet (Zi)",
-        "access_rules": [],
+        "access_rules": [
+          "remotedrone"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -156,7 +167,9 @@
       {
         "name": "Voranj",
         "short_name": "Voranj",
-        "access_rules": [],
+        "access_rules": [
+          "remotedrone"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -204,7 +217,9 @@
       {
         "name": "Size Node (Zi)",
         "short_name": "Size Node (Zi)",
-        "access_rules": [],
+        "access_rules": [
+          "hijump"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -219,7 +234,7 @@
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Hidden Wall",
             "item_count": 1
           }
         ]
@@ -228,7 +243,9 @@
       {
         "name": "Bioflux Accelerator #1",
         "short_name": "Bioflux Accelerator #1",
-        "access_rules": [],
+        "access_rules": [
+          "hijump"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -276,7 +293,9 @@
       {
         "name": "Health Node Fragment (Zi bottom)",
         "short_name": "Health Node Fragment (Zi v)",
-        "access_rules": [],
+        "access_rules": [
+          "hijump,laserdrill"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -300,7 +319,9 @@
       {
         "name": "Range Node (Zi)",
         "short_name": "Range Node (Zi)",
-        "access_rules": [],
+        "access_rules": [
+          "hijump,coat"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -315,7 +336,7 @@
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Hidden Wall",
             "item_count": 1
           }
         ]

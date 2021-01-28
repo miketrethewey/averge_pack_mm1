@@ -4,6 +4,10 @@
     "name": "Kur",
     "color": "#8B176E",
     "parent": "Sudra",
+    "access_rules": [ // Eribu -> Absu, Absu -> Zi, Zi -> Kur
+      // Zi -> Kur: A gun
+      "spazer,laserdrill, addressdisruptor, rangeshort"
+    ],
     "children": [
       // Clay Tablet (Kur top)
       {
@@ -321,7 +325,9 @@
       {
         "name": "Remote Drone",
         "short_name": "Remote Drone",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -345,7 +351,9 @@
       {
         "name": "Hypo-Atomizer",
         "short_name": "Hypo-Atomizer",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat,laserdrill,remotedrone,droneteleport"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -369,7 +377,9 @@
       {
         "name": "Health Node Fragment (Kur middle right)",
         "short_name": "Health Node Fragment (Kur =>)",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat,laserdrill"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -393,7 +403,10 @@
       {
         "name": "Power Node (Kur bottom)",
         "short_name": "Power Node (Kur v)",
-        "access_rules": [ ],
+        "access_rules": [
+          "{}",
+          "coat"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -409,7 +422,8 @@
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -417,7 +431,9 @@
       {
         "name": "Health Node Fragment (Kur bottom)",
         "short_name": "Health Node Fragment (Kur v)",
-        "access_rules": [ ],
+        "access_rules": [
+          "remotedrone,droneteleport"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -441,7 +457,9 @@
       {
         "name": "Firewall",
         "short_name": "Firewall",
-        "access_rules": [ ],
+        "access_rules": [
+          "hijump"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -456,7 +474,7 @@
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Hidden Wall",
             "item_count": 1
           }
         ]
@@ -465,7 +483,9 @@
       {
         "name": "Address Disrupter 2",
         "short_name": "Address Disrupter 2",
-        "access_rules": [ ],
+        "access_rules": [
+          "remotedrone,coat"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -513,7 +533,9 @@
       {
         "name": "Tethered Charge",
         "short_name": "Tethered Charge",
-        "access_rules": [ ],
+        "access_rules": [
+          "remotedrone,droneteleport"
+        ],
         "map_locations": [
           {
             "map": "sudra",

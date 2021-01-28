@@ -4,17 +4,28 @@
     "name": "Absu",
     "color": "#6B09AE",
     "parent": "Sudra",
+    "access_rules": [ // Eribu -> Absu
+      "excavate"
+    ],
     "children": [
       // Health Node Fragment (Absu top)
       {
         "name": "Health Node Fragment (Absu top)",
         "short_name": "Health Node Fragment (Absu)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "coat1,addressdisruptor,grapple",
+          "coat2,highjump"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 513,
             "y": 909
+          },
+          {
+            "map": "absu",
+            "x": 414,
+            "y": 125
           }
         ],
         "sections": [
@@ -28,12 +39,19 @@
       {
         "name": "Power Node Fragment (Absu top 1)",
         "short_name": "Power Node Fragment (Absu ^ 1)",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressdisruptor2,remotedrone"
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 369,
             "y": 927
+          },
+          {
+            "map": "absu",
+            "x": 270,
+            "y": 143
           }
         ],
         "sections": [
@@ -47,12 +65,19 @@
       {
         "name": "Power Node Fragment (Absu top 2)",
         "short_name": "Power Node Fragment (Absu ^ 2)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "addressdisruptor2,remotedrone"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 387,
             "y": 927
+          },
+          {
+            "map": "absu",
+            "x": 288,
+            "y": 143
           }
         ],
         "sections": [
@@ -66,12 +91,19 @@
       {
         "name": "Power Node Fragment (Absu top 3)",
         "short_name": "Power Node Fragment (Absu ^ 3)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "addressbomb"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 333,
             "y": 945
+          },
+          {
+            "map": "absu",
+            "x": 234,
+            "y": 161
           }
         ],
         "sections": [
@@ -85,12 +117,19 @@
       {
         "name": "Power Node Fragment (Absu top 4)",
         "short_name": "Power Node Fragment (Absu ^ 4)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "addressbomb"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 351,
             "y": 945
+          },
+          {
+            "map": "absu",
+            "x": 252,
+            "y": 161
           }
         ],
         "sections": [
@@ -104,18 +143,27 @@
       {
         "name": "Health Node Fragment (Absu middle 1)",
         "short_name": "Health Node Fragment (Absu = 1)",
-        "access_rules": [ ],
+        "access_rules": [
+          "{}",
+          "wave"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 315,
             "y": 963
+          },
+          {
+            "map": "absu",
+            "x": 216,
+            "y": 179
           }
         ],
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -123,12 +171,19 @@
       {
         "name": "Health Node Fragment (Absu middle 2)",
         "short_name": "Health Node Fragment (Absu = 2)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "excavate"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 279,
             "y": 1017
+          },
+          {
+            "map": "absu",
+            "x": 180,
+            "y": 233
           }
         ],
         "sections": [
@@ -142,12 +197,20 @@
       {
         "name": "Address Disruptor 1",
         "short_name": "Address Disruptor 1",
-        "access_rules": [ ],
+        "access_rules": [
+          "wave",
+          "coat"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  441,
             "y": 1017
+          },
+          {
+            "map": "absu",
+            "x": 342,
+            "y": 233
           }
         ],
         "sections": [
@@ -161,12 +224,21 @@
       {
         "name": "Power Node Fragment (Absu middle left)",
         "short_name": "Power Node Fragment (Absu <=)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "addressdisruptor,wave",
+          "addressdisruptor,coat",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  207,
             "y": 1035
+          },
+          {
+            "map": "absu",
+            "x": 108,
+            "y": 251
           }
         ],
         "sections": [
@@ -186,6 +258,11 @@
             "map": "sudra",
             "x":  351,
             "y": 1053
+          },
+          {
+            "map": "absu",
+            "x": 252,
+            "y": 269
           }
         ],
         "sections": [
@@ -199,12 +276,20 @@
       {
         "name": "Health Node (Absu)",
         "short_name": "Health Node (Absu)",
-        "access_rules": [ ],
+        "access_rules": [
+          "wave,addressdisruptor",
+          "coat2"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  477,
             "y": 1053
+          },
+          {
+            "map": "absu",
+            "x": 378,
+            "y": 269
           }
         ],
         "sections": [
@@ -218,12 +303,20 @@
       {
         "name": "Inertial Pulse",
         "short_name": "Inertial Pulse",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "addressdisruptor2,coat2,excavate",
+          "addressdisruptor2,coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  639,
             "y": 1053
+          },
+          {
+            "map": "absu",
+            "x": 540,
+            "y": 269
           }
         ],
         "sections": [
@@ -237,12 +330,19 @@
       {
         "name": "Digital Paper (Absu top)",
         "short_name": "Digital Paper (Absu ^)",
-        "access_rules": [ ],
+        "access_rules": [
+          "remotedrone"
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  243,
             "y": 1071
+          },
+          {
+            "map": "absu",
+            "x": 144,
+            "y": 287
           }
         ],
         "sections": [
@@ -256,12 +356,20 @@
       {
         "name": "Rusalka Tablet (Absu top right)",
         "short_name": "Rusalka Tablet (Absu ^>)",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat2",
+          "wave,addressdisruptor"
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  531,
             "y": 1071
+          },
+          {
+            "map": "absu",
+            "x": 432,
+            "y": 287
           }
         ],
         "sections": [
@@ -275,18 +383,27 @@
       {
         "name": "Rusalka Tablet (Absu top left)",
         "short_name": "Rusalka Tablet (Absu <^)",
-        "access_rules": [ ],
+        "access_rules": [
+          "{wave}",
+          "coat"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  333,
             "y": 1089
+          },
+          {
+            "map": "absu",
+            "x": 234,
+            "y": 305
           }
         ],
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -294,12 +411,20 @@
       {
         "name": "Size Node (Absu)",
         "short_name": "Size Node (Absu)",
-        "access_rules": [ ],
+        "access_rules": [
+          "wave,addressdisruptor",
+          "coat2"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  477,
             "y": 1089
+          },
+          {
+            "map": "absu",
+            "x": 378,
+            "y": 305
           }
         ],
         "sections": [
@@ -313,12 +438,22 @@
       {
         "name": "Health Node Fragment (Absu bottom)",
         "short_name": "Health Node Fragment (Absu v)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "wave,addressdisruptor",
+          "coat1,addressdisruptor",
+          "coat2",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  585,
             "y": 1089
+          },
+          {
+            "map": "absu",
+            "x": 486,
+            "y": 305
           }
         ],
         "sections": [
@@ -332,12 +467,20 @@
       {
         "name": "Data Bomb",
         "short_name": "Data Bomb",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "remotedrone,coat2",
+          "remotedrone,coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  261,
             "y": 1107
+          },
+          {
+            "map": "absu",
+            "x": 162,
+            "y": 323
           }
         ],
         "sections": [
@@ -351,12 +494,19 @@
       {
         "name": "Range Node (Absu left)",
         "short_name": "Range Node (Absu <)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "addressdisruptor2,remotedrone,coat"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  333,
             "y": 1107
+          },
+          {
+            "map": "absu",
+            "x": 234,
+            "y": 323
           }
         ],
         "sections": [
@@ -370,18 +520,35 @@
       {
         "name": "Digital Paper (Absu bottom)",
         "short_name": "Digital Paper (Absu v)",
-        "access_rules": [ ],
+        "access_rules": [
+          "{wave}",
+          "{coat1}",
+          "highjump,grapple",
+          "highjump,coat2",
+          "coat3",
+          "wave,addressdisruptor"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  441,
             "y": 1107
+          },
+          {
+            "map": "absu",
+            "x": 342,
+            "y": 323
           }
         ],
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "access_rules": [
+              "addressdisruptor",
+              "hijump"
+            ],
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -389,12 +556,22 @@
       {
         "name": "Range Node (Absu right)",
         "short_name": "Range Node (Absu >)",
-        "access_rules": [ ],
+        "access_rules": [
+          "wave,addressdisruptor,remotedrone",
+          "coat1,addressdisruptor,remotedrone",
+          "coat2",
+          "coat3"
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  513,
             "y": 1107
+          },
+          {
+            "map": "absu",
+            "x": 414,
+            "y": 323
           }
         ],
         "sections": [
@@ -408,18 +585,33 @@
       {
         "name": "Rusalka Tablet (Absu bottom right)",
         "short_name": "Rusalka Tablet (Absu v>)",
-        "access_rules": [ ],
+        "access_rules": [
+          "{wave,addressdisruptor}",
+          "{coat1,addressdisruptor}",
+          "{coat2}",
+          "{coat3}",
+          "wave,addressdisruptor,remotedrone",
+          "coat1,addressdisruptor,remotedrone",
+          "coat2,remotedrone",
+          "coat3,remotedrone"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  549,
             "y": 1125
+          },
+          {
+            "map": "absu",
+            "x": 450,
+            "y": 341
           }
         ],
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -427,18 +619,29 @@
       {
         "name": "Power Node (Absu)",
         "short_name": "Power Node (Absu)",
-        "access_rules": [ ],
+        "access_rules": [
+          "wave,addressdisruptor",
+          "coat1,addressdisruptor",
+          "coat2",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  639,
             "y": 1125
+          },
+          {
+            "map": "absu",
+            "x": 540,
+            "y": 341
           }
         ],
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -446,12 +649,22 @@
       {
         "name": "Power Node Fragment (Absu bottom)",
         "short_name": "Power Node Fragment (Absu v)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "coat2,highjump",
+          "coat2,grapple",
+          "coat3",
+          "coat2,remotedrone,droneteleport"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  603,
             "y": 1143
+          },
+          {
+            "map": "absu",
+            "x": 504,
+            "y": 359
           }
         ],
         "sections": [
@@ -465,12 +678,19 @@
       {
         "name": "Rusalka Tablet (Absu bottom left)",
         "short_name": "Rusalka Tablet (Absu <v)",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat"
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x":  333,
             "y": 1161
+          },
+          {
+            "map": "absu",
+            "x": 234,
+            "y": 377
           }
         ],
         "sections": [

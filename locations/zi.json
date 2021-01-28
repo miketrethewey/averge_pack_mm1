@@ -4,17 +4,31 @@
     "name": "Zi",
     "color": "#2933FD",
     "parent": "sudra",
+    "access_rules": [ // Eribu -> Absu, Absu -> Zi
+      "excavate,wave,addressdisruptor",
+      "excavate,coat1,addressdisruptor",
+      "excavate,coat2",
+      "coat3"
+    ],
     "children": [
-      // Power Node Fragment
+      // Power Node Fragment (Zi top) #1
       {
         "name": "Power Node Fragment (Zi top) #1",
         "short_name": "Power Node Fragment (Zi ^) #1",
-        "access_rules": [],
+        "access_rules": [
+          "highjump,addressdisruptor,grapple",
+          "remotedrone,droneteleport,addressdisruptor,grapple"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 855,
             "y": 909
+          },
+          {
+            "map": "zi",
+            "x": 406,
+            "y": 134
           }
         ],
         "sections": [
@@ -24,16 +38,24 @@
           }
         ]
       },
-      // Health Node
+      // Health Node (Zi)
       {
         "name": "Health Node (Zi)",
         "short_name": "Health Node (Zi)",
-        "access_rules": [],
+        "access_rules": [
+          "highjump,addressdisruptor,coat",
+          "remotedrone,droneteleport,addressdisruptor,coat"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 819,
             "y": 927
+          },
+          {
+            "map": "zi",
+            "x": 370,
+            "y": 152
           }
         ],
         "sections": [
@@ -47,12 +69,22 @@
       {
         "name": "Modified Lab Coat",
         "short_name": "Modified Lab Coat",
-        "access_rules": [],
+        "access_rules": [
+          "highjump,coat2",
+          "coat3",
+          "highjump,addressdisruptor",
+          "remotedrone,droneteleport"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 873,
             "y": 927
+          },
+          {
+            "map": "zi",
+            "x": 424,
+            "y": 152
           }
         ],
         "sections": [
@@ -66,12 +98,20 @@
       {
         "name": "Digital Paper (Zi) #1",
         "short_name": "Digital Paper (Zi) #1",
-        "access_rules": [],
+        "access_rules": [
+          "highjump,excavate",
+          "remotedrone"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 783,
             "y": 963
+          },
+          {
+            "map": "zi",
+            "x": 334,
+            "y": 188
           }
         ],
         "sections": [
@@ -85,12 +125,24 @@
       {
         "name": "Health Node Fragment (Zi) #1",
         "short_name": "Health Node Fragment (Zi) #1",
-        "access_rules": [],
+        "access_rules": [
+          "highjump,coat",
+          "remotedrone,droneteleport,coat",
+          "coat2",
+          "coat3",
+          "{highjump}",
+          "{remotedrone}"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 819,
             "y": 981
+          },
+          {
+            "map": "zi",
+            "x": 370,
+            "y": 206
           }
         ],
         "sections": [
@@ -104,12 +156,19 @@
       {
         "name": "Rusalka Tablet (Zi)",
         "short_name": "Rusalka Tablet (Zi)",
-        "access_rules": [],
+        "access_rules": [
+          "highjump,remotedrone"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 675,
             "y": 999
+          },
+          {
+            "map": "zi",
+            "x": 208,
+            "y": 224
           }
         ],
         "sections": [
@@ -123,12 +182,19 @@
       {
         "name": "Voranj",
         "short_name": "Voranj",
-        "access_rules": [],
+        "access_rules": [
+          "remotedrone,highjump"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 729,
             "y": 1017
+          },
+          {
+            "map": "zi",
+            "x": 280,
+            "y": 242
           }
         ],
         "sections": [
@@ -142,12 +208,23 @@
       {
         "name": "Power Node Fragment (Zi) #2",
         "short_name": "Power Node Fragment (Zi) #2",
-        "access_rules": [],
+        "access_rules": [
+          "addressdisruptor2,highjump",
+          "addressdisruptor2,remotedrone",
+          "addressdisruptor2,grapple",
+          "coat2,highjump",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 657,
             "y": 1053
+          },
+          {
+            "map": "zi",
+            "x": 208,
+            "y": 278
           }
         ],
         "sections": [
@@ -161,12 +238,20 @@
       {
         "name": "Size Node (Zi)",
         "short_name": "Size Node (Zi)",
-        "access_rules": [],
+        "access_rules": [
+          "highjump",
+          "coat2"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 801,
             "y": 1053
+          },
+          {
+            "map": "zi",
+            "x": 352,
+            "y": 278
           }
         ],
         "sections": [
@@ -180,12 +265,23 @@
       {
         "name": "Bioflux Accelerator #1",
         "short_name": "Bioflux Accelerator #1",
-        "access_rules": [],
-        "map_locations": [{
-          "map": "sudra",
-          "x": 693,
-          "y": 1071
-        }],
+        "access_rules": [
+          "highjump,coat",
+          "remotedrone,droneteleport,coat",
+          "coat3"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 693,
+            "y": 1071
+          },
+          {
+            "map": "zi",
+            "x": 244,
+            "y": 296
+          }
+        ],
         "sections": [
           {
             "name": "Item",
@@ -197,12 +293,19 @@
       {
         "name": "Health Node Fragment (Zi middle)",
         "short_name": "Health Node Fragment (Zi =)",
-        "access_rules": [],
+        "access_rules": [
+          "remotedrone"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 837,
             "y": 1071
+          },
+          {
+            "map": "zi",
+            "x": 388,
+            "y": 296
           }
         ],
         "sections": [
@@ -216,12 +319,20 @@
       {
         "name": "Health Node Fragment (Zi bottom)",
         "short_name": "Health Node Fragment (Zi v)",
-        "access_rules": [],
+        "access_rules": [
+          "highjump,excavate",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 747,
             "y": 1089
+          },
+          {
+            "map": "zi",
+            "x": 298,
+            "y": 314
           }
         ],
         "sections": [
@@ -235,12 +346,21 @@
       {
         "name": "Range Node (Zi)",
         "short_name": "Range Node (Zi)",
-        "access_rules": [],
+        "access_rules": [
+          "highjump,coat",
+          "remotedrone,droneteleport,coat",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 711,
             "y": 1107
+          },
+          {
+            "map": "zi",
+            "x": 262,
+            "y": 332
           }
         ],
         "sections": [
@@ -254,12 +374,22 @@
       {
         "name": "Passcode Tool",
         "short_name": "Passcode Tool",
-        "access_rules": [],
+        "access_rules": [
+          "remotedrone",
+          "grapple,coat2",
+          "highjump,coat2",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 801,
             "y": 1125
+          },
+          {
+            "map": "zi",
+            "x": 352,
+            "y": 350
           }
         ],
         "sections": [
@@ -273,12 +403,22 @@
       {
         "name": "Digital Paper (Zi) #2",
         "short_name": "Digital Paper (Zi) #2",
-        "access_rules": [],
+        "access_rules": [
+          "remotedrone",
+          "grapple,coat2",
+          "highjump,coat2",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 837,
             "y": 1125
+          },
+          {
+            "map": "zi",
+            "x": 388,
+            "y": 350
           }
         ],
         "sections": [

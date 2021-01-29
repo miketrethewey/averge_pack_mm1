@@ -4,17 +4,28 @@
     "name": "E-Kur-Mah",
     "color": "#2C6D59",
     "parent": "Sudra",
+    "access rules": [ // Eribu -> Absu, Absu -> Zi -> North Kur -> E-Kur-Mah
+      "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,coat2",
+      "fielddisruptor,coat3,$canDroneTeleport"
+    ],
     "children": [
       // Power Node (E-Kur-Mah)
       {
         "name": "Power Node (E-Kur-Mah)",
         "short_name": "Power Node (E-Kur-Mah)",
-        "access_rules": [ ],
+        "access_rules": [
+          "sudrankey"
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 1143,
             "y": 459
+          },
+          {
+            "map": "ekurmah",
+            "x": 290,
+            "y": 79
           }
         ],
         "sections": [
@@ -28,12 +39,19 @@
       {
         "name": "Sudran Key",
         "short_name": "Sudran Key",
-        "access_rules": [ ],
+        "access_rules": [
+          //No special requirements from North Entrance
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 1215,
             "y": 477
+          },
+          {
+            "map": "ekurmah",
+            "x": 362,
+            "y": 97
           }
         ],
         "sections": [
@@ -47,12 +65,19 @@
       {
         "name": "Clay Tablet (E-Kur-Mah top right)",
         "short_name": "Clay Tablet (E-Kur-Mah ^>)",
-        "access_rules": [ ],
+        "access_rules": [
+          // No special requirements from North Entrance
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 1233,
             "y": 495
+          },
+          {
+            "map": "ekurmah",
+            "x": 380,
+            "y": 115
           }
         ],
         "sections": [
@@ -66,12 +91,19 @@
       {
         "name": "Clay Tablet (E-Kur-Mah top left)",
         "short_name": "Clay Tablet (E-Kur-Mah <^)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          //No special requirements from North Entrance
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 1143,
             "y": 513
+          },
+          {
+            "map": "ekurmah",
+            "x": 290,
+            "y": 133
           }
         ],
         "sections": [
@@ -85,12 +117,19 @@
       {
         "name": "Clay Tablet (E-Kur-Mah bottom)",
         "short_name": "Clay Tablet (E-Kur-Mah v)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "sudrankey,coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 1233,
             "y": 585
+          },
+          {
+            "map": "ekurmah",
+            "x": 380,
+            "y": 205
           }
         ],
         "sections": [
@@ -100,16 +139,24 @@
           }
         ]
       },
-      // Quantum Veriegator
+      // Quantum Veriegator (ISKART-EHANZU)
       {
-        "name": "Quantum Veriegator",
-        "short_name": "Quantum Veriegator",
-        "access_rules": [ ],
+        "name": "Quantum Veriegator (ISKART-EHANZU)",
+        "short_name": "Quantum Veriegator (ISKART-EHANZU)",
+        "access_rules": [ 
+          "passcodetool,$canEnhancedDroneLaunch,$canDroneTeleport,coat",
+          "passcodetool,coat3,$canDroneTeleport,fielddisruptor"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 1161,
             "y": 729
+          },
+          {
+            "map": "ekurmah",
+            "x": 308,
+            "y": 349
           }
         ],
         "sections": [
@@ -123,12 +170,20 @@
       {
         "name": "Health Node Fragment (E-Kur-Mah)",
         "short_name": "Health Node Fragment (E-Kur-Mah)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "coat3,remotedrone",
+          "highjump,$canEnhancedDroneLaunch,sudrankey"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 1197,
             "y": 747
+          },
+          {
+            "map": "ekurmah",
+            "x": 344,
+            "y": 367
           }
         ],
         "sections": [
@@ -148,6 +203,11 @@
             "map": "sudra",
             "x": 1161,
             "y": 801
+          },
+          {
+            "map": "ekurmah",
+            "x": 308,
+            "y": 421
           }
         ],
         "sections": [
@@ -161,12 +221,20 @@
       {
         "name": "Power Node Fragment (E-Kur-Mah)",
         "short_name": "Power Node Fragment (E-Kur-Mah)",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat3",
+          "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,coat2,sudrankey"
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 1179,
             "y": 819
+          },
+          {
+            "map": "ekurmah",
+            "x": 326,
+            "y": 439
           }
         ],
         "sections": [

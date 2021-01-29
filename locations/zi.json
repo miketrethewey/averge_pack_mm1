@@ -15,7 +15,10 @@
       {
         "name": "Power Node Fragment (Zi top) #1",
         "short_name": "Power Node Fragment (Zi ^) #1",
-        "access_rules": [],
+        "access_rules": [
+          "highjump,addressdisruptor,grapple",
+          "$canDroneTeleport,addressdisruptor,grapple"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -40,7 +43,8 @@
         "name": "Health Node (Zi)",
         "short_name": "Health Node (Zi)",
         "access_rules": [
-          "{addressdisruptor},teleport1"
+          "highjump,addressdisruptor,coat",
+          "$canDroneTeleport,addressdisruptor,coat"
         ],
         "map_locations": [
           {
@@ -66,7 +70,10 @@
         "name": "Modified Lab Coat",
         "short_name": "Modified Lab Coat",
         "access_rules": [
-          "addressdisruptor"
+          "highjump,coat2",
+          "coat3",
+          "highjump,addressdisruptor",
+          "$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -92,7 +99,8 @@
         "name": "Digital Paper (Zi) #1",
         "short_name": "Digital Paper (Zi) #1",
         "access_rules": [
-          "hijump,laserdrill"
+          "highjump,excavate",
+          "$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -118,8 +126,12 @@
         "name": "Health Node Fragment (Zi) #1",
         "short_name": "Health Node Fragment (Zi) #1",
         "access_rules": [
-          "{hijump}",
-          "hijump,teleport1"
+          "highjump,coat",
+          "$canDroneTeleport,coat",
+          "coat2",
+          "coat3",
+          "{highjump}",
+          "{$canUseRemoteDrone}"
         ],
         "map_locations": [
           {
@@ -146,7 +158,7 @@
         "name": "Rusalka Tablet (Zi)",
         "short_name": "Rusalka Tablet (Zi)",
         "access_rules": [
-          "remotedrone"
+          "highjump,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -172,7 +184,7 @@
         "name": "Voranj",
         "short_name": "Voranj",
         "access_rules": [
-          "remotedrone"
+          "$canUseRemoteDrone,highjump"
         ],
         "map_locations": [
           {
@@ -197,7 +209,13 @@
       {
         "name": "Power Node Fragment (Zi) #2",
         "short_name": "Power Node Fragment (Zi) #2",
-        "access_rules": [],
+        "access_rules": [
+          "addressdisruptor2,highjump",
+          "addressdisruptor2,$canUseRemoteDrone",
+          "addressdisruptor2,grapple",
+          "coat2,highjump",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -222,7 +240,8 @@
         "name": "Size Node (Zi)",
         "short_name": "Size Node (Zi)",
         "access_rules": [
-          "hijump"
+          "highjump",
+          "coat2"
         ],
         "map_locations": [
           {
@@ -248,7 +267,9 @@
         "name": "Bioflux Accelerator #1",
         "short_name": "Bioflux Accelerator #1",
         "access_rules": [
-          "hijump"
+          "highjump,coat",
+          "$canDroneTeleport,coat",
+          "coat3"
         ],
         "map_locations": [
           {
@@ -273,7 +294,9 @@
       {
         "name": "Health Node Fragment (Zi middle)",
         "short_name": "Health Node Fragment (Zi =)",
-        "access_rules": [],
+        "access_rules": [
+          "$canUseRemoteDrone"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -298,7 +321,8 @@
         "name": "Health Node Fragment (Zi bottom)",
         "short_name": "Health Node Fragment (Zi v)",
         "access_rules": [
-          "hijump,laserdrill"
+          "highjump,excavate",
+          "coat3"
         ],
         "map_locations": [
           {
@@ -324,7 +348,9 @@
         "name": "Range Node (Zi)",
         "short_name": "Range Node (Zi)",
         "access_rules": [
-          "hijump,teleport1"
+          "highjump,coat",
+          "$canDroneTeleport,coat",
+          "coat3"
         ],
         "map_locations": [
           {
@@ -349,7 +375,12 @@
       {
         "name": "Passcode Tool",
         "short_name": "Passcode Tool",
-        "access_rules": [],
+        "access_rules": [
+          "$canUseRemoteDrone",
+          "grapple,coat2",
+          "highjump,coat2",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -373,7 +404,12 @@
       {
         "name": "Digital Paper (Zi) #2",
         "short_name": "Digital Paper (Zi) #2",
-        "access_rules": [],
+        "access_rules": [
+          "$canUseRemoteDrone",
+          "grapple,coat2",
+          "highjump,coat2",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",

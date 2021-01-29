@@ -4,12 +4,18 @@
     "name": "E-Kur-Mah",
     "color": "#2C6D59",
     "parent": "Sudra",
+    "access rules": [ // Eribu -> Absu, Absu -> Zi -> North Kur -> E-Kur-Mah
+      "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,coat2",
+      "fielddisruptor,coat3,$canDroneTeleport"
+    ],
     "children": [
       // Power Node (E-Kur-Mah)
       {
         "name": "Power Node (E-Kur-Mah)",
         "short_name": "Power Node (E-Kur-Mah)",
-        "access_rules": [ ],
+        "access_rules": [
+          "sudrankey"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -33,7 +39,9 @@
       {
         "name": "Sudran Key",
         "short_name": "Sudran Key",
-        "access_rules": [ ],
+        "access_rules": [
+          //No special requirements from North Entrance
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -57,7 +65,9 @@
       {
         "name": "Clay Tablet (E-Kur-Mah top right)",
         "short_name": "Clay Tablet (E-Kur-Mah ^>)",
-        "access_rules": [ ],
+        "access_rules": [
+          // No special requirements from North Entrance
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -81,7 +91,9 @@
       {
         "name": "Clay Tablet (E-Kur-Mah top left)",
         "short_name": "Clay Tablet (E-Kur-Mah <^)",
-        "access_rules": [ ],
+        "access_rules": [
+          //No special requirements from North Entrance
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -106,7 +118,7 @@
         "name": "Clay Tablet (E-Kur-Mah bottom)",
         "short_name": "Clay Tablet (E-Kur-Mah v)",
         "access_rules": [
-          "teleport3"
+          "sudrankey,coat3"
         ],
         "map_locations": [
           {
@@ -127,11 +139,14 @@
           }
         ]
       },
-      // Quantum Veriegator
+      // Quantum Veriegator (ISKART-EHANZU)
       {
-        "name": "Quantum Veriegator",
-        "short_name": "Quantum Veriegator",
-        "access_rules": [ ],
+        "name": "Quantum Veriegator (ISKART-EHANZU)",
+        "short_name": "Quantum Veriegator (ISKART-EHANZU)",
+        "access_rules": [
+          "passcodetool,$canEnhancedDroneLaunch,$canDroneTeleport,coat",
+          "passcodetool,coat3,$canDroneTeleport,fielddisruptor"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -155,7 +170,10 @@
       {
         "name": "Health Node Fragment (E-Kur-Mah)",
         "short_name": "Health Node Fragment (E-Kur-Mah)",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat3,$canUseRemoteDrone",
+          "highjump,$canEnhancedDroneLaunch,sudrankey"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -203,7 +221,10 @@
       {
         "name": "Power Node Fragment (E-Kur-Mah)",
         "short_name": "Power Node Fragment (E-Kur-Mah)",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat3",
+          "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,coat2,sudrankey"
+         ],
         "map_locations": [
           {
             "map": "sudra",

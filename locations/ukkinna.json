@@ -4,12 +4,18 @@
     "name": "Ukkin-Na",
     "color": "#015EA5",
     "parent": "Sudra",
+    "access rules": [ // Eribu -> Ukkin-Na
+      "excavate,addressdisruptor2,coat",
+      "coat3"
+    ],
     "children": [
       // Turbine Pulse
       {
         "name": "Turbine Pulse",
         "short_name": "Turbine Pulse",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat3,$canEnhancedDroneLaunch,$canDroneTeleport"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -33,7 +39,11 @@
       {
         "name": "Rusalka Tablet (Ukkin-Na top)",
         "short_name": "Rusalka Tablet (Ukkin-Na ^)",
-        "access_rules": [ ],
+        "access_rules": [
+          "highjump,grapple",
+          "$canDroneTeleport",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -58,7 +68,9 @@
         "name": "Health Node Fragment (Ukkin-Na top)",
         "short_name": "Health Node Fragment (Ukkin-Na ^)",
         "access_rules": [
-          "remotedrone,airport2"
+          "highjump,coat2,$canUseRemoteDrone",
+          "$canDroneTeleport,coat2",
+          "coat3,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -83,7 +95,11 @@
       {
         "name": "Power Node Fragment (Ukkin-Na top)",
         "short_name": "Power Node Fragment (Ukkin-Na ^)",
-        "access_rules": [ ],
+        "access_rules": [
+          "highjump,addressdisruptor,$canUseRemoteDrone",
+          "$canDroneTeleport,addressdisruptor",
+          "coat3,addressdisruptor,$canUseRemoteDrone"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -107,7 +123,11 @@
       {
         "name": "Health Node (Ukkin-Na)",
         "short_name": "Health Node (Ukkin-Na)",
-        "access_rules": [ ],
+        "access_rules": [
+          "highjump",
+          "$canDroneTeleport",
+          "coat3"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -131,7 +151,11 @@
       {
         "name": "Trenchcoat",
         "short_name": "Trenchcoat",
-        "access_rules": [ ],
+        "access_rules": [
+          "highjump",
+          "$canDroneTeleport",
+          "coat3"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -156,8 +180,9 @@
         "name": "Power Node Fragment (Ukkin-Na middle)",
         "short_name": "Power Node Fragment (Ukkin-Na =)",
         "access_rules": [
-          "{}",
-          "airport2"
+          "highjump,coat2",
+          "$canDroneTeleport,coat2",
+          "coat3"
         ],
         "map_locations": [
           {
@@ -183,7 +208,11 @@
       {
         "name": "Digital Paper (Ukkin-Na)",
         "short_name": "Digital Paper (Ukkin-Na)",
-        "access_rules": [ ],
+        "access_rules": [
+          "highjump,coat2,$canUseRemoteDrone",
+          "$canDroneTeleport,coat2",
+          "coat3,$canUseRemoteDrone"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -207,7 +236,6 @@
       {
         "name": "Rusalka Tablet (Ukkin-Na bottom) (2 items)",
         "short_name": "Rusalka Tablet (Ukkin-Na v) (2 items)",
-        "access_rules": [ ],
         "map_locations": [
           {
             "map": "sudra",
@@ -222,12 +250,21 @@
         ],
         "sections": [
           {
-            "name": "Item 1",
-            "item_count": 1
+            "name": "Upper",
+            "item_count": 1,
+            "access rules": [
+              "coat3",
+              "coat2,highjump"
+            ]
           },
           {
-            "name": "Item 2",
-            "item_count": 1
+            "name": "Lower",
+            "item_count": 1,
+            "access rules": [
+              "highjump,addressdisruptor,grapple",
+              "highjump,addressdisruptor,$canUseRemoteDrone",
+              "$canDroneTeleport"
+             ]
           }
         ]
       },
@@ -236,7 +273,9 @@
         "name": "Power Node Fragment (bottom)",
         "short_name": "Power Node Fragment (v)",
         "access_rules": [
-          "teleport3"
+          "highjump,coat2",
+          "$canDroneTeleport,coat2",
+          "coat3"
         ],
         "map_locations": [
           {

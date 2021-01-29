@@ -37,7 +37,9 @@
       {
         "name": "Health Node Fragment (Slug Glitch)",
         "short_name": "Health Node Fragment (Slug Glitch)",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressdisruptor"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -61,7 +63,9 @@
       {
         "name": "Digital Paper (Indi)",
         "short_name": "Digital Paper (Indi)",
-        "access_rules": [ ],
+        "access_rules": [
+          "highjump,$canUseRemoteDrone"
+         ],
         "map_locations": [
           {
             "map": "sudra",

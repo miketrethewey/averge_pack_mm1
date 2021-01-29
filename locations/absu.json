@@ -40,7 +40,10 @@
         "name": "Power Node Fragment (Absu top 1)",
         "short_name": "Power Node Fragment (Absu ^ 1)",
         "access_rules": [
-          "addressdisruptor2,remotedrone"
+          "addressdisruptor2,$canUseRemoteDrone",
+          "highjump,coat2,addressbomb",
+          "grapple,addressbomb",
+          "coat3,addressbomb"
          ],
         "map_locations": [
           {
@@ -66,7 +69,10 @@
         "name": "Power Node Fragment (Absu top 2)",
         "short_name": "Power Node Fragment (Absu ^ 2)",
         "access_rules": [
-          "addressdisruptor2,remotedrone"
+          "addressdisruptor2,$canUseRemoteDrone",
+          "highjump,coat2,addressbomb",
+          "grapple,addressbomb",
+          "coat3,addressbomb"
         ],
         "map_locations": [
           {
@@ -92,7 +98,10 @@
         "name": "Power Node Fragment (Absu top 3)",
         "short_name": "Power Node Fragment (Absu ^ 3)",
         "access_rules": [
-          "addressbomb"
+          "addressdisruptor2,$canDroneTeleport,addressbomb",
+          "highjump,coat2",
+          "grapple",
+          "coat3"
         ],
         "map_locations": [
           {
@@ -118,7 +127,10 @@
         "name": "Power Node Fragment (Absu top 4)",
         "short_name": "Power Node Fragment (Absu ^ 4)",
         "access_rules": [
-          "addressbomb"
+          "addressdisruptor2,$canDroneTeleport,addressbomb",
+          "highjump,coat2,addressbomb",
+          "grapple,addressbomb",
+          "coat3,addressbomb"
         ],
         "map_locations": [
           {
@@ -332,7 +344,7 @@
         "name": "Digital Paper (Absu top)",
         "short_name": "Digital Paper (Absu ^)",
         "access_rules": [
-          "remotedrone"
+          "$canUseRemoteDrone"
          ],
         "map_locations": [
           {
@@ -469,8 +481,8 @@
         "name": "Data Bomb",
         "short_name": "Data Bomb",
         "access_rules": [
-          "remotedrone,coat2",
-          "remotedrone,coat3"
+          "$canUseRemoteDrone,coat2",
+          "$canUseRemoteDrone,coat3"
         ],
         "map_locations": [
           {
@@ -496,7 +508,7 @@
         "name": "Range Node (Absu left)",
         "short_name": "Range Node (Absu <)",
         "access_rules": [
-          "addressdisruptor2,remotedrone,coat"
+          "addressdisruptor2,$canUseRemoteDrone,coat"
         ],
         "map_locations": [
           {
@@ -558,8 +570,8 @@
         "name": "Range Node (Absu right)",
         "short_name": "Range Node (Absu >)",
         "access_rules": [
-          "wave,addressdisruptor,remotedrone",
-          "coat1,addressdisruptor,remotedrone",
+          "wave,addressdisruptor,$canUseRemoteDrone",
+          "coat1,addressdisruptor,$canUseRemoteDrone",
           "coat2",
           "coat3"
          ],
@@ -591,10 +603,10 @@
           "{coat1,addressdisruptor}",
           "{coat2}",
           "{coat3}",
-          "wave,addressdisruptor,remotedrone",
-          "coat1,addressdisruptor,remotedrone",
-          "coat2,remotedrone",
-          "coat3,remotedrone"
+          "wave,addressdisruptor,$canUseRemoteDrone",
+          "coat1,addressdisruptor,$canUseRemoteDrone",
+          "coat2,$canUseRemoteDrone",
+          "coat3,$canUseRemoteDrone"
         ],
         "map_locations": [
           {

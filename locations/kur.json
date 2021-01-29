@@ -4,16 +4,21 @@
     "name": "Kur",
     "color": "#8B176E",
     "parent": "Sudra",
-    "access_rules": [ // Eribu -> Absu, Absu -> Zi, Zi -> Kur
-      // Zi -> Kur: A gun
-      "spazer,laserdrill, addressdisruptor, $canShootShort"
+    "access rules": [ // Eribu -> Absu, Absu -> Zi -> Kur
+      "excavate,wave,addressdisruptor",
+      "excavate,coat1,addressdisruptor",
+      "excavate,coat2",
+      "coat3"
     ],
     "children": [
       // Clay Tablet (Kur top)
       {
         "name": "Clay Tablet (Kur top)",
         "short_name": "Clay Tablet (Kur ^)",
-        "access_rules": [ ],
+        "access_rules": [
+          "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
+          "fielddisruptor,coat3,$canDroneTeleport"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -37,7 +42,11 @@
       {
         "name": "Power Node Fragment (Kur)",
         "short_name": "Power Node Fragment (Kur)",
-        "access_rules": [ ],
+        "access_rules": [
+          "$canDroneTeleport,grapple,addressdisruptor",
+          "fielddisruptor,coat3,addressdisruptor",
+          "highjump,grapple,addressdisruptor"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -61,7 +70,14 @@
       {
         "name": "Power Node (Kur top)",
         "short_name": "Power Node (Kur ^)",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressdisruptor2,highjump,coat,$canUseRemoteDrone",
+          "addressdisruptor2,$canDroneTeleport,coat",
+          "coat2,$canUseRemoteDrone",
+          "coat2,grapple",
+          "coat3,$canUseRemoteDrone",
+          "coat3,grapple"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -85,7 +101,14 @@
       {
         "name": "Clay Tablet (Kur middle)",
         "short_name": "Clay Tablet (Kur =)",
-        "access_rules": [ ],
+        "access_rules": [
+          "$canDroneTeleport,grapple,addressdisruptor",
+          "fielddisruptor,coat3,addressdisruptor",
+          "highjump,grapple,addressdisruptor",
+          "$canDroneTeleport,grapple,$canEnhancedDroneLaunch",
+          "fielddisruptor,coat3,$canEnhancedDroneLaunch",
+          "highjump,grapple,$canEnhancedDroneLaunch"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -109,7 +132,11 @@
       {
         "name": "Reflector",
         "short_name": "Reflector",
-        "access_rules": [ ],
+        "access_rules": [
+          "$canDroneTeleport,grapple",
+          "fielddisruptor,coat3,$canUseRemoteDrone",
+          "highjump,grapple,$canUseRemoteDrone"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -133,7 +160,11 @@
       {
         "name": "Enhanced Drone Launch",
         "short_name": "Enhanced Drone Launch",
-        "access_rules": [ ],
+        "access_rules": [
+          "$canDroneTeleport,grapple",
+          "fielddisruptor,coat3",
+          "highjump,grapple"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -157,7 +188,12 @@
       {
         "name": "Health Node Fragment (Kur top right)",
         "short_name": "Health Node Fragment (Kur ^>)",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressdisruptor2,highjump,coat,$canUseRemoteDrone",
+          "addressdisruptor2,$canDroneTeleport,coat",
+          "coat2,highjump",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -181,7 +217,11 @@
       {
         "name": "Health Node Fragment (Kur top left)",
         "short_name": "Health Node Fragment (Kur <^)",
-        "access_rules": [ ],
+        "access_rules": [
+          "$canDroneTeleport,grapple",
+          "fielddisruptor,coat3,$canUseRemoteDrone",
+          "highjump,grapple,$canUseRemoteDrone"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -205,7 +245,12 @@
       {
         "name": "Grapple",
         "short_name": "Grapple",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressdisruptor2,highjump,coat,$canUseRemoteDrone",
+          "addressdisruptor2,$canDroneTeleport,coat",
+          "coat2,highjump",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -229,7 +274,11 @@
       {
         "name": "Clay Tablet (Kur bottom)",
         "short_name": "Clay Tablet (Kur v)",
-        "access_rules": [ ],
+        "access_rules": [
+          "$canDroneTeleport,grapple",
+          "fielddisruptor,coat3,$canUseRemoteDrone",
+          "highjump,grapple,$canUseRemoteDrone"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -253,7 +302,11 @@
       {
         "name": "Health Node Fragment (Kur middle left)",
         "short_name": "Health Node Fragment (Kur <=)",
-        "access_rules": [ ],
+        "access_rules": [
+          "highjump,coat2,$canDroneTeleport",
+          "$canDroneTeleport,grapple,coat",
+          "highjump,grapple"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -277,7 +330,12 @@
       {
         "name": "Health Node (Kur)",
         "short_name": "Health Node (Kur)",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressdisruptor2,highjump,coat",
+          "addressdisruptor2,$canDroneTeleport,coat",
+          "coat2",
+          "coat3"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -328,8 +386,9 @@
         "name": "Remote Drone",
         "short_name": "Remote Drone",
         "access_rules": [
-          "teleport1",
-          "teleport2"
+          "highjump,coat2",
+          "coat3",
+          "$canDroneTeleport,coat"
         ],
         "map_locations": [
           {
@@ -355,7 +414,8 @@
         "name": "Hypo-Atomizer",
         "short_name": "Hypo-Atomizer",
         "access_rules": [
-          "coat,laserdrill,$canDroneTeleport"
+          "coat,$canUseRemoteDrone",
+          "coat3"
         ],
         "map_locations": [
           {
@@ -381,8 +441,10 @@
         "name": "Health Node Fragment (Kur middle right)",
         "short_name": "Health Node Fragment (Kur =>)",
         "access_rules": [
-          "coat,laserdrill"
-        ],
+          "addressdisruptor2,highjump,$canUseRemoteDrone",
+          "coat2,$canUseRemoteDrone",
+          "coat3,$canUseRemoteDrone"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -408,7 +470,10 @@
         "short_name": "Power Node (Kur v)",
         "access_rules": [
           "{}",
-          "teleport1"
+          "teleport1",
+          "highjump,coat",
+          "$canDroneTeleport,coat",
+          "grapple,coat"
         ],
         "map_locations": [
           {
@@ -435,7 +500,7 @@
         "name": "Health Node Fragment (Kur bottom)",
         "short_name": "Health Node Fragment (Kur v)",
         "access_rules": [
-          "$canDroneTeleport"
+          "$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -461,8 +526,10 @@
         "name": "Firewall",
         "short_name": "Firewall",
         "access_rules": [
-          "hijump"
-        ],
+          "highjump",
+          "$canUseRemoteDrone",
+          "grapple"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -487,7 +554,10 @@
         "name": "Address Disrupter 2",
         "short_name": "Address Disrupter 2",
         "access_rules": [
-          "remotedrone,coat"
+          "coat3",
+          "addressdisruptor2,excavate",
+          "highjump,coat2",
+          "$canUseRemoteDrone,coat"
         ],
         "map_locations": [
           {
@@ -512,7 +582,9 @@
       {
         "name": "Field Disruptor",
         "short_name": "Field Disruptor",
-        "access_rules": [ ],
+        "access_rules": [
+          //No special access rules
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -537,9 +609,11 @@
         "name": "Tethered Charge",
         "short_name": "Tethered Charge",
         "access_rules": [
-          "$canDroneTeleport",
-          "teleport3"
-        ],
+          "coat2,fatbeam",
+          "coat3,fatbeam",
+          "highjump,$canDroneTeleport,coat,addressdisruptor",
+          "coat3,addressdisruptor"
+         ],
         "map_locations": [
           {
             "map": "sudra",

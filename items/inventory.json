@@ -44,7 +44,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/axiom-disruptor.png",
-    "codes": "axiomdisruptor,rangelong,rangemedium,rangemed,rangeshort"
+    "codes": "axiomdisruptor,rangelong"
   },
   // Bioflux Accelerator 1 (Red)
   {
@@ -52,7 +52,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/bioflux-accelerator-1.png",
-    "codes": "biofluxaccelerator1,biofluxaccelerator,rangelong,rangemedium,rangemed,rangeshort"
+    "codes": "biofluxaccelerator1,biofluxaccelerator,rangelong"
   },
   // Bioflux Accelerator 2 (Purple)
   {
@@ -60,7 +60,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/bioflux-accelerator-2.png",
-    "codes": "biofluxaccelerator2,biofluxaccelerator,rangelong,rangemedium,rangemed,rangeshort"
+    "codes": "biofluxaccelerator2,biofluxaccelerator,rangelong"
   },
   // Clay Tablet
   {
@@ -77,7 +77,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/data-bomb.png",
-    "codes": "databomb,rangelong,rangemedium,rangemed,rangeshort"
+    "codes": "databomb,rangelong"
   },
   // Digital Paper
   {
@@ -144,7 +144,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/fat-beam.png",
-    "codes": "fatbeam,rangelong,wavebeam,wave,widebeam,wide,rangemedium,rangemed,rangeshort"
+    "codes": "fatbeam,rangelong,wavebeam,wave,widebeam,wide"
   },
   // Field Disruptor
   {
@@ -160,7 +160,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/firewall.png",
-    "codes": "firewall,rangemedium,rangemed,rangeshort"
+    "codes": "firewall,rangemedium"
   },
   // Flamethrower
   {
@@ -168,7 +168,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/flamethrower.png",
-    "codes": "flamethrower,rangelong,wavebeam,wave,plasmabeam,plasma,rangemedium,rangemed,rangeshort"
+    "codes": "flamethrower,rangelong,wavebeam,wave,plasmabeam,plasma"
   },
   // Grapple
   {
@@ -202,7 +202,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/heat-seeker.png",
-    "codes": "heatseeker,rangelong,rangemedium,rangemed,rangeshort"
+    "codes": "heatseeker,rangelong"
   },
   // Hypo-Atomizer
   {
@@ -210,7 +210,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/hypo-atomizer.png",
-    "codes": "hypoatomizer,rangelong,splits,split,spazerbeam,spazer,widebeam,wide,rangemedium,rangemed,rangeshort"
+    "codes": "hypoatomizer,rangelong,splits,split,spazerbeam,spazer,widebeam,wide"
   },
   // Inertial Pulse
   {
@@ -218,7 +218,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/inertial-pulse.png",
-    "codes": "inertialpulse,rangelong,plasmabeam,plasma,rangemedium,rangemed,rangeshort"
+    "codes": "inertialpulse,rangelong,plasmabeam,plasma"
   },
   // Ion Beam
   {
@@ -226,7 +226,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/ion-beam.png",
-    "codes": "ionbeam,rangelong,rangemedium,rangemed,rangeshort"
+    "codes": "ionbeam,rangelong"
   },
   // Kilver
   {
@@ -250,7 +250,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/lightning-gun.png",
-    "codes": "lightninggun,rangelong,rangemedium,rangemed,rangeshort"
+    "codes": "lightninggun,rangelong"
   },
   // Coats
   {
@@ -278,7 +278,7 @@
       { // Red Coat
         "name": "Red Coat",
         "img": "images/inventory/red-coat.png",
-        "codes": "coat3,coat,excavate,teleport1,teleport2,teleport3,airport1,airport2,airport3"
+        "codes": "coat3,coat,excavate,highjump,hijump,teleport1,teleport2,teleport3,airport1,airport2,airport3"
       }
     ]
   },
@@ -296,7 +296,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/nova.png",
-    "codes": "nova,rangelong,split,splits,spazerbeam,spazer,widebeam,wide,rangemedium,rangemed,rangeshort"
+    "codes": "nova,rangelong,split,splits,spazerbeam,spazer,widebeam,wide"
   },
   // Orbital Discharge
   {
@@ -304,7 +304,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/orbital-discharge.png",
-    "codes": "orbitaldischarge,rangelong,snakeshooter,snake,rangemedium,rangemed,rangeshort"
+    "codes": "orbitaldischarge,rangelong,snakeshooter,snake"
   },
   // Passcode Tool
   {
@@ -338,7 +338,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/quantum-variegator.png",
-    "codes": "quantumvariegator,rangelong,widebeam,wide,rangemedium,rangemed,rangeshort"
+    "codes": "quantumvariegator,rangelong,widebeam,wide"
   },
   // Range Node
   {
@@ -355,7 +355,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/reflector.png",
-    "codes": "reflector,rangelong,bounce,rangemedium,rangemed,rangeshort"
+    "codes": "reflector,rangelong,bounce"
   },
   // Reverse Slicer
   {
@@ -363,7 +363,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/reverse-slicer.png",
-    "codes": "reverseslicer,rangemedium,rangemed,wavebeam,wave,rangeshort"
+    "codes": "reverseslicer,rangemedium,wavebeam,wave"
   },
   // Rusalka Tablet
   {
@@ -380,7 +380,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/scissor-beam.png",
-    "codes": "scissorbeam,rangelong,wavebeam,wave,widebeam,wide,rangemedium,rangemed,rangeshort"
+    "codes": "scissorbeam,rangelong,wavebeam,wave,widebeam,wide"
   },
   // Shards
   {
@@ -413,7 +413,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/tethered-charge.png",
-    "codes": "tetheredcharge,rangelong,widebeam,wide,rangemedium,rangemed,rangeshort"
+    "codes": "tetheredcharge,rangelong,widebeam,wide"
   },
   // Turbine Pulse
   {
@@ -421,7 +421,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/turbine-pulse.png",
-    "codes": "turbinepulse,rangelong,widebeam,wide,rangemedium,rangemed,rangeshort"
+    "codes": "turbinepulse,rangelong,widebeam,wide"
   },
   // Voranj
   {
@@ -429,7 +429,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/voranj.png",
-    "codes": "voranj,rangelong,splits,split,spazerbeam,spazer,widebeam,wide,rangemedium,rangemed,rangeshort"
+    "codes": "voranj,rangelong,splits,split,spazerbeam,spazer,widebeam,wide"
   },
   // Secret World
   {

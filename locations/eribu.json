@@ -10,7 +10,10 @@
         "name": "Health Node (Eribu top)",
         "short_name": "Health Node (Eribu ^)",
         "access_rules": [
-          "addressbomb,$canShootShort"
+          "addressbomb,coat3",
+          "addressbomb,highjump,grapple",
+          "addressbomb,coat2",
+          "addressbomb,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -36,7 +39,8 @@
         "name": "Nova",
         "short_name": "Nova",
         "access_rules": [
-          "$canShootShort"
+          "$canShootShort",
+          "coat"
         ],
         // Return needs Split or Wave
         "map_locations": [
@@ -58,14 +62,17 @@
           }
         ]
       },
-      // Power Node Fragment (Eribu top)
+      // Power Node Fragment (IKKIBU-LABIRU)
       {
-        "name": "Power Node Fragment (Eribu top)",
-        "short_name": "Power Node Fragment (Eribu ^)",
-        "access_rules": [
-          "spazer,laserdrill,passcodetool",
-          "wave,laserdrill,passcodetool",
-          "fatbeam"
+        "name": "Power Node Fragment (IKKIBU-LABIRU)",
+        "short_name": "Power Node Fragment (IKKIBU-LABIRU)",
+        "access_rules": [ //Needs testing with coat3
+          "spazer,excavate,grapple,passcodetool",
+          "wave,excavate,grapple,passcodetool",
+          "excavate,grapple,fatbeam",
+          "$canUseRemoteDrone,grapple,passcodetool",
+          "$canDroneTeleport,passcodetool",
+          "$canDroneTeleport,fatbeam"
         ],
         "map_locations": [
           {
@@ -93,7 +100,7 @@
         "access_rules": [
           "spazer,excavate",
           "wave,excavate",
-          "remotedrone",
+          "$canUseRemoteDrone",
           "coat3"
         ],
         "map_locations": [
@@ -115,12 +122,12 @@
           }
         ]
       },
-      // Flamethrower
+      // Flamethrower (DINGER-GISBAR)
       {
-        "name": "Flamethrower",
-        "short_name": "Flamethrower",
+        "name": "Flamethrower (DINGER-GISBAR)",
+        "short_name": "Flamethrower (DINGER-GISBAR)",
         "access_rules": [
-          "coat3,$canEnhancedDroneLaunch,$canDroneTeleport,passcodetool"
+          "coat3,$canEnhancedDroneLaunch,$canDroneTeleport,passcodetool,fielddisruptor"
         ],
         "map_locations": [
           {
@@ -148,7 +155,7 @@
         "access_rules": [
           "spazer",
           "wave",
-          "remotedrone",
+          "$canUseRemoteDrone",
           "reflector",
           "coat2",
           "coat3"
@@ -206,7 +213,7 @@
           "spazer",
           "wave",
           "reflector",
-          "remotedrone"
+          "$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -262,9 +269,9 @@
         "name": "Health Node Fragment (Eribu top)",
         "short_name": "Health Node Fragment (Eribu ^)",
         "access_rules": [
-          "remotedrone,coat3",
-          "remotedrone,highjump,coat2",
-          "remotedrone,highjump,grapple"
+          "$canUseRemoteDrone,coat3",
+          "$canUseRemoteDrone,highjump,coat2",
+          "$canUseRemoteDrone,highjump,grapple"
         ],
         "map_locations": [
           {
@@ -314,7 +321,8 @@
         "name": "Lightning Gun",
         "short_name": "Lightning Gun",
         "access_rules": [ //Needs additional Logic added
-          "addressbomb"
+          "addressbomb,coat3",
+          "addressbomb,$canUseRemoteDrone"
          ],
         "map_locations": [
           {
@@ -335,13 +343,14 @@
           }
         ]
       },
-      // Orbital Discharge
+      // Orbital Discharge (DALHKU-SUBTUM)
       {
-        "name": "Orbital Discharge",
-        "short_name": "Orbital Discharge",
+        "name": "Orbital Discharge (DALHKU-SUBTUM)",
+        "short_name": "Orbital Discharge (DALHKU-SUBTUM)",
         "access_rules": [
-          "spazer,laserdrill,hijump,passcodetool",
-          "wave,laserdrill,hijump,passcodetool"
+          "passcodetool,coat2,highjump",
+          "coat3,passcodetool",
+          "passcodetool,grapple"
         ],
         "map_locations": [
           {
@@ -370,7 +379,7 @@
           "addressdisruptor,excavate",
           "grapple,excavate",
           "highjump,excavate",
-          "remotedrone",
+          "$canUseRemoteDrone",
           "coat3",
           "{excavate}"
         ],

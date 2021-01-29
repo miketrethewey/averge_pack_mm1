@@ -11,8 +11,16 @@ function has(code, level)
   end
 end
 
+function canUseRemoteDrone()
+  if has("remotedrone") then
+    return 1
+  else
+    return 0
+  end
+end
+
 function canDroneTeleport()
-  if has("remotedrone") and has("droneteleport") then
+  if canUseRemoteDrone() and has("droneteleport") then
     return 1
   else
     return 0
@@ -20,7 +28,7 @@ function canDroneTeleport()
 end
 
 function canEnhancedDroneLaunch()
-  if has("remotedrone") and has("enhanceddronelaunch") then
+  if canUseRemoteDrone() and has("enhanceddronelaunch") then
     return 1
   else
     return 0

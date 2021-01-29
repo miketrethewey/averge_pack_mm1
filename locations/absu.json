@@ -40,7 +40,7 @@
         "name": "Power Node Fragment (Absu top 1)",
         "short_name": "Power Node Fragment (Absu ^ 1)",
         "access_rules": [
-          "addressdisruptor2,remotedrone"
+          "addressdisruptor2,remotedrone",
           "highjump,coat2,addressbomb",
           "grapple,addressbomb",
           "coat3,addressbomb"

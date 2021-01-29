@@ -273,12 +273,12 @@
       { // Trench Coat
         "name": "Trench Coat",
         "img": "images/inventory/trench-coat.png",
-        "codes": "coat2,coat"
+        "codes": "coat2,coat,highjump,"
       },
       { // Red Coat
         "name": "Red Coat",
         "img": "images/inventory/red-coat.png",
-        "codes": "coat3,coat,excavate"
+        "codes": "coat3,coat,excavate,highjump,hijump"
       }
     ]
   },

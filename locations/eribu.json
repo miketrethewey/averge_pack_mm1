@@ -10,9 +10,10 @@
         "name": "Health Node (Eribu top)",
         "short_name": "Health Node (Eribu ^)",
         "access_rules": [ 
-          "addressbomb,rangeshort",
-          "addressbomb,rangemed",
-          "addressbomb,rangelong"
+          "addressbomb,coat3",
+          "addressbomb,highjump,grapple",
+          "addressbomb,coat2",
+          "addressbomb,remotedrone"
         ],
         "map_locations": [
           {
@@ -123,12 +124,12 @@
           }
         ]
       },
-      // Flamethrower
+      // Flamethrower (DINGER-GISBAR)
       {
-        "name": "Flamethrower",
-        "short_name": "Flamethrower",
+        "name": "Flamethrower (DINGER-GISBAR)",
+        "short_name": "Flamethrower (DINGER-GISBAR)",
         "access_rules": [ 
-          "coat3,enhanceddronelaunch,droneteleport,passcodetool"
+          "coat3,$canEnhancedDroneLaunch,$canDroneTeleport,passcodetool,fielddisruptor"
         ],
         "map_locations": [
           {
@@ -322,7 +323,8 @@
         "name": "Lightning Gun",
         "short_name": "Lightning Gun",
         "access_rules": [ //Needs additional Logic added
-          "addressbomb"
+          "addressbomb,coat3",
+          "addressbomb,remotedrone"
          ],
         "map_locations": [
           {

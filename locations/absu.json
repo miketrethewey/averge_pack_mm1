@@ -41,6 +41,9 @@
         "short_name": "Power Node Fragment (Absu ^ 1)",
         "access_rules": [
           "addressdisruptor2,remotedrone"
+          "highjump,coat2,addressbomb",
+          "grapple,addressbomb",
+          "coat3,addressbomb"
          ],
         "map_locations": [
           {
@@ -66,7 +69,10 @@
         "name": "Power Node Fragment (Absu top 2)",
         "short_name": "Power Node Fragment (Absu ^ 2)",
         "access_rules": [ 
-          "addressdisruptor2,remotedrone"
+          "addressdisruptor2,remotedrone",
+          "highjump,coat2,addressbomb",
+          "grapple,addressbomb",
+          "coat3,addressbomb"
         ],
         "map_locations": [
           {
@@ -92,7 +98,10 @@
         "name": "Power Node Fragment (Absu top 3)",
         "short_name": "Power Node Fragment (Absu ^ 3)",
         "access_rules": [ 
-          "addressbomb"
+          "addressdisruptor2,$canRemoteDroneTeleport,addressbomb",
+          "highjump,coat2",
+          "grapple",
+          "coat3"
         ],
         "map_locations": [
           {
@@ -118,7 +127,10 @@
         "name": "Power Node Fragment (Absu top 4)",
         "short_name": "Power Node Fragment (Absu ^ 4)",
         "access_rules": [ 
-          "addressbomb"
+          "addressdisruptor2,$canRemoteDroneTeleport,addressbomb",
+          "highjump,coat2,addressbomb",
+          "grapple,addressbomb",
+          "coat3,addressbomb"
         ],
         "map_locations": [
           {

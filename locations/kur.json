@@ -4,17 +4,31 @@
     "name": "Kur",
     "color": "#8B176E",
     "parent": "Sudra",
+    "access rules": [ // Eribu -> Absu, Absu -> Zi -> Kur
+      "excavate,wave,addressdisruptor",
+      "excavate,coat1,addressdisruptor",
+      "excavate,coat2",
+      "coat3"
+    ]
     "children": [
       // Clay Tablet (Kur top)
       {
         "name": "Clay Tablet (Kur top)",
         "short_name": "Clay Tablet (Kur ^)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
+          "fielddisruptor,coat3,$canDroneTeleport"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 1035,
             "y": 513
+          },
+          {
+            "map": "kur",
+            "x": 308,
+            "y": 34
           }
         ],
         "sections": [
@@ -28,12 +42,21 @@
       {
         "name": "Power Node Fragment (Kur)",
         "short_name": "Power Node Fragment (Kur)",
-        "access_rules": [ ],
+        "access_rules": [
+          "$canDroneTeleport,grapple,addressdisruptor",
+          "fielddisruptor,coat3,addressdisruptor",
+          "highjump,grapple,addressdisruptor"
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 981,
             "y": 549
+          },
+          {
+            "map": "kur",
+            "x": 254,
+            "y": 70
           }
         ],
         "sections": [
@@ -47,12 +70,24 @@
       {
         "name": "Power Node (Kur top)",
         "short_name": "Power Node (Kur ^)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "addressdisruptor2,highjump,coat,remotedrone",
+          "addressdisruptor2,$canDroneTeleport,coat",
+          "coat2,remotedrone",
+          "coat2,grapple", 
+          "coat3,remotedrone",
+          "coat3,grapple"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 1197,
             "y": 549
+          },
+          {
+            "map": "kur",
+            "x": 470,
+            "y": 70
           }
         ],
         "sections": [
@@ -66,12 +101,24 @@
       {
         "name": "Clay Tablet (Kur middle)",
         "short_name": "Clay Tablet (Kur =)",
-        "access_rules": [ ],
+        "access_rules": [
+          "$canDroneTeleport,grapple,addressdisruptor",
+          "fielddisruptor,coat3,addressdisruptor",
+          "highjump,grapple,addressdisruptor",
+          "$canDroneTeleport,grapple,$canEnhancedDroneLaunch",
+          "fielddisruptor,coat3,$canEnhancedDroneLaunch",
+          "highjump,grapple,$canEnhancedDroneLaunch"
+         ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 981,
             "y": 567
+          },
+          {
+            "map": "kur",
+            "x": 254,
+            "y": 88
           }
         ],
         "sections": [
@@ -85,12 +132,21 @@
       {
         "name": "Reflector",
         "short_name": "Reflector",
-        "access_rules": [ ],
+        "access_rules": [
+          "$canDroneTeleport,grapple",
+          "fielddisruptor,coat3,remotedrone",
+          "highjump,grapple,remotedrone"
+         ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1107,
             "y": 567
+          },
+          {
+            "map": "kur",
+            "x": 380,
+            "y": 88
           }
         ],
         "sections": [
@@ -104,12 +160,21 @@
       {
         "name": "Enhanced Drone Launch",
         "short_name": "Enhanced Drone Launch",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "$canDroneTeleport,grapple",
+          "fielddisruptor,coat3",
+          "highjump,grapple"
+        ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1089,
             "y": 585
+          },
+          {
+            "map": "kur",
+            "x": 362,
+            "y": 106
           }
         ],
         "sections": [
@@ -123,12 +188,22 @@
       {
         "name": "Health Node Fragment (Kur top right)",
         "short_name": "Health Node Fragment (Kur ^>)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "addressdisruptor2,highjump,coat,remotedrone",
+          "addressdisruptor2,$canDroneTeleport,coat",
+          "coat2,highjump",
+          "coat3"
+        ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1197,
             "y": 585
+          },
+          {
+            "map": "kur",
+            "x": 470,
+            "y": 106
           }
         ],
         "sections": [
@@ -142,12 +217,21 @@
       {
         "name": "Health Node Fragment (Kur top left)",
         "short_name": "Health Node Fragment (Kur <^)",
-        "access_rules": [ ],
+        "access_rules": [
+          "$canDroneTeleport,grapple",
+          "fielddisruptor,coat3,remotedrone",
+          "highjump,grapple,remotedrone"
+         ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1071,
             "y": 603
+          },
+          {
+            "map": "kur",
+            "x": 344,
+            "y": 124
           }
         ],
         "sections": [
@@ -161,12 +245,22 @@
       {
         "name": "Grapple",
         "short_name": "Grapple",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "addressdisruptor2,highjump,coat,remotedrone",
+          "addressdisruptor2,$canDroneTeleport,coat",
+          "coat2,highjump",
+          "coat3"
+        ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1197,
             "y": 603
+          },
+          {
+            "map": "kur",
+            "x": 470,
+            "y": 124
           }
         ],
         "sections": [
@@ -180,12 +274,21 @@
       {
         "name": "Clay Tablet (Kur bottom)",
         "short_name": "Clay Tablet (Kur v)",
-        "access_rules": [ ],
+        "access_rules": [
+          "$canDroneTeleport,grapple",
+          "fielddisruptor,coat3,remotedrone",
+          "highjump,grapple,remotedrone"
+         ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1053,
             "y": 621
+          },
+          {
+            "map": "kur",
+            "x": 326,
+            "y": 142
           }
         ],
         "sections": [
@@ -199,12 +302,21 @@
       {
         "name": "Health Node Fragment (Kur middle left)",
         "short_name": "Health Node Fragment (Kur <=)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "highjump,coat2,$canDroneTeleport",
+          "$canDroneTeleport,grapple,coat",
+          "highjump,grapple"
+        ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 963,
             "y": 675
+          },
+          {
+            "map": "kur",
+            "x": 236,
+            "y": 196
           }
         ],
         "sections": [
@@ -218,12 +330,22 @@
       {
         "name": "Health Node (Kur)",
         "short_name": "Health Node (Kur)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "addressdisruptor2,highjump,coat",
+          "addressdisruptor2,$canDroneTeleport,coat",
+          "coat2", 
+          "coat3"
+        ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1071,
             "y": 675
+          },
+          {
+            "map": "kur",
+            "x": 344,
+            "y": 196
           }
         ],
         "sections": [
@@ -237,12 +359,19 @@
       {
         "name": "Ion Beam",
         "short_name": "Ion Beam",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat3"
+         ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 981,
             "y": 693
+          },
+          {
+            "map": "kur",
+            "x": 254,
+            "y": 214
           }
         ],
         "sections": [
@@ -256,12 +385,21 @@
       {
         "name": "Remote Drone",
         "short_name": "Remote Drone",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "highjump,coat2",
+          "coat3", 
+          "$canDroneTeleport,coat"
+        ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1017,
             "y": 693
+          },
+          {
+            "map": "kur",
+            "x": 290,
+            "y": 214
           }
         ],
         "sections": [
@@ -275,12 +413,20 @@
       {
         "name": "Hypo-Atomizer",
         "short_name": "Hypo-Atomizer",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "coat,remotedrone",
+          "coat3"
+        ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 999,
             "y": 747
+          },
+          {
+            "map": "kur",
+            "x": 272,
+            "y": 268
           }
         ],
         "sections": [
@@ -294,12 +440,21 @@
       {
         "name": "Health Node Fragment (Kur middle right)",
         "short_name": "Health Node Fragment (Kur =>)",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressdisruptor2,highjump,remotedrone",
+          "coat2,remotedrone",
+          "coat3,remotedrone" 
+         ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1017,
             "y": 747
+          },
+          {
+            "map": "kur",
+            "x": 290,
+            "y": 268
           }
         ],
         "sections": [
@@ -313,12 +468,23 @@
       {
         "name": "Power Node (Kur bottom)",
         "short_name": "Power Node (Kur v)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "highjump,coat",
+          "$canDroneTeleport,coat",
+          "grapple,coat",
+          "coat3",
+          "coat2"
+        ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 909,
             "y": 853
+          },
+          {
+            "map": "kur",
+            "x": 182,
+            "y": 376
           }
         ],
         "sections": [
@@ -332,12 +498,19 @@
       {
         "name": "Health Node Fragment (Kur bottom)",
         "short_name": "Health Node Fragment (Kur v)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "remotedrone"
+        ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 999,
             "y": 855
+          },
+          {
+            "map": "kur",
+            "x": 272,
+            "y": 376
           }
         ],
         "sections": [
@@ -351,12 +524,21 @@
       {
         "name": "Firewall",
         "short_name": "Firewall",
-        "access_rules": [ ],
+        "access_rules": [
+          "highjump",
+          "remotedrone",
+          "grapple"
+         ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 981,
             "y": 873
+          },
+          {
+            "map": "kur",
+            "x": 254,
+            "y": 394
           }
         ],
         "sections": [
@@ -370,12 +552,22 @@
       {
         "name": "Address Disrupter 2",
         "short_name": "Address Disrupter 2",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "coat3",
+          "addressdisruptor2,excavate",
+          "highjump,coat2",
+          "remotedrone,coat"
+        ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 927,
             "y": 909
+          },
+          {
+            "map": "kur",
+            "x": 200,
+            "y": 430
           }
         ],
         "sections": [
@@ -389,12 +581,19 @@
       {
         "name": "Field Disruptor",
         "short_name": "Field Disruptor",
-        "access_rules": [ ],
+        "access_rules": [
+          //No special access rules
+         ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 999,
             "y": 909
+          },
+          {
+            "map": "kur",
+            "x": 272,
+            "y": 430
           }
         ],
         "sections": [
@@ -408,12 +607,22 @@
       {
         "name": "Tethered Charge",
         "short_name": "Tethered Charge",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat2,fatbeam",
+          "coat3,fatbeam",
+          "highjump,$canDroneTeleport,coat,addressdisruptor",
+          "coat3,addressdisruptor"
+         ],
         "map_locations": [
           {
-            "map":"sudra",
+            "map": "sudra",
             "x": 1071,
             "y": 909
+          },
+          {
+            "map": "kur",
+            "x": 344,
+            "y": 430
           }
         ],
         "sections": [

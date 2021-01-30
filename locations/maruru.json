@@ -4,17 +4,27 @@
     "name": "Mar-Uru",
     "color": "#C72FFF",
     "parent": "Sudra",
+    "access rules": [ // Eribu -> Ukkin-Na -> Mar-Uru
+      "coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
+    ],
     "children": [
       // Digital Paper (Mar-Uru top)
       {
         "name": "Digital Paper (Mar-Uru top)",
         "short_name": "Digital Paper (Mar-Uru ^)",
-        "access_rules": [ ],
+        "access_rules": [
+          "remotedrone"
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 387,
             "y": 153
+          },
+          {
+            "map": "maruru",
+            "x": 325,
+            "y": 195
           }
         ],
         "sections": [
@@ -28,12 +38,19 @@
       {
         "name": "Digital Paper (Mar-Uru bottom)",
         "short_name": "Digital Paper (Mar-Uru v)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 369,
             "y": 207
+          },
+          {
+            "map": "maruru",
+            "x": 307,
+            "y": 231
           }
         ],
         "sections": [
@@ -47,12 +64,20 @@
       {
         "name": "Reverse Slicer",
         "short_name": "Reverse Slicer",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressdisruptor",
+          "fatbeam"
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 351,
             "y": 243
+          },
+          {
+            "map": "maruru",
+            "x": 289,
+            "y": 267
           }
         ],
         "sections": [
@@ -66,12 +91,19 @@
       {
         "name": "Size Node (Mar-Uru)",
         "short_name": "Size Node (Mar-Uru)",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
+        ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 423,
             "y": 243
+          },
+          {
+            "map": "maruru",
+            "x": 361,
+            "y": 267
           }
         ],
         "sections": [
@@ -85,12 +117,19 @@
       {
         "name": "Health Node (Mar-Uru)",
         "short_name": "Health Node (Mar-Uru)",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 369,
             "y": 333
+          },
+          {
+            "map": "maruru",
+            "x": 307,
+            "y": 357
           }
         ],
         "sections": [
@@ -104,12 +143,19 @@
       {
         "name": "Power Node Fragment (Mar-Uru top)",
         "short_name": "Power Node Fragment (Mar-Uru ^)",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressdisruptor"
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 405,
             "y": 333
+          },
+          {
+            "map": "maruru",
+            "x": 343,
+            "y": 357
           }
         ],
         "sections": [
@@ -123,12 +169,19 @@
       {
         "name": "Clay Tablet (Mar-Uru) (2 items)",
         "short_name": "Clay Tablet (Mar-Uru) (2 items)",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressdisruptor"
+         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 405,
             "y": 351
+          },
+          {
+            "map": "maruru",
+            "x": 343,
+            "y": 375
           }
         ],
         "sections": [

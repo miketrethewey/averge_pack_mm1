@@ -7,7 +7,7 @@
     "access_rules": [ // Eribu -> Ukkin-Na -> Edin
       "coat2",
       "coat3"
-    ]
+    ],
     "children": [
       // Drone Teleport
       {

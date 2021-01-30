@@ -40,8 +40,9 @@
         "name": "Sudran Key",
         "short_name": "Sudran Key",
         "access_rules": [
-          //No special requirements from North Entrance
-         ],
+          "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,coat2",
+          "fielddisruptor,coat3,$canDroneTeleport"
+                 ],
         "map_locations": [
           {
             "map": "sudra",
@@ -66,8 +67,9 @@
         "name": "Clay Tablet (E-Kur-Mah top right)",
         "short_name": "Clay Tablet (E-Kur-Mah ^>)",
         "access_rules": [
-          // No special requirements from North Entrance
-         ],
+          "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,coat2",
+          "fielddisruptor,coat3,$canDroneTeleport"
+                 ],
         "map_locations": [
           {
             "map": "sudra",
@@ -92,8 +94,9 @@
         "name": "Clay Tablet (E-Kur-Mah top left)",
         "short_name": "Clay Tablet (E-Kur-Mah <^)",
         "access_rules": [ 
-          //No special requirements from North Entrance
-        ],
+          "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,coat2",
+          "fielddisruptor,coat3,$canDroneTeleport"
+                ],
         "map_locations": [
           {
             "map": "sudra",
@@ -197,7 +200,10 @@
       {
         "name": "Red Coat",
         "short_name": "Red Coat",
-        "access_rules": [ ],
+        "access_rules": [
+          "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,coat2",
+          "fielddisruptor,coat3,$canDroneTeleport"
+         ],
         "map_locations": [
           {
             "map": "sudra",

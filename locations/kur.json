@@ -9,7 +9,7 @@
       "excavate,coat1,addressdisruptor",
       "excavate,coat2",
       "coat3"
-    ]
+    ],
     "children": [
       // Clay Tablet (Kur top)
       {
@@ -582,8 +582,10 @@
         "name": "Field Disruptor",
         "short_name": "Field Disruptor",
         "access_rules": [
-          //No special access rules
-         ],
+          "excavate,wave,addressdisruptor",
+          "excavate,coat1,addressdisruptor",
+          "excavate,coat2",
+          "coat3"         ],
         "map_locations": [
           {
             "map": "sudra",

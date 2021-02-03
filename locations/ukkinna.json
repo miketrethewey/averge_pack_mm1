@@ -5,8 +5,7 @@
     "color": "#015EA5",
     "parent": "Sudra",
     "access_rules": [ // Eribu -> Ukkin-Na
-      "excavate,addressdisruptor2,coat",
-      "coat3"
+      "@Eribu -> Ukkin-Na/Connection"
     ],
     "children": [
       // Turbine Pulse

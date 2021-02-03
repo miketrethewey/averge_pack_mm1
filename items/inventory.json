@@ -11,7 +11,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/address-bomb.png",
-    "codes": "addressbomb"
+    "codes": "addressbomb,addressdisruptor"
   },
   // Address Disruptor
   {
@@ -96,38 +96,29 @@
     "img": "images/inventory/distortion-field.png",
     "codes": "distortionfield,rangeshort,wavebeam,wave"
   },
-  // Drone Teleport : #FIXME Requires Remote Drone
+  // Remote Drone
+  {
+    "name": "Remote Drone",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/remote-drone.png",
+    "codes": "remotedrone,excavate,rangeshort"
+  },
+  // Enhanced Drone Launch
+  {
+    "name": "Enhanced Drone Launch",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/enhanced-drone-launch.png",
+    "codes": "enhanceddronelaunch"
+  },
+  // Drone Teleport
   {
     "name": "Drone Teleport",
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/drone-teleport.png",
     "codes": "droneteleport"
-  },
-  // Remote Drone
-  {
-    "name": "Remote Drone/Enhanced Drone Launch",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      { // No item
-        "name": "No Drone",
-        "img": "images/inventory/remote-drone.png",
-        "img_mods": "@disabled",
-        "codes": "drone"
-      },
-      { // Remote Drone
-        "name": "Remote Drone",
-        "img": "images/inventory/remote-drone.png",
-        "codes": "remotedrone,excavate,rangeshort"
-      },
-      { // Enhanced Drone Launch
-        "name": "Enhanced Drone Launch",
-        "img": "images/inventory/enhanced-drone-launch.png",
-        "codes": "enhanceddronelaunch,excavate,rangeshort"
-      }
-    ]
   },
   // Faded Note
   {
@@ -430,6 +421,14 @@
     "loop": true,
     "img": "images/inventory/voranj.png",
     "codes": "voranj,rangelong,splits,split,spazerbeam,spazer,widebeam,wide"
+  },
+  // Connections
+  {
+    "name": "Connections",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/connections/all.png",
+    "codes": "connections"
   },
   // Secret World
   {

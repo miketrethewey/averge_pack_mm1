@@ -1,0 +1,36 @@
+[
+  // Inter - Sudra
+  {
+    "name": "Inter - Sudra",
+    "parent": "Sudra",
+    "children": [
+      { // Start
+        "name": "Start",
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 135,
+            "y": 765
+          },
+          {
+            "map": "eribu",
+            "x": 314,
+            "y": 267
+          }
+        ],
+        "sections": [
+          {
+            "name": "Connection",
+            "item_count": 1,
+            "visibility_rules": [
+              "connections"
+            ],
+            "chest_unavailable_img": "images/connections/start.png",
+            "chest_unopened_img": "images/connections/start.png",
+            "chest_opened_img": "images/connections/start.png"
+          }
+        ]
+      }
+    ]
+  }
+]

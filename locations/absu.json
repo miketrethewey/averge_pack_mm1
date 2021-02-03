@@ -5,7 +5,7 @@
     "color": "#6B09AE",
     "parent": "Sudra",
     "access_rules": [ // Eribu -> Absu
-      "excavate"
+      "@Eribu -> Absu/Connection"
     ],
     "children": [
       // Health Node Fragment (Absu top)
@@ -536,6 +536,7 @@
         "access_rules": [
           "{wave}",
           "{teleport1}",
+          "addressbomb",
           "highjump,grapple",
           "highjump,coat2",
           "coat3",

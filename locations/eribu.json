@@ -4,6 +4,9 @@
     "name": "Eribu",
     "color": "#A81468",
     "parent": "Sudra",
+    "access_rules": [
+      "@Start/Connection"
+    ],
     "children": [
       // Health Node (Eribu top)
       {
@@ -377,8 +380,8 @@
         "short_name": "Health Node Fragment (Eribu <v)",
         "access_rules": [
           "addressdisruptor,excavate",
+          "addressbomb",
           "grapple,excavate",
-          "highjump,excavate",
           "$canUseRemoteDrone",
           "coat3",
           "{excavate}"

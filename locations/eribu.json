@@ -381,7 +381,6 @@
         "access_rules": [
           "addressdisruptor,excavate",
           "grapple,excavate",
-          "highjump,excavate",
           "$canUseRemoteDrone",
           "coat3",
           "{excavate}"

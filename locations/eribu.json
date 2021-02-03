@@ -380,6 +380,7 @@
         "short_name": "Health Node Fragment (Eribu <v)",
         "access_rules": [
           "addressdisruptor,excavate",
+          "addressbomb",
           "grapple,excavate",
           "$canUseRemoteDrone",
           "coat3",

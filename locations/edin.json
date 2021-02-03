@@ -42,7 +42,6 @@
         "name": "Clay Tablet (Edin)",
         "short_name": "Clay Tablet (Edin)",
         "access_rules": [
-          "coat2,fielddisruptor,addressbomb",
           "coat3,addressbomb",
           "addressbomb,remotedrone,$canDroneTeleport,coat2"
          ],
@@ -313,10 +312,10 @@
           }
         ]
       },
-      // Health Node Fragment (Edin right) (2 items)
+      // Health & Power Nodes (Edin right) (2 items)
       {
-        "name": "Health Node Fragment (Edin right) (2 items)",
-        "short_name": "Health Node Fragment (Edin >) (2 items)",
+        "name": "Health & Power Nodes (Edin right) (2 items)",
+        "short_name": "Health & Power Nodes (Edin >) (2 items)",
         "access_rules": [
           "addressbomb,fielddisruptor,coat2",
           "addressbomb,fielddisruptor,coat3",
@@ -336,8 +335,12 @@
         ],
         "sections": [
           {
-            "name": "Item",
-            "item_count": 2
+            "name": "Power Node",
+            "item_count": 1
+          }
+          {
+            "name": "Health Node",
+            "item_count": 1
           }
         ]
       },

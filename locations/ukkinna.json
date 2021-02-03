@@ -254,7 +254,7 @@
             "access rules": [ 
               "coat3",
               "coat2,highjump"
-            ],
+            ]
           },
           {
             "name": "Lower",
@@ -263,7 +263,7 @@
               "highjump,addressdisruptor,grapple",
               "highjump,addressdisruptor,remotedrone",
               "$canRemoteDroneTeleport"
-             ],
+             ]
           }
         ]
       },

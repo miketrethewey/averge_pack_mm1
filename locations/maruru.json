@@ -65,8 +65,8 @@
         "name": "Reverse Slicer",
         "short_name": "Reverse Slicer",
         "access_rules": [
-          "addressdisruptor",
-          "fatbeam"
+          "addressdisruptor,coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor",
+          "fatbeam,coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
          ],
         "map_locations": [
           {
@@ -144,7 +144,7 @@
         "name": "Power Node Fragment (Mar-Uru top)",
         "short_name": "Power Node Fragment (Mar-Uru ^)",
         "access_rules": [
-          "addressdisruptor"
+          "addressdisruptor,coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
          ],
         "map_locations": [
           {
@@ -170,7 +170,7 @@
         "name": "Clay Tablet (Mar-Uru) (2 items)",
         "short_name": "Clay Tablet (Mar-Uru) (2 items)",
         "access_rules": [
-          "addressdisruptor"
+          "addressdisruptor,coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
          ],
         "map_locations": [
           {

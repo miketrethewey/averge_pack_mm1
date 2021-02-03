@@ -267,6 +267,7 @@
         "short_name": "Bioflux Accelerator #1",
         "access_rules": [
           "highjump,coat",
+          "wave,highjump",
           "remotedrone,droneteleport,coat",
           "coat3"
         ],

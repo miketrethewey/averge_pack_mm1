@@ -16,16 +16,18 @@ Tracker:AddMaps("maps/maps.json")
 
 -- Locations
 --- Item Locations
-Tracker:AddLocations("locations/sudra.json")    -- Sudra
-Tracker:AddLocations("locations/eribu.json")    -- Eribu
-Tracker:AddLocations("locations/absu.json")     -- Absu
-Tracker:AddLocations("locations/zi.json")       -- Zi
-Tracker:AddLocations("locations/kur.json")      -- Kur
-Tracker:AddLocations("locations/indi.json")     -- Indi
-Tracker:AddLocations("locations/edin.json")     -- Edin
-Tracker:AddLocations("locations/ukkinna.json")  -- Ukkin-Na
-Tracker:AddLocations("locations/ekurmah.json")  -- E-Kur-Mah
-Tracker:AddLocations("locations/maruru.json")   -- Mar-Uru
+Tracker:AddLocations("locations/sudra.json")                  -- Sudra
+Tracker:AddLocations("locations/eribu.json")                  -- Eribu
+Tracker:AddLocations("locations/inter/inter-eribu.json")      -- Inter-Eribu
+Tracker:AddLocations("locations/absu.json")                   -- Absu
+Tracker:AddLocations("locations/inter/inter-absu.json")       -- Inter-Absu
+Tracker:AddLocations("locations/zi.json")                     -- Zi
+Tracker:AddLocations("locations/kur.json")                    -- Kur
+Tracker:AddLocations("locations/indi.json")                   -- Indi
+Tracker:AddLocations("locations/edin.json")                   -- Edin
+Tracker:AddLocations("locations/ukkinna.json")                -- Ukkin-Na
+Tracker:AddLocations("locations/ekurmah.json")                -- E-Kur-Mah
+Tracker:AddLocations("locations/maruru.json")                 -- Mar-Uru
 --- Secret World Locations
 Tracker:AddLocations("locations/secretworld/secret-maruru.json") -- Mar-Uru
 

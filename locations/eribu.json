@@ -4,6 +4,9 @@
     "name": "Eribu",
     "color": "#A81468",
     "parent": "Sudra",
+    "access_rules": [
+      "@Start/Connection"
+    ],
     "children": [
       // Health Node (Eribu top)
       {

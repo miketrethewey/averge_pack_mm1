@@ -3,12 +3,9 @@
   {
     "name": "Zi",
     "color": "#2933FD",
-    "parent": "sudra",
+    "parent": "Sudra",
     "access_rules": [ // Eribu -> Absu, Absu -> Zi
-      "excavate,wave,addressdisruptor",
-      "excavate,teleport1,addressdisruptor",
-      "excavate,coat2",
-      "coat3"
+      "@Absu -> Zi/Connection"
     ],
     "children": [
       // Power Node Fragment (Zi top) #1

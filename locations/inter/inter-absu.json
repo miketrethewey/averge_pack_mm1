@@ -1,0 +1,72 @@
+[
+  // Inter - Absu
+  {
+    "name": "Inter - Absu",
+    "parent": "Absu",
+    "children": [
+      { // Absu -> Indi
+        "name": "Absu -> Indi",
+        "access_rules": [
+          "@Eribu -> Indi/Connection"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 459,
+            "y": 909
+          },
+          {
+            "map": "absu",
+            "x": 360,
+            "y": 125
+          }
+        ],
+        "sections": [
+          {
+            "name": "Connection",
+            "item_count": 1,
+            "visibility_rules": [
+              "connections"
+            ],
+            "chest_unavailable_img": "images/connections/right.png",
+            "chest_unopened_img": "images/connections/right.png",
+            "chest_opened_img": "images/connections/right.png"
+          }
+        ]
+      },
+      { // Absu -> Zi
+        "name": "Absu -> Zi",
+        "access_rules": [
+          "wave,addressdisruptor",
+          "teleport1,addressdisruptor",
+          "coat2",
+          "coat3"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 639,
+            "y": 1143
+          },
+          {
+            "map": "absu",
+            "x": 540,
+            "y": 359
+          }
+        ],
+        "sections": [
+          {
+            "name": "Connection",
+            "item_count": 1,
+            "visibility_rules": [
+              "connections"
+            ],
+            "chest_unavailable_img": "images/connections/down.png",
+            "chest_unopened_img": "images/connections/down.png",
+            "chest_opened_img": "images/connections/down.png"
+          }
+        ]
+      }
+    ]
+  }
+]

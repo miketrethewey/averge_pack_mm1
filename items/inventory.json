@@ -431,6 +431,14 @@
     "img": "images/inventory/voranj.png",
     "codes": "voranj,rangelong,splits,split,spazerbeam,spazer,widebeam,wide"
   },
+  // Connections
+  {
+    "name": "Connections",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/connections/all.png",
+    "codes": "connections"
+  },
   // Secret World
   {
     "name": "Secret World",

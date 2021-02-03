@@ -4,9 +4,8 @@
     "name": "Indi",
     "color": "#00AD8C",
     "parent": "Sudra",
-    "access_rules": [ //Access via most zones
-      "grapple,excavate,highjump",
-      "coat3"
+    "access_rules": [
+      "@Eribu -> Indi/Connection"
     ],
     "children": [
       // Rusalka Tablet (Indi)

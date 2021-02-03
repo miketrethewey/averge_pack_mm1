@@ -273,12 +273,12 @@
       { // Trench Coat
         "name": "Trench Coat",
         "img": "images/inventory/trench-coat.png",
-        "codes": "highjump,hijump,coat2,coat,teleport1,teleport2,airport1,airport2"
+        "codes": "highjump,hijump,coat2,coat,teleport2,airport2"
       },
       { // Red Coat
         "name": "Red Coat",
         "img": "images/inventory/red-coat.png",
-        "codes": "coat3,coat,excavate,highjump,hijump,teleport1,teleport2,teleport3,airport1,airport2,airport3"
+        "codes": "coat3,coat,excavate,highjump,hijump,teleport3,airport3"
       }
     ]
   },

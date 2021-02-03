@@ -97,7 +97,7 @@
         "short_name": "Power Node Fragment (Edin ^)",
         "access_rules": [
           "coat2,fielddisruptor,$canDroneTeleport,addressbomb",
-          "coat3,$candroneteleport,addressbomb",
+          "coat3,$canDroneTeleport,addressbomb",
           "addressbomb,$canEnhancedDroneLaunch,$canDroneTeleport"
          ],
         "map_locations": [
@@ -291,7 +291,7 @@
         "access_rules": [
           "fielddisruptor,coat2,addressdisruptor",
           "coat3,addressdisruptor",
-          "$candroneteleport,coat2,addressdisruptor"
+          "$canDroneTeleport,coat2,addressdisruptor"
          ],
         "map_locations": [
           {

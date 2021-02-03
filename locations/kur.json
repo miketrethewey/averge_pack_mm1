@@ -4,7 +4,7 @@
     "name": "Kur",
     "color": "#8B176E",
     "parent": "Sudra",
-    "access rules": [ // Eribu -> Absu, Absu -> Zi -> Kur
+    "access_rules": [ // Eribu -> Absu, Absu -> Zi -> Kur
       "excavate,wave,addressdisruptor",
       "excavate,teleport1,addressdisruptor",
       "excavate,coat2",

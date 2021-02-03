@@ -4,7 +4,7 @@
     "name": "Mar-Uru",
     "color": "#C72FFF",
     "parent": "Sudra",
-    "access rules": [ // Eribu -> Ukkin-Na -> Mar-Uru
+    "access_rules": [ // Eribu -> Ukkin-Na -> Mar-Uru
       "coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
     ],
     "children": [

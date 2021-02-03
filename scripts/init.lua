@@ -17,6 +17,7 @@ Tracker:AddMaps("maps/maps.json")
 -- Locations
 --- Item Locations
 Tracker:AddLocations("locations/sudra.json")                  -- Sudra
+Tracker:AddLocations("locations/inter/inter-sudra.json")      -- Inter-Sudra
 Tracker:AddLocations("locations/eribu.json")                  -- Eribu
 Tracker:AddLocations("locations/inter/inter-eribu.json")      -- Inter-Eribu
 Tracker:AddLocations("locations/absu.json")                   -- Absu

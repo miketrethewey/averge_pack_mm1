@@ -4,14 +4,18 @@
     "name": "Indi",
     "color": "#00AD8C",
     "parent": "Sudra",
+    "access_rules": [ //Access via most zones
+      "grapple,excavate,highjump",
+      "coat3"
+    ],
     "children": [
       // Rusalka Tablet (Indi)
       {
         "name": "Rusalka Tablet (Indi)",
         "short_name": "Rusalka Tablet (Indi)",
-        "access_rules": [ 
-          "coat2",
-          "coat3"
+        "access_rules": [
+          "{}",
+          "airport2"
         ],
         "map_locations": [
           {
@@ -28,7 +32,8 @@
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },
@@ -63,7 +68,7 @@
         "name": "Digital Paper (Indi)",
         "short_name": "Digital Paper (Indi)",
         "access_rules": [
-          "highjump,remotedrone"
+          "highjump,$canUseRemoteDrone"
          ],
         "map_locations": [
           {

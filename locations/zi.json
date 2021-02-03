@@ -6,7 +6,7 @@
     "parent": "sudra",
     "access_rules": [ // Eribu -> Absu, Absu -> Zi
       "excavate,wave,addressdisruptor",
-      "excavate,coat1,addressdisruptor",
+      "excavate,teleport1,addressdisruptor",
       "excavate,coat2",
       "coat3"
     ],

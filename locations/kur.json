@@ -6,7 +6,7 @@
     "parent": "Sudra",
     "access rules": [ // Eribu -> Absu, Absu -> Zi -> Kur
       "excavate,wave,addressdisruptor",
-      "excavate,coat1,addressdisruptor",
+      "excavate,teleport1,addressdisruptor",
       "excavate,coat2",
       "coat3"
     ],
@@ -584,7 +584,7 @@
         "short_name": "Field Disruptor",
         "access_rules": [
           "excavate,wave,addressdisruptor",
-          "excavate,coat1,addressdisruptor",
+          "excavate,teleport1,addressdisruptor",
           "excavate,coat2",
           "coat3"         ],
         "map_locations": [

@@ -13,7 +13,7 @@
         "name": "Health Node Fragment (Absu top)",
         "short_name": "Health Node Fragment (Absu)",
         "access_rules": [
-          "coat1,addressdisruptor,grapple",
+          "teleport1,addressdisruptor,grapple",
           "coat2,highjump"
         ],
         "map_locations": [
@@ -453,7 +453,7 @@
         "short_name": "Health Node Fragment (Absu v)",
         "access_rules": [
           "wave,addressdisruptor",
-          "coat1,addressdisruptor",
+          "teleport1,addressdisruptor",
           "coat2",
           "coat3"
         ],
@@ -535,7 +535,7 @@
         "short_name": "Digital Paper (Absu v)",
         "access_rules": [
           "{wave}",
-          "{coat1}",
+          "{teleport1}",
           "highjump,grapple",
           "highjump,coat2",
           "coat3",
@@ -571,7 +571,7 @@
         "short_name": "Range Node (Absu >)",
         "access_rules": [
           "wave,addressdisruptor,$canUseRemoteDrone",
-          "coat1,addressdisruptor,$canUseRemoteDrone",
+          "teleport1,addressdisruptor,$canUseRemoteDrone",
           "coat2",
           "coat3"
          ],
@@ -600,11 +600,11 @@
         "short_name": "Rusalka Tablet (Absu v>)",
         "access_rules": [
           "{wave,addressdisruptor}",
-          "{coat1,addressdisruptor}",
+          "{teleport1,addressdisruptor}",
           "{coat2}",
           "{coat3}",
           "wave,addressdisruptor,$canUseRemoteDrone",
-          "coat1,addressdisruptor,$canUseRemoteDrone",
+          "teleport1,addressdisruptor,$canUseRemoteDrone",
           "coat2,$canUseRemoteDrone",
           "coat3,$canUseRemoteDrone"
         ],
@@ -634,7 +634,7 @@
         "short_name": "Power Node (Absu)",
         "access_rules": [
           "wave,addressdisruptor",
-          "coat1,addressdisruptor",
+          "teleport1,addressdisruptor",
           "coat2",
           "coat3"
         ],

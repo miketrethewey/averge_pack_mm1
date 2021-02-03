@@ -157,8 +157,7 @@
         "short_name": "Health Node Fragment (Absu = 1)",
         "access_rules": [
           "{}",
-          "wave",
-          "teleport1"
+          "wave"
         ],
         "map_locations": [
           {
@@ -317,8 +316,9 @@
         "name": "Inertial Pulse",
         "short_name": "Inertial Pulse",
         "access_rules": [
-          "addressdisruptor2,coat2,excavate",
-          "addressdisruptor2,coat3"
+          "addressdisruptor2,excavate,highjump",
+          "addressdisruptor2,coat3",
+          "addressdisruptor2,excavate,coat2"
         ],
         "map_locations": [
           {

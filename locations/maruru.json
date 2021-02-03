@@ -4,12 +4,17 @@
     "name": "Mar-Uru",
     "color": "#C72FFF",
     "parent": "Sudra",
+    "access rules": [ // Eribu -> Ukkin-Na -> Mar-Uru
+      "coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
+    ],
     "children": [
       // Digital Paper (Mar-Uru top)
       {
         "name": "Digital Paper (Mar-Uru top)",
         "short_name": "Digital Paper (Mar-Uru ^)",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor,remotedrone"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -33,7 +38,9 @@
       {
         "name": "Digital Paper (Mar-Uru bottom)",
         "short_name": "Digital Paper (Mar-Uru v)",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -57,7 +64,10 @@
       {
         "name": "Reverse Slicer",
         "short_name": "Reverse Slicer",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressdisruptor,coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor",
+          "fatbeam,coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -81,7 +91,9 @@
       {
         "name": "Size Node (Mar-Uru)",
         "short_name": "Size Node (Mar-Uru)",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -105,7 +117,9 @@
       {
         "name": "Health Node (Mar-Uru)",
         "short_name": "Health Node (Mar-Uru)",
-        "access_rules": [ ],
+        "access_rules": [
+          "coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -129,7 +143,9 @@
       {
         "name": "Power Node Fragment (Mar-Uru top)",
         "short_name": "Power Node Fragment (Mar-Uru ^)",
-        "access_rules": [ ],
+        "access_rules": [
+          "addressdisruptor,coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -154,7 +170,7 @@
         "name": "Clay Tablet (Mar-Uru) (2 items)",
         "short_name": "Clay Tablet (Mar-Uru) (2 items)",
         "access_rules": [
-          "airport3"
+          "addressdisruptor,coat3,$canEnhancedDroneLaunch,$canDroneTeleport,fielddisruptor"
         ],
         "map_locations": [
           {

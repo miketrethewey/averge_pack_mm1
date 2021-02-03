@@ -97,10 +97,10 @@
           }
         ]
       },
-      // Clay Tablet (Kur middle)
+      // Journal Page (Kur middle)
       {
-        "name": "Clay Tablet (Kur middle)",
-        "short_name": "Clay Tablet (Kur =)",
+        "name": "Journal Page (Kur middle)",
+        "short_name": "Journal Page (Kur =)",
         "access_rules": [
           "$canDroneTeleport,grapple,addressdisruptor",
           "fielddisruptor,coat3,addressdisruptor",
@@ -189,7 +189,7 @@
         "name": "Health Node Fragment (Kur top right)",
         "short_name": "Health Node Fragment (Kur ^>)",
         "access_rules": [
-          "addressdisruptor2,highjump,coat,$canUseRemoteDrone",
+          "addressdisruptor2,highjump,coat,$canUseRemoteDrone,grapple",
           "addressdisruptor2,$canDroneTeleport,coat",
           "coat2,highjump",
           "coat3"
@@ -386,7 +386,7 @@
         "name": "Remote Drone",
         "short_name": "Remote Drone",
         "access_rules": [
-          "highjump,coat2",
+          "highjump,coat",
           "coat3",
           "$canDroneTeleport,coat"
         ],
@@ -583,8 +583,10 @@
         "name": "Field Disruptor",
         "short_name": "Field Disruptor",
         "access_rules": [
-          //No special access rules
-         ],
+          "excavate,wave,addressdisruptor",
+          "excavate,coat1,addressdisruptor",
+          "excavate,coat2",
+          "coat3"         ],
         "map_locations": [
           {
             "map": "sudra",

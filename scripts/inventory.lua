@@ -33,3 +33,23 @@ end
 function canShootShort()
   return canShootLong() or canShootMedium() or has("rangeshort")
 end
+
+function canAirport3()
+  return has("airport3")
+end
+function canAirport2()
+  return has("airport2") or canAirport3()
+end
+function canAirport1()
+  return has("airport1") or canAirport2()
+end
+
+function canTeleport3()
+  return has("teleport3") or canAirport3()
+end
+function canTeleport2()
+  return has("teleport2") or canAirport2() or canTeleport3()
+end
+function canTeleport1()
+  return has("teleport1") or canAirport1() or canTeleport2()
+end

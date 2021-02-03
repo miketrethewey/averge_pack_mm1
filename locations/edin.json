@@ -13,7 +13,7 @@
       {
         "name": "Drone Teleport",
         "short_name": "Drone Teleport",
-        "access_rules": [ 
+        "access_rules": [
           "coat2,fielddisruptor,addressbomb,rangelong,remotedrone",
           "coat3,addressbomb,rangelong,remotedrone",
           "addressbomb,remotedrone,$canDroneTeleport,coat2"
@@ -123,7 +123,7 @@
       {
         "name": "Health Node Fragment (Edin top)",
         "short_name": "Health Node Fragment (Edin ^)",
-        "access_rules": [ 
+        "access_rules": [
           "coat2,fielddisruptor,grapple,remotedrone",
           "coat3,grapple,remotedrone",
           "coat2,$canDroneTeleport,grapple"
@@ -151,7 +151,7 @@
       {
         "name": "Health Node (Edin)",
         "short_name": "Health Node (Edin)",
-        "access_rules": [ 
+        "access_rules": [
           "coat2,fielddisruptor,$canDroneTeleport,addressbomb",
           "coat3,$canDroneTeleport,addressbomb",
           "addressbomb,remotedrone,$canDroneTeleport"
@@ -179,7 +179,7 @@
       {
         "name": "Rusalka Tablet (Edin)",
         "short_name": "Rusalka Tablet (Edin)",
-        "access_rules": [ 
+        "access_rules": [
           "addressbomb,coat2,fielddisruptor",
           "addressbomb,coat3",
           "addressbomb,remotedrone,$canDroneTeleport"
@@ -207,9 +207,9 @@
       {
         "name": "Digital Paper (Edin top)",
         "short_name": "Digital Paper (Edin ^)",
-        "access_rules": [ 
+        "access_rules": [
           "fielddisruptor,addressdisruptor,coat2",
-          "coat3", 
+          "coat3",
           "$canDroneTeleport,addressdisruptor,coat2"
         ],
         "map_locations": [
@@ -337,7 +337,7 @@
           {
             "name": "Power Node",
             "item_count": 1
-          }
+          },
           {
             "name": "Health Node",
             "item_count": 1
@@ -348,7 +348,7 @@
       {
         "name": "Shards",
         "short_name": "Shards",
-        "access_rules": [ 
+        "access_rules": [
           "coat2,addressbomb",
           "coat3,addressbomb",
           "$canEnhancedDroneLaunch,$canDroneTeleport,addressbomb"
@@ -376,7 +376,7 @@
       {
         "name": "Range Node (Edin)",
         "short_name": "Range Node (Edin)",
-        "access_rules": [ 
+        "access_rules": [
           "fielddisruptor,coat2,remotedrone",
           "coat3,fielddisruptor,remotedrone"
         ],
@@ -403,7 +403,7 @@
       {
         "name": "Address Bomb",
         "short_name": "Address Bomb",
-        "access_rules": [ 
+        "access_rules": [
           "fielddisruptor,coat2",
           "coat3",
           "coat2,remotedrone,$canDroneTeleport"

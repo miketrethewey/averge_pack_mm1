@@ -40,8 +40,8 @@
         "name": "Health Node (Zi)",
         "short_name": "Health Node (Zi)",
         "access_rules": [
-          "highjump,addressdisruptor,coat",
-          "$canDroneTeleport,addressdisruptor,coat"
+          "highjump,addressdisruptor,teleport1",
+          "$canDroneTeleport,addressdisruptor,teleport1"
         ],
         "map_locations": [
           {
@@ -67,8 +67,8 @@
         "name": "Modified Lab Coat",
         "short_name": "Modified Lab Coat",
         "access_rules": [
-          "highjump,coat2",
-          "coat3",
+          "highjump,teleport2",
+          "teleport3",
           "highjump,addressdisruptor",
           "$canDroneTeleport"
         ],
@@ -123,10 +123,9 @@
         "name": "Health Node Fragment (Zi) #1",
         "short_name": "Health Node Fragment (Zi) #1",
         "access_rules": [
-          "highjump,coat",
-          "$canDroneTeleport,coat",
-          "coat2",
-          "coat3",
+          "highjump,teleport1",
+          "$canDroneTeleport,teleport1",
+          "teleport2",
           "{highjump}",
           "{$canUseRemoteDrone}"
         ],
@@ -210,8 +209,8 @@
           "addressdisruptor2,highjump",
           "addressdisruptor2,$canUseRemoteDrone",
           "addressdisruptor2,grapple",
-          "coat2,highjump",
-          "coat3"
+          "teleport2,highjump",
+          "teleport3"
         ],
         "map_locations": [
           {
@@ -238,7 +237,7 @@
         "short_name": "Size Node (Zi)",
         "access_rules": [
           "highjump",
-          "coat2"
+          "teleport2"
         ],
         "map_locations": [
           {
@@ -264,10 +263,10 @@
         "name": "Bioflux Accelerator #1",
         "short_name": "Bioflux Accelerator #1",
         "access_rules": [
-          "highjump,coat",
+          "highjump,teleport1",
           "wave,highjump",
-          "$canDroneTeleport,coat",
-          "coat3"
+          "$canDroneTeleport,teleport1",
+          "teleport3"
         ],
         "map_locations": [
           {
@@ -320,7 +319,7 @@
         "short_name": "Health Node Fragment (Zi v)",
         "access_rules": [
           "highjump,excavate",
-          "coat3"
+          "teleport3"
         ],
         "map_locations": [
           {
@@ -346,9 +345,9 @@
         "name": "Range Node (Zi)",
         "short_name": "Range Node (Zi)",
         "access_rules": [
-          "highjump,coat",
-          "$canDroneTeleport,coat",
-          "coat3"
+          "highjump,teleport1",
+          "$canDroneTeleport,teleport1",
+          "teleport3"
         ],
         "map_locations": [
           {
@@ -375,9 +374,9 @@
         "short_name": "Passcode Tool",
         "access_rules": [
           "$canUseRemoteDrone",
-          "grapple,coat2",
-          "highjump,coat2",
-          "coat3"
+          "grapple,teleport2",
+          "highjump,teleport2",
+          "teleport3"
         ],
         "map_locations": [
           {
@@ -404,9 +403,9 @@
         "short_name": "Digital Paper (Zi) #2",
         "access_rules": [
           "$canUseRemoteDrone",
-          "grapple,coat2",
-          "highjump,coat2",
-          "coat3"
+          "grapple,teleport2",
+          "highjump,teleport2",
+          "teleport3"
         ],
         "map_locations": [
           {

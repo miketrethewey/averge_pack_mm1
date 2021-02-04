@@ -4,49 +4,24 @@
     "name": "Inter - Eribu",
     "parent": "Eribu",
     "children": [
-      { // Start
-        "name": "Start",
-        "map_locations": [
-          {
-            "map": "sudra",
-            "x": 135,
-            "y": 765
-          },
-          {
-            "map": "eribu",
-            "x": 314,
-            "y": 267
-          }
-        ],
-        "sections": [
-          {
-            "name": "Connection",
-            "item_count": 1,
-            "visibility_rules": [
-              "connections"
-            ],
-            "chest_unavailable_img": "images/connections/start.png",
-            "chest_unopened_img": "images/connections/start.png",
-            "chest_opened_img": "images/connections/start.png"
-          }
-        ]
-      },
       { // Eribu -> Ukkin-Na
         "name": "Eribu -> Ukkin-Na",
         "access_rules": [
-          "@Start/Connection,excavate,addressdisruptor2,coat,grapple",
-          "@Start/Connection,coat3"
+          "excavate,addressdisruptor2,teleport1",
+          "coat3"
         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 279,
-            "y": 801
+            "y": 801,
+            "size": 8
           },
           {
             "map": "eribu",
             "x": 458,
-            "y": 303
+            "y": 303,
+            "size": 8
           }
         ],
         "sections": [
@@ -65,19 +40,22 @@
       { // Eribu -> Indi
         "name": "Eribu -> Indi",
         "access_rules": [
-          "@Start/Connection,grapple,excavate,highjump",
-          "@Start/Connection,coat3"
+          "excavate,grapple",
+          "excavate,hijump,coat2",
+          "coat3"
         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 279,
-            "y": 855
+            "y": 855,
+            "size": 8
           },
           {
             "map": "eribu",
             "x": 458,
-            "y": 357
+            "y": 357,
+            "size": 8
           }
         ],
         "sections": [
@@ -96,18 +74,20 @@
       { // Eribu -> Absu
         "name": "Eribu -> Absu",
         "access_rules": [
-          "@Start/Connection,excavate"
+          "excavate"
         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 279,
-            "y": 891
+            "y": 891,
+            "size": 8
           },
           {
             "map": "eribu",
             "x": 458,
-            "y": 393
+            "y": 393,
+            "size": 8
           }
         ],
         "sections": [

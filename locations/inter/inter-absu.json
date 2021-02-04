@@ -7,8 +7,8 @@
       { // Absu -> Indi
         "name": "Absu -> Indi",
         "access_rules": [
-          "teleport1,addressdisruptor,grapple",
-          "teleport1,addressdisruptor,$canDroneTeleport",
+          "$canTeleport1,addressdisruptor,grapple",
+          "$canTeleport1,addressdisruptor,$canDroneTeleport",
           "coat2,highjump",
           "coat2,grapple",
           "coat2,$canDroneTeleport",
@@ -45,7 +45,7 @@
         "name": "Absu -> Zi",
         "access_rules": [
           "wave,addressdisruptor",
-          "teleport1,addressdisruptor",
+          "$canTeleport1,addressdisruptor",
           "coat2",
           "coat3"
         ],

@@ -43,9 +43,9 @@
         "name": "Power Node Fragment (Kur)",
         "short_name": "Power Node Fragment (Kur)",
         "access_rules": [
-          "$canDroneTeleport,grapple,addressdisruptor",
-          "fielddisruptor,coat3,addressdisruptor",
-          "highjump,grapple,addressdisruptor"
+          "$canDroneTeleport,grapple,addressdisruptor2",
+          "fielddisruptor,coat3,addressdisruptor2",
+          "highjump,grapple,addressdisruptor2"
          ],
         "map_locations": [
           {
@@ -102,9 +102,9 @@
         "name": "Journal Page (Kur middle)",
         "short_name": "Journal Page (Kur =)",
         "access_rules": [
-          "$canDroneTeleport,grapple,addressdisruptor",
-          "fielddisruptor,coat3,addressdisruptor",
-          "highjump,grapple,addressdisruptor",
+          "$canDroneTeleport,grapple,addressdisruptor2",
+          "fielddisruptor,coat3,addressdisruptor2",
+          "highjump,grapple,addressdisruptor2",
           "$canDroneTeleport,grapple,$canEnhancedDroneLaunch",
           "fielddisruptor,coat3,$canEnhancedDroneLaunch",
           "highjump,grapple,$canEnhancedDroneLaunch"

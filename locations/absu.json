@@ -481,8 +481,8 @@
         "name": "Data Bomb",
         "short_name": "Data Bomb",
         "access_rules": [
-          "$canUseRemoteDrone,coat2",
-          "$canUseRemoteDrone,coat3"
+          "$canUseDroneTeleport,coat2",
+          "$canUseDroneTeleport,coat3"
         ],
         "map_locations": [
           {
@@ -508,7 +508,8 @@
         "name": "Range Node (Absu left)",
         "short_name": "Range Node (Absu <)",
         "access_rules": [
-          "addressdisruptor2,$canUseRemoteDrone,coat"
+          "addressdisruptor2,$canUseRemoteDrone,teleport1",
+          "addressbomb,$canUseRemoteDrone,teleport1"
         ],
         "map_locations": [
           {

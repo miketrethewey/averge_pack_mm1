@@ -273,8 +273,8 @@
         "short_name": "Health Node Fragment (Eribu ^)",
         "access_rules": [
           "$canUseRemoteDrone,coat3",
-          "$canUseRemoteDrone,highjump,coat2",
-          "$canUseRemoteDrone,highjump,grapple"
+          "$canUseRemoteDrone,highjump,coat2,addressdisruptor2",
+          "$canUseRemoteDrone,highjump,grapple,addressdisruptor2"
         ],
         "map_locations": [
           {

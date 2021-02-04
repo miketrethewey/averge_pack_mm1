@@ -6,7 +6,7 @@
     "parent": "Sudra",
     "access_rules": [ // Eribu -> Absu, Absu -> Zi -> North Kur -> E-Kur-Mah
       "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,coat2",
-      "fielddisruptor,coat3,$canDroneTeleport"
+      "fielddisruptor,coat3"
     ],
     "children": [
       // Power Node (E-Kur-Mah)
@@ -202,7 +202,7 @@
         "short_name": "Red Coat",
         "access_rules": [
           "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,coat2",
-          "fielddisruptor,coat3,$canDroneTeleport"
+          "fielddisruptor,coat3"
          ],
         "map_locations": [
           {

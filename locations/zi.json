@@ -165,7 +165,7 @@
           },
           {
             "map": "zi",
-            "x": 208,
+            "x": 224,
             "y": 224
           }
         ],
@@ -309,7 +309,7 @@
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Hidden Wall",
             "item_count": 1
           }
         ]

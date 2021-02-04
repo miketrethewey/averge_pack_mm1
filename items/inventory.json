@@ -11,7 +11,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/address-bomb.png",
-    "codes": "addressbomb,addressdisruptor"
+    "codes": "addressbomb,addressdisruptor,addressdisruptor2"
   },
   // Address Disruptor
   {

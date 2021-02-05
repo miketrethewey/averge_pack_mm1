@@ -14,7 +14,10 @@
         "short_name": "Power Node Fragment (Zi ^) #1",
         "access_rules": [
           "highjump,addressdisruptor,grapple",
-          "$canDroneTeleport,addressdisruptor,grapple"
+          "$canDroneTeleport,addressdisruptor,grapple",
+          "airport2,addressdisruptor",
+          "highjump,airport2,$canDroneTeleport,grapple",
+          "airport3,$canDroneTeleport,grapple"
         ],
         "map_locations": [
           {
@@ -41,7 +44,10 @@
         "short_name": "Health Node (Zi)",
         "access_rules": [
           "highjump,addressdisruptor,teleport1",
-          "$canDroneTeleport,addressdisruptor,teleport1"
+          "$canDroneTeleport,addressdisruptor,teleport1",
+          "airport2,addressdisruptor",
+          "highjump,airport2,$canDroneTeleport",
+          "airport3,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -67,8 +73,8 @@
         "name": "Modified Lab Coat",
         "short_name": "Modified Lab Coat",
         "access_rules": [
-          "highjump,teleport2",
-          "teleport3",
+          "highjump,airport2",
+          "airport3",
           "highjump,addressdisruptor",
           "$canDroneTeleport"
         ],
@@ -97,6 +103,8 @@
         "short_name": "Digital Paper (Zi) #1",
         "access_rules": [
           "highjump,excavate",
+          "airport2,excavate",
+          "airport3",
           "$canUseRemoteDrone"
         ],
         "map_locations": [
@@ -154,7 +162,8 @@
         "name": "Rusalka Tablet (Zi)",
         "short_name": "Rusalka Tablet (Zi)",
         "access_rules": [
-          "highjump,$canUseRemoteDrone"
+          "highjump,$canUseRemoteDrone",
+          "airport2,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -209,8 +218,7 @@
           "addressdisruptor2,highjump",
           "addressdisruptor2,$canUseRemoteDrone",
           "addressdisruptor2,grapple",
-          "teleport2,highjump",
-          "teleport3"
+          "airport2,fielddisruptor"
         ],
         "map_locations": [
           {
@@ -266,7 +274,7 @@
           "highjump,teleport1",
           "wave,highjump",
           "$canDroneTeleport,teleport1",
-          "teleport3"
+          "airport3"
         ],
         "map_locations": [
           {
@@ -319,7 +327,7 @@
         "short_name": "Health Node Fragment (Zi v)",
         "access_rules": [
           "highjump,excavate",
-          "teleport3"
+          "airport2,excavate"
         ],
         "map_locations": [
           {
@@ -347,7 +355,8 @@
         "access_rules": [
           "highjump,teleport1",
           "$canDroneTeleport,teleport1",
-          "teleport3"
+          "grapple,teleport1",
+          "airport3"
         ],
         "map_locations": [
           {
@@ -403,9 +412,9 @@
         "short_name": "Digital Paper (Zi) #2",
         "access_rules": [
           "$canUseRemoteDrone",
-          "grapple,teleport2",
-          "highjump,teleport2",
-          "teleport3"
+          "grapple,airport2",
+          "highjump,airport2",
+          "airport3"
         ],
         "map_locations": [
           {

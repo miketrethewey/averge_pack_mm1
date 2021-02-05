@@ -148,7 +148,7 @@
         "short_name": "Quantum Veriegator (ISKART-EHANZU)",
         "access_rules": [
           "passcodetool,$canEnhancedDroneLaunch,$canDroneTeleport,teleport1",
-          "passcodetool,teleport3,$canDroneTeleport,fielddisruptor"
+          "passcodetool,airport3,$canDroneTeleport,fielddisruptor"
         ],
         "map_locations": [
           {
@@ -174,7 +174,7 @@
         "name": "Health Node Fragment (E-Kur-Mah)",
         "short_name": "Health Node Fragment (E-Kur-Mah)",
         "access_rules": [
-          "teleport3,$canUseRemoteDrone",
+          "airport3,$canUseRemoteDrone",
           "highjump,$canEnhancedDroneLaunch,sudrankey"
         ],
         "map_locations": [

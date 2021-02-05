@@ -13,7 +13,7 @@
         "name": "Turbine Pulse",
         "short_name": "Turbine Pulse",
         "access_rules": [
-          "teleport3,$canEnhancedDroneLaunch,$canDroneTeleport"
+          "airport3,$canEnhancedDroneLaunch,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -179,9 +179,9 @@
         "name": "Power Node Fragment (Ukkin-Na middle)",
         "short_name": "Power Node Fragment (Ukkin-Na =)",
         "access_rules": [
-          "highjump,teleport2",
-          "$canDroneTeleport,teleport2",
-          "teleport3"
+          "highjump,airport2",
+          "$canDroneTeleport,airport2",
+          "airport3"
         ],
         "map_locations": [
           {
@@ -208,9 +208,9 @@
         "name": "Digital Paper (Ukkin-Na)",
         "short_name": "Digital Paper (Ukkin-Na)",
         "access_rules": [
-          "highjump,teleport2,$canUseRemoteDrone",
-          "$canDroneTeleport,teleport2",
-          "teleport3,$canUseRemoteDrone"
+          "highjump,airport2,$canUseRemoteDrone",
+          "$canDroneTeleport,airport2",
+          "airport3,$canUseRemoteDrone"
          ],
         "map_locations": [
           {
@@ -252,8 +252,8 @@
             "name": "Upper",
             "item_count": 1,
             "access_rules": [
-              "teleport3",
-              "teleport2,highjump"
+              "airport3",
+              "airport2,highjump"
             ]
           },
           {

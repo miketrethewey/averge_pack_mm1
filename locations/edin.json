@@ -261,7 +261,7 @@
         "name": "Bioflux Accelerator 2",
         "short_name": "Bioflux Accelerator 2",
         "access_rules": [
-          "teleport2,$canEnhancedDroneLaunch,$canDroneTeleport"
+          "airport2,$canEnhancedDroneLaunch,$canDroneTeleport"
          ],
         "map_locations": [
           {
@@ -287,9 +287,9 @@
         "name": "Digital Paper (Edin bottom)",
         "short_name": "Digital Paper (Edin v)",
         "access_rules": [
-          "fielddisruptor,teleport2,addressdisruptor",
+          "fielddisruptor,airport2,addressdisruptor",
           "teleport3,addressdisruptor",
-          "$canDroneTeleport,teleport2,addressdisruptor"
+          "$canDroneTeleport,airport2,addressdisruptor"
          ],
         "map_locations": [
           {
@@ -373,7 +373,7 @@
         "name": "Range Node (Edin)",
         "short_name": "Range Node (Edin)",
         "access_rules": [
-          "fielddisruptor,teleport2,remotedrone"
+          "fielddisruptor,airport2,remotedrone"
         ],
         "map_locations": [
           {

@@ -480,7 +480,7 @@
         "name": "Data Bomb",
         "short_name": "Data Bomb",
         "access_rules": [
-          "$canUseDroneTeleport,teleport2"        
+          "$canDroneTeleport,teleport2"        
         ],
         "map_locations": [
           {

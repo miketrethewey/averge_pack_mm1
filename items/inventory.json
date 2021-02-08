@@ -176,7 +176,7 @@
     "loop": true,
     "img": "images/inventory/health-node-fragment.png",
     "codes": "healthnodefragment",
-    "max_quantity": 25
+    "max_quantity": 20
   },
   // Health Node
   {
@@ -185,7 +185,7 @@
     "loop": true,
     "img": "images/inventory/health-node.png",
     "codes": "healthnode",
-    "max_quantity": 9
+    "max_quantity": 12
   },
   // Heat Seeker
   {
@@ -312,7 +312,7 @@
     "loop": true,
     "img": "images/inventory/power-node-fragment.png",
     "codes": "powernodefragment",
-    "max_quantity": 18
+    "max_quantity": 30
   },
   // Power Node
   {
@@ -321,7 +321,7 @@
     "loop": true,
     "img": "images/inventory/power-node.png",
     "codes": "powernode",
-    "max_quantity": 6
+    "max_quantity": 10
   },
   // Quantum Variegator
   {
@@ -338,7 +338,7 @@
     "loop": true,
     "img": "images/inventory/range-node.png",
     "codes": "rangenode",
-    "max_quantity": 6
+    "max_quantity": 5
   },
   // Reflector
   {
@@ -388,7 +388,7 @@
     "loop": true,
     "img": "images/inventory/size-node.png",
     "codes": "sizenode",
-    "max_quantity": 6
+    "max_quantity": 5
   },
   // Sudran Key
   {

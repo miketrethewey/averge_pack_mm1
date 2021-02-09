@@ -17,7 +17,7 @@
         "short_name": "Clay Tablet (Kur ^)",
         "access_rules": [
           "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
-          "fielddisruptor,$canTeleport3,$canDroneTeleport"
+          "fielddisruptor,$canAirport3,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -44,9 +44,9 @@
         "short_name": "Power Node Fragment (Kur)",
         "access_rules": [
           "$canDroneTeleport,grapple,addressdisruptor2",
-          "fielddisruptor,$canTeleport3,addressdisruptor2",
+          "fielddisruptor,$canAirport3,addressdisruptor2",
           "highjump,grapple,addressdisruptor2"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -73,8 +73,8 @@
         "access_rules": [
           "addressdisruptor2,highjump,$canTeleport1,$canUseRemoteDrone",
           "addressdisruptor2,$canDroneTeleport,$canTeleport1",
-          "$canTeleport2,$canUseRemoteDrone",
-          "$canTeleport2,grapple"
+          "$canAirport2,$canUseRemoteDrone",
+          "$canAirport2,grapple"
         ],
         "map_locations": [
           {
@@ -101,12 +101,12 @@
         "short_name": "Journal Page (Kur =)",
         "access_rules": [
           "$canDroneTeleport,grapple,addressdisruptor2",
-          "fielddisruptor,$canTeleport3,addressdisruptor2",
+          "fielddisruptor,$canAirport3,addressdisruptor2",
           "highjump,grapple,addressdisruptor2",
           "$canDroneTeleport,grapple,$canEnhancedDroneLaunch",
-          "fielddisruptor,$canTeleport3,$canEnhancedDroneLaunch",
+          "fielddisruptor,$canAirport3,$canEnhancedDroneLaunch",
           "highjump,grapple,$canEnhancedDroneLaunch"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -132,9 +132,9 @@
         "short_name": "Reflector",
         "access_rules": [
           "$canDroneTeleport,grapple",
-          "fielddisruptor,$canTeleport3,$canUseRemoteDrone",
+          "fielddisruptor,$canAirport3,$canUseRemoteDrone",
           "highjump,grapple,$canUseRemoteDrone"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -160,7 +160,7 @@
         "short_name": "Enhanced Drone Launch",
         "access_rules": [
           "$canDroneTeleport,grapple",
-          "fielddisruptor,$canTeleport3",
+          "fielddisruptor,$canAirport3",
           "highjump,grapple"
         ],
         "map_locations": [
@@ -189,8 +189,8 @@
         "access_rules": [
           "addressdisruptor2,highjump,$canTeleport1,$canUseRemoteDrone,grapple",
           "addressdisruptor2,$canDroneTeleport,$canTeleport1",
-          "$canTeleport2,highjump",
-          "$canTeleport3"
+          "$canAirport2,highjump",
+          "$canAirport3"
         ],
         "map_locations": [
           {
@@ -217,9 +217,9 @@
         "short_name": "Health Node Fragment (Kur <^)",
         "access_rules": [
           "$canDroneTeleport,grapple",
-          "fielddisruptor,$canTeleport3,$canUseRemoteDrone",
+          "fielddisruptor,$canAirport3,$canUseRemoteDrone",
           "highjump,grapple,$canUseRemoteDrone"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -246,8 +246,8 @@
         "access_rules": [
           "addressdisruptor2,highjump,$canTeleport1,$canUseRemoteDrone",
           "addressdisruptor2,$canDroneTeleport,$canTeleport1",
-          "$canTeleport2,highjump",
-          "$canTeleport3"
+          "$canAirport2,highjump",
+          "$canAirport3"
         ],
         "map_locations": [
           {
@@ -274,9 +274,9 @@
         "short_name": "Clay Tablet (Kur v)",
         "access_rules": [
           "$canDroneTeleport,grapple",
-          "fielddisruptor,$canTeleport3,$canUseRemoteDrone",
+          "fielddisruptor,$canAirport3,$canUseRemoteDrone",
           "highjump,grapple,$canUseRemoteDrone"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -301,7 +301,7 @@
         "name": "Health Node Fragment (Kur middle left)",
         "short_name": "Health Node Fragment (Kur <=)",
         "access_rules": [
-          "highjump,$canTeleport2,$canDroneTeleport",
+          "highjump,$canAirport2,$canDroneTeleport",
           "$canDroneTeleport,grapple,$canTeleport1",
           "highjump,grapple"
         ],
@@ -331,7 +331,7 @@
         "access_rules": [
           "addressdisruptor2,highjump,$canTeleport1",
           "addressdisruptor2,$canDroneTeleport,$canTeleport1",
-          "$canTeleport2"
+          "$canAirport2"
         ],
         "map_locations": [
           {
@@ -357,7 +357,7 @@
         "name": "Ion Beam",
         "short_name": "Ion Beam",
         "access_rules": [
-          "$canTeleport3"
+          "$canAirport3"
         ],
         "map_locations": [
           {
@@ -466,10 +466,10 @@
         "short_name": "Power Node (Kur v)",
         "access_rules": [
           "{}",
-          "$canTeleport1",
           "highjump,$canTeleport1",
           "$canDroneTeleport,$canTeleport1",
-          "grapple,$canTeleport1"
+          "grapple,$canTeleport1",
+          "$canAirport2"
         ],
         "map_locations": [
           {
@@ -524,7 +524,8 @@
         "access_rules": [
           "highjump",
           "$canUseRemoteDrone",
-          "grapple"
+          "grapple",
+          "airport2"
          ],
         "map_locations": [
           {

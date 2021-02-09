@@ -67,7 +67,8 @@
         "name": "Digital Paper (Indi)",
         "short_name": "Digital Paper (Indi)",
         "access_rules": [
-          "highjump,$canUseRemoteDrone"
+          "highjump,$canUseRemoteDrone",
+          "airport2,$canUseRemoteDrone"
          ],
         "map_locations": [
           {

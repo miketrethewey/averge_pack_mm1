@@ -14,7 +14,7 @@
         "short_name": "Health Node Fragment (Absu)",
         "access_rules": [
           "$canTeleport1,addressdisruptor,grapple",
-          "$canTeleport2,highjump"
+          "$canAirport2,highjump"
         ],
         "map_locations": [
           {
@@ -41,10 +41,10 @@
         "short_name": "Power Node Fragment (Absu ^ 1)",
         "access_rules": [
           "addressdisruptor2,$canUseRemoteDrone",
-          "highjump,$canTeleport2,addressbomb",
+          "highjump,$canAirport2,addressbomb",
           "grapple,addressbomb",
-          "$canTeleport3,addressbomb"
-         ],
+          "$canAirport3,addressbomb"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -70,9 +70,9 @@
         "short_name": "Power Node Fragment (Absu ^ 2)",
         "access_rules": [
           "addressdisruptor2,$canUseRemoteDrone",
-          "highjump,$canTeleport2,addressbomb",
+          "highjump,$canAirport2,addressbomb",
           "grapple,addressbomb",
-          "$canTeleport3,addressbomb"
+          "$canAirport3,addressbomb"
         ],
         "map_locations": [
           {
@@ -99,9 +99,9 @@
         "short_name": "Power Node Fragment (Absu ^ 3)",
         "access_rules": [
           "addressdisruptor2,$canDroneTeleport,addressbomb",
-          "highjump,$canTeleport2",
+          "highjump,$canAirport2",
           "grapple",
-          "$canTeleport3"
+          "$canAirport3"
         ],
         "map_locations": [
           {
@@ -317,8 +317,8 @@
         "short_name": "Inertial Pulse",
         "access_rules": [
           "addressdisruptor2,excavate,highjump",
-          "addressdisruptor2,$canTeleport3",
-          "addressdisruptor2,excavate,$canTeleport2"
+          "addressdisruptor2,$canAirport3",
+          "addressdisruptor2,excavate,$canAirport2"
         ],
         "map_locations": [
           {
@@ -480,7 +480,7 @@
         "name": "Data Bomb",
         "short_name": "Data Bomb",
         "access_rules": [
-          "$canUseDroneTeleport,$canTeleport2"
+          "$canDroneTeleport,$canTeleport2"
         ],
         "map_locations": [
           {
@@ -572,8 +572,8 @@
         "access_rules": [
           "wave,addressdisruptor,$canUseRemoteDrone",
           "$canTeleport1,addressdisruptor,$canUseRemoteDrone",
-          "$canTeleport2"
-         ],
+          "$canAirport2"
+        ],
         "map_locations": [
           {
             "map": "sudra",

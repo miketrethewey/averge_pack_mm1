@@ -1,30 +1,24 @@
 [
-  // Inter - Absu
+  // Inter - Zi
   {
-    "name": "Inter - Absu",
-    "parent": "Absu",
+    "name": "Inter - Zi",
+    "parent": "Zi",
     "children": [
-      { // Absu -> Indi
-        "name": "Absu -> Indi",
+      { // Zi -> Kur
+        "name": "Zi -> Kur",
         "access_rules": [
-          "$canTeleport1,addressdisruptor,grapple",
-          "$canTeleport1,addressdisruptor,$canDroneTeleport",
-          "coat2,highjump",
-          "coat2,grapple",
-          "coat2,$canDroneTeleport",
-          "coat3"
         ],
         "map_locations": [
           {
             "map": "sudra",
-            "x": 459,
-            "y": 909,
+            "x": 891,
+            "y": 963,
             "size": 8
           },
           {
-            "map": "absu",
-            "x": 360,
-            "y": 125,
+            "map": "zi",
+            "x": 442,
+            "y": 188,
             "size": 8
           }
         ],
@@ -41,25 +35,25 @@
           }
         ]
       },
-      { // Absu -> Zi
-        "name": "Absu -> Zi",
+      { // Zi -> Indi
+        "name": "Zi -> Indi",
         "access_rules": [
-          "wave,addressdisruptor",
-          "$canTeleport1,addressdisruptor",
-          "coat2",
+          "highjump,grapple",
+          "$canDroneTeleport",
+          "coat2,highjump",
           "coat3"
         ],
         "map_locations": [
           {
             "map": "sudra",
-            "x": 639,
-            "y": 1143,
+            "x": 711,
+            "y": 909,
             "size": 8
           },
           {
-            "map": "absu",
-            "x": 540,
-            "y": 359,
+            "map": "zi",
+            "x": 262,
+            "y": 134,
             "size": 8
           }
         ],
@@ -70,9 +64,9 @@
             "visibility_rules": [
               "connections"
             ],
-            "chest_unavailable_img": "images/connections/right.png",
-            "chest_unopened_img": "images/connections/right.png",
-            "chest_opened_img": "images/connections/right.png"
+            "chest_unavailable_img": "images/connections/up.png",
+            "chest_unopened_img": "images/connections/up.png",
+            "chest_opened_img": "images/connections/up.png"
           }
         ]
       }

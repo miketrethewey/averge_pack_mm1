@@ -1,0 +1,40 @@
+[
+  // Inter - Kur
+  {
+    "name": "Inter - Kur",
+    "parent": "Kur",
+    "children": [
+      { // Kur -> Indi
+        "name": "Kur -> Indi",
+        "access_rules": [
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 909,
+            "y": 855,
+            "size": 8
+          },
+          {
+            "map": "kur",
+            "x": 182,
+            "y": 376,
+            "size": 8
+          }
+        ],
+        "sections": [
+          {
+            "name": "Connection",
+            "item_count": 1,
+            "visibility_rules": [
+              "connections"
+            ],
+            "chest_unavailable_img": "images/connections/left.png",
+            "chest_unopened_img": "images/connections/left.png",
+            "chest_opened_img": "images/connections/left.png"
+          }
+        ]
+      }
+    ]
+  }
+]

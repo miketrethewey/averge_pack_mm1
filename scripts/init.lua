@@ -23,7 +23,9 @@ Tracker:AddLocations("locations/inter/inter-eribu.json")      -- Inter-Eribu
 Tracker:AddLocations("locations/absu.json")                   -- Absu
 Tracker:AddLocations("locations/inter/inter-absu.json")       -- Inter-Absu
 Tracker:AddLocations("locations/zi.json")                     -- Zi
+Tracker:AddLocations("locations/inter/inter-zi.json")         -- Inter-Zi
 Tracker:AddLocations("locations/kur.json")                    -- Kur
+Tracker:AddLocations("locations/inter/inter-kur.json")        -- Inter-Kur
 Tracker:AddLocations("locations/indi.json")                   -- Indi
 Tracker:AddLocations("locations/edin.json")                   -- Edin
 Tracker:AddLocations("locations/ukkinna.json")                -- Ukkin-Na

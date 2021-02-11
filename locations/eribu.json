@@ -14,7 +14,7 @@
         "short_name": "Health Node (Eribu ^)",
         "access_rules": [
           "addressbomb,highjump,grapple",
-          "addressbomb,airport2",
+          "addressbomb,$canAirport2",
           "addressbomb,$canUseRemoteDrone"
         ],
         "map_locations": [
@@ -42,7 +42,7 @@
         "short_name": "Nova",
         "access_rules": [
           "$canShootShort",
-          "teleport1"
+          "$canTeleport1"
         ],
         // Return needs Split or Wave
         "map_locations": [
@@ -103,8 +103,8 @@
           "spazer,excavate",
           "wave,excavate",
           "$canUseRemoteDrone",
-          "airport2,excavate",
-          "airport3"
+          "$canAirport2,excavate",
+          "$canAirport3"
         ],
         "map_locations": [
           {
@@ -130,7 +130,7 @@
         "name": "Flamethrower (DINGER-GISBAR)",
         "short_name": "Flamethrower (DINGER-GISBAR)",
         "access_rules": [
-          "airport3,$canEnhancedDroneLaunch,$canDroneTeleport,passcodetool,fielddisruptor"
+          "$canAirport3,$canEnhancedDroneLaunch,$canDroneTeleport,passcodetool,fielddisruptor"
         ],
         "map_locations": [
           {
@@ -160,8 +160,8 @@
           "wave",
           "$canUseRemoteDrone",
           "reflector",
-          "airport2"
-         ],
+          "$canAirport2"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -186,7 +186,7 @@
         "name": "Note (Eribu)",
         "short_name": "Note (Eribu)",
         "access_rules": [
-          "$canDroneTeleport,teleport1"
+          "$canDroneTeleport,$canTeleport1"
         ],
         "map_locations": [
           {
@@ -271,7 +271,7 @@
         "name": "Health Node Fragment (Eribu top)",
         "short_name": "Health Node Fragment (Eribu ^)",
         "access_rules": [
-          "$canUseRemoteDrone,teleport3",
+          "$canUseRemoteDrone,$canTeleport3",
           "$canUseRemoteDrone,highjump,grapple,addressdisruptor2",
           "$canDroneTeleport,addressdisruptor2"
         ],
@@ -289,7 +289,7 @@
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Hidden Wall in Water",
             "item_count": 1
           }
         ]
@@ -323,9 +323,9 @@
         "name": "Lightning Gun",
         "short_name": "Lightning Gun",
         "access_rules": [ //Needs additional Logic added
-          "addressbomb,airport3",
+          "addressbomb,$canAirport3",
           "addressbomb,$canUseRemoteDrone"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -350,8 +350,8 @@
         "name": "Orbital Discharge (DALHKU-SUBTUM)",
         "short_name": "Orbital Discharge (DALHKU-SUBTUM)",
         "access_rules": [
-          "passcodetool,airport2,highjump",
-          "airport3,passcodetool",
+          "passcodetool,$canAirport2,highjump",
+          "$canAirport3,passcodetool",
           "passcodetool,grapple"
         ],
         "map_locations": [
@@ -382,7 +382,7 @@
           "addressbomb",
           "grapple,excavate",
           "$canUseRemoteDrone",
-          "airport2",
+          "$canAirport2",
           "{excavate}"
         ],
         "map_locations": [
@@ -410,8 +410,8 @@
         "name": "Power Node Fragment (Eribu bottom)",
         "short_name": "Power Node Fragment (Eribu v)",
         "access_rules": [
-          "airport3,highjump",
-          "$canDroneTeleport,teleport1"
+          "$canAirport3,highjump",
+          "$canDroneTeleport,$canTeleport1"
         ],
         "map_locations": [
           {

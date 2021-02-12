@@ -7,7 +7,7 @@
       { // Eribu -> Ukkin-Na
         "name": "Eribu -> Ukkin-Na",
         "access_rules": [
-          "excavate,addressdisruptor2,$canTeleport1",
+          "excavate,addressdisruptor2,$can$canTeleport1",
           "coat3"
         ],
         "map_locations": [
@@ -41,7 +41,7 @@
         "name": "Eribu -> Indi",
         "access_rules": [
           "excavate,grapple",
-          "excavate,hijump,coat2",
+          "excavate,highjump,coat2",
           "coat3"
         ],
         "map_locations": [

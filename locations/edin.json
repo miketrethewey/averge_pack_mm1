@@ -12,6 +12,7 @@
       {
         "name": "Drone Teleport",
         "short_name": "Drone Teleport",
+        "vgravmap": "DroneTeleport",
         "access_rules": [
           "$canTeleport2,highjump,rangelong,$canUseRemoteDrone",
           "$canTeleport2,addressbomb,$canDroneTeleport",
@@ -44,7 +45,7 @@
           "$canTeleport2,addressbomb,$canDroneTeleport",
           "$canTeleport2,highjump,$canDroneTeleport",
           "$canTeleport3"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -68,10 +69,11 @@
       {
         "name": "Distortion Field",
         "short_name": "Distortion Field",
+        "vgravmap": "DistortionField",
         "access_rules": [
           "$canTeleport2,highjump,$canEnhancedDroneLaunch,$canDroneTeleport",
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -99,7 +101,7 @@
           "$canTeleport2,highjump,$canDroneTeleport,addressbomb",
           "$canTeleport3,$canDroneTeleport,addressbomb",
           "addressbomb,$canEnhancedDroneLaunch,$canDroneTeleport"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -151,6 +153,7 @@
       {
         "name": "Health Node (Edin)",
         "short_name": "Health Node (Edin)",
+        "vgravmap": "HealthNode6",
         "access_rules": [
           "$canTeleport2,highjump,$canDroneTeleport,addressbomb",
           "$canTeleport3,$canDroneTeleport,addressbomb",
@@ -237,7 +240,7 @@
         "short_name": "Health Node Fragment (Edin <)",
         "access_rules": [
           "$canEnhancedDroneLaunch,$canDroneTeleport,grapple"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -261,6 +264,7 @@
       {
         "name": "Bioflux Accelerator 2",
         "short_name": "Bioflux Accelerator 2",
+        "vgravmap": "TendrilsBottom",
         "access_rules": [
           "$canAirport2,$canEnhancedDroneLaunch,$canDroneTeleport"
         ],
@@ -318,7 +322,7 @@
         "access_rules": [
           "$canTeleport2,addressbomb,highjump",
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -346,6 +350,7 @@
       {
         "name": "Shards",
         "short_name": "Shards",
+        "vgravmap": "Shards",
         "access_rules": [
           "$canTeleport2,addressbomb",
           "$canEnhancedDroneLaunch,$canDroneTeleport,addressbomb"
@@ -373,6 +378,7 @@
       {
         "name": "Range Node (Edin)",
         "short_name": "Range Node (Edin)",
+        "vgravmap": "RangeNode3",
         "access_rules": [
           "$canAirport2,highjump,$canUseRemoteDrone"
         ],
@@ -399,6 +405,7 @@
       {
         "name": "Address Bomb",
         "short_name": "Address Bomb",
+        "vgravmap": "GlitchBomb",
         "access_rules": [
           "$canTeleport2,highjump",
           "$canTeleport2,$canDroneTeleport",

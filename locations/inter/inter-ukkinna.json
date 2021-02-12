@@ -1,0 +1,105 @@
+[
+  // Inter - Ukkin-Na
+  {
+    "name": "Inter - Ukkin-Na",
+    "parent": "Ukkin-Na",
+    "children": [
+      { // Ukkin-Na -> Indi
+        "name": "Ukkin-Na -> Indi",
+        "access_rules": [
+          "$canAirport2"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 459,
+            "y": 801,
+            "size": 8
+          },
+          {
+            "map": "ukkinna",
+            "x": 388,
+            "y": 421,
+            "size": 8
+          }
+        ],
+        "sections": [
+          {
+            "name": "Connection",
+            "item_count": 1,
+            "visibility_rules": [
+              "connections"
+            ],
+            "chest_unavailable_img": "images/connections/down.png",
+            "chest_unopened_img": "images/connections/down.png",
+            "chest_opened_img": "images/connections/down.png"
+          }
+        ]
+      },
+      { // Ukkin-Na -> Edin
+        "name": "Ukkin-Na -> Edin",
+        "access_rules": [
+          "$canAirport2"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 495,
+            "y": 801,
+            "size": 8
+          },
+          {
+            "map": "ukkinna",
+            "x": 424,
+            "y": 421,
+            "size": 8
+          }
+        ],
+        "sections": [
+          {
+            "name": "Connection",
+            "item_count": 1,
+            "visibility_rules": [
+              "connections"
+            ],
+            "chest_unavailable_img": "images/connections/right.png",
+            "chest_unopened_img": "images/connections/right.png",
+            "chest_opened_img": "images/connections/right.png"
+          }
+        ]
+      },
+      { // Ukkin-Na -> Mar-Uru
+        "name": "Ukkin-Na -> Mar-Uru",
+        "access_rules": [
+          "$canAirport3"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 387,
+            "y": 459,
+            "size": 8
+          },
+          {
+            "map": "ukkinna",
+            "x": 316,
+            "y":  79,
+            "size": 8
+          }
+        ],
+        "sections": [
+          {
+            "name": "Connection",
+            "item_count": 1,
+            "visibility_rules": [
+              "connections"
+            ],
+            "chest_unavailable_img": "images/connections/up.png",
+            "chest_unopened_img": "images/connections/up.png",
+            "chest_opened_img": "images/connections/up.png"
+          }
+        ]
+      }
+    ]
+  }
+]

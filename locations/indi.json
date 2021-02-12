@@ -40,9 +40,10 @@
       {
         "name": "Health Node Fragment (Slug Glitch)",
         "short_name": "Health Node Fragment (Slug Glitch)",
+        "vgravmap": "HealthNodeFragment15",
         "access_rules": [
           "addressdisruptor"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -69,7 +70,7 @@
         "access_rules": [
           "$canAirport2,$canUseRemoteDrone",
           "highjump,$canUseRemoteDrone"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",

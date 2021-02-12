@@ -47,7 +47,7 @@
           "$canDroneTeleport,grapple,addressdisruptor2",
           "$canAirport3,highjump,addressdisruptor2",
           "highjump,grapple,addressdisruptor2"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -107,7 +107,7 @@
           "highjump,grapple,addressdisruptor2",
           "$canDroneTeleport,grapple,$canEnhancedDroneLaunch",
           "highjump,grapple,$canEnhancedDroneLaunch"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -131,11 +131,12 @@
       {
         "name": "Reflector",
         "short_name": "Reflector",
+        "vgravmap": "Reflect",
         "access_rules": [
           "$canAirport3,highjump,$canUseRemoteDrone",
           "$canDroneTeleport,grapple",
           "highjump,grapple,$canUseRemoteDrone"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -159,6 +160,7 @@
       {
         "name": "Enhanced Drone Launch",
         "short_name": "Enhanced Drone Launch",
+        "vgravmap": "EnhancedLaunch",
         "access_rules": [
           "$canAirport3,highjump",
           "$canDroneTeleport,grapple",
@@ -220,7 +222,7 @@
           "$canAirport3,highjump,$canUseRemoteDrone",
           "$canDroneTeleport,grapple",
           "highjump,grapple,$canUseRemoteDrone"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -244,6 +246,7 @@
       {
         "name": "Grapple",
         "short_name": "Grapple",
+        "vgravmap": "Grapple",
         "access_rules": [
           "$canTeleport1,addressdisruptor2,highjump,$canUseRemoteDrone",
           "$canTeleport1,addressdisruptor2,$canDroneTeleport",
@@ -277,7 +280,7 @@
           "$canAirport3,highjump,$canUseRemoteDrone",
           "$canDroneTeleport,grapple",
           "highjump,grapple,$canUseRemoteDrone"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -329,6 +332,7 @@
       {
         "name": "Health Node (Kur)",
         "short_name": "Health Node (Kur)",
+        "vgravmap": "HealthNode4",
         "access_rules": [
           "$canTeleport1,addressdisruptor2,highjump",
           "$canTeleport1,addressdisruptor2,$canDroneTeleport",
@@ -357,6 +361,7 @@
       {
         "name": "Ion Beam",
         "short_name": "Ion Beam",
+        "vgravmap": "IonBeam",
         "access_rules": [
           "$canAirport3"
         ],
@@ -383,6 +388,7 @@
       {
         "name": "Remote Drone",
         "short_name": "Remote Drone",
+        "vgravmap": "DroneGun",
         "access_rules": [
           "$canTeleport1,highjump",
           "$canTeleport1,$canDroneTeleport",
@@ -441,7 +447,7 @@
         "access_rules": [
           "$canTeleport2,$canUseRemoteDrone",
           "addressdisruptor2,highjump,$canUseRemoteDrone"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -522,12 +528,13 @@
       {
         "name": "Firewall",
         "short_name": "Firewall",
+        "vgravmap": "FireWall",
         "access_rules": [
           "$canAirport2",
           "highjump",
           "$canUseRemoteDrone",
           "grapple"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -547,10 +554,11 @@
           }
         ]
       },
-      // Address Disrupter 2
+      // Address Disruptor 2
       {
-        "name": "Address Disrupter 2",
-        "short_name": "Address Disrupter 2",
+        "name": "Address Disruptor 2",
+        "short_name": "Address Disruptor 2",
+        "vgravmap": "AddressDisruptor2",
         "access_rules": [
           "$canTeleport1,$canUseRemoteDrone",
           "$canTeleport2,highjump",
@@ -580,6 +588,7 @@
       {
         "name": "Field Disruptor",
         "short_name": "Field Disruptor",
+        "vgravmap": "HighJump",
         "access_rules": [
           "$canTeleport1,excavate,addressdisruptor",
           "$canTeleport2,excavate",
@@ -609,11 +618,12 @@
       {
         "name": "Tethered Charge",
         "short_name": "Tethered Charge",
+        "vgravmap": "TetheredCharge",
         "access_rules": [
           "$canTeleport1,highjump,$canDroneTeleport,addressdisruptor",
           "$canTeleport2,fatbeam",
           "$canTeleport3,addressdisruptor"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",

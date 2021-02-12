@@ -12,6 +12,7 @@
       {
         "name": "Turbine Pulse",
         "short_name": "Turbine Pulse",
+        "vgravmap": "TriCone",
         "access_rules": [
           "$canAirport3,$canEnhancedDroneLaunch,$canDroneTeleport"
         ],
@@ -122,11 +123,12 @@
       {
         "name": "Health Node (Ukkin-Na)",
         "short_name": "Health Node (Ukkin-Na)",
+        "vgravmap": "HealthNode6",
         "access_rules": [
           "$canTeleport3",
           "highjump",
           "$canDroneTeleport"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -150,11 +152,12 @@
       {
         "name": "Trenchcoat",
         "short_name": "Trenchcoat",
+        "vgravmap": "BlackCoat",
         "access_rules": [
           "$canTeleport3",
           "highjump",
           "$canDroneTeleport"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -268,10 +271,10 @@
           }
         ]
       },
-      // Power Node Fragment (bottom)
+      // Power Node Fragment (Ukkin-Na bottom)
       {
-        "name": "Power Node Fragment (bottom)",
-        "short_name": "Power Node Fragment (v)",
+        "name": "Power Node Fragment (Ukkin-Na bottom)",
+        "short_name": "Power Node Fragment (Ukkin-Na v)",
         "access_rules": [
           "$canTeleport2,highjump",
           "$canTeleport2,$canDroneTeleport",

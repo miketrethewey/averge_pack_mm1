@@ -14,8 +14,8 @@
         "short_name": "Drone Teleport",
         "vgravmap": "DroneTeleport",
         "access_rules": [
-          "$canTeleport2,highjump,addressbomb,rangelong,$canUseRemoteDrone",
-          "$canTeleport2,addressbomb,$canUseRemoteDrone,$canDroneTeleport",
+          "$canTeleport2,highjump,rangelong,$canUseRemoteDrone",
+          "$canTeleport2,addressbomb,$canDroneTeleport",
           "$canTeleport3,addressbomb,rangelong,$canUseRemoteDrone"
         ],
         "map_locations": [
@@ -42,8 +42,9 @@
         "name": "Clay Tablet (Edin)",
         "short_name": "Clay Tablet (Edin)",
         "access_rules": [
-          "$canTeleport2,addressbomb,$canUseRemoteDrone,$canDroneTeleport",
-          "$canTeleport3,addressbomb"
+          "$canTeleport2,addressbomb,$canDroneTeleport",
+          "$canTeleport2,highjump,$canDroneTeleport",
+          "$canTeleport3"
         ],
         "map_locations": [
           {
@@ -156,7 +157,7 @@
         "access_rules": [
           "$canTeleport2,highjump,$canDroneTeleport,addressbomb",
           "$canTeleport3,$canDroneTeleport,addressbomb",
-          "addressbomb,$canUseRemoteDrone,$canDroneTeleport"
+          "addressbomb,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -184,7 +185,7 @@
         "access_rules": [
           "$canTeleport2,highjump",
           "$canTeleport3",
-          "addressbomb,$canUseRemoteDrone,$canDroneTeleport"
+          "addressbomb,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -407,7 +408,7 @@
         "vgravmap": "GlitchBomb",
         "access_rules": [
           "$canTeleport2,highjump",
-          "$canTeleport2,$canUseRemoteDrone,$canDroneTeleport",
+          "$canTeleport2,$canDroneTeleport",
           "$canTeleport3"
         ],
         "map_locations": [

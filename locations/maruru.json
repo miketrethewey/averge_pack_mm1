@@ -13,7 +13,7 @@
         "name": "Digital Paper (Mar-Uru top)",
         "short_name": "Digital Paper (Mar-Uru ^)",
         "access_rules": [
-          "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport,highjump,$canUseRemoteDrone"
+          "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
           {

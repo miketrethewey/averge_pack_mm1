@@ -6,9 +6,9 @@
     "children": [
       { // Eribu -> Ukkin-Na
         "name": "Eribu -> Ukkin-Na",
-        "access_rules": [ // FIXME: coat
+        "access_rules": [ // FIXED
           "$canTeleport1,excavate,addressdisruptor2",
-          "coat3"
+          "$canTeleport3"
         ],
         "map_locations": [
           {
@@ -39,10 +39,10 @@
       },
       { // Eribu -> Indi
         "name": "Eribu -> Indi",
-        "access_rules": [ // FIXME: coat
+        "access_rules": [ // FIXED
           "excavate,grapple",
-          "coat2,excavate,highjump",
-          "coat3"
+          "$canAirport2,excavate,highjump",
+          "$canAirport3"
         ],
         "map_locations": [
           {

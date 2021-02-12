@@ -14,8 +14,8 @@
         "short_name": "Drone Teleport",
         "access_rules": [
           "$canTeleport2,highjump,addressbomb,rangelong,$canUseRemoteDrone",
-          "$canTeleport3,addressbomb,rangelong,$canUseRemoteDrone",
-          "addressbomb,$canUseRemoteDrone,$canDroneTeleport,$canTeleport2"
+          "$canTeleport2,addressbomb,$canUseRemoteDrone,$canDroneTeleport",
+          "$canTeleport3,addressbomb,rangelong,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -41,8 +41,8 @@
         "name": "Clay Tablet (Edin)",
         "short_name": "Clay Tablet (Edin)",
         "access_rules": [
-          "$canTeleport3,addressbomb",
-          "addressbomb,$canUseRemoteDrone,$canDroneTeleport,$canTeleport2"
+          "$canTeleport2,addressbomb,$canUseRemoteDrone,$canDroneTeleport",
+          "$canTeleport3,addressbomb"
          ],
         "map_locations": [
           {
@@ -68,7 +68,7 @@
         "name": "Distortion Field",
         "short_name": "Distortion Field",
         "access_rules": [
-          "highjump,$canTeleport2,$canEnhancedDroneLaunch,$canDroneTeleport",
+          "$canTeleport2,highjump,$canEnhancedDroneLaunch,$canDroneTeleport",
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport"
          ],
         "map_locations": [
@@ -124,8 +124,8 @@
         "short_name": "Health Node Fragment (Edin ^)",
         "access_rules": [
           "$canTeleport2,highjump,grapple,$canUseRemoteDrone",
-          "$canTeleport3,grapple,$canUseRemoteDrone",
-          "$canTeleport2,$canDroneTeleport,grapple"
+          "$canTeleport2,$canDroneTeleport,grapple",
+          "$canTeleport3,grapple,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -207,9 +207,9 @@
         "name": "Digital Paper (Edin top)",
         "short_name": "Digital Paper (Edin ^)",
         "access_rules": [
-          "highjump,addressdisruptor,$canTeleport2",
-          "$canTeleport3",
-          "$canDroneTeleport,addressdisruptor,$canTeleport2"
+          "$canTeleport2,highjump,addressdisruptor",
+          "$canTeleport2,$canDroneTeleport,addressdisruptor",
+          "$canTeleport3"
         ],
         "map_locations": [
           {
@@ -287,9 +287,9 @@
         "name": "Digital Paper (Edin bottom)",
         "short_name": "Digital Paper (Edin v)",
         "access_rules": [
-          "highjump,$canAirport2,addressdisruptor",
-          "$canTeleport3,addressdisruptor",
-          "$canDroneTeleport,$canAirport2,addressdisruptor"
+          "$canAirport2,highjump,addressdisruptor",
+          "$canAirport2,$canDroneTeleport,addressdisruptor",
+          "$canTeleport3,addressdisruptor"
         ],
         "map_locations": [
           {
@@ -315,7 +315,7 @@
         "name": "Health & Power Nodes (Edin right) (2 items)",
         "short_name": "Health & Power Nodes (Edin >) (2 items)",
         "access_rules": [
-          "addressbomb,highjump,$canTeleport2",
+          "$canTeleport2,addressbomb,highjump",
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport"
          ],
         "map_locations": [
@@ -373,7 +373,7 @@
         "name": "Range Node (Edin)",
         "short_name": "Range Node (Edin)",
         "access_rules": [
-          "highjump,$canAirport2,$canUseRemoteDrone"
+          "$canAirport2,highjump,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -399,9 +399,9 @@
         "name": "Address Bomb",
         "short_name": "Address Bomb",
         "access_rules": [
-          "highjump,$canTeleport2",
-          "$canTeleport3",
-          "$canTeleport2,$canUseRemoteDrone,$canDroneTeleport"
+          "$canTeleport2,highjump",
+          "$canTeleport2,$canUseRemoteDrone,$canDroneTeleport",
+          "$canTeleport3"
         ],
         "map_locations": [
           {

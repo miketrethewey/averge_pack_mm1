@@ -14,7 +14,7 @@
         "short_name": "Health Node (Eribu ^)",
         "access_rules": [
           "addressbomb,highjump,grapple",
-          "addressbomb,$canAirport2",
+          "$canAirport2,addressbomb",
           "addressbomb,$canUseRemoteDrone"
         ],
         "map_locations": [
@@ -42,8 +42,8 @@
         "short_name": "Nova",
         "vgravmap": "Nova",
         "access_rules": [
-          "$canShootShort",
-          "$canTeleport1"
+          "$canTeleport1",
+          "$canShootShort"
         ],
         // Return needs Split or Wave
         "map_locations": [
@@ -102,11 +102,11 @@
         "short_name": "Multi-Disruptor",
         "vgravmap": "MultiDisruptor",
         "access_rules": [
+          "$canAirport2,excavate",
+          "$canAirport3",
           "spazer,excavate",
           "wave,excavate",
-          "$canUseRemoteDrone",
-          "$canAirport2,excavate",
-          "$canAirport3"
+          "$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -159,11 +159,11 @@
         "short_name": "Size Node (Eribu)",
         "vgravmap": "SizeNode1",
         "access_rules": [
+          "$canAirport2",
           "spazer",
           "wave",
           "$canUseRemoteDrone",
-          "reflector",
-          "$canAirport2"
+          "reflector"
          ],
         "map_locations": [
           {
@@ -189,7 +189,7 @@
         "name": "Note (Eribu)",
         "short_name": "Note (Eribu)",
         "access_rules": [
-          "$canDroneTeleport,$canTeleport1"
+          "$canTeleport1,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -216,11 +216,11 @@
         "short_name": "Laser Drill",
         "vgravmap": "Drill",
         "access_rules": [
+          "$canTeleport3",
           "spazer",
           "wave",
           "reflector",
-          "$canUseRemoteDrone",
-          "$canTeleport3"
+          "$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -248,10 +248,10 @@
         "vgravmap": "PowerNode1",
         "access_rules": [
           "{spazer}",
-          "spazer,excavate",
           "{wave}",
-          "wave,excavate",
-          "$canTeleport3"
+          "$canTeleport3",
+          "spazer,excavate",
+          "wave,excavate"
         ],
         "map_locations": [
           {
@@ -331,7 +331,7 @@
         "name": "Lightning Gun",
         "short_name": "Lightning Gun",
         "access_rules": [ //Needs additional Logic added
-          "addressbomb,$canAirport3",
+          "$canAirport3,addressbomb",
           "addressbomb,$canUseRemoteDrone"
          ],
         "map_locations": [
@@ -358,7 +358,7 @@
         "name": "Orbital Discharge (DALHKU-SUBTUM)",
         "short_name": "Orbital Discharge (DALHKU-SUBTUM)",
         "access_rules": [
-          "passcodetool,$canAirport2,highjump",
+          "$canAirport2,passcodetool,highjump",
           "$canAirport3,passcodetool",
           "passcodetool,grapple"
         ],
@@ -386,12 +386,12 @@
         "name": "Health Node Fragment (Eribu bottom left)",
         "short_name": "Health Node Fragment (Eribu <v)",
         "access_rules": [
+          "{excavate}",
+          "$canAirport2",
           "addressdisruptor,excavate",
           "addressbomb",
           "grapple,excavate",
-          "$canUseRemoteDrone",
-          "$canAirport2",
-          "{excavate}"
+          "$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -418,9 +418,9 @@
         "name": "Power Node Fragment (Eribu bottom)",
         "short_name": "Power Node Fragment (Eribu v)",
         "access_rules": [
+          "$canTeleport1,$canDroneTeleport",
           "$canAirport3,highjump",
-          "$canAirport3,grapple",
-          "$canDroneTeleport,$canTeleport1"
+          "$canAirport3,grapple"
         ],
         "map_locations": [
           {

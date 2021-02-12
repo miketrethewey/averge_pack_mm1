@@ -13,9 +13,9 @@
         "name": "Drone Teleport",
         "short_name": "Drone Teleport",
         "access_rules": [
-          "$can$canTeleport2,highjump,addressbomb,rangelong,remotedrone",
-          "$can$canTeleport3,addressbomb,rangelong,remotedrone",
-          "addressbomb,remotedrone,$canDroneTeleport,$can$canTeleport2"
+          "$canTeleport2,highjump,addressbomb,rangelong,remotedrone",
+          "$canTeleport3,addressbomb,rangelong,remotedrone",
+          "addressbomb,remotedrone,$canDroneTeleport,$canTeleport2"
         ],
         "map_locations": [
           {

@@ -356,10 +356,10 @@
           }
         ]
       },
-      // Orbital Discharge (DALHKU-SUBTUM)
+      // Orbital Discharge (DALKHU-SUBTUM)
       {
-        "name": "Orbital Discharge (DALHKU-SUBTUM)",
-        "short_name": "Orbital Discharge (DALHKU-SUBTUM)",
+        "name": "Orbital Discharge (DALKHU-SUBTUM)",
+        "short_name": "Orbital Discharge (DALKHU-SUBTUM)",
         "access_rules": [
           "$canAirport2,passcodetool,highjump",
           "$canAirport3,passcodetool",

@@ -47,7 +47,8 @@
           "$canDroneTeleport,addressdisruptor,teleport1",
           "airport2,addressdisruptor",
           "highjump,airport2,$canDroneTeleport",
-          "airport3,$canDroneTeleport"
+          "airport3,$canDroneTeleport",
+          "airport3,addressdisruptor"
         ],
         "map_locations": [
           {

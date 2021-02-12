@@ -13,7 +13,7 @@
         "name": "Turbine Pulse",
         "short_name": "Turbine Pulse",
         "access_rules": [
-          "$canAirport3,$canEnhancedDroneLaunch,$canDroneTeleport"
+          "airport3,$canEnhancedDroneLaunch,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -41,13 +41,13 @@
         "access_rules": [
           "highjump,grapple",
           "$canDroneTeleport",
-          "$canTeleport3"
+          "teleport3"
         ],
         "map_locations": [
           {
             "map": "sudra",
             "x": 333,
-            "y": 549
+            "y": 537
           },
           {
             "map": "ukkinna",
@@ -67,9 +67,9 @@
         "name": "Health Node Fragment (Ukkin-Na top)",
         "short_name": "Health Node Fragment (Ukkin-Na ^)",
         "access_rules": [
-          "highjump,$canTeleport2,$canUseRemoteDrone",
-          "$canDroneTeleport,$canTeleport2",
-          "$canTeleport3,$canUseRemoteDrone"
+          "highjump,teleport2,$canUseRemoteDrone",
+          "$canDroneTeleport,teleport2",
+          "teleport3,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -97,7 +97,7 @@
         "access_rules": [
           "highjump,addressdisruptor,$canUseRemoteDrone",
           "$canDroneTeleport,addressdisruptor",
-          "$canTeleport3,addressdisruptor,$canUseRemoteDrone"
+          "teleport3,addressdisruptor,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -125,7 +125,7 @@
         "access_rules": [
           "highjump",
           "$canDroneTeleport",
-          "$canTeleport3"
+          "teleport3"
          ],
         "map_locations": [
           {
@@ -153,7 +153,7 @@
         "access_rules": [
           "highjump",
           "$canDroneTeleport",
-          "$canTeleport3"
+          "teleport3"
          ],
         "map_locations": [
           {
@@ -179,9 +179,9 @@
         "name": "Power Node Fragment (Ukkin-Na middle)",
         "short_name": "Power Node Fragment (Ukkin-Na =)",
         "access_rules": [
-          "highjump,$canAirport2",
-          "$canDroneTeleport,$canAirport2",
-          "$canAirport3"
+          "highjump,airport2",
+          "$canDroneTeleport,airport2",
+          "airport3"
         ],
         "map_locations": [
           {
@@ -208,10 +208,10 @@
         "name": "Digital Paper (Ukkin-Na)",
         "short_name": "Digital Paper (Ukkin-Na)",
         "access_rules": [
-          "highjump,$canAirport2,$canUseRemoteDrone",
-          "$canDroneTeleport,$canAirport2",
-          "$canAirport3,$canUseRemoteDrone"
-        ],
+          "highjump,airport2,$canUseRemoteDrone",
+          "$canDroneTeleport,airport2",
+          "airport3,$canUseRemoteDrone"
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -252,8 +252,8 @@
             "name": "Upper",
             "item_count": 1,
             "access_rules": [
-              "$canAirport3",
-              "$canAirport2,highjump"
+              "airport3",
+              "airport2,highjump"
             ]
           },
           {
@@ -262,7 +262,8 @@
             "access_rules": [
               "highjump,addressdisruptor,grapple",
               "highjump,addressdisruptor,$canUseRemoteDrone",
-              "$canDroneTeleport"
+              "$canDroneTeleport",
+              "airport2,fielddisruptor"
              ]
           }
         ]
@@ -272,9 +273,9 @@
         "name": "Power Node Fragment (bottom)",
         "short_name": "Power Node Fragment (v)",
         "access_rules": [
-          "highjump,$canTeleport2",
-          "$canDroneTeleport,$canTeleport2",
-          "$canTeleport3"
+          "highjump,teleport2",
+          "$canDroneTeleport,teleport2",
+          "teleport3"
         ],
         "map_locations": [
           {

@@ -15,9 +15,9 @@
         "access_rules": [
           "highjump,addressdisruptor,grapple",
           "$canDroneTeleport,addressdisruptor,grapple",
-          "airport2,addressdisruptor",
-          "highjump,airport2,$canDroneTeleport,grapple",
-          "airport3,$canDroneTeleport,grapple"
+          "$canAirport2,addressdisruptor",
+          "highjump,$canAirport2,$canDroneTeleport,grapple",
+          "$canAirport3,$canDroneTeleport,grapple"
         ],
         "map_locations": [
           {
@@ -103,8 +103,8 @@
         "short_name": "Digital Paper (Zi) #1",
         "access_rules": [
           "highjump,excavate",
-          "airport2,excavate",
-          "airport3",
+          "$canAirport2,excavate",
+          "$canAirport3",
           "$canUseRemoteDrone"
         ],
         "map_locations": [
@@ -163,7 +163,7 @@
         "short_name": "Rusalka Tablet (Zi)",
         "access_rules": [
           "highjump,$canUseRemoteDrone",
-          "airport2,$canUseRemoteDrone"
+          "$canAirport2,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -300,7 +300,8 @@
         "name": "Health Node Fragment (Zi middle)",
         "short_name": "Health Node Fragment (Zi =)",
         "access_rules": [
-          "$canUseRemoteDrone"
+          "$canUseRemoteDrone",
+          "$canTeleport2"
         ],
         "map_locations": [
           {

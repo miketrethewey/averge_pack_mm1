@@ -6,7 +6,7 @@
     "parent": "Sudra",
     "access_rules": [ // Eribu -> Absu, Absu -> Zi -> North Kur -> E-Kur-Mah
       "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,$canTeleport2",
-      "fielddisruptor,$canTeleport3"
+      "$canTeleport3"
     ],
     "children": [
       // Power Node (E-Kur-Mah)
@@ -41,7 +41,7 @@
         "short_name": "Sudran Key",
         "access_rules": [
           "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,$canTeleport2",
-          "fielddisruptor,$canTeleport3,$canDroneTeleport"
+          "highjump,$canTeleport3,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -68,7 +68,7 @@
         "short_name": "Clay Tablet (E-Kur-Mah ^>)",
         "access_rules": [
           "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,$canTeleport2",
-          "fielddisruptor,$canTeleport3,$canDroneTeleport"
+          "highjump,$canTeleport3,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -95,7 +95,7 @@
         "short_name": "Clay Tablet (E-Kur-Mah <^)",
         "access_rules": [
           "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,$canTeleport2",
-          "fielddisruptor,$canTeleport3,$canDroneTeleport"
+          "highjump,$canTeleport3,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -148,7 +148,7 @@
         "short_name": "Quantum Veriegator (ISKART-EHANZU)",
         "access_rules": [
           "passcodetool,$canEnhancedDroneLaunch,$canDroneTeleport,$canTeleport1",
-          "passcodetool,$canAirport3,$canDroneTeleport,fielddisruptor"
+          "passcodetool,$canAirport3,$canDroneTeleport,highjump"
         ],
         "map_locations": [
           {
@@ -202,7 +202,7 @@
         "short_name": "Red Coat",
         "access_rules": [
           "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,$canTeleport2",
-          "fielddisruptor,$canTeleport3"
+          "highjump,$canTeleport3"
          ],
         "map_locations": [
           {

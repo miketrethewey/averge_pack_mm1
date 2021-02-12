@@ -44,7 +44,7 @@
           "highjump,$canAirport2,addressbomb",
           "grapple,addressbomb",
           "$canAirport3,addressbomb"
-        ],
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -157,7 +157,8 @@
         "short_name": "Health Node Fragment (Absu = 1)",
         "access_rules": [
           "{}",
-          "wave"
+          "wave",
+          "$canTeleport1"
         ],
         "map_locations": [
           {
@@ -317,7 +318,7 @@
         "short_name": "Inertial Pulse",
         "access_rules": [
           "addressdisruptor2,excavate,highjump",
-          "addressdisruptor2,$canAirport3",
+          "$canAirport3",
           "addressdisruptor2,excavate,$canAirport2"
         ],
         "map_locations": [
@@ -558,7 +559,7 @@
             "name": "Item",
             "access_rules": [
               "addressdisruptor",
-              "hijump"
+              "highjump"
             ],
             "item_count": 1,
             "capture_item": true
@@ -573,7 +574,7 @@
           "wave,addressdisruptor,$canUseRemoteDrone",
           "$canTeleport1,addressdisruptor,$canUseRemoteDrone",
           "$canAirport2"
-        ],
+         ],
         "map_locations": [
           {
             "map": "sudra",

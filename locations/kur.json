@@ -17,7 +17,8 @@
         "short_name": "Clay Tablet (Kur ^)",
         "access_rules": [
           "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
-          "highjump,$canAirport3,$canDroneTeleport"
+          "highjump,$canAirport3,$canDroneTeleport",
+          "highjump,$canAirport3,grapple"
         ],
         "map_locations": [
           {
@@ -46,7 +47,7 @@
           "$canDroneTeleport,grapple,addressdisruptor2",
           "highjump,$canAirport3,addressdisruptor2",
           "highjump,grapple,addressdisruptor2"
-        ],
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -106,7 +107,7 @@
           "$canDroneTeleport,grapple,$canEnhancedDroneLaunch",
           "highjump,$canAirport3,$canEnhancedDroneLaunch",
           "highjump,grapple,$canEnhancedDroneLaunch"
-        ],
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -134,7 +135,7 @@
           "$canDroneTeleport,grapple",
           "highjump,$canAirport3,$canUseRemoteDrone",
           "highjump,grapple,$canUseRemoteDrone"
-        ],
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -219,7 +220,7 @@
           "$canDroneTeleport,grapple",
           "highjump,$canAirport3,$canUseRemoteDrone",
           "highjump,grapple,$canUseRemoteDrone"
-        ],
+         ],
         "map_locations": [
           {
             "map": "sudra",
@@ -276,7 +277,7 @@
           "$canDroneTeleport,grapple",
           "highjump,$canAirport3,$canUseRemoteDrone",
           "highjump,grapple,$canUseRemoteDrone"
-        ],
+         ],
         "map_locations": [
           {
             "map": "sudra",

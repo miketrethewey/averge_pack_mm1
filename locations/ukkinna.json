@@ -47,7 +47,7 @@
           {
             "map": "sudra",
             "x": 333,
-            "y": 549
+            "y": 537
           },
           {
             "map": "ukkinna",
@@ -262,7 +262,8 @@
             "access_rules": [
               "highjump,addressdisruptor,grapple",
               "highjump,addressdisruptor,$canUseRemoteDrone",
-              "$canDroneTeleport"
+              "$canDroneTeleport",
+              "airport2,fielddisruptor"
              ]
           }
         ]

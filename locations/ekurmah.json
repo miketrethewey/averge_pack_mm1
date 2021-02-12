@@ -14,7 +14,8 @@
         "name": "Power Node (E-Kur-Mah)",
         "short_name": "Power Node (E-Kur-Mah)",
         "access_rules": [
-          "sudrankey"
+          "sudrankey",
+          "airport3,fielddisruptor,grapple"
          ],
         "map_locations": [
           {
@@ -95,7 +96,8 @@
         "short_name": "Clay Tablet (E-Kur-Mah <^)",
         "access_rules": [
           "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,$canTeleport2",
-          "highjump,$canTeleport3,$canDroneTeleport"
+          "highjump,$canTeleport3,$canDroneTeleport",
+          "highjump,$canAirport3,grapple"
         ],
         "map_locations": [
           {
@@ -121,7 +123,8 @@
         "name": "Clay Tablet (E-Kur-Mah bottom)",
         "short_name": "Clay Tablet (E-Kur-Mah v)",
         "access_rules": [
-          "sudrankey,$canTeleport3"
+          "sudrankey,$canTeleport3",
+          "$canAirport3,highjump,grapple"
         ],
         "map_locations": [
           {
@@ -201,8 +204,8 @@
         "name": "Red Coat",
         "short_name": "Red Coat",
         "access_rules": [
-          "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,$canTeleport2",
-          "highjump,$canTeleport3"
+          "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
+          "$canTeleport3"
          ],
         "map_locations": [
           {

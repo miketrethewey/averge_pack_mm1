@@ -37,9 +37,9 @@
       },
       { // Zi -> Indi
         "name": "Zi -> Indi",
-        "access_rules": [ // FIXME: coat
-          "coat2,highjump",
-          "coat3",
+        "access_rules": [ // FIXED
+          "$canTeleport2,highjump",
+          "$canteleport3",
           "highjump,grapple",
           "$canDroneTeleport"
         ],

@@ -40,6 +40,7 @@
       {
         "name": "Nova",
         "short_name": "Nova",
+        "vgravmap": "Nova",
         "access_rules": [
           "$canShootShort",
           "$canTeleport1"
@@ -99,6 +100,7 @@
       {
         "name": "Multi-Disruptor",
         "short_name": "Multi-Disruptor",
+        "vgravmap": "MultiDisruptor",
         "access_rules": [
           "spazer,excavate",
           "wave,excavate",
@@ -155,6 +157,7 @@
       {
         "name": "Size Node (Eribu)",
         "short_name": "Size Node (Eribu)",
+        "vgravmap": "SizeNode1",
         "access_rules": [
           "spazer",
           "wave",
@@ -211,6 +214,7 @@
       {
         "name": "Laser Drill",
         "short_name": "Laser Drill",
+        "vgravmap": "Drill",
         "access_rules": [
           "spazer",
           "wave",
@@ -240,6 +244,7 @@
       {
         "name": "Power Node (Eribu)",
         "short_name": "Power Node (Eribu)",
+        "vgravmap": "PowerNode1",
         "access_rules": [
           "{spazer}",
           "spazer,excavate",
@@ -298,6 +303,7 @@
       {
         "name": "Axiom Disruptor",
         "short_name": "Axiom Disruptor",
+        "vgravmap": "DataDisruptor",
         "access_rules": [ ],
         "map_locations": [
           {

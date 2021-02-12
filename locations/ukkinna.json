@@ -13,7 +13,7 @@
         "name": "Turbine Pulse",
         "short_name": "Turbine Pulse",
         "access_rules": [
-          "airport3,$canEnhancedDroneLaunch,$canDroneTeleport"
+          "$canAirport3,$canEnhancedDroneLaunch,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -39,9 +39,9 @@
         "name": "Rusalka Tablet (Ukkin-Na top)",
         "short_name": "Rusalka Tablet (Ukkin-Na ^)",
         "access_rules": [
+          "$canTeleport3",
           "highjump,grapple",
-          "$canDroneTeleport",
-          "teleport3"
+          "$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -67,9 +67,9 @@
         "name": "Health Node Fragment (Ukkin-Na top)",
         "short_name": "Health Node Fragment (Ukkin-Na ^)",
         "access_rules": [
-          "highjump,teleport2,$canUseRemoteDrone",
-          "$canDroneTeleport,teleport2",
-          "teleport3,$canUseRemoteDrone"
+          "$canTeleport2,highjump,$canUseRemoteDrone",
+          "$canTeleport2,$canDroneTeleport",
+          "$canTeleport3,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -95,9 +95,9 @@
         "name": "Power Node Fragment (Ukkin-Na top)",
         "short_name": "Power Node Fragment (Ukkin-Na ^)",
         "access_rules": [
+          "$canTeleport3,addressdisruptor,$canUseRemoteDrone",
           "highjump,addressdisruptor,$canUseRemoteDrone",
-          "$canDroneTeleport,addressdisruptor",
-          "teleport3,addressdisruptor,$canUseRemoteDrone"
+          "$canDroneTeleport,addressdisruptor"
         ],
         "map_locations": [
           {
@@ -123,9 +123,9 @@
         "name": "Health Node (Ukkin-Na)",
         "short_name": "Health Node (Ukkin-Na)",
         "access_rules": [
+          "$canTeleport3",
           "highjump",
-          "$canDroneTeleport",
-          "teleport3"
+          "$canDroneTeleport"
          ],
         "map_locations": [
           {
@@ -151,9 +151,9 @@
         "name": "Trenchcoat",
         "short_name": "Trenchcoat",
         "access_rules": [
+          "$canTeleport3",
           "highjump",
-          "$canDroneTeleport",
-          "teleport3"
+          "$canDroneTeleport"
          ],
         "map_locations": [
           {
@@ -179,9 +179,9 @@
         "name": "Power Node Fragment (Ukkin-Na middle)",
         "short_name": "Power Node Fragment (Ukkin-Na =)",
         "access_rules": [
-          "highjump,airport2",
-          "$canDroneTeleport,airport2",
-          "airport3"
+          "$canAirport2,highjump",
+          "$canAirport2,$canDroneTeleport",
+          "$canAirport3"
         ],
         "map_locations": [
           {
@@ -208,10 +208,10 @@
         "name": "Digital Paper (Ukkin-Na)",
         "short_name": "Digital Paper (Ukkin-Na)",
         "access_rules": [
-          "highjump,airport2,$canUseRemoteDrone",
-          "$canDroneTeleport,airport2",
-          "airport3,$canUseRemoteDrone"
-         ],
+          "$canAirport2,highjump,$canUseRemoteDrone",
+          "$canAirport2,$canDroneTeleport",
+          "$canAirport3,$canUseRemoteDrone"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -252,18 +252,18 @@
             "name": "Upper",
             "item_count": 1,
             "access_rules": [
-              "airport3",
-              "airport2,highjump"
+              "$canAirport2,highjump",
+              "$canAirport3"
             ]
           },
           {
             "name": "Lower",
             "item_count": 1,
             "access_rules": [
+              "$canAirport2,highjump",
               "highjump,addressdisruptor,grapple",
               "highjump,addressdisruptor,$canUseRemoteDrone",
-              "$canDroneTeleport",
-              "airport2,fielddisruptor"
+              "$canDroneTeleport"
              ]
           }
         ]
@@ -273,9 +273,9 @@
         "name": "Power Node Fragment (bottom)",
         "short_name": "Power Node Fragment (v)",
         "access_rules": [
-          "highjump,teleport2",
-          "$canDroneTeleport,teleport2",
-          "teleport3"
+          "$canTeleport2,highjump",
+          "$canTeleport2,$canDroneTeleport",
+          "$canTeleport3"
         ],
         "map_locations": [
           {

@@ -6,7 +6,7 @@
     "children": [
       { // Absu -> Indi
         "name": "Absu -> Indi",
-        "access_rules": [
+        "access_rules": [ // FIXME: coat
           "$canTeleport1,addressdisruptor,grapple",
           "$canTeleport1,addressdisruptor,$canDroneTeleport",
           "coat2,highjump",
@@ -43,11 +43,11 @@
       },
       { // Absu -> Zi
         "name": "Absu -> Zi",
-        "access_rules": [
-          "wave,addressdisruptor",
+        "access_rules": [ // FIXME: coat
           "$canTeleport1,addressdisruptor",
           "coat2",
-          "coat3"
+          "coat3",
+          "wave,addressdisruptor"
         ],
         "map_locations": [
           {

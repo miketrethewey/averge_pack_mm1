@@ -14,7 +14,7 @@
         "short_name": "Rusalka Tablet (Indi)",
         "access_rules": [
           "{}",
-          "airport2"
+          "$canAirport2"
         ],
         "map_locations": [
           {
@@ -67,8 +67,8 @@
         "name": "Digital Paper (Indi)",
         "short_name": "Digital Paper (Indi)",
         "access_rules": [
-          "highjump,$canUseRemoteDrone",
-          "airport2,$canUseRemoteDrone"
+          "$canAirport2,$canUseRemoteDrone",
+          "highjump,$canUseRemoteDrone"
          ],
         "map_locations": [
           {

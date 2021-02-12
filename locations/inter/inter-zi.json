@@ -37,11 +37,11 @@
       },
       { // Zi -> Indi
         "name": "Zi -> Indi",
-        "access_rules": [
-          "highjump,grapple",
-          "$canDroneTeleport",
+        "access_rules": [ // FIXME: coat
           "coat2,highjump",
-          "coat3"
+          "coat3",
+          "highjump,grapple",
+          "$canDroneTeleport"
         ],
         "map_locations": [
           {

@@ -566,7 +566,7 @@
             "access_rules": [
               "addressdisruptor",
               "highjump"
-           ],
+            ],
             "item_count": 1,
             "capture_item": true
           }
@@ -611,7 +611,7 @@
           "$canTeleport1,addressdisruptor,$canUseRemoteDrone",
           "$canTeleport2,$canUseRemoteDrone",
           "wave,addressdisruptor,$canUseRemoteDrone"
-               ],
+        ],
         "map_locations": [
           {
             "map": "sudra",

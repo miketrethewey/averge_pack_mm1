@@ -44,7 +44,7 @@
           "$canAirport3,addressbomb",
           "addressdisruptor2,$canUseRemoteDrone",
           "grapple,addressbomb"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -210,6 +210,7 @@
       {
         "name": "Address Disruptor 1",
         "short_name": "Address Disruptor 1",
+        "vgravmap": "AddressDisruptor1",
         "access_rules": [
           "$canTeleport1",
           "wave"
@@ -265,6 +266,7 @@
       {
         "name": "Kilver",
         "short_name": "Kilver",
+        "vgravmap": "Kilver",
         "access_rules": [ ],
         "map_locations": [
           {
@@ -289,6 +291,7 @@
       {
         "name": "Health Node (Absu)",
         "short_name": "Health Node (Absu)",
+        "vgravmap": "HealthNode2",
         "access_rules": [
           "$canTeleport2",
           "wave,addressdisruptor"
@@ -316,6 +319,7 @@
       {
         "name": "Inertial Pulse",
         "short_name": "Inertial Pulse",
+        "vgravmap": "IntertialPulse",
         "access_rules": [
           "$canAirport2,addressdisruptor2,excavate",
           "$canAirport3",
@@ -346,7 +350,7 @@
         "short_name": "Digital Paper (Absu ^)",
         "access_rules": [
           "$canUseRemoteDrone"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -373,7 +377,7 @@
         "access_rules": [
           "$canTeleport2",
           "wave,addressdisruptor"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -425,6 +429,7 @@
       {
         "name": "Size Node (Absu)",
         "short_name": "Size Node (Absu)",
+        "vgravmap": "SizeNode2",
         "access_rules": [
           "$canTeleport2",
           "wave,addressdisruptor"
@@ -480,6 +485,7 @@
       {
         "name": "Data Bomb",
         "short_name": "Data Bomb",
+        "vgravmap": "DataGrenade",
         "access_rules": [
           "$canTeleport2,$canDroneTeleport"
         ],
@@ -560,7 +566,7 @@
             "access_rules": [
               "addressdisruptor",
               "highjump"
-            ],
+           ],
             "item_count": 1,
             "capture_item": true
           }
@@ -574,7 +580,7 @@
           "$canTeleport1,addressdisruptor,$canUseRemoteDrone",
           "$canAirport2",
           "wave,addressdisruptor,$canUseRemoteDrone"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -605,7 +611,7 @@
           "$canTeleport1,addressdisruptor,$canUseRemoteDrone",
           "$canTeleport2,$canUseRemoteDrone",
           "wave,addressdisruptor,$canUseRemoteDrone"
-                ],
+               ],
         "map_locations": [
           {
             "map": "sudra",
@@ -630,6 +636,7 @@
       {
         "name": "Power Node (Absu)",
         "short_name": "Power Node (Absu)",
+        "vgravmap": "PowerNode2",
         "access_rules": [
           "$canTeleport1,addressdisruptor",
           "$canTeleport2",
@@ -690,7 +697,7 @@
         "short_name": "Rusalka Tablet (Absu <v)",
         "access_rules": [
           "$canTeleport1"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",

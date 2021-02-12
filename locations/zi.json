@@ -42,6 +42,7 @@
       {
         "name": "Health Node (Zi)",
         "short_name": "Health Node (Zi)",
+        "vgravmap": "HealthNode3",
         "access_rules": [
           "$canTeleport1,highjump,addressdisruptor",
           "$canTeleport1,$canDroneTeleport,addressdisruptor",
@@ -73,6 +74,7 @@
       {
         "name": "Modified Lab Coat",
         "short_name": "Modified Lab Coat",
+        "vgravmap": "GlitchTeleport",
         "access_rules": [
           "$canAirport2,highjump",
           "$canAirport3",
@@ -189,6 +191,7 @@
       {
         "name": "Voranj",
         "short_name": "Voranj",
+        "vgravmap": "Voranj",
         "access_rules": [
           "$canUseRemoteDrone,highjump"
         ],
@@ -244,6 +247,7 @@
       {
         "name": "Size Node (Zi)",
         "short_name": "Size Node (Zi)",
+        "vgravmap": "SizeNode3",
         "access_rules": [
           "$canTeleport2",
           "highjump"
@@ -271,6 +275,7 @@
       {
         "name": "Bioflux Accelerator #1",
         "short_name": "Bioflux Accelerator #1",
+        "vgravmap": "TendrilsTop",
         "access_rules": [
           "$canTeleport1,highjump",
           "$canTeleport1,$canDroneTeleport",
@@ -354,6 +359,7 @@
       {
         "name": "Range Node (Zi)",
         "short_name": "Range Node (Zi)",
+        "vgravmap": "RangeNode2",
         "access_rules": [
           "$canTeleport1,highjump",
           "$canTeleport1,$canDroneTeleport",
@@ -383,6 +389,7 @@
       {
         "name": "Passcode Tool",
         "short_name": "Passcode Tool",
+        "vgravmap": "PasswordTool",
         "access_rules": [
           "$canTeleport2,grapple",
           "$canTeleport2,highjump",

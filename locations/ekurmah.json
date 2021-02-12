@@ -13,10 +13,11 @@
       {
         "name": "Power Node (E-Kur-Mah)",
         "short_name": "Power Node (E-Kur-Mah)",
+        "vgravmap": "PowerNode6",
         "access_rules": [
           "$canAirport3,highjump,grapple",
           "sudrankey"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -40,6 +41,7 @@
       {
         "name": "Sudran Key",
         "short_name": "Sudran Key",
+        "vgravmap": "BreachSuppressor",
         "access_rules": [
           "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
           "$canTeleport3,highjump,$canDroneTeleport"
@@ -176,6 +178,7 @@
       {
         "name": "Health Node Fragment (E-Kur-Mah)",
         "short_name": "Health Node Fragment (E-Kur-Mah)",
+        "vgravmap": "HealthNodeFragment17",
         "access_rules": [
           "$canAirport3,$canUseRemoteDrone",
           "highjump,$canEnhancedDroneLaunch,sudrankey"
@@ -203,10 +206,11 @@
       {
         "name": "Red Coat",
         "short_name": "Red Coat",
+        "vgravmap": "RedCoat",
         "access_rules": [
           "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
           "$canTeleport3"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -230,10 +234,11 @@
       {
         "name": "Power Node Fragment (E-Kur-Mah)",
         "short_name": "Power Node Fragment (E-Kur-Mah)",
+        "vgravmap": "PowerNodeFragment18",
         "access_rules": [
           "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,sudrankey",
           "$canTeleport3"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",

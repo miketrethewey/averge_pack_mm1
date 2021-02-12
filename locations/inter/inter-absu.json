@@ -34,7 +34,7 @@
             "item_count": 1,
             "visibility_rules": [
               "connections"
-            ],
+           ],
             "chest_unavailable_img": "images/connections/right.png",
             "chest_unopened_img": "images/connections/right.png",
             "chest_opened_img": "images/connections/right.png"
@@ -69,7 +69,7 @@
             "item_count": 1,
             "visibility_rules": [
               "connections"
-            ],
+           ],
             "chest_unavailable_img": "images/connections/right.png",
             "chest_unopened_img": "images/connections/right.png",
             "chest_opened_img": "images/connections/right.png"

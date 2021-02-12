@@ -12,6 +12,7 @@
       {
         "name": "Health Node (Eribu top)",
         "short_name": "Health Node (Eribu ^)",
+        "vgravmap": "HealthNode1",
         "access_rules": [
           "addressbomb,highjump,grapple",
           "$canAirport2,addressbomb",
@@ -131,6 +132,7 @@
       {
         "name": "Flamethrower (DINGER-GISBAR)",
         "short_name": "Flamethrower (DINGER-GISBAR)",
+        "vgravmap": "FlameThrower",
         "access_rules": [
           "$canAirport3,$canEnhancedDroneLaunch,$canDroneTeleport,passcodetool,highjump"
         ],
@@ -164,7 +166,7 @@
           "wave",
           "$canUseRemoteDrone",
           "reflector"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -330,10 +332,11 @@
       {
         "name": "Lightning Gun",
         "short_name": "Lightning Gun",
+        "vgravmap": "LightningGun",
         "access_rules": [ //Needs additional Logic added
           "$canAirport3,addressbomb",
           "addressbomb,$canUseRemoteDrone"
-         ],
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -445,6 +448,7 @@
       {
         "name": "Health Node (Eribu bottom)",
         "short_name": "Health Node (Eribu v)",
+        "vgravmap": "HealthNode9",
         "access_rules": [
           "excavate"
         ],

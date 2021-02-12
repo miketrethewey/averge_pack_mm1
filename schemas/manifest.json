@@ -100,7 +100,7 @@
                   "chathud",
                   "map",
                   "pins"
-                ],
+               ],
                 "examples": [
                   "autotracker",
                   "chathud",

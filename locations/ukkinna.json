@@ -98,9 +98,9 @@
         "name": "Power Node Fragment (Ukkin-Na top)",
         "short_name": "Power Node Fragment (Ukkin-Na ^)",
         "access_rules": [
-          "$canTeleport3,addressdisruptor,$canUseRemoteDrone",
-          "highjump,addressdisruptor,$canUseRemoteDrone",
-          "$canDroneTeleport,addressdisruptor"
+          "$canTeleport3,$canUseRemoteDrone",
+          "highjump,addressdisruptor2,$canUseRemoteDrone",
+          "$canDroneTeleport,addressdisruptor2,$canTeleport2"
         ],
         "map_locations": [
           {
@@ -215,6 +215,7 @@
         "access_rules": [
           "$canAirport2,highjump,$canUseRemoteDrone",
           "$canAirport2,$canDroneTeleport",
+          "$canAirport2,grapple,$canUseRemoteDrone",
           "$canAirport3,$canUseRemoteDrone"
         ],
         "map_locations": [

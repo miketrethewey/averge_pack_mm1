@@ -395,12 +395,15 @@
         "name": "Health Node Fragment (Eribu bottom left)",
         "short_name": "Health Node Fragment (Eribu <v)",
         "access_rules": [
-          "{excavate}",
+          "laserdrill",
+          "[progadvanced],{excavate}",
           "$canAirport2",
-          "addressdisruptor,excavate",
           "addressbomb",
-          "grapple,excavate",
-          "$canUseRemoteDrone"
+          "addressdisruptor,laserdrill",
+          "grapple,laserdrill",
+          "progadvanced],addressdisruptor,excavate",
+          "[progadvanced],grapple,excavate",
+          "[progadvanced],$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -427,7 +430,7 @@
         "name": "Power Node Fragment (Eribu bottom)",
         "short_name": "Power Node Fragment (Eribu v)",
         "access_rules": [
-          "$canTeleport1,$canDroneTeleport",
+          "[progadvanced],$canTeleport1,$canDroneTeleport",
           "$canAirport3,highjump",
           "$canAirport3,grapple"
         ],
@@ -456,7 +459,8 @@
         "short_name": "Health Node (Eribu v)",
         "vgravmap": "HealthNode9",
         "access_rules": [
-          "excavate"
+          "laserdrill",
+          "[progadvanced],excavate"
         ],
         "map_locations": [
           {

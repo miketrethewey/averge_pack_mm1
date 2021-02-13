@@ -41,8 +41,10 @@
       { // Eribu -> Indi
         "name": "Eribu -> Indi",
         "access_rules": [ // FIXED
-          "excavate,grapple",
-          "$canAirport2,excavate,highjump",
+          "laserdrill,grapple",
+          "$canAirport2,laserdrill,highjump",
+          "[progadvanced],excavate,grapple",
+          "[progadvanced],$canAirport2,excavate,highjump",
           "$canAirport3"
         ],
         "map_locations": [
@@ -75,7 +77,8 @@
       { // Eribu -> Absu
         "name": "Eribu -> Absu",
         "access_rules": [
-          "excavate"
+          "laserdrill",
+          "[progadvanced],excavate"
         ],
         "map_locations": [
           {

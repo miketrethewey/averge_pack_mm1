@@ -105,9 +105,11 @@
         "access_rules": [
           "$canAirport2,excavate",
           "$canAirport3",
-          "spazer,excavate",
-          "wave,excavate",
-          "$canUseRemoteDrone"
+          "spazer,laserdrill",
+          "wave,laserdrill",
+          "[progadvanced],spazer,excavate",
+          "[progadvanced],wave,excavate",
+          "[progadvanced],$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -250,11 +252,13 @@
         "short_name": "Power Node (Eribu)",
         "vgravmap": "PowerNode1",
         "access_rules": [
-          "{spazer}",
-          "{wave}",
-          "$canTeleport3",
-          "spazer,excavate",
-          "wave,excavate"
+          "{spazer}",                       // can see but can't get
+          "{wave}",                         // can see but can't get
+          "$canTeleport3",                  // can get
+          "spazer,laserdrill",              // can get
+          "wave,laserdrill",                // can get
+          "[progadvanced],spazer,excavate", // can get (advanced)
+          "[progadvanced],wave,excavate"    // can get (advanced)
         ],
         "map_locations": [
           {

@@ -34,5 +34,12 @@
       //   "codes": "progmasochist"
       }
     ]
+  },
+  {
+    "name": "Connections",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/settings/toggles/paths.png",
+    "codes": "connections-setting,connections"
   }
 ]

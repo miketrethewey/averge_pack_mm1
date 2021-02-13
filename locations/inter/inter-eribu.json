@@ -7,7 +7,8 @@
       { // Eribu -> Ukkin-Na
         "name": "Eribu -> Ukkin-Na",
         "access_rules": [ // FIXED
-          "$canTeleport1,excavate,addressdisruptor2",
+          "$canTeleport1,laserdrill,addressdisruptor2,highjump",
+          "$canTeleport2,laserdrill,grapple",
           "$canTeleport3"
         ],
         "map_locations": [

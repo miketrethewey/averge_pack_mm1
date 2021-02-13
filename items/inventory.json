@@ -379,7 +379,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/shards.png",
-    "codes": "shards,rangeshort,split,splits,spazerbeam,spazer,widebeam,wide"
+    "codes": "shards,rangeshort,widebeam,wide"
   },
   // Size Node
   {

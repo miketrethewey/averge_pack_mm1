@@ -27,9 +27,9 @@ Tracker:AddLocations("locations/inter/inter-zi.json")         -- Inter-Zi
 Tracker:AddLocations("locations/kur.json")                    -- Kur
 Tracker:AddLocations("locations/inter/inter-kur.json")        -- Inter-Kur
 Tracker:AddLocations("locations/indi.json")                   -- Indi
-Tracker:AddLocations("locations/edin.json")                   -- Edin
 Tracker:AddLocations("locations/inter/inter-ukkinna.json")    -- Inter-Ukkin-Na
 Tracker:AddLocations("locations/ukkinna.json")                -- Ukkin-Na
+Tracker:AddLocations("locations/edin.json")                   -- Edin
 Tracker:AddLocations("locations/ekurmah.json")                -- E-Kur-Mah
 Tracker:AddLocations("locations/maruru.json")                 -- Mar-Uru
 --- Secret World Locations

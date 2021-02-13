@@ -125,6 +125,7 @@
         "name": "Clay Tablet (E-Kur-Mah bottom)",
         "short_name": "Clay Tablet (E-Kur-Mah v)",
         "access_rules": [
+          "{}",
           "$canTeleport3,sudrankey",
           "$canAirport3,highjump,grapple"
         ],
@@ -143,7 +144,8 @@
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true
           }
         ]
       },

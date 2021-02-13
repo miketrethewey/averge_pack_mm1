@@ -45,17 +45,17 @@
         }
       },
       {
-        "title": "Edin",
-        "content": {
-          "type": "map",
-          "maps": [ "edin" ]
-        }
-      },
-      {
         "title": "Ukkin-Na",
         "content": {
           "type": "map",
           "maps": [ "ukkinna" ]
+        }
+      },
+      {
+        "title": "Edin",
+        "content": {
+          "type": "map",
+          "maps": [ "edin" ]
         }
       },
       {

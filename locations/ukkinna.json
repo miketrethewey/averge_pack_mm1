@@ -14,7 +14,9 @@
         "short_name": "Turbine Pulse",
         "vgravmap": "TriCone",
         "access_rules": [
-          "$canAirport3,$canEnhancedDroneLaunch,$canDroneTeleport"
+          "$canAirport3",
+          "$canEnhancedDroneLaunch",
+          "$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -255,9 +257,11 @@
             "name": "Upper",
             "item_count": 1,
             "access_rules": [
+              "{wave}",
               "$canAirport2,highjump",
               "$canAirport3"
-            ]
+            ],
+            "capture_item": true
           },
           {
             "name": "Lower",
@@ -276,8 +280,8 @@
         "name": "Power Node Fragment (Ukkin-Na bottom)",
         "short_name": "Power Node Fragment (Ukkin-Na v)",
         "access_rules": [
-          "$canTeleport2,highjump",
-          "$canTeleport2,$canDroneTeleport",
+          "$canTeleport2,highjump,addressdisruptor,rangelong",
+          "$canTeleport2,$canDroneTeleport,addressdisruptor,rangelong",
           "$canTeleport3"
         ],
         "map_locations": [
@@ -294,7 +298,7 @@
         ],
         "sections": [
           {
-            "name": "Item",
+            "name": "Through Floor",
             "item_count": 1
           }
         ]

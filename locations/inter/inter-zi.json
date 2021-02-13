@@ -39,7 +39,7 @@
         "name": "Zi -> Indi",
         "access_rules": [ // FIXED
           "$canTeleport2,highjump",
-          "$canteleport3",
+          "$canTeleport3",
           "highjump,grapple",
           "$canDroneTeleport"
         ],

@@ -219,6 +219,7 @@
         "vgravmap": "Drill",
         "access_rules": [
           "$canTeleport3",
+          "snake",
           "spazer",
           "wave",
           "reflector",
@@ -360,6 +361,7 @@
       {
         "name": "Orbital Discharge (DALKHU-SUBTUM)",
         "short_name": "Orbital Discharge (DALKHU-SUBTUM)",
+        "vgravmap": "WallTrace",
         "access_rules": [
           "$canAirport2,passcodetool,highjump",
           "$canAirport3,passcodetool",

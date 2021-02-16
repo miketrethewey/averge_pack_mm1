@@ -107,9 +107,9 @@
           "$canAirport3",
           "spazer,laserdrill",
           "wave,laserdrill",
+          "$canUseRemoteDrone",
           "[progadvanced],spazer,excavate",
-          "[progadvanced],wave,excavate",
-          "[progadvanced],$canUseRemoteDrone"
+          "[progadvanced],wave,excavate"
         ],
         "map_locations": [
           {
@@ -401,9 +401,9 @@
           "addressbomb",
           "addressdisruptor,laserdrill",
           "grapple,laserdrill",
-          "progadvanced],addressdisruptor,excavate",
-          "[progadvanced],grapple,excavate",
-          "[progadvanced],$canUseRemoteDrone"
+          "$canUseRemoteDrone",
+          "[progadvanced],addressdisruptor,excavate",
+          "[progadvanced],grapple,excavate"
         ],
         "map_locations": [
           {

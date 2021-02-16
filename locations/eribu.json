@@ -12,11 +12,14 @@
       {
         "name": "Health Node (Eribu top)",
         "short_name": "Health Node (Eribu ^)",
-        "vgravmap": "HealthNode1",
+        "vgravmap": "HealthNode9",
         "access_rules": [
-          "{addressbomb,$canUseRemoteDrone}",
-          "addressbomb,highjump,grapple",
-          "$canAirport2,addressbomb"
+          "{addressbomb,$canUseRemoteDrone}", // EmoTracker-only
+          "highjump,grapple,addressbomb",
+          "$canAirport2,addressbomb",
+          "highjump,$canUseRemoteDrone,addressbomb",
+          "addressbomb,$canDroneTeleport"
+//          "$canAirport3,addressbomb" // FIXME: Redundant
         ],
         "map_locations": [
           {
@@ -34,7 +37,7 @@
           {
             "name": "Item",
             "item_count": 1,
-						"capture_item": true
+            "capture_item": true
           }
         ]
       },
@@ -44,10 +47,11 @@
         "short_name": "Nova",
         "vgravmap": "Nova",
         "access_rules": [
-          "$canTeleport1",
-          "$canShootShort"
+          "$canShootShort",
+          "$canTeleport1", // FIXME: VGR Needs
+          "[progadvanced],excavate",
+          "[progmasochist],grapple"
         ],
-        // Return needs Split or Wave
         "map_locations": [
           {
             "map": "sudra",
@@ -71,15 +75,22 @@
       {
         "name": "Power Node Fragment (IKKIBU-LABIRU)",
         "short_name": "Power Node Fragment (IKKIBU-LABIRU)",
-        "access_rules": [ //Needs testing with coat3
+        "vgravmap": "PowerNodeFragment2",
+        "access_rules": [
+          // EmoTracker-only
           "{spazer,excavate,grapple}",
           "{wave,excavate,grapple}",
           "{$canUseRemoteDrone,grapple}",
           "{$canDroneTeleport}",
+
+          "$canDroneTeleport,passcodetool",
+          "highjump,$canAirport3,passcodetool",
+          "grapple,$canAirport3,passcodetool",
+          "[progmasochist],$canUseRemoteDrone",
+          // FIXME: VGR Needs
           "spazer,excavate,grapple,passcodetool",
           "wave,excavate,grapple,passcodetool",
           "$canUseRemoteDrone,grapple,passcodetool",
-          "$canDroneTeleport,passcodetool",
           "excavate,grapple,fatbeam",
           "$canDroneTeleport,fatbeam"
         ],
@@ -99,7 +110,7 @@
           {
             "name": "Item",
             "item_count": 1,
-						"capture_item": true
+            "capture_item": true
           }
         ]
       },
@@ -109,13 +120,14 @@
         "short_name": "Multi-Disruptor",
         "vgravmap": "MultiDisruptor",
         "access_rules": [
-          "$canAirport2,excavate",
-          "$canAirport3",
           "spazer,laserdrill",
-          "wave,laserdrill",
           "$canUseRemoteDrone",
-          "[progadvanced],spazer,excavate",
-          "[progadvanced],wave,excavate"
+          "laserdrill,grapple",
+          "$canAirport3",
+
+          // FIXME: VGR Needs
+          "wave,laserdrill",
+          "$canAirport2,excavate"
         ],
         "map_locations": [
           {
@@ -142,7 +154,10 @@
         "short_name": "Flamethrower (DINGER-GISBAR)",
         "vgravmap": "FlameThrower",
         "access_rules": [
-          "$canAirport3,$canEnhancedDroneLaunch,$canDroneTeleport,passcodetool,highjump"
+          "$canDroneTeleport,$canAirport3,passcodetool",
+          "[progadvanced],highjump,grapple,$canAirport3,passcodetool",
+          "[progadvanced],$canDroneTeleport,grapple,$canAirport2,passcodetool",
+          "[progmasochist],grapple,$canAirport3,passcodetool"
         ],
         "map_locations": [
           {
@@ -169,10 +184,14 @@
         "short_name": "Size Node (Eribu)",
         "vgravmap": "SizeNode1",
         "access_rules": [
-          "$canAirport2",
           "spazer",
-          "wave",
           "$canUseRemoteDrone",
+          "grapple",
+          "$canAirport2",
+          "$canAirport3", // FIXME: Redundant
+
+          // FIXME: VGR Needs
+          "wave",
           "reflector"
         ],
         "map_locations": [
@@ -198,8 +217,10 @@
       {
         "name": "Note (Eribu)",
         "short_name": "Note (Eribu)",
+        "vgravmap": "Note2",
         "access_rules": [
-          "$canTeleport1,$canDroneTeleport"
+          "$canDroneTeleport",
+          "[progmasochist],$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -226,12 +247,18 @@
         "short_name": "Laser Drill",
         "vgravmap": "Drill",
         "access_rules": [
-          "$canTeleport3",
-          "snake",
           "spazer",
+          "$canShootShort,grapple",
+          "$canShootShort,$canUseRemoteDrone",
+          "laserdrill,$canTeleport2",
+          "$canTeleport3",
+          "[progadvanced],highjump,coat3", // FIXME: Wut?
+          "[progmasochist],coat3",
+
+          // FIXME: VGR Needs
+          "snake",
           "wave",
-          "reflector",
-          "$canUseRemoteDrone"
+          "reflector"
         ],
         "map_locations": [
           {
@@ -258,13 +285,18 @@
         "short_name": "Power Node (Eribu)",
         "vgravmap": "PowerNode1",
         "access_rules": [
-          "{spazer}",                       // can see but can't get
-          "{wave}",                         // can see but can't get
-          "$canTeleport3",                  // can get
-          "spazer,laserdrill",              // can get
-          "wave,laserdrill",                // can get
-          "[progadvanced],spazer,excavate", // can get (advanced)
-          "[progadvanced],wave,excavate"    // can get (advanced)
+          // EmoTracker-only
+          "{spazer}",       // can see but can't get
+          "{wave}",         // can see but can't get
+
+          "spazer,laserdrill",
+          "$canUseRemoteDrone",
+          "laserdrill,grapple",
+          "laserdrill,$canTeleport2",
+          "$canTeleport3",
+
+          // FIXME: VGR Needs
+          "wave,laserdrill"  // can get
         ],
         "map_locations": [
           {
@@ -290,9 +322,13 @@
       {
         "name": "Health Node Fragment (Eribu top)",
         "short_name": "Health Node Fragment (Eribu ^)",
+        "vgravmap": "HealthNodeFragment13",
         "access_rules": [
+          "$canUseRemoteDrone,addressdisruptor2,grapple",
           "$canTeleport3",
-          "$canUseRemoteDrone,highjump,grapple,addressdisruptor2",
+          "[progadvanced],laserdrill,addressdisruptor2,coat2",
+
+          // FIXME: VGR Needs
           "$canDroneTeleport,addressdisruptor2"
         ],
         "map_locations": [
@@ -319,7 +355,9 @@
         "name": "Axiom Disruptor",
         "short_name": "Axiom Disruptor",
         "vgravmap": "DataDisruptor",
-        "access_rules": [ ],
+        "access_rules": [
+          // None
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -345,8 +383,10 @@
         "short_name": "Lightning Gun",
         "vgravmap": "LightningGun",
         "access_rules": [ //Needs additional Logic added
-          "$canAirport3,addressbomb",
-          "addressbomb,$canUseRemoteDrone"
+          "$canUseRemoteDrone,addressbomb",
+          "addressbomb,$canAirport3",
+          "[progmasochist],$canUseRemoteDrone,grapple",
+          "[progmasochist],grapple,$canAirport3"
         ],
         "map_locations": [
           {
@@ -373,6 +413,11 @@
         "short_name": "Orbital Discharge (DALKHU-SUBTUM)",
         "vgravmap": "WallTrace",
         "access_rules": [
+          "$canDroneTeleport,passcodetool",
+          "highjump,$canAirport3,passcodetool",
+          "grapple,$canAirport3,passcodetool",
+
+          // FIXME: VGR Needs
           "$canAirport2,passcodetool,highjump",
           "$canAirport3,passcodetool",
           "passcodetool,grapple"
@@ -400,16 +445,19 @@
       {
         "name": "Health Node Fragment (Eribu bottom left)",
         "short_name": "Health Node Fragment (Eribu <v)",
+        "vgravmap": "HealthNodeFragment2",
         "access_rules": [
+          "laserdrill,addressdisruptor1",
+          "$canUseRemoteDrone",
+          "laserdrill,coat2",
+          "coat3",
+          "[progmasochist],grapple",
+
+          // FIXME: VGR Needs
           "{laserdrill}",
-          "[progadvanced],{excavate}",
           "$canAirport2",
           "addressbomb",
-          "addressdisruptor,laserdrill",
           "grapple,laserdrill",
-          "$canUseRemoteDrone",
-          "[progadvanced],addressdisruptor,excavate",
-          "[progadvanced],grapple,excavate"
         ],
         "map_locations": [
           {
@@ -435,10 +483,12 @@
       {
         "name": "Power Node Fragment (Eribu bottom)",
         "short_name": "Power Node Fragment (Eribu v)",
+        "vgravmap": "PowerNodeFragment16",
         "access_rules": [
-          "[progadvanced],$canTeleport1,$canDroneTeleport",
-          "$canAirport3,highjump",
-          "$canAirport3,grapple"
+          "$canTeleport1,$canDroneTeleport",
+          "highjump,$canAirport3",
+          "grapple,$canAirport3",
+          "[progadvanced],$canUseRemoteDrone,grapple,coat2"
         ],
         "map_locations": [
           {
@@ -463,10 +513,10 @@
       {
         "name": "Health Node (Eribu bottom)",
         "short_name": "Health Node (Eribu v)",
-        "vgravmap": "HealthNode9",
+        "vgravmap": "HealthNode1",
         "access_rules": [
-          "laserdrill",
-          "[progadvanced],excavate"
+          "excavate",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {

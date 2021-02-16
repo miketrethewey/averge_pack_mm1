@@ -71,7 +71,7 @@
         "access_rules": [
           "$canAirport2,highjump,addressbomb",
           "$canAirport3,addressbomb",
-          "addressdisruptor2,$canUseRemoteDrone",
+          "highjump,addressdisruptor2,$canUseRemoteDrone",
           "grapple,addressbomb"
         ],
         "map_locations": [
@@ -100,6 +100,7 @@
         "access_rules": [
           "$canAirport2,highjump",
           "$canAirport3",
+					"$canUseRemoteDrone",
           "addressdisruptor2,$canDroneTeleport,addressbomb",
           "grapple"
         ],
@@ -577,9 +578,9 @@
         "name": "Range Node (Absu right)",
         "short_name": "Range Node (Absu >)",
         "access_rules": [
-          "$canTeleport1,addressdisruptor,$canUseRemoteDrone",
+          "$canTeleport1,addressdisruptor,$canUseRemoteDrone", // FIXME: I just needed teleport1 & highjump?
           "$canAirport2",
-          "wave,addressdisruptor,$canUseRemoteDrone"
+          "wave,addressdisruptor,$canUseRemoteDrone" // FIXME: How?
         ],
         "map_locations": [
           {

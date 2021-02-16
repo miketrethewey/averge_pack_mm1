@@ -14,9 +14,9 @@
         "short_name": "Health Node (Eribu ^)",
         "vgravmap": "HealthNode1",
         "access_rules": [
+          "{addressbomb,$canUseRemoteDrone}",
           "addressbomb,highjump,grapple",
-          "$canAirport2,addressbomb",
-          "addressbomb,$canUseRemoteDrone"
+          "$canAirport2,addressbomb"
         ],
         "map_locations": [
           {
@@ -33,7 +33,8 @@
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+						"capture_item": true
           }
         ]
       },
@@ -71,11 +72,15 @@
         "name": "Power Node Fragment (IKKIBU-LABIRU)",
         "short_name": "Power Node Fragment (IKKIBU-LABIRU)",
         "access_rules": [ //Needs testing with coat3
+          "{spazer,excavate,grapple}",
+          "{wave,excavate,grapple}",
+          "{$canUseRemoteDrone,grapple}",
+          "{$canDroneTeleport}",
           "spazer,excavate,grapple,passcodetool",
           "wave,excavate,grapple,passcodetool",
-          "excavate,grapple,fatbeam",
           "$canUseRemoteDrone,grapple,passcodetool",
           "$canDroneTeleport,passcodetool",
+          "excavate,grapple,fatbeam",
           "$canDroneTeleport,fatbeam"
         ],
         "map_locations": [
@@ -93,7 +98,8 @@
         "sections": [
           {
             "name": "Item",
-            "item_count": 1
+            "item_count": 1,
+						"capture_item": true
           }
         ]
       },
@@ -395,7 +401,7 @@
         "name": "Health Node Fragment (Eribu bottom left)",
         "short_name": "Health Node Fragment (Eribu <v)",
         "access_rules": [
-          "laserdrill",
+          "{laserdrill}",
           "[progadvanced],{excavate}",
           "$canAirport2",
           "addressbomb",

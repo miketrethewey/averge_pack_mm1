@@ -14,12 +14,12 @@
         "short_name": "Health Node (Eribu ^)",
         "vgravmap": "HealthNode9",
         "access_rules": [
-          "{addressbomb,$canUseRemoteDrone}", // EmoTracker-only
-          "highjump,grapple,addressbomb",
-          "$canAirport2,addressbomb",
-          "highjump,$canUseRemoteDrone,addressbomb",
-          "addressbomb,$canDroneTeleport"
-//          "$canAirport3,addressbomb" // FIXME: Redundant
+          "{$canGlitchBomb,$canUseRemoteDrone}", // EmoTracker-only
+          "highjump,grapple,$canGlitchBomb",
+          "$canAirport2,$canGlitchBomb",
+          "highjump,$canUseRemoteDrone,$canGlitchBomb",
+          "$canGlitchBomb,$canDroneTeleport"
+//          "$canAirport3,$canGlitchBomb" // FIXME: Redundant
         ],
         "map_locations": [
           {
@@ -324,12 +324,12 @@
         "short_name": "Health Node Fragment (Eribu ^)",
         "vgravmap": "HealthNodeFragment13",
         "access_rules": [
-          "$canUseRemoteDrone,addressdisruptor2,grapple",
+          "$canUseRemoteDrone,$canGlitchGun2,grapple",
           "$canTeleport3",
-          "[progadvanced],laserdrill,addressdisruptor2,coat2",
+          "[progadvanced],laserdrill,$canGlitchGun2,coat2",
 
           // FIXME: VGR Needs
-          "$canDroneTeleport,addressdisruptor2"
+          "$canDroneTeleport,$canGlitchGun2"
         ],
         "map_locations": [
           {
@@ -383,8 +383,8 @@
         "short_name": "Lightning Gun",
         "vgravmap": "LightningGun",
         "access_rules": [ //Needs additional Logic added
-          "$canUseRemoteDrone,addressbomb",
-          "addressbomb,$canAirport3",
+          "$canUseRemoteDrone,$canGlitchBomb",
+          "$canGlitchBomb,$canAirport3",
           "[progmasochist],$canUseRemoteDrone,grapple",
           "[progmasochist],grapple,$canAirport3"
         ],
@@ -449,7 +449,7 @@
         "access_rules": [
           "{laserdrill}",  // EmoTracker-only
 
-          "laserdrill,addressdisruptor1",
+          "laserdrill,$canGlitchGun1",
           "$canUseRemoteDrone",
           "laserdrill,coat2",
           "coat3",
@@ -457,7 +457,7 @@
 
           // FIXME: VGR Needs
           "$canAirport2",       // FIXME: Likely Redundant due to Area Access
-          "addressbomb",        // FIXME: Likely Redundant due to Area Access
+          "$canGlitchBomb",			// FIXME: Likely Redundant due to Area Access
           "grapple,laserdrill"  // FIXME: Likely Redundant due to Area Access
         ],
         "map_locations": [

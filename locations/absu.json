@@ -12,7 +12,15 @@
       {
         "name": "Health Node Fragment (Absu top)",
         "short_name": "Health Node Fragment (Absu)",
+        "vgravmap": "HealthNodeFragment6",
         "access_rules": [
+          "laserdrill,wave,addressdisruptor,$canTeleport1,grapple",
+          "laserdrill,coat2",
+          "coat3",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],grapple",
+
+          // FIXME: VGR Needs
           "$canTeleport1,addressdisruptor,grapple",
           "$canAirport2,highjump"
         ],
@@ -39,10 +47,17 @@
       {
         "name": "Power Node Fragment (Absu top 1)",
         "short_name": "Power Node Fragment (Absu ^ 1)",
+        "vgravmap": "PowerNodeFragment5",
         "access_rules": [
+          "$canUseRemoteDrone,addressdisruptor2",
+          "laserdrill,highjump,addressdisruptor2,coat2",
+          "laserdrill,addressdisruptor2,grapple",
+          "[progadvanced],addressdisruptor2,coat3",
+          "[progmasochist],addressdisruptor2,coat2",
+
+          // FIXME: VGR Needs
           "$canAirport2,highjump,addressbomb",
           "$canAirport3,addressbomb",
-          "addressdisruptor2,$canUseRemoteDrone",
           "grapple,addressbomb"
         ],
         "map_locations": [
@@ -68,10 +83,18 @@
       {
         "name": "Power Node Fragment (Absu top 2)",
         "short_name": "Power Node Fragment (Absu ^ 2)",
+        "vgravmap": "PowerNodeFragment6",
         "access_rules": [
+          "highjump,$canUseRemoteDrone,addressdisruptor2",
+          "$canEnhancedDroneLaunch,addressdisruptor2",
+          "$canUseRemoteDrone,addressdisruptor2,coat2",
+          "[progadvanced],laserdrill,highjump,addressdisruptor2,coat2",
+          "[progadvanced],laserdrill,addressdisruptor2,grapple,coat2",
+          "[progadvanced],addressdisruptor2,$canAirport3",
+          "[progmasochist],addressdisruptor2,grapple,coat2",
+
+          // FIXME: VGR Needs
           "$canAirport2,highjump,addressbomb",
-          "$canAirport3,addressbomb",
-          "highjump,addressdisruptor2,$canUseRemoteDrone",
           "grapple,addressbomb"
         ],
         "map_locations": [
@@ -97,10 +120,17 @@
       {
         "name": "Power Node Fragment (Absu top 3)",
         "short_name": "Power Node Fragment (Absu ^ 3)",
+        "vgravmap": "PowerNodeFragment3",
         "access_rules": [
-          "$canAirport2,highjump",
-          "$canAirport3",
           "$canUseRemoteDrone",
+          "laserdrill,grapple",
+          "$canAirport3",
+          "[progmasochist],laserdrill,coat2",
+          "[progmasochist],grapple,coat2",
+          "[progmasochist],grapple,addressbomb",
+
+          // FIXME: VGR Needs
+          "$canAirport2,highjump",
           "addressdisruptor2,$canDroneTeleport,addressbomb",
           "grapple"
         ],
@@ -127,11 +157,17 @@
       {
         "name": "Power Node Fragment (Absu top 4)",
         "short_name": "Power Node Fragment (Absu ^ 4)",
+        "vgravmap": "PowerNodeFragment4",
         "access_rules": [
-          "$canTeleport2,highjump,addressbomb",
-          "$canTeleport3,addressbomb",
-          "addressdisruptor2,$canDroneTeleport,addressbomb",
-          "grapple,addressbomb"
+          "laserdrill,grapple,addressbomb",
+          "laserdrill,highjump,$canTeleport2,addressbomb",
+          "addressbomb,$canTeleport3",
+          "$canDroneTeleport,addressbomb",
+          "[progadvanced],laserdrill,coat2,addressbomb",
+          "[progmasochist],grapple,addressbomb",
+
+          // FIXME: VGR Needs
+          "addressdisruptor2,$canDroneTeleport,addressbomb"
         ],
         "map_locations": [
           {
@@ -239,9 +275,16 @@
       {
         "name": "Power Node Fragment (Absu middle left)",
         "short_name": "Power Node Fragment (Absu <=)",
+        "vgravmap": "PowerNodeFragment7",
         "access_rules": [
-          "$canTeleport1,addressdisruptor",
+          "laserdrill,wave,addressdisruptor",
+          "laserdrill,addressdisruptor,$canTeleport1",
+          "laserdrill,addressdisruptor,coat2", // FIXME: Redundant
           "$canTeleport3",
+          "[progmasochist],addressdisruptor,grapple",
+
+          // FIXME: VGR Needs
+          "$canTeleport1,addressdisruptor",
           "addressdisruptor,wave"
         ],
         "map_locations": [
@@ -268,7 +311,11 @@
         "name": "Kilver",
         "short_name": "Kilver",
         "vgravmap": "Kilver",
-        "access_rules": [ ],
+        "access_rules": [
+          "laserdrill",
+          "coat3",
+          "[progmasochist],grapple"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -294,8 +341,16 @@
         "short_name": "Health Node (Absu)",
         "vgravmap": "HealthNode2",
         "access_rules": [
-          "$canTeleport2",
-          "wave,addressdisruptor"
+          "laserdrill,wave,addressdisruptor",
+          "laserdrill,addressdisruptor,$canTeleport1",
+          "laserdrill,$canTeleport2",
+          "coat3",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],grapple",
+
+          // FIXME: VGR Needs
+          "$canTeleport2",        // Likely Redundant due to Area Access
+          "wave,addressdisruptor"  // Likely Redundant due to Area Access
         ],
         "map_locations": [
           {
@@ -322,8 +377,14 @@
         "short_name": "Inertial Pulse",
         "vgravmap": "IntertialPulse",
         "access_rules": [
-          "$canAirport2,addressdisruptor2,excavate",
+          "laserdrill,wave,addressdisruptor2",
+          "laserdrill,coat,addressdisruptor2",
+          "excavate,addressdisruptor2,$canAirport2",
           "$canAirport3",
+          "[progadvanced],$canDroneTeleport,addressdisruptor2",
+          "[progmasochist],laserdrill,addressdisruptor2,grapple",
+
+          // FIXME: VGR Needs
           "addressdisruptor2,excavate,highjump"
         ],
         "map_locations": [
@@ -349,6 +410,7 @@
       {
         "name": "Digital Paper (Absu top)",
         "short_name": "Digital Paper (Absu ^)",
+        "vgravmap": "Note16",
         "access_rules": [
           "$canUseRemoteDrone"
         ],
@@ -375,9 +437,18 @@
       {
         "name": "Rusalka Tablet (Absu top right)",
         "short_name": "Rusalka Tablet (Absu ^>)",
+        "vgravmap": "Note24",
         "access_rules": [
-          "$canTeleport2",
-          "wave,addressdisruptor"
+          "laserdrill,wave,addressdisruptor",
+          "laserdrill,addressdisruptor,$canTeleport1",
+          "laserdrill,$canTeleport2",
+          "coat3",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],laserdrill,grapple",
+
+          // FIXME: VGR Needs
+          "$canTeleport2",        // Likely Redundant due to Area Access
+          "wave,addressdisruptor"  // Likely Redundant due to Area Access
         ],
         "map_locations": [
           {
@@ -402,8 +473,14 @@
       {
         "name": "Rusalka Tablet (Absu top left)",
         "short_name": "Rusalka Tablet (Absu <^)",
+        "vgravmap": "Note14",
         "access_rules": [
-          "{wave}",
+          "{wave}",  // EmoTracker-only
+          "laserdrill,$canTeleport2",
+          "coat3",
+          "[progmasochist],grapple",
+
+          // FIXME: VGR Needs
           "$canTeleport1"
         ],
         "map_locations": [
@@ -432,8 +509,17 @@
         "short_name": "Size Node (Absu)",
         "vgravmap": "SizeNode2",
         "access_rules": [
-          "$canTeleport2",
-          "wave,addressdisruptor"
+          "laserdrill,wave,addressdisruptor",
+          "laserdrill,addressdisruptor,$canTeleport1",
+          "laserdrill,$canTeleport2",
+          "coat3",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],laserdrill,grapple",
+          "[progmasochist],addressdisruptor,grapple",
+
+          // FIXME: VGR Needs
+          "$canTeleport2",        // Likely Redundant due to Area Access
+          "wave,addressdisruptor"  // Likely Redundant due to Area Access
         ],
         "map_locations": [
           {
@@ -458,10 +544,21 @@
       {
         "name": "Health Node Fragment (Absu bottom)",
         "short_name": "Health Node Fragment (Absu v)",
+        "vgravmap": "HealthNodeFragment3",
         "access_rules": [
-          "$canTeleport1,addressdisruptor",
-          "$canTeleport2",
-          "wave,addressdisruptor"
+          "laserdrill,wave,addressdisruptor",
+          "laserdrill,wave,$canTeleport1",
+          "laserdrill,coat2",
+          "coat3",
+          "[progadvanced],addressdisruptor,$canDroneTeleport",
+          "[progadvanced],$canTeleport1,$canDroneTeleport",
+          "[progadvanced],$canDroneTeleport,wave", // LongKilver?
+          "[progmasochist],laserdrill,grapple",
+
+          // FIXME: VGR Needs
+          "$canTeleport2",          // Likely Redundant due to Area Access
+          "wave,addressdisruptor",  // Likely Redundant due to Area Access
+          "$canTeleport1,addressdisruptor"
         ],
         "map_locations": [
           {
@@ -513,8 +610,18 @@
       {
         "name": "Range Node (Absu left)",
         "short_name": "Range Node (Absu <)",
+        "vgravmap": "RangeNode4",
         "access_rules": [
-          "$canTeleport1,addressdisruptor2,$canUseRemoteDrone",
+          "$canTeleport1,$canUseRemoteDrone,addressdisruptor2",
+          "$canUseRemoteDrone,addressdisruptor2,$canTeleport2",
+//          "$canUseRemoteDrone,addressdisruptor2,coat3", // Redundant
+          "highjump,addressdisruptor2,coat3",
+          "[progadvanced],addressdisruptor2,grapple,coat3",
+          "[progadvanced],laserdrill,addressdisruptor2,grapple,coat2",
+          "[progmasochist],laserdrill,addressdisruptor2,coat2",
+          "[progmasochist],grapple",
+
+          // FIXME: VGR Needs
           "$canTeleport1,addressbomb,$canUseRemoteDrone"
         ],
         "map_locations": [
@@ -540,14 +647,25 @@
       {
         "name": "Digital Paper (Absu bottom)",
         "short_name": "Digital Paper (Absu v)",
+        "vgravmap": "Note15",
         "access_rules": [
+          // EmoTracker-only
           "{wave}",
           "{$canTeleport1}",
-          "$canTeleport2,highjump",
+
+          "laserdrill,wave,addressdisruptor",
+          "laserdrill,addressdisruptor,$canTeleport1",
+          "laserdrill,coat2",
           "$canTeleport3",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],grapple,coat2",
+          "[progmasochist],laserdrill,grapple",
+
+          // FIXME: VGR Needs
+          "wave,addressdisruptor",  // Likely Redundant due to Area Access
+          "$canTeleport2,highjump",
           "addressbomb",
-          "highjump,grapple",
-          "wave,addressdisruptor"
+          "highjump,grapple"
         ],
         "map_locations": [
           {
@@ -577,10 +695,18 @@
       {
         "name": "Range Node (Absu right)",
         "short_name": "Range Node (Absu >)",
+        "vgravmap": "RangeNode1",
         "access_rules": [
-          "$canTeleport1,addressdisruptor,$canUseRemoteDrone", // FIXME: I just needed teleport1 & highjump?
-          "$canAirport2",
-          "wave,addressdisruptor,$canUseRemoteDrone" // FIXME: How?
+          "laserdrill,wave,addressdisruptor,highjump,$canTeleport1",
+          "wave,addressdisruptor,$canUseRemoteDrone",
+          "laserdrill,coat2",
+          "coat3",
+          "[progadvanced],$canDroneTeleport",
+          "[progadvanced],$canUseRemoteDrone,grapple",
+
+          // FIXME: VGR Needs
+          "$canTeleport1,addressdisruptor,$canUseRemoteDrone",  // FIXME: I just needed teleport1 & highjump?
+          "$canAirport2"                                        // Likely Redundant due to Area Access
         ],
         "map_locations": [
           {
@@ -605,13 +731,21 @@
       {
         "name": "Rusalka Tablet (Absu bottom right)",
         "short_name": "Rusalka Tablet (Absu v>)",
+        "vgravmap": "Note28",
         "access_rules": [
+          // EmoTracker-only
           "{wave,addressdisruptor}",
           "{$canTeleport1,addressdisruptor}",
           "{$canTeleport2}",
-          "$canTeleport1,addressdisruptor,$canUseRemoteDrone",
-          "$canTeleport2,$canUseRemoteDrone",
-          "wave,addressdisruptor,$canUseRemoteDrone"
+
+          "wave,addressdisruptor,$canUseRemoteDrone",
+          "addressdisruptor,$canTeleport1,$canUseRemoteDrone",
+          "coat3",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],$canUseRemoteDrone,grapple",
+
+          // FIXME: VGR Needs
+          "$canTeleport2,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -639,9 +773,17 @@
         "short_name": "Power Node (Absu)",
         "vgravmap": "PowerNode2",
         "access_rules": [
-          "$canTeleport1,addressdisruptor",
-          "$canTeleport2",
-          "wave,addressdisruptor"
+          "laserdrill,wave,addressdisruptor",
+          "laserdrill,addressdisruptor,$canTeleport1",
+          "laserdrill,coat2",
+          "coat3",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],laserdrill,grapple",
+
+          // FIXME: VGR Needs
+          "wave,addressdisruptor",          // Likely Redundant due to Area Access
+          "$canTeleport1,addressdisruptor",  // Likely Redundant due to Area Access
+          "$canTeleport2"                    // Likely Redundant due to Area Access
         ],
         "map_locations": [
           {
@@ -667,11 +809,18 @@
       {
         "name": "Power Node Fragment (Absu bottom)",
         "short_name": "Power Node Fragment (Absu v)",
+        "vgravmap": "PowerNodeFragment9",
         "access_rules": [
-          "$canTeleport2,highjump",
+          "laserdrill,highjump,coat2",
+          "laserdrill,grapple,coat2",
+          "coat3",
+          "[progadvanced],laserdrill,coat2",
+          "[progmasochist],grapple",
+
+          // FIXME: VGR Needs
+          "$canTeleport2,highjump",          // Likely Redundant due to Area Access
           "$canTeleport2,grapple",
-          "$canTeleport2,$canDroneTeleport",
-          "$canTeleport3"
+          "$canTeleport2,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -696,8 +845,15 @@
       {
         "name": "Rusalka Tablet (Absu bottom left)",
         "short_name": "Rusalka Tablet (Absu <v)",
+        "vgravmap": "Note7",
         "access_rules": [
-          "$canTeleport1"
+          "laserdrill,$canTeleport1",
+          "laserdrill,$canTeleport2",
+          "coat3",
+          "[progmasochist],grapple",
+
+          // FIXME: VGR Needs
+          "$canTeleport1"  // Likely Redundant due to Area Access
         ],
         "map_locations": [
           {

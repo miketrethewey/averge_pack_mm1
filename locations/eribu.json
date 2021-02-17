@@ -447,6 +447,8 @@
         "short_name": "Health Node Fragment (Eribu <v)",
         "vgravmap": "HealthNodeFragment2",
         "access_rules": [
+          "{laserdrill}",  // EmoTracker-only
+
           "laserdrill,addressdisruptor1",
           "$canUseRemoteDrone",
           "laserdrill,coat2",
@@ -454,10 +456,9 @@
           "[progmasochist],grapple",
 
           // FIXME: VGR Needs
-          "{laserdrill}",
-          "$canAirport2",
-          "addressbomb",
-          "grapple,laserdrill",
+          "$canAirport2",       // FIXME: Likely Redundant due to Area Access
+          "addressbomb",        // FIXME: Likely Redundant due to Area Access
+          "grapple,laserdrill"  // FIXME: Likely Redundant due to Area Access
         ],
         "map_locations": [
           {

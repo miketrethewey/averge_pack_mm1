@@ -193,7 +193,9 @@
         "name": "Health Node Fragment (Absu middle 1)",
         "short_name": "Health Node Fragment (Absu = 1)",
         "access_rules": [
+					// EmoTracker-only
           "{}",
+
           "$canTeleport1",
           "wave"
         ],
@@ -447,8 +449,8 @@
           "[progmasochist],laserdrill,grapple",
 
           // FIXME: VGR Needs
-          "$canTeleport2",        // Likely Redundant due to Area Access
-          "wave,$canGlitchGun1"  // Likely Redundant due to Area Access
+          "$canTeleport2",			// Likely Redundant due to Area Access
+          "wave,$canGlitchGun1"	// Likely Redundant due to Area Access
         ],
         "map_locations": [
           {
@@ -556,8 +558,8 @@
           "[progmasochist],laserdrill,grapple",
 
           // FIXME: VGR Needs
-          "$canTeleport2",          // Likely Redundant due to Area Access
-          "wave,$canGlitchGun1",  // Likely Redundant due to Area Access
+          "$canTeleport2",				// Likely Redundant due to Area Access
+          "wave,$canGlitchGun1",	// Likely Redundant due to Area Access
           "$canTeleport1,$canGlitchGun1"
         ],
         "map_locations": [

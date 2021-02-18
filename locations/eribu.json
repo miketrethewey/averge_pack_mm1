@@ -87,6 +87,7 @@
           "highjump,$canAirport3,passcodetool",
           "grapple,$canAirport3,passcodetool",
           "[progmasochist],$canUseRemoteDrone",
+
           // FIXME: VGR Needs
           "spazer,excavate,grapple,passcodetool",
           "wave,excavate,grapple,passcodetool",
@@ -184,7 +185,7 @@
         "short_name": "Size Node (Eribu)",
         "vgravmap": "SizeNode1",
         "access_rules": [
-          "spazer",
+          "spazershort",
           "$canUseRemoteDrone",
           "grapple",
           "$canAirport2",
@@ -192,7 +193,8 @@
 
           // FIXME: VGR Needs
           "wave",
-          "reflector"
+          "reflector",
+          "snake"
         ],
         "map_locations": [
           {
@@ -286,8 +288,8 @@
         "vgravmap": "PowerNode1",
         "access_rules": [
           // EmoTracker-only
-          "{spazer}",       // can see but can't get
-          "{wave}",         // can see but can't get
+          "{spazer}",	// can see but can't get
+          "{wave}",		// can see but can't get
 
           "spazer,laserdrill",
           "$canUseRemoteDrone",
@@ -456,9 +458,9 @@
           "[progmasochist],grapple",
 
           // FIXME: VGR Needs
-          "$canAirport2",       // FIXME: Likely Redundant due to Area Access
+          "$canAirport2",				// FIXME: Likely Redundant due to Area Access
           "$canGlitchBomb",			// FIXME: Likely Redundant due to Area Access
-          "grapple,laserdrill"  // FIXME: Likely Redundant due to Area Access
+          "grapple,laserdrill"	// FIXME: Likely Redundant due to Area Access
         ],
         "map_locations": [
           {

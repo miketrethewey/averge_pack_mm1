@@ -201,7 +201,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/hypo-atomizer.png",
-    "codes": "hypoatomizer,rangelong,splits,split,spazerbeam,spazer,widebeam,wide"
+    "codes": "hypoatomizer,rangelong,splits,split,spazerbeam,spazer,spazershort,widebeam,wide"
   },
   // Inertial Pulse
   {
@@ -287,7 +287,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/nova.png",
-    "codes": "nova,rangelong,split,splits,spazerbeam,spazer,widebeam,wide"
+    "codes": "nova,rangelong,split,splits,spazerbeam,spazer,spazershort,widebeam,wide"
   },
   // Orbital Discharge
   {

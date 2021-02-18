@@ -38,11 +38,11 @@ end
 
 -- Big Glitch
 function canGlitchBomb()
-	return has("addressbomb")
+  return has("addressbomb")
 end
 -- Glitch Gun 2 or Address Bomb
 function canGlitchGun2()
-	return has("addressdisruptor2") or canGlitchBomb()
+  return has("addressdisruptor2") or canGlitchBomb()
 end
 -- Glich Gun 1 or Glitch Gun 2 or Address Bomb
 function canGlitchGun1()

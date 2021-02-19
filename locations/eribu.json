@@ -92,7 +92,7 @@
           "spazer,excavate,grapple,passcodetool",
           "wave,excavate,grapple,passcodetool",
           "$canUseRemoteDrone,grapple,passcodetool",
-          "excavate,grapple,fatbeam",
+          "$canAirport2,excavate,grapple,fatbeam",
           "$canDroneTeleport,fatbeam"
         ],
         "map_locations": [

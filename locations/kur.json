@@ -54,7 +54,14 @@
       {
         "name": "Power Node Fragment (Kur)",
         "short_name": "Power Node Fragment (Kur)",
+        "vgravmap": "PowerNodeFragment14",
         "access_rules": [
+          "laserdrill,highjump,$canTeleport1,$canGlitchGun2,grapple",
+          "laserdrill,$canGlitchGun2,grapple,$canTeleport2",
+          // "laserdrill,$canGlitchGun2,grapple,$canTeleport3", // Redundant
+          "$canTeleport1,$canDroneTeleport,$canEnhancedDroneLaunch",
+
+          // FIXME: VGR Needs
           "$canDroneTeleport,grapple,addressdisruptor2",
           "highjump,grapple,addressdisruptor2",  // Likely Redundant due to Area Access
           "$canAirport3,highjump,addressdisruptor2"

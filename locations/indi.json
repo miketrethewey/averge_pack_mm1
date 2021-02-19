@@ -12,9 +12,18 @@
       {
         "name": "Rusalka Tablet (Indi)",
         "short_name": "Rusalka Tablet (Indi)",
+        "vgravmap": "Note9",
         "access_rules": [
+          // EmoTracker-only
           "{}",
-          "$canAirport2"
+
+          "laserdrill,$canTeleport2",
+          "$canTeleport3",
+          "[progmasochist],highjump,grapple",
+          "[progmasochist],grapple,$canTeleport2",
+
+          // FIXME: VGR Needs
+          "$canAirport2"  // Likely Redundant due to Area Access
         ],
         "map_locations": [
           {
@@ -42,6 +51,12 @@
         "short_name": "Health Node Fragment (Slug Glitch)",
         "vgravmap": "HealthNodeFragment15",
         "access_rules": [
+          "laserdrill,$canGlitchGun2,grapple",
+          "laserdrill,$canGlitchGun2,$canTeleport2",
+          // "laserdrill,$canGlitchGun2,$canTeleport3", // Redundant
+          "$canDroneTeleport,$canGlitchGun2",
+
+          // FIXME: VGR Needs
           "addressdisruptor"
         ],
         "map_locations": [
@@ -67,8 +82,14 @@
       {
         "name": "Digital Paper (Indi)",
         "short_name": "Digital Paper (Indi)",
+        "vgravmap": "Note25",
         "access_rules": [
-          "$canAirport2,$canUseRemoteDrone",
+          "$canUseRemoteDrone,grapple",
+          "$canUseRemoteDrone,$canAirport2",
+          "$canDroneTeleport",
+          "$canUseRemoteDrone,$canTeleport3",
+
+          // FIXME: VGR Needs
           "highjump,$canUseRemoteDrone"
         ],
         "map_locations": [

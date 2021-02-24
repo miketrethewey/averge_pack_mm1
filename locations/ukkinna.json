@@ -14,6 +14,12 @@
         "short_name": "Turbine Pulse",
         "vgravmap": "TriCone",
         "access_rules": [
+          "$canTeleport1,$canDroneTeleport,$canEnhancedDroneLaunch,telereset",    // What's telereset?
+          // "$canDroneTeleport,$canTeleport2,$canEnhancedDroneLaunch,telereset",  // Redundant
+          // "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3,telereset",  // Redundant
+          "[progmasochist],laserdrill,grapple",
+
+          // FIXME: Are these supposed to be combined?
           "$canAirport3",
           "$canEnhancedDroneLaunch",
           "$canDroneTeleport"
@@ -41,9 +47,18 @@
       {
         "name": "Rusalka Tablet (Ukkin-Na top)",
         "short_name": "Rusalka Tablet (Ukkin-Na ^)",
+        "vgravmap": "Note8",
         "access_rules": [
-          "$canTeleport3",
-          "highjump,grapple",
+          "laserdrill,highjump,$canTeleport1,$canGlitchGun2,grapple",
+          "laserdrill,$canTeleport1,$canDroneTeleport,$canGlitchGun2",
+          "laserdrill,highjump,$canGlitchGun2,$canTeleport2",
+          "laserdrill,$canGlitchGun2,grapple,$canTeleport2",
+          "highjump,$canTeleport3",
+          "[progadvanced],$canTeleport3",
+          "[progmasochist],laserdrill,$canGlitchGun2,$canTeleport2",
+          "[progmasochist],highjump,grapple",
+
+          // FIXME: VGR Needs
           "$canDroneTeleport"
         ],
         "map_locations": [
@@ -97,9 +112,16 @@
       {
         "name": "Power Node Fragment (Ukkin-Na top)",
         "short_name": "Power Node Fragment (Ukkin-Na ^)",
+        "vgravmap": "HealthNodeFragment16",
         "access_rules": [
+          "$canUseRemoteDrone,$canGlitchGun2,grapple,$canTeleport2",
+          "$canUseRemoteDrone,$canTeleport3",
+          "[progadvanced],$canUseRemoteDrone,$canTeleport2",
+          "[progmasochist],$canUseRemoteDrone,grapple",
+          "[progmasochist],grapple,$canTeleport3",
+
+          // FIXME: VGR Needs
           "$canTeleport2,$canDroneTeleport,addressdisruptor2",
-          "$canTeleport3,$canUseRemoteDrone",
           "highjump,addressdisruptor2,$canUseRemoteDrone"
         ],
         "map_locations": [
@@ -125,9 +147,16 @@
       {
         "name": "Health Node (Ukkin-Na)",
         "short_name": "Health Node (Ukkin-Na)",
-        "vgravmap": "HealthNode6",
+        "vgravmap": "HealthNode5",
         "access_rules": [
+          "laserdrill,highjump,$canTeleport1,$canGlitchGun2",
+          // "laserdrill,highjump,$canGlitchGun2,$canTeleport2", // Redundant
+          "laserdrill,$canGlitchGun2,grapple,$canTeleport2",
           "$canTeleport3",
+          "[progadvanced],laserdrill,$canGlitchGun2,$canTeleport2",
+          "[progmasochist],grapple",
+
+          // FIXME: VGR Needs
           "highjump",
           "$canDroneTeleport"
         ],
@@ -156,7 +185,13 @@
         "short_name": "Trenchcoat",
         "vgravmap": "BlackCoat",
         "access_rules": [
+          "laserdrill,highjump,$canTeleport1,$canGlitchGun2",
+          "laserdrill,highjump,$canTeleport2",
           "$canTeleport3",
+          "[progadvanced],laserdrill,$canTeleport2",
+          "[progmasochist],grapple",
+
+          // FIXME: VGR Needs
           "highjump",
           "$canDroneTeleport"
         ],
@@ -183,10 +218,17 @@
       {
         "name": "Power Node Fragment (Ukkin-Na middle)",
         "short_name": "Power Node Fragment (Ukkin-Na =)",
+        "vgravmap": "PowerNodeFragment15",
         "access_rules": [
-          "$canAirport2,highjump",
+          "laserdrill,highjump,$canTeleport2",
           "$canAirport2,$canDroneTeleport",
-          "$canAirport3"
+          "laserdrill,grapple,$canTeleport2",
+          "$canTeleport3",
+          "[progadvanced],laserdrill,$canTeleport2",
+          "[progmasochist],grapple",
+
+          // FIXME: VGR Needs
+          "$canAirport2,highjump"  // Likely Redundant due to Area Access
         ],
         "map_locations": [
           {
@@ -212,11 +254,14 @@
       {
         "name": "Digital Paper (Ukkin-Na)",
         "short_name": "Digital Paper (Ukkin-Na)",
+        "vgravmap": "Note22",
         "access_rules": [
-          "$canAirport2,highjump,$canUseRemoteDrone",
-          "$canAirport2,$canDroneTeleport",
-          "$canAirport2,grapple,$canUseRemoteDrone",
-          "$canAirport3,$canUseRemoteDrone"
+          "highjump,$canUseRemoteDrone,$canAirport2",
+          "$canDroneTeleport,$canAirport2",
+          "$canUseRemoteDrone,grapple,$canAirport2",
+          "$canUseRemoteDrone,$canAirport3",
+          "[progadvanced],$canUseRemoteDrone,$canTeleport2",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -241,6 +286,7 @@
       {
         "name": "Rusalka Tablet (Ukkin-Na bottom) (2 items)",
         "short_name": "Rusalka Tablet (Ukkin-Na v) (2 items)",
+        "vgravmap": [ "Note23", "HealthNodeFragment18" ],
         "map_locations": [
           {
             "map": "sudra",
@@ -258,9 +304,17 @@
             "name": "Upper",
             "item_count": 1,
             "access_rules": [
+              // EmoTracker-only
               "{wave}",
-              "$canAirport2,highjump",
-              "$canAirport3"
+
+              "laserdrill,highjump,$canGlitchGun2,$canTeleport2",
+              "laserdrill,$canGlitchGun2,grapple,$canTeleport2",
+              "$canAirport3",
+              "[progadvanced],laserdrill,$canGlitchGun2,$canTeleport2",
+              "[progmasochist],grapple",
+
+              // FIXME: VGR Needs
+              "$canAirport2,highjump"
             ],
             "capture_item": true
           },
@@ -268,6 +322,15 @@
             "name": "Lower",
             "item_count": 1,
             "access_rules": [
+              "laserdrill,highjump,$canGlitchGun2,$canTeleport2",
+              "$canTeleport1,$canDroneTeleport,$canGlitchGun2",
+              "laserdrill,highjump,$canGlitchGun2,$canTeleport2",
+              "laserdrill,$canGlitchGun2,grapple,$canTeleport2",
+              "$canTeleport3",
+              "[progadvanced],laserdrill,$canGlitchGun2,$canTeleport2",
+              "[progmasochist],grapple",
+
+              // FIXME: VGR Needs
               "$canAirport2,highjump",
               "highjump,addressdisruptor,grapple",
               "highjump,addressdisruptor,$canUseRemoteDrone",
@@ -280,10 +343,14 @@
       {
         "name": "Power Node Fragment (Ukkin-Na bottom)",
         "short_name": "Power Node Fragment (Ukkin-Na v)",
+        "vgravmap": "PowerNodeFragment10",
         "access_rules": [
+          "$canTeleport2,fatbeam",
+          "$canTelport3",
+
+          // FIXME: VGR Needs
           "$canTeleport2,highjump,addressdisruptor,rangelong",
-          "$canTeleport2,$canDroneTeleport,addressdisruptor,rangelong",
-          "$canTeleport3"
+          "$canTeleport2,$canDroneTeleport,addressdisruptor,rangelong"
         ],
         "map_locations": [
           {

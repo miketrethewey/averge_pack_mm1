@@ -14,6 +14,13 @@
         "short_name": "Drone Teleport",
         "vgravmap": "DroneTeleport",
         "access_rules": [
+					"laserdrill,highjump,$canTeleport2,$canGlitchBomb",
+					"[progadvanced],laserdrill,highjump,$canTeleport1,grapple",
+					"[progadvanced],laserdrill,highjump,$canTeleport2",
+					"[progadvanced],laserdrill,grapple,$canTeleport2",
+					"[progadvanced],$canUseRemoteDrone,$canTeleport3",
+
+					// FIXME: VGR Needs
           "$canTeleport2,highjump,rangelong,$canUseRemoteDrone",
           "$canTeleport2,addressbomb,$canDroneTeleport",
           "$canTeleport3,addressbomb,rangelong,$canUseRemoteDrone"
@@ -41,10 +48,15 @@
       {
         "name": "Clay Tablet (Edin)",
         "short_name": "Clay Tablet (Edin)",
+				"vgravmap": "Note4",
         "access_rules": [
-          "$canTeleport2,addressbomb,$canDroneTeleport",
-          "$canTeleport2,highjump,$canDroneTeleport",
-          "$canTeleport3"
+					"$canTeleport2,$canGlitchBomb,$canDroneTeleport",
+					"$canTeleport3",
+					"[provadvanced],laserdrill,grapple,$canTeleport2",
+					"[progmasochist],highjump,grapple,$canGlitchBomb,$canDroneTeleport",
+
+					// FIXME: VGR Needs
+          "$canTeleport2,highjump,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -71,6 +83,11 @@
         "short_name": "Distortion Field",
         "vgravmap": "DistortionField",
         "access_rules": [
+					"$canTeleport2,$canGlitchBomb,$canDroneTeleport,$canEnhancedDroneLaunch,telereset",
+					"$canGlitchBomb,$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3,telereset",
+					"[progmasochist],grapple,$canTeleport3",
+
+					// FIXME: VGR Needs
           "$canTeleport2,highjump,$canEnhancedDroneLaunch,$canDroneTeleport",
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport"
         ],
@@ -97,7 +114,16 @@
       {
         "name": "Power Node Fragment (Edin top)",
         "short_name": "Power Node Fragment (Edin ^)",
+				"vgravmap": "PowerNodeFragment17",
         "access_rules": [
+					"$canTeleport2,$canGlitchBomb,$canDroneTeleport",
+					// "$canGlitchBomb,$canDroneTeleport,$canTeleport3" // Redundant
+					"[progadvanced],highjump,$canTeleport2,$canDroneTeleport",
+					"[progadvanced],grapple,$canTeleport2,$canDroneTeleport",
+					"[progadvanced],$canDroneTeleport,$canTeleport3",
+					"[progmasochist],highjump,grapple,$canGlitchBomb,$canDroneTeleport",
+
+					// FIXME: VGR Needs
           "$canTeleport2,highjump,$canDroneTeleport,addressbomb",
           "$canTeleport3,$canDroneTeleport,addressbomb",
           "addressbomb,$canEnhancedDroneLaunch,$canDroneTeleport"
@@ -125,7 +151,18 @@
       {
         "name": "Health Node Fragment (Edin top)",
         "short_name": "Health Node Fragment (Edin ^)",
+				"vgravmap": "HealthNodeFragment19",
         "access_rules": [
+					"laserdrill,highjump,grapple,$canTeleport2",
+					"$canTeleport2,$canDroneTeleport,$canEnhancedDroneLaunch,telereset",
+					"$canDroneTeleport,$canEnhancedDroneLaunch,telereset",
+					// "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3,telereset" // Redundant
+					"[progadvanced],$canTeleport2,$canDroneTeleport,telereset",
+					// "[progadvanced],$canDroneTeleport,$canTeleport3,telereset", // Redundant
+					"[progadvanced],grapple,$canTeleport3",
+					"[progmasochist],grapple,$canTeleport2",
+
+					// FIXME: VGR Needs
           "$canTeleport2,highjump,grapple,$canUseRemoteDrone",
           "$canTeleport2,$canDroneTeleport,grapple",
           "$canTeleport3,grapple,$canUseRemoteDrone"
@@ -153,8 +190,15 @@
       {
         "name": "Health Node (Edin)",
         "short_name": "Health Node (Edin)",
-        "vgravmap": "HealthNode6",
+        "vgravmap": "HealthNode7",
         "access_rules": [
+					"$canTeleport2,$canGlitchBomb,$canDroneTeleport",
+					// "$canGlitchBomb,$canDroneTeleport,$canTeleport3", // Redundant
+					"[progadvanced],highjump,$canTeleport2,$canDroneTeleport",
+					"[progadvanced],grapple,$canTeleport2,$canDroneTeleport",
+					"[progadvanced],$canDroneTeleport,$canTeleport3",
+
+					// FIXME: VGR Needs
           "$canTeleport2,highjump,$canDroneTeleport,addressbomb",
           "$canTeleport3,$canDroneTeleport,addressbomb",
           "addressbomb,$canDroneTeleport"
@@ -182,9 +226,16 @@
       {
         "name": "Rusalka Tablet (Edin)",
         "short_name": "Rusalka Tablet (Edin)",
+				"vgravmap": "Note5",
         "access_rules": [
-          "$canTeleport2,highjump",
-          "$canTeleport3",
+					"laserdrill,$canTeleport2,$canGlitchBomb",
+					"$canTeleport3",
+					"[progadvanced],laserdrill,highjump,$canTeleport1,grapple,$canGlitchBomb",
+					"[progadvanced],laserdrill,highjump,$canTeleport2",
+					"[progadvanced],laserdrill,grapple,$canTeleport2",
+
+					// FIXME: VGR Needs
+          "$canTeleport2,highjump", // Likely Redundant due to Area Access
           "addressbomb,$canDroneTeleport"
         ],
         "map_locations": [
@@ -210,10 +261,16 @@
       {
         "name": "Digital Paper (Edin top)",
         "short_name": "Digital Paper (Edin ^)",
+				"vgravmap": "Note27",
         "access_rules": [
+					"laserdrill,highjump,$canTeleport2",
+					"$canTeleport3",
+					"[progadvanced],laserdrill,grapple,$canTeleport2",
+					"[progadvanced],$canTeleport2,$canDroneTeleport",
+
+					// FIXME: VGR Needs
           "$canTeleport2,highjump,addressdisruptor",
-          "$canTeleport2,$canDroneTeleport,addressdisruptor",
-          "$canTeleport3"
+          "$canTeleport2,$canDroneTeleport,addressdisruptor"
         ],
         "map_locations": [
           {
@@ -238,7 +295,16 @@
       {
         "name": "Health Node Fragment (Edin left)",
         "short_name": "Health Node Fragment (Edin <)",
+				"vgravmap": "HealthNodeFragment20",
         "access_rules": [
+					"$canTeleport2,$canDroneTeleport,$canEnhancedDroneLaunch",
+					// "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3", // Redundant
+					"[progadvanced],grapple,$canDroneTeleport,$canTeleport3",
+					"[progadvanced],$canTeleport2,$canDroneTeleport,telereset",
+					// "[progadvanced],$canDroneTeleport,$canTeleport3,telereset" // Redundant
+					"[progmasochist],grapple,$canDroneTeleport,telereset",
+
+					// FIXME: VGR Needs
           "$canEnhancedDroneLaunch,$canDroneTeleport,grapple"
         ],
         "map_locations": [
@@ -266,7 +332,11 @@
         "short_name": "Bioflux Accelerator 2",
         "vgravmap": "TendrilsBottom",
         "access_rules": [
-          "$canAirport2,$canEnhancedDroneLaunch,$canDroneTeleport"
+					"$canAirport2,$canDroneTeleport,$canEnhancedDroneLaunch",
+					// "$canDroneTeleport,$canEnhancedDroneLaunch,$canAirport3", // Redundant
+					"[progadvanced],highjump,grapple,$canTeleport3",
+					"[progmasochist],grapple,$canTeleport3",
+					"[progmasochist],highjump,grapple,$canTeleport2"
         ],
         "map_locations": [
           {
@@ -291,7 +361,14 @@
       {
         "name": "Digital Paper (Edin bottom)",
         "short_name": "Digital Paper (Edin v)",
+				"vgravmap": "Note18",
         "access_rules": [
+					"laserdrill,highjump,$canTeleport2",
+					"$canTeleport3",
+					"[progadvanced],laserdrill,grapple,$canTeleport2",
+					"[progadvanced],$canTeleport2,$canDroneTeleport",
+
+					// FIXME: VGR Needs
           "$canAirport2,highjump,addressdisruptor",
           "$canAirport2,$canDroneTeleport,addressdisruptor",
           "$canTeleport3,addressdisruptor"
@@ -319,9 +396,21 @@
       {
         "name": "Health & Power Nodes (Edin right) (2 items)",
         "short_name": "Health & Power Nodes (Edin >) (2 items)",
+				"vgravmap": [ "PowerNode5", "HealthNode6" ],
         "access_rules": [
-          "$canTeleport2,addressbomb,highjump",
-          "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport"
+					"laserdrill,highjump,$canTeleport2,$canGlitchBomb",
+					"$canTeleport2,$canGlitchBomb,$canDroneTeleport",
+					"$canTeleport2,$canDroneTeleport,$canEnhancedDroneLaunch",
+					"highjump,$canGlitchBomb,$canTeleport3",
+					"$canGlitchBomb,$canDroneTeleport,$canTeleport3",
+					// "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3" // Redundant
+					"[progadvanced],$canGlitchGun2,$canTeleport2,$canDroneTeleport",
+					"[progadvanced],laserdrill,grapple,$canTeleport2,$canGlitchBomb",
+					"[progadvanced],$canGlitchBomb,$canTeleport3",
+					"[progadvanced],highjump,grapple,$canTeleport3",
+
+					// FIXME: VGR Needs
+          "$canTeleport2,addressbomb,highjump" // Likely Redundant due to Area Access
         ],
         "map_locations": [
           {
@@ -352,7 +441,13 @@
         "short_name": "Shards",
         "vgravmap": "Shards",
         "access_rules": [
-          "$canTeleport2,addressbomb",
+					"laserdrill,$canTeleport2,$canGlitchBomb",
+					"laserdrill,highjump,$canTeleport1,$canGlitchBomb",
+					"$canTeleport1,$canGlitchBomb,$canDroneTeleport",
+					"[progadvanced],$canGlitchBomb,$canTeleport3",
+
+					// FIXME: VGR Needs
+          "$canTeleport2,addressbomb", // Likely Redundant due to Area Access
           "$canEnhancedDroneLaunch,$canDroneTeleport,addressbomb"
         ],
         "map_locations": [
@@ -380,7 +475,10 @@
         "short_name": "Range Node (Edin)",
         "vgravmap": "RangeNode3",
         "access_rules": [
-          "$canAirport2,highjump,$canUseRemoteDrone"
+					"highjump,$canUseRemoteDrone,$canAirport2",
+					"[progadvanced],$canUseRemoteDrone,grapple,$canTeleport2",
+					"[progadvanced],$canUseRemoteDrone,$canTeleport3",
+					"[progmasochist],laserdrill,grapple,$canTeleport2"
         ],
         "map_locations": [
           {
@@ -407,9 +505,13 @@
         "short_name": "Address Bomb",
         "vgravmap": "GlitchBomb",
         "access_rules": [
-          "$canTeleport2,highjump",
-          "$canTeleport2,$canDroneTeleport",
-          "$canTeleport3"
+					"laserdrill,highjump,$canTeleport2",
+					"$canTeleport3",
+					"[progadvanced],laserdrill,grapple,$canTeleport2",
+					"[progadvanced],$canTeleport2,$canDroneTeleport",
+
+					// FIXME: VGR Needs
+          "$canTeleport2,highjump" // Likely Redundant due to Area Access
         ],
         "map_locations": [
           {

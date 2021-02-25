@@ -29,12 +29,12 @@
       { // Address Disruptor 1
         "name": "Address Disruptor 1",
         "img": "images/inventory/address-disruptor-1.png",
-        "codes": "addressdisruptor1,addressdisruptor"
+        "codes": "addressdisruptor1,addressdisruptor,telereset"
       },
       { // Address Disruptor 2
         "name": "Address Disruptor 2",
         "img": "images/inventory/address-disruptor-2.png",
-        "codes": "addressdisruptor2,addressdisruptor"
+        "codes": "addressdisruptor2,addressdisruptor,telereset"
       }
     ]
   },
@@ -233,7 +233,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/laser-drill.png",
-    "codes": "laserdrill,rangeshort,excavate"
+    "codes": "laserdrill,rangeshort,excavate,telereset"
   },
   // Lightning Gun
   {

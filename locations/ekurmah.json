@@ -15,6 +15,13 @@
         "short_name": "Power Node (E-Kur-Mah)",
         "vgravmap": "PowerNode6",
         "access_rules": [
+          "$canTeleport2,$canDroneTeleport,$canEnhancedDroneLaunch,sudrankey",
+          "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3",
+          "[progadvanced],$canTeleport2,$canDroneTeleport,sudrankey,telereset",
+          "[progadvanced],$canDroneTeleport,$canTeleport3,telereset",
+          "[progmasochist],grapple,$canTeleport3",
+
+          // FIXME: VGR Needs
           "$canAirport3,highjump,grapple",
           "sudrankey"
         ],
@@ -43,6 +50,12 @@
         "short_name": "Sudran Key",
         "vgravmap": "BreachSuppressor",
         "access_rules": [
+          "$canTeleport2,$canDroneTeleport,$canEnhancedDroneLaunch",
+          // "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3", // Redundant
+          "[progadvanced],$canTeleport2,$canDroneTeleport,telereset",
+          // "[progadvanced],$canDroneTeleport,$canTeleport3,telereset", // Redundant
+
+          // FIXME: VGR Needs
           "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
           "$canTeleport3,highjump,$canDroneTeleport"
         ],
@@ -69,7 +82,14 @@
       {
         "name": "Clay Tablet (E-Kur-Mah top right)",
         "short_name": "Clay Tablet (E-Kur-Mah ^>)",
+        "vgravmap": "Note3",
         "access_rules": [
+          "$canTeleport2,$canDroneTeleport,$canEnhancedDroneLaunch",
+          // "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3", // Redundant
+          "[progadvanced],$canTeleport2,$canDroneTeleport,telereset",
+          // "[progadvanced],$canDroneTeleport,$canTeleport3,telereset", // Redundant
+
+          // FIXME: VGR Needs
           "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,",
           "$canTeleport3,highjump,$canDroneTeleport"
         ],
@@ -96,10 +116,16 @@
       {
         "name": "Clay Tablet (E-Kur-Mah top left)",
         "short_name": "Clay Tablet (E-Kur-Mah <^)",
+        "vgravmap": "Note1",
         "access_rules": [
+          "$canTeleport2,$canDroneTeleport,$canEnhancedDroneLaunch",
+          // "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3", // Redundant
+          "[progadvanced],highjump,grapple,$canAirport3",
+          "[progmasochist],grapple,$canTeleport3",
+
+          // FIXME: VGR Needs
           "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
-          "$canTeleport3,highjump,$canDroneTeleport",
-          "$canAirport3,highjump,grapple"
+          "$canTeleport3,highjump,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -124,10 +150,17 @@
       {
         "name": "Clay Tablet (E-Kur-Mah bottom)",
         "short_name": "Clay Tablet (E-Kur-Mah v)",
+        "vgravmap": "Note11",
         "access_rules": [
+          // EmoTracker-only
           "{}",
-          "$canTeleport3,sudrankey",
-          "$canAirport3,highjump,grapple"
+
+          "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3",
+          "[progadvanced],highjump,grapple,$canAirport3",
+          "[progmasochist],grapple,$canTeleport3",
+
+          // FIXME: VGR Needs
+          "$canTeleport3,sudrankey"
         ],
         "map_locations": [
           {
@@ -153,7 +186,16 @@
       {
         "name": "Quantum Veriegator (ISKART-EHANZU)",
         "short_name": "Quantum Veriegator (ISKART-EHANZU)",
+        "vgravmap": "Swim",
         "access_rules": [
+          "$canTeleport2,$canDroneTeleport,$canEnhancedDroneLaunch,passcodetool",
+          // "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3,passcodetool", // Redundant
+          "[progadvanced],highjump,$canTeleport2,$canDroneTeleport,passcodetool",
+          "[progadvanced],$canDroneTeleport,$canTeleport3,passcodetool",
+          "[progadvanced],highjump,grapple,$canTeleport3,passcodetool",
+          "[progmasochist],grapple,$canTeleport3,passcodetool",
+
+          // FIXME: VGR Needs
           "$canTeleport1,passcodetool,$canEnhancedDroneLaunch,$canDroneTeleport",
           "$canAirport3,passcodetool,$canDroneTeleport,highjump"
         ],
@@ -182,6 +224,14 @@
         "short_name": "Health Node Fragment (E-Kur-Mah)",
         "vgravmap": "HealthNodeFragment17",
         "access_rules": [
+          "$canTeleport2,$canDroneTeleport,$canEnhancedDroneLaunch,sudrankey",
+          "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3",
+          "[progadvanced],$canTeleport2,$canDroneTeleport,sudrankey,telereset",
+          "[progadvanced],$canDroneTeleport,$canTeleport3,telereset",
+          "[progmasochist],grapple,$canTeleport2,$canDroneTeleport,telereset",
+          "[progmasochist],grapple,$canTeleport3",
+
+          // FIXME: VGR Needs
           "$canAirport3,$canUseRemoteDrone",
           "highjump,$canEnhancedDroneLaunch,sudrankey"
         ],
@@ -210,8 +260,15 @@
         "short_name": "Red Coat",
         "vgravmap": "RedCoat",
         "access_rules": [
-          "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
-          "$canTeleport3"
+          "$canTeleport2,$canDroneTeleport,$canEnhancedDroneLaunch,sudrankey",
+          "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3",
+          "[progadvanced],$canTeleport2,$canDroneTeleport,sudrankey,telereset",
+          "[progadvanced],$canTeleport3",
+          "[progmasochist],grapple,$canTeleport2,$canDroneTeleport,telereset",
+          "[progmasochist],grapple,$canTeleport3",
+
+          // FIXME: VGR Needs
+          "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch"
         ],
         "map_locations": [
           {
@@ -238,8 +295,11 @@
         "short_name": "Power Node Fragment (E-Kur-Mah)",
         "vgravmap": "PowerNodeFragment18",
         "access_rules": [
-          "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,sudrankey",
-          "$canTeleport3"
+          "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3",
+          "[progadvanced],$canTeleport3",
+
+          // FIXME: VGR Needs
+          "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,sudrankey"
         ],
         "map_locations": [
           {

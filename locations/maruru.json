@@ -12,7 +12,13 @@
       {
         "name": "Digital Paper (Mar-Uru top)",
         "short_name": "Digital Paper (Mar-Uru ^)",
+        "vgravmap": "Note21",
         "access_rules": [
+          "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3",
+          "[progadvanced],$canDroneTeleport,$canTeleport3,telereset",
+          "[progmasochist],highjump,$canUseRemoteDrone,grapple,$canTeleport3",
+
+          // FIXME: VGR Needs
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
@@ -38,7 +44,13 @@
       {
         "name": "Digital Paper (Mar-Uru bottom)",
         "short_name": "Digital Paper (Mar-Uru v)",
+        "vgravmap": "Note26",
         "access_rules": [
+          "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3",
+          "[progadvanced],$canDroneTeleport,$canTeleport3,telereset",
+          "[progmasochist],highjump,grapple,$canTeleport3",
+
+          // FIXME: VGR Needs
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
@@ -66,6 +78,11 @@
         "short_name": "Reverse Slicer",
         "vgravmap": "Scythe",
         "access_rules": [
+          "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3",
+          "[progadvanced],$canDroneTeleport,$canTeleport3,telereset",
+          "[progmasochist],highjump,grapple,$canTeleport3",
+
+          // FIXME: VGR Needs
           "$canTeleport3,addressdisruptor,$canEnhancedDroneLaunch,$canDroneTeleport,highjump",
           "$canTeleport3,fatbeam,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
@@ -94,6 +111,11 @@
         "short_name": "Size Node (Mar-Uru)",
         "vgravmap": "SizeNode4",
         "access_rules": [
+          "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3",
+          "[progadvanced],$canDroneTeleport,$canTeleport3,telereset",
+          "[progmasochist],highjump,grapple,$canTeleport3",
+
+          // FIXME: VGR Needs
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
@@ -121,6 +143,11 @@
         "short_name": "Health Node (Mar-Uru)",
         "vgravmap": "HealthNode8",
         "access_rules": [
+          "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3",
+          "[progadvanced],$canDroneTeleport,$canTeleport3,telereset",
+          "[progmasochist],highjump,grapple,$canTeleport3",
+
+          // FIXME: VGR Needs
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
@@ -146,7 +173,13 @@
       {
         "name": "Power Node Fragment (Mar-Uru top)",
         "short_name": "Power Node Fragment (Mar-Uru ^)",
+        "vgravmap": "PowerNodeFragment11",
         "access_rules": [
+          "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3",
+          "[progadvanced],$canDroneTeleport,$canTeleport3,telereset",
+          "[progmasochist],highjump,grapple,$canTeleport3",
+
+          // FIXME: VGR Needs
           "$canTeleport3,addressdisruptor,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
@@ -172,7 +205,13 @@
       {
         "name": "Clay Tablet (Mar-Uru) (2 items)",
         "short_name": "Clay Tablet (Mar-Uru) (2 items)",
+        "vgravmap": [ "Note6", "PowerNodeFragment12" ],
         "access_rules": [
+          "$canDroneTeleport,$canEnhancedDroneLaunch,$canTeleport3",
+          "[progadvanced],$canDroneTeleport,$canTeleport3,telereset",
+          "[progmasochist],highjump,grapple,$canTeleport3",
+
+          // FIXME: VGR Needs
           "$canTeleport3,addressdisruptor,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [

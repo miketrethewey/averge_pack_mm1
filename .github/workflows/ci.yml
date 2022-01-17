@@ -81,7 +81,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: appversion-${{ matrix.os-name }}
-          path: ${{ steps.parentDir.outputs.value}}/deploy
+          path: ${{ steps.parentDir.outputs.value}}/build
 
       # Upload Archive Artifact
       - name: Upload Archive Artifact

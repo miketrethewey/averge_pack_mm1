@@ -172,8 +172,8 @@ jobs:
           tag_name: v${{ steps.debug_info.outputs.github_tag }}
           release_name: Axiom Verge EmoTracker Pack v${{ steps.debug_info.outputs.github_tag }}
           body_path: RELEASENOTES.md
-          draft: true
-        # if: contains(github.ref, 'master')
+          # draft: true
+        if: contains(github.ref, 'master')
       # upload archive asset
       - name: Upload Archive Asset
         id: upload-asset
@@ -185,4 +185,4 @@ jobs:
           asset_path: ../deploy/averge_pack_mm1.zip
           asset_name: averge_pack_mm1.zip
           asset_content_type: application/zip
-        # if: contains(github.ref, 'master')
+        if: contains(github.ref, 'master')

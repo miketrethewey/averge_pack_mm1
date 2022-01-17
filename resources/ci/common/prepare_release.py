@@ -70,15 +70,6 @@ def prepare_release():
   print(BUILD_FILENAMES)
 
   if len(BUILD_FILENAMES) > 0:
-      for BUILD_FILENAME in BUILD_FILENAMES:
-          if not BUILD_FILENAME == "":
-              if "artifact" not in BUILD_FILENAME:
-                  # move the binary to temp folder
-                  move(
-                      os.path.join(".", BUILD_FILENAME),
-                      os.path.join("..", "artifact", BUILD_FILENAME)
-                  )
-
       # clean the git slate
       git_clean()
 
@@ -98,35 +89,13 @@ def prepare_release():
                   os.path.join("..", "build", dirname)
               )
 
-      for BUILD_FILENAME in BUILD_FILENAMES:
-          if "artifact" not in BUILD_FILENAME:
-              if os.path.isfile(os.path.join("..", "artifact", BUILD_FILENAME)):
-                  # move the binary back
-                  move(
-                      os.path.join("..", "artifact", BUILD_FILENAME),
-                      os.path.join(".", BUILD_FILENAME)
-                  )
-                  # Make Linux/Mac binary executable
-                  if "linux" in env["OS_NAME"] or \
-                      "ubuntu" in env["OS_NAME"] or \
-                      "mac" in env["OS_NAME"] or \
-                          "osx" in env["OS_NAME"]:
-                      os.chmod(os.path.join(".", BUILD_FILENAME), 0o755)
-
       # .zip if windows
       # .tar.gz otherwise
-      if len(BUILD_FILENAMES) > 1:
-          ZIP_FILENAME = os.path.join(
-              "..",
-              "deploy",
-              env["REPO_NAME"]
-          )
-      else:
-          ZIP_FILENAME = os.path.join(
-              "..",
-              "deploy",
-              os.path.splitext(BUILD_FILENAME)[0]
-          )
+      ZIP_FILENAME = os.path.join(
+          "..",
+          "deploy",
+          env["REPO_NAME"]
+      )
       if env["OS_NAME"] == "windows":
           make_archive(ZIP_FILENAME, "zip")
           ZIP_FILENAME += ".zip"
@@ -142,13 +111,6 @@ def prepare_release():
                   os.path.join(".", thisDir)
               )
 
-  for BUILD_FILENAME in BUILD_FILENAMES:
-      if not BUILD_FILENAME == "":
-          print(f"Build Filename: {BUILD_FILENAME}")
-          print("Build Filesize: " + common.file_size(BUILD_FILENAME))
-      else:
-          print(f"No Build to prepare: {BUILD_FILENAME}")
-
   if not ZIP_FILENAME == "":
       print(f"Zip Filename:   {ZIP_FILENAME}")
       print("Zip Filesize:   " + common.file_size(ZIP_FILENAME))
@@ -157,7 +119,7 @@ def prepare_release():
 
   print(f"Git tag:        {env['GITHUB_TAG']}")
 
-  if (len(BUILD_FILENAMES) == 0) or (ZIP_FILENAME == ""):
+  if (ZIP_FILENAME == ""):
       exit(1)
 
 

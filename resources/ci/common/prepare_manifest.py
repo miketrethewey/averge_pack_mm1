@@ -16,8 +16,9 @@ def prepare_manifest():
       with open(os.path.join("manifest.json"), "r+") as manifestFile:
           manifestJSON = json.load(manifestFile)
           manifestJSON["package_version"] = APPVERSION
+          manifestFile.seek(0)
+          manifestFile.write(json.dumps(manifestJSON, indent=2))
           manifestFile.truncate()
-          manifestFile.write(json.dumps(manifestJSON))
 
 def main():
   prepare_manifest()

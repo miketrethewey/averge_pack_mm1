@@ -2,7 +2,6 @@
   "common": {
     "cleanup": {
       "nuke": [
-        ".git",
         ".github",
         "resources",
         "schemas"

@@ -80,14 +80,14 @@ jobs:
       - name: Upload AppVersion Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: appversion-${{ matrix.os-name }}
+          name: appversion
           path: ${{ steps.parentDir.outputs.value}}/deploy
 
       # Upload Archive Artifact
       - name: Upload Archive Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: archive-${{ matrix.os-name }}
+          name: archive
           path: ${{ steps.parentDir.outputs.value}}/deploy
 
   # Deploy to GitHub Releases
@@ -134,7 +134,7 @@ jobs:
       - name: Download AppVersion Artifact
         uses: actions/download-artifact@v2
         with:
-          name: appversion-${{ matrix.os-name }}
+          name: appversion
           path: ${{ steps.parentDir.outputs.value }}/build
       # debug info
       - name: Debug Info

@@ -103,8 +103,8 @@ jobs:
     #  os & python versions
     strategy:
       matrix:
-        # release only on windows
-        os-name: [windows-latest]
+        # release only on ubuntu
+        os-name: [ubuntu-latest]
         python-version: [3.8]
 
     needs: [install-prepare-release]

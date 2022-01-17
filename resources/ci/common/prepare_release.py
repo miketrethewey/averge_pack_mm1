@@ -96,12 +96,8 @@ def prepare_release():
           "deploy",
           env["REPO_NAME"]
       )
-      if env["OS_NAME"] == "windows":
-          make_archive(ZIP_FILENAME, "zip")
-          ZIP_FILENAME += ".zip"
-      else:
-          make_archive(ZIP_FILENAME, "gztar")
-          ZIP_FILENAME += ".tar.gz"
+      make_archive(ZIP_FILENAME, "zip")
+      ZIP_FILENAME += ".zip"
 
       # mv dirs back
       for thisDir in dirs:

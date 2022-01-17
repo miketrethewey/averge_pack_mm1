@@ -143,6 +143,12 @@ jobs:
         with:
           name: appversion-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.value }}/build
+      # download archive artifact
+      - name: Download Archive Artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: archive-${{ matrix.os-name }}
+          path: ${{ steps.parentDir.outputs.value }}/deploy
       # debug info
       - name: Debug Info
         id: debug_info
@@ -168,9 +174,9 @@ jobs:
           body_path: RELEASENOTES.md
           draft: true
         # if: contains(github.ref, 'master')
-      # upload ubuntu archive asset
-      - name: Upload Ubuntu Archive Asset
-        id: upload-ubuntu-asset
+      # upload archive asset
+      - name: Upload Archive Asset
+        id: upload-asset
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

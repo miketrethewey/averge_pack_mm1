@@ -13,7 +13,8 @@
         "title": "Axiom Verge EmoTracker Pack",
         "username": "miketrethewey",
         "repository": "averge_pack_mm1"
-      }
+      },
+      "actor": "miketrethewey"
     },
     "git_clean": {
       "excludes": [

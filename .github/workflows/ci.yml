@@ -69,14 +69,14 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: appversion-${{ matrix.os-name }}
-          path: ${{ steps.parentDir.outputs.value}}/deploy
+          path: ${{ steps.parentDir.outputs.value}}/build
 
       # Upload Archive Artifact
       - name: Upload Archive Artifact
         uses: actions/upload-artifact@v2
         with:
           name: archive-${{ matrix.os-name }}
-          path: ${{ steps.parentDir.outputs.value}}/deploy
+          path: ${{ steps.parentDir.outputs.value}}/artifact
 
   # Deploy to GitHub Releases
   #  Release Name:  SpriteSomething v${GITHUB_TAG}

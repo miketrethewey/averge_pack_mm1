@@ -195,6 +195,14 @@
     "img": "images/inventory/heat-seeker.png",
     "codes": "heatseeker,rangelong"
   },
+  // Nova
+  {
+    "name": "Nova",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/nova.png",
+    "codes": "nova,rangelong,split,splits,spazerbeam,spazer,spazershort,widebeam,wide"
+  },
   // Hypo-Atomizer
   {
     "name": "Hypo-Atomizer",
@@ -280,14 +288,6 @@
     "loop": true,
     "img": "images/inventory/multi-disruptor.png",
     "codes": "multidisruptor,rangeshort,nova,split,splits,spazerbeam,spazer,widebeam,wide"
-  },
-  // Nova
-  {
-    "name": "Nova",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/inventory/nova.png",
-    "codes": "nova,rangelong,split,splits,spazerbeam,spazer,spazershort,widebeam,wide"
   },
   // Orbital Discharge
   {

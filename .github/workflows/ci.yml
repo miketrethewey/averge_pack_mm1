@@ -123,6 +123,13 @@ jobs:
           source: ${{ github.repository }}
           find: '${{ github.repository_owner }}/'
           replace: ''
+      - name: Get Parent Directory Path (!Windows)
+        uses: mad9000/actions-find-and-replace-string@1
+        id: parentDirNotWin
+        with:
+          source: ${{ github.workspace }}
+          find: '${{ steps.repoName.outputs.value }}/${{ steps.repoName.outputs.value }}'
+          replace: ${{ steps.repoName.outputs.value }}
       - name: Get Parent Directory Path (Windows)
         uses: mad9000/actions-find-and-replace-string@1
         id: parentDir

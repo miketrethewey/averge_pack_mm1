@@ -57,9 +57,14 @@ jobs:
           python --version
 
       # Prepare AppVersion
-      - name: Prepare AppVersion & Release
+      - name: Prepare AppVersion
         run: |
           python ./resources/ci/common/prepare_appversion.py
+
+      # Prepare Manifest
+      - name: Prepare Manifest
+        run: |
+          python ./resources/ci/common/prepare_manifest.py
 
       # Prepare Archive
       - name: Prepare Archive

@@ -58,9 +58,9 @@ def prepare_release():
   ZIP_FILENAME = ""
 
   # list executables
-  BUILD_FILENAME = common.find_binary(os.path.join("."))
+  BUILD_FILENAME = (os.path.join("."))
   if BUILD_FILENAME == "":
-      BUILD_FILENAME = common.find_binary(os.path.join("..", "artifact"))
+      BUILD_FILENAME = (os.path.join("..", "artifact"))
 
   if isinstance(BUILD_FILENAME, str):
       BUILD_FILENAME = list(BUILD_FILENAME)

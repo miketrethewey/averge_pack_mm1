@@ -54,15 +54,15 @@ jobs:
         run: |
           python ./resources/ci/common/prepare_appversion.py
 
-      # Cleanup Workspace
-      - name: Cleanup Workspace
-        run: |
-          python ./resources/ci/common/cleanup.py
-
       # Prepare Archive
       - name: Prepare Archive
         run: |
           python ./resources/ci/common/prepare_archive.py
+
+      # Cleanup Workspace
+      - name: Cleanup Workspace
+        run: |
+          python ./resources/ci/common/cleanup.py
 
       # Upload AppVersion Artifact
       - name: Upload AppVersion Artifact

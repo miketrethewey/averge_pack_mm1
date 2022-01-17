@@ -85,7 +85,7 @@ def prepare_release():
           os.path.join(".", "CODE_OF_CONDUCT.md")
       ]
       for dirname in dirs:
-          if os.path.isdir(dirname):
+          if os.path.exists(dirname):
               move(
                   dirname,
                   os.path.join("..", "build", dirname)
@@ -103,7 +103,7 @@ def prepare_release():
 
       # mv dirs back
       for thisDir in dirs:
-          if os.path.isdir(os.path.join("..", "build", thisDir)):
+          if os.path.exists(os.path.join("..", "build", thisDir)):
               move(
                   os.path.join("..", "build", thisDir),
                   os.path.join(".", thisDir)

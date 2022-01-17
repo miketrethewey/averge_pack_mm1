@@ -20,7 +20,7 @@ def prepare_release():
 
   # make dirs for each os
   # for dirname in ["linux", "macos", "windows"]:
-  for dirname in ["windows"]:
+  for dirname in ["linux"]:
       if not os.path.isdir(os.path.join("..", "deploy", dirname)):
           os.mkdir(os.path.join("..", "deploy", dirname))
 

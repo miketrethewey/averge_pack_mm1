@@ -168,15 +168,15 @@ jobs:
           body_path: RELEASENOTES.md
           draft: true
         # if: contains(github.ref, 'master')
-      # upload windows archive asset
-      - name: Upload Windows Archive Asset
-        id: upload-windows-asset
+      # upload ubuntu archive asset
+      - name: Upload Ubuntu Archive Asset
+        id: upload-ubuntu-asset
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ../deploy/windows/averge_pack_mm1.zip
+          asset_path: ../deploy/ubuntu/averge_pack_mm1.zip
           asset_name: averge_pack_mm1.zip
           asset_content_type: application/zip
         # if: contains(github.ref, 'master')

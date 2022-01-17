@@ -135,7 +135,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/fat-beam.png",
-    "codes": "fatbeam,rangelong,wavebeam,wave,widebeam,wide"
+    "codes": "fatbeam,rangelong,wavebeam,wave,wavelong,widebeam,wide"
   },
   // Field Disruptor
   {

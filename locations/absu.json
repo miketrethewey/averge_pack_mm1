@@ -461,7 +461,7 @@
         "access_rules": [
           "$canTeleport1,addressdisruptor",
           "$canTeleport2",
-          "wave,addressdisruptor"
+          "wavelong,addressdisruptor"
         ],
         "map_locations": [
           {

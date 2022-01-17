@@ -80,7 +80,9 @@ def prepare_release():
           os.path.join(".", ".gitattributes"),
           os.path.join(".", ".gitignore"),
           os.path.join(".", "html"),
-          os.path.join(".", "resources", "ci")
+          os.path.join(".", "resources"),
+          os.path.join(".", "schemas"),
+          os.path.join(".", "CODE_OF_CONDUCT.md")
       ]
       for dirname in dirs:
           if os.path.isdir(dirname):

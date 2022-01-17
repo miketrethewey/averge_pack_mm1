@@ -176,7 +176,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ../deploy/ubuntu/averge_pack_mm1.zip
+          asset_path: ../deploy/averge_pack_mm1.zip
           asset_name: averge_pack_mm1.zip
           asset_content_type: application/zip
         # if: contains(github.ref, 'master')

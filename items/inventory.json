@@ -135,7 +135,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/fat-beam.png",
-    "codes": "fatbeam,rangelong,wavebeam,wave,widebeam,wide"
+    "codes": "fatbeam,rangelong,wavebeam,wave,wavelong,widebeam,wide"
   },
   // Field Disruptor
   {
@@ -195,13 +195,21 @@
     "img": "images/inventory/heat-seeker.png",
     "codes": "heatseeker,rangelong"
   },
+  // Nova
+  {
+    "name": "Nova",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/inventory/nova.png",
+    "codes": "nova,rangelong,split,splits,spazerbeam,spazer,spazershort,widebeam,wide"
+  },
   // Hypo-Atomizer
   {
     "name": "Hypo-Atomizer",
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/hypo-atomizer.png",
-    "codes": "hypoatomizer,rangelong,splits,split,spazerbeam,spazer,spazershort,widebeam,wide"
+    "codes": "hypoatomizer,rangelong,nova,splits,split,spazerbeam,spazer,spazershort,widebeam,wide"
   },
   // Inertial Pulse
   {
@@ -279,15 +287,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/multi-disruptor.png",
-    "codes": "multidisruptor,rangeshort,split,splits,spazerbeam,spazer,widebeam,wide"
-  },
-  // Nova
-  {
-    "name": "Nova",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/inventory/nova.png",
-    "codes": "nova,rangelong,split,splits,spazerbeam,spazer,spazershort,widebeam,wide"
+    "codes": "multidisruptor,rangeshort,nova,split,splits,spazerbeam,spazer,widebeam,wide"
   },
   // Orbital Discharge
   {

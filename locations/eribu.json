@@ -128,7 +128,12 @@
 
           // FIXME: VGR Needs
           "wave,laserdrill",
-          "$canAirport2,excavate"
+          "$canAirport2,excavate",
+          "nova,laserdrill",
+          "wave,laserdrill",
+          "$canUseRemoteDrone",
+          "[progadvanced],nova,excavate",
+          "[progadvanced],wave,excavate"
         ],
         "map_locations": [
           {
@@ -192,6 +197,7 @@
           "$canAirport3", // FIXME: Redundant
 
           // FIXME: VGR Needs
+          "nova",
           "wave",
           "reflector",
           "snake"
@@ -259,6 +265,7 @@
 
           // FIXME: VGR Needs
           "snake",
+          "nova",
           "wave",
           "reflector"
         ],
@@ -298,7 +305,11 @@
           "$canTeleport3",
 
           // FIXME: VGR Needs
-          "wave,laserdrill"  // can get
+          "{nova}",                       // can see but can't get
+          "nova,laserdrill",              // can get
+          "wave,laserdrill",              // can get
+          "[progadvanced],nova,excavate", // can get (advanced)
+          "[progadvanced],wave,excavate"  // can get (advanced)
         ],
         "map_locations": [
           {

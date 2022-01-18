@@ -235,6 +235,33 @@
           }
         ]
       },
+      // Telal
+      {
+        "name": "Telal",
+        "short_name": "Telal",
+        "vgravmap": "",
+        "access_rules": [
+          "@Address Disruptor 1/Item"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 441,
+            "y": 963
+          },
+          {
+            "map": "absu",
+            "x": 342,
+            "y": 179
+          }
+        ],
+        "sections": [
+          {
+            "name": "Boss",
+            "item_count": 1
+          }
+        ]
+      },
       // Power Node Fragment (Absu middle left)
       {
         "name": "Power Node Fragment (Absu middle left)",

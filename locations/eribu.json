@@ -252,6 +252,33 @@
           }
         ]
       },
+      // Xedur
+      {
+        "name": "Xedur",
+        "short_name": "Xedur",
+        "vgravmap": "",
+        "access_rules": [
+          "@Laser Drill/Item"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 261,
+            "y": 729
+          },
+          {
+            "map": "eribu",
+            "x": 440,
+            "y": 231
+          }
+        ],
+        "sections": [
+          {
+            "name": "Boss",
+            "item_count": 1
+          }
+        ]
+      },
       // Power Node (Eribu)
       {
         "name": "Power Node (Eribu)",

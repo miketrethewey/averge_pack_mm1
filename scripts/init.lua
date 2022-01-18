@@ -1,3 +1,6 @@
+-- Version
+ScriptHost:LoadScript("scripts/ver.lua")
+
 -- Items
 Tracker:AddItems("items/inventory.json")        -- All Inventory items
 

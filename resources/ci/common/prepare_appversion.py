@@ -20,6 +20,11 @@ def prepare_appversion():
           f.seek(0)
           f.write(env["GITHUB_TAG"])
           f.truncate()
+      with open(os.path.join("scripts","ver.lua"), "w+") as ver:
+          _ = ver.read()
+          ver.seek(0)
+          ver.write("print(\"Package Version: " + env["GITHUB_TAG"] + "\")")
+          ver.truncate()
 
   if not os.path.isdir(os.path.join("..", "build")):
       os.mkdir(os.path.join("..", "build"))

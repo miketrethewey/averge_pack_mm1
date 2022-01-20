@@ -100,6 +100,33 @@
           }
         ]
       },
+      // Uruku
+      {
+        "name": "Uruku",
+        "short_name": "Uruku",
+        "vgravmap": "",
+        "access_rules": [
+          "@Modified Lab Coat/Item"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 801,
+            "y": 927
+          },
+          {
+            "map": "zi",
+            "x": 352,
+            "y": 152
+          }
+        ],
+        "sections": [
+          {
+            "name": "Boss",
+            "item_count": 1
+          }
+        ]
+      },
       // Digital Paper Zi #1
       {
         "name": "Digital Paper (Zi) #1",

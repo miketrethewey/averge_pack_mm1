@@ -176,6 +176,7 @@
         "short_name": "Health Node Fragment (Absu = 1)",
         "vgravmap": "HealthNodeFragment4",
         "access_rules": [
+          "{excavate}",
           "$canTeleport1",
           "wave",
           "[progmasochist],excavate,grapple",
@@ -320,7 +321,7 @@
         "name": "Kilver",
         "short_name": "Kilver",
         "vgravmap": "Kilver",
-        "access_rules": [ 
+        "access_rules": [
           "excavate",
           "[progmasochist],grapple"
         ],

@@ -2,7 +2,7 @@
   "upgrades_grid": {
     "type": "itemgrid",
     "rows": [
-      [ "", "powernode", "sudrankey", "healthnode", "addressdisruptor-item" ],
+      [ "gomode", "powernode", "sudrankey", "healthnode", "addressdisruptor-item" ],
       [ "addressbomb", "powernodefragment", "passcodetool", "healthnodefragment", "laserdrill" ],
       [ "coats", "", "remotedrone", "droneteleport", "digitalpaper" ],
       [ "biofluxaccelerator1", "biofluxaccelerator2", "enhanceddronelaunch", "grapple", "rusalkatablet" ],

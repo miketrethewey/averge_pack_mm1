@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Go Mode",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/extras/gomode.png",
+    "codes": "go,gomode"
+  }
+]

@@ -4,9 +4,13 @@ ScriptHost:LoadScript("scripts/ver.lua")
 -- Items
 Tracker:AddItems("items/inventory.json")        -- All Inventory items
 
+-- Extras
+Tracker:AddItems("items/extras.json")           -- Extra items
+
 -- Grids
 Tracker:AddLayouts("layouts/grids/upgrades.json")     -- Upgrades grid
 Tracker:AddLayouts("layouts/grids/weapons.json")      -- Weapons grid
+Tracker:AddLayouts("layouts/grids/extras.json")       -- Extras grid
 
 Tracker:AddLayouts("layouts/grids/grids.json") -- Combined grid
 

@@ -4,6 +4,9 @@ ScriptHost:LoadScript("scripts/ver.lua")
 -- Items
 Tracker:AddItems("items/inventory.json")        -- All Inventory items
 
+-- Story Markers
+Tracker:AddItems("items/storymarkers.json")     -- Story Markers
+
 -- Extras
 Tracker:AddItems("items/extras.json")           -- Extra items
 

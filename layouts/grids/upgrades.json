@@ -5,7 +5,7 @@
       [ "", "healthnode", "powernode", "rangenode", "remotedrone", "addressdisruptor-item" ],
       [ "gomode", "healthnodefragment", "powernodefragment", "sizenode", "enhanceddronelaunch", "addressbomb" ],
       [ "", "coats", "fielddisruptor", "grapple", "droneteleport", "laserdrill" ],
-      [ "", "biofluxaccelerator1", "biofluxaccelerator2", "sudrankey", "passcodetool", "" ],
+      [ "vision", "biofluxaccelerator1", "biofluxaccelerator2", "sudrankey", "passcodetool", "" ],
       [ "", "digitalpaper", "rusalkatablet", "claytablet", "fadednote", "" ]
     ]
   }

@@ -1,0 +1,9 @@
+[
+  {
+    "name": "VISIon",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/storymarkers/vision.png",
+    "codes": "vision,visiondead,deadvision,visiondefeated,defeatedvision"
+  }
+]

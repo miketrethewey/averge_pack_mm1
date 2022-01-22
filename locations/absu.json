@@ -142,7 +142,7 @@
       {
         "name": "Power Node Fragment (Attic 2)",
         "short_name": "Power Node Fragment (Attic 2)",
-        "vgravmap": "PowerNodeFragment4"
+        "vgravmap": "PowerNodeFragment4",
         "access_rules": [
           "$canTeleport2,highjump,addressbomb",
           "$canTeleport3,addressbomb",
@@ -205,7 +205,7 @@
       {
         "name": "Health Node Fragment (Absu middle 2)",
         "short_name": "Health Node Fragment (Absu = 2)",
-        "vgravmap": "HealthNodeFragment1"
+        "vgravmap": "HealthNodeFragment1",
         "access_rules": [
           "excavate"
         ],

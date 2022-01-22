@@ -111,10 +111,10 @@
         "access_rules": [
           "$canAirport2,excavate",
           "$canAirport3",
-          "spazer,laserdrill",
+          "nova,laserdrill",
           "wave,laserdrill",
           "$canUseRemoteDrone",
-          "[progadvanced],spazer,excavate",
+          "[progadvanced],nova,excavate",
           "[progadvanced],wave,excavate"
         ],
         "map_locations": [
@@ -170,7 +170,7 @@
         "vgravmap": "SizeNode1",
         "access_rules": [
           "$canAirport2",
-          "spazer",
+          "nova",
           "wave",
           "$canUseRemoteDrone",
           "reflector"
@@ -228,7 +228,7 @@
         "access_rules": [
           "$canTeleport3",
           "snake",
-          "spazer",
+          "nova",
           "wave",
           "reflector",
           "$canUseRemoteDrone"
@@ -252,19 +252,46 @@
           }
         ]
       },
+      // Xedur
+      {
+        "name": "Xedur",
+        "short_name": "Xedur",
+        "vgravmap": "",
+        "access_rules": [
+          "@Laser Drill/Item"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 261,
+            "y": 729
+          },
+          {
+            "map": "eribu",
+            "x": 440,
+            "y": 231
+          }
+        ],
+        "sections": [
+          {
+            "name": "Boss",
+            "item_count": 1
+          }
+        ]
+      },
       // Power Node (Eribu)
       {
         "name": "Power Node (Eribu)",
         "short_name": "Power Node (Eribu)",
         "vgravmap": "PowerNode1",
         "access_rules": [
-          "{spazer}",                       // can see but can't get
-          "{wave}",                         // can see but can't get
-          "$canTeleport3",                  // can get
-          "spazer,laserdrill",              // can get
-          "wave,laserdrill",                // can get
-          "[progadvanced],spazer,excavate", // can get (advanced)
-          "[progadvanced],wave,excavate"    // can get (advanced)
+          "{nova}",                       // can see but can't get
+          "{wave}",                       // can see but can't get
+          "$canTeleport3",                // can get
+          "nova,laserdrill",              // can get
+          "wave,laserdrill",              // can get
+          "[progadvanced],nova,excavate", // can get (advanced)
+          "[progadvanced],wave,excavate"  // can get (advanced)
         ],
         "map_locations": [
           {

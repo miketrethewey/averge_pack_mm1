@@ -1,0 +1,193 @@
+# workflow name
+name: Manage Release
+
+# fire on
+on: [push, pull_request]
+
+# stuff to do
+jobs:
+  # Clean EmoPack workspace & prepare release
+  install-prepare-release:
+    name: Install/Prepare Release
+    runs-on: ${{ matrix.os-name }}
+
+    # VM settings
+    #  os & python versions
+    strategy:
+      matrix:
+        # one OS
+        os-name: [ubuntu-latest]
+        python-version: [3.8]
+
+    steps:
+      # checkout commit
+      - name: Checkout commit
+        uses: actions/checkout@v2
+
+      # get parent directory
+      - name: Get Repo Name
+        uses: mad9000/actions-find-and-replace-string@1
+        id: repoName
+        with:
+          source: ${{ github.repository }}
+          find: '${{ github.repository_owner }}/'
+          replace: ''
+      - name: Get Parent Directory Path (!Windows)
+        uses: mad9000/actions-find-and-replace-string@1
+        id: parentDirNotWin
+        with:
+          source: ${{ github.workspace }}
+          find: '${{ steps.repoName.outputs.value }}/${{ steps.repoName.outputs.value }}'
+          replace: ${{ steps.repoName.outputs.value }}
+      - name: Get Parent Directory Path (Windows)
+        uses: mad9000/actions-find-and-replace-string@1
+        id: parentDir
+        with:
+          source: ${{ steps.parentDirNotWin.outputs.value }}
+          find: '${{ steps.repoName.outputs.value }}\${{ steps.repoName.outputs.value }}'
+          replace: ${{ steps.repoName.outputs.value }}
+
+      # install python
+      - name: Install python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: x64
+      - run: |
+          python --version
+
+      # Prepare AppVersion
+      - name: Prepare AppVersion
+        run: |
+          python ./resources/ci/common/prepare_appversion.py
+
+      # Prepare Manifest
+      - name: Prepare Manifest
+        run: |
+          python ./resources/ci/common/prepare_manifest.py
+
+      # Prepare Archive
+      - name: Prepare Archive
+        run: |
+          python ./resources/ci/common/prepare_archive.py
+
+      # Prepare Release
+      - name: Prepare Release
+        run: |
+          python ./resources/ci/common/prepare_release.py
+
+      # Cleanup Workspace
+      - name: Cleanup Workspace
+        run: |
+          python ./resources/ci/common/cleanup.py
+
+      # Upload AppVersion Artifact
+      - name: Upload AppVersion Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: appversion-${{ matrix.os-name }}
+          path: ${{ steps.parentDir.outputs.value}}/build
+
+      # Upload Archive Artifact
+      - name: Upload Archive Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: archive-${{ matrix.os-name }}
+          path: ${{ steps.parentDir.outputs.value}}/deploy
+
+  # Deploy to GitHub Releases
+  #  Release Name:  SpriteSomething v${GITHUB_TAG}
+  #  Release Body:  Inline content of RELEASENOTES.md
+  #  Release Body:  Fallback to URL to RELEASENOTES.md
+  #  Release Files: ../deploy
+  deploy-release:
+    name: Deploy GHReleases
+    runs-on: ${{ matrix.os-name }}
+
+    # VM settings
+    #  os & python versions
+    strategy:
+      matrix:
+        # release only on ubuntu
+        os-name: [ubuntu-latest]
+        python-version: [3.8]
+
+    needs: [install-prepare-release]
+    steps:
+      # checkout commit
+      - name: Checkout commit
+        uses: actions/checkout@v2
+      - name: Install Dependencies via pip
+        run: |
+          python -m pip install pytz requests
+      # get parent directory
+      - name: Get Repo Name
+        uses: mad9000/actions-find-and-replace-string@1
+        id: repoName
+        with:
+          source: ${{ github.repository }}
+          find: '${{ github.repository_owner }}/'
+          replace: ''
+      - name: Get Parent Directory Path (!Windows)
+        uses: mad9000/actions-find-and-replace-string@1
+        id: parentDirNotWin
+        with:
+          source: ${{ github.workspace }}
+          find: '${{ steps.repoName.outputs.value }}/${{ steps.repoName.outputs.value }}'
+          replace: ${{ steps.repoName.outputs.value }}
+      - name: Get Parent Directory Path (Windows)
+        uses: mad9000/actions-find-and-replace-string@1
+        id: parentDir
+        with:
+          source: ${{ steps.parentDirNotWin.outputs.value }}
+          find: '${{ steps.repoName.outputs.value }}\${{ steps.repoName.outputs.value }}'
+          replace: ${{ steps.repoName.outputs.value }}
+      # download appversion artifact
+      - name: Download AppVersion Artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: appversion-${{ matrix.os-name }}
+          path: ${{ steps.parentDir.outputs.value }}/build
+      # download archive artifact
+      - name: Download Archive Artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: archive-${{ matrix.os-name }}
+          path: ${{ steps.parentDir.outputs.value }}/deploy
+      # debug info
+      - name: Debug Info
+        id: debug_info
+        #      shell: bash
+        #        git tag ${GITHUB_TAG}
+        #        git push origin ${GITHUB_TAG}
+        run: |
+          GITHUB_TAG="$(head -n 1 ../build/app_version.txt)"
+          echo "::set-output name=github_tag::$GITHUB_TAG"
+          GITHUB_TAG="v${GITHUB_TAG}"
+          RELEASE_NAME="Axiom Verge EmoTracker Pack ${GITHUB_TAG}"
+          echo "Release Name: ${RELEASE_NAME}"
+          echo "Git Tag:      ${GITHUB_TAG}"
+      # create a release
+      - name: Create a Release
+        id: create_release
+        uses: actions/create-release@v1.1.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.debug_info.outputs.github_tag }}
+          release_name: Axiom Verge EmoTracker Pack v${{ steps.debug_info.outputs.github_tag }}
+          body_path: RELEASENOTES.md
+          # draft: true
+        if: contains(github.ref, 'master')
+      # upload archive asset
+      - name: Upload Archive Asset
+        id: upload-asset
+        uses: actions/upload-release-asset@v1.0.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ../deploy/averge_pack_mm1.zip
+          asset_name: averge_pack_mm1.zip
+          asset_content_type: application/zip
+        if: contains(github.ref, 'master')

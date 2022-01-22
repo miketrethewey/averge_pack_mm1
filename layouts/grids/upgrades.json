@@ -2,11 +2,11 @@
   "upgrades_grid": {
     "type": "itemgrid",
     "rows": [
-      [ "gomode", "powernode", "sudrankey", "healthnode", "addressdisruptor-item" ],
-      [ "addressbomb", "powernodefragment", "passcodetool", "healthnodefragment", "laserdrill" ],
-      [ "coats", "", "remotedrone", "droneteleport", "digitalpaper" ],
-      [ "biofluxaccelerator1", "biofluxaccelerator2", "enhanceddronelaunch", "grapple", "rusalkatablet" ],
-      [ "sizenode", "rangenode", "fielddisruptor", "claytablet", "fadednote" ]
+      [ "", "healthnode", "powernode", "rangenode", "remotedrone", "addressdisruptor-item" ],
+      [ "gomode", "healthnodefragment", "powernodefragment", "sizenode", "enhanceddronelaunch", "addressbomb" ],
+      [ "", "coats", "fielddisruptor", "grapple", "droneteleport", "laserdrill" ],
+      [ "", "biofluxaccelerator1", "biofluxaccelerator2", "sudrankey", "passcodetool", "" ],
+      [ "", "digitalpaper", "rusalkatablet", "claytablet", "fadednote", "" ]
     ]
   }
 }

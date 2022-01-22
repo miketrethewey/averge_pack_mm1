@@ -592,7 +592,8 @@
         "short_name": "Range Node (Absu <)",
         "access_rules": [
           "$canTeleport1,addressdisruptor2,$canUseRemoteDrone",
-          "$canTeleport1,addressbomb,$canUseRemoteDrone"
+          "$canTeleport1,addressbomb,$canUseRemoteDrone",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {

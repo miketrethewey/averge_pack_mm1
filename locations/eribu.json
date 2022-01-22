@@ -12,11 +12,13 @@
       {
         "name": "Health Node (Eribu top)",
         "short_name": "Health Node (Eribu ^)",
-        "vgravmap": "HealthNode1",
+        "vgravmap": "HealthNode9",
         "access_rules": [
           "{addressbomb,$canUseRemoteDrone}",
           "addressbomb,highjump,grapple",
-          "$canAirport2,addressbomb"
+          "$canAirport2,addressbomb",
+          "highjump,$canUseRemoteDrone,addressbomb",
+          "$canDroneTeleport,addressbomb"
         ],
         "map_locations": [
           {
@@ -45,9 +47,10 @@
         "vgravmap": "Nova",
         "access_rules": [
           "$canTeleport1",
-          "$canShootShort"
+          "$canShootShort",
+          "drill",
+          "[progmasochist],grapple"
         ],
-        // Return needs Split or Wave
         "map_locations": [
           {
             "map": "sudra",
@@ -71,7 +74,8 @@
       {
         "name": "Power Node Fragment (IKKIBU-LABIRU)",
         "short_name": "Power Node Fragment (IKKIBU-LABIRU)",
-        "access_rules": [ //Needs testing with coat3
+        "vgravmap": "PowerNodeFragment2",
+        "access_rules": [ 
           "{spazer,excavate,grapple}",
           "{wave,excavate,grapple}",
           "{$canUseRemoteDrone,grapple}",
@@ -81,7 +85,10 @@
           "$canUseRemoteDrone,grapple,passcodetool",
           "$canDroneTeleport,passcodetool",
           "excavate,grapple,fatbeam",
-          "$canDroneTeleport,fatbeam"
+          "$canDroneTeleport,fatbeam",
+          "highjump,$canAirport3,,passcodetool",
+          "grapple,$canAirport3,passcodetool",
+          "[progmasochist],drone"
         ],
         "map_locations": [
           {
@@ -114,8 +121,7 @@
           "nova,laserdrill",
           "wave,laserdrill",
           "$canUseRemoteDrone",
-          "[progadvanced],nova,excavate",
-          "[progadvanced],wave,excavate"
+          "grapple,excavate"
         ],
         "map_locations": [
           {
@@ -142,7 +148,10 @@
         "short_name": "Flamethrower (DINGER-GISBAR)",
         "vgravmap": "FlameThrower",
         "access_rules": [
-          "$canAirport3,$canEnhancedDroneLaunch,$canDroneTeleport,passcodetool,highjump"
+          "$canAirport3,$canDroneTeleport,passcodetool,highjump",
+          "highjump,grapple,$canAirport3,passcodetool",
+          "$canDroneTeleport,grapple,addressdisruptor2,$canAirport2,passcodetool",
+          "[progmasochist],grapple,$canAirport3,passcodetool"
         ],
         "map_locations": [
           {
@@ -173,7 +182,7 @@
           "nova",
           "wave",
           "$canUseRemoteDrone",
-          "reflector"
+          "grapple"
         ],
         "map_locations": [
           {
@@ -198,8 +207,10 @@
       {
         "name": "Note (Eribu)",
         "short_name": "Note (Eribu)",
+        "vgravmap": "Note2",
         "access_rules": [
-          "$canTeleport1,$canDroneTeleport"
+          "$canTeleport1,$canDroneTeleport",
+          "[progmasochist],$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -226,12 +237,13 @@
         "short_name": "Laser Drill",
         "vgravmap": "Drill",
         "access_rules": [
-          "$canTeleport3",
-          "snake",
           "nova",
           "wave",
-          "reflector",
-          "$canUseRemoteDrone"
+          "$canUseRemoteDrone,rangelong",
+          "$canUseRemoteDrone,rangeshort",
+          "drill,$canAirport2",
+          "[progadvanced],$canAirport3",
+          "[progmasochist],grapple"          
         ],
         "map_locations": [
           {
@@ -287,11 +299,11 @@
         "access_rules": [
           "{nova}",                       // can see but can't get
           "{wave}",                       // can see but can't get
-          "$canTeleport3",                // can get
-          "nova,laserdrill",              // can get
-          "wave,laserdrill",              // can get
-          "[progadvanced],nova,excavate", // can get (advanced)
-          "[progadvanced],wave,excavate"  // can get (advanced)
+          "nova,excavate",
+          "grapple,excavate",
+          "$canUseRemoteDrone",
+          "$canAirport3",
+          "$canAirport2,excavate"
         ],
         "map_locations": [
           {
@@ -317,10 +329,12 @@
       {
         "name": "Health Node Fragment (Eribu top)",
         "short_name": "Health Node Fragment (Eribu ^)",
+        "vgravmap": "HealthNodeFragment13",
         "access_rules": [
           "$canTeleport3",
-          "$canUseRemoteDrone,highjump,grapple,addressdisruptor2",
-          "$canDroneTeleport,addressdisruptor2"
+          "$canUseRemoteDrone,grapple,addressdisruptor2",
+          "$canDroneTeleport,addressdisruptor2",
+          "[progadvanced],drill,addressdisruptor2,$canAirport2"
         ],
         "map_locations": [
           {
@@ -371,9 +385,11 @@
         "name": "Lightning Gun",
         "short_name": "Lightning Gun",
         "vgravmap": "LightningGun",
-        "access_rules": [ //Needs additional Logic added
+        "access_rules": [ 
           "$canAirport3,addressbomb",
-          "addressbomb,$canUseRemoteDrone"
+          "addressbomb,$canUseRemoteDrone",
+          "[progmasochist],$canUseRemoteDrone,grapple",
+          "[progmasochist],grapple,$canAirport3"
         ],
         "map_locations": [
           {
@@ -402,7 +418,8 @@
         "access_rules": [
           "$canAirport2,passcodetool,highjump",
           "$canAirport3,passcodetool",
-          "passcodetool,grapple"
+          "passcodetool,grapple",
+          "$canDroneTeleport,passcodetool"
         ],
         "map_locations": [
           {
@@ -427,6 +444,7 @@
       {
         "name": "Health Node Fragment (Eribu bottom left)",
         "short_name": "Health Node Fragment (Eribu <v)",
+        "vgravmap": "HealthNodeFragment2",
         "access_rules": [
           "{laserdrill}",
           "[progadvanced],{excavate}",
@@ -462,10 +480,12 @@
       {
         "name": "Power Node Fragment (Eribu bottom)",
         "short_name": "Power Node Fragment (Eribu v)",
+        "vgravmap": "PowerNodeFragment16",
         "access_rules": [
-          "[progadvanced],$canTeleport1,$canDroneTeleport",
           "$canAirport3,highjump",
-          "$canAirport3,grapple"
+          "$canAirport3,grapple",
+          "$canTeleport1,$canDroneTeleport",
+          "[progadvanced],$canUseRemoteDrone,grapple,$canAirport2"
         ],
         "map_locations": [
           {
@@ -490,10 +510,10 @@
       {
         "name": "Health Node (Eribu bottom)",
         "short_name": "Health Node (Eribu v)",
-        "vgravmap": "HealthNode9",
+        "vgravmap": "HealthNode1",
         "access_rules": [
-          "laserdrill",
-          "[progadvanced],excavate"
+          "excavate",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {

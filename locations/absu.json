@@ -12,9 +12,12 @@
       {
         "name": "Health Node Fragment (Absu top)",
         "short_name": "Health Node Fragment (Absu)",
+        "vgravmap": "HealthNodeFragment6",
         "access_rules": [
           "$canTeleport1,addressdisruptor,grapple",
-          "$canAirport2,highjump"
+          "$canAirport2",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -35,15 +38,17 @@
           }
         ]
       },
-      // Power Node Fragment (Absu top 1)
+      // Power Node Fragment (Attic 3)
       {
-        "name": "Power Node Fragment (Absu top 1)",
-        "short_name": "Power Node Fragment (Absu ^ 1)",
+        "name": "Power Node Fragment (Attic 3)",
+        "short_name": "Power Node Fragment (Attic 3)",
+        "vgravmap": "PowerNodeFragment5",
         "access_rules": [
-          "$canAirport2,highjump,addressbomb",
-          "$canAirport3,addressbomb",
+          "$canAirport2,highjump,addressdisruptor2",
           "addressdisruptor2,$canUseRemoteDrone",
-          "grapple,addressbomb"
+          "grapple,addressdisruptor2",
+          "[progadvanced],addressdisruptor2,$canAirport3",
+          "[progmasochist],addressdisruptor2,$canAirport2"
         ],
         "map_locations": [
           {
@@ -64,15 +69,22 @@
           }
         ]
       },
-      // Power Node Fragment (Absu top 2)
+      // Power Node Fragment (Attic 4)
       {
-        "name": "Power Node Fragment (Absu top 2)",
-        "short_name": "Power Node Fragment (Absu ^ 2)",
+        "name": "Power Node Fragment (Attic 4)",
+        "short_name": "Power Node Fragment (Attic 4)",
+        "vgravmap": "PowerNodefragment6",
         "access_rules": [
           "$canAirport2,highjump,addressbomb",
           "$canAirport3,addressbomb",
           "highjump,addressdisruptor2,$canUseRemoteDrone",
-          "grapple,addressbomb"
+          "grapple,addressbomb",
+          "$canUseRemoteDrone,enhanceddronelaunch,addressdisruptor2",
+          "$canAirport2,addressdisruptor2,$canUseRemoteDrone",
+          "[progadvanced],highjump,addressdisruptor2,$canAirport2",
+          "[progadvanced],addressdisruptor2,grapple,$canAirport2",
+          "[progadvanced],addressdisruptor2,$canAirport3",
+          "[progmasochist],addressdisruptor2,grapple,$canAirport2"
         ],
         "map_locations": [
           {
@@ -93,16 +105,19 @@
           }
         ]
       },
-      // Power Node Fragment (Absu top 3)
+      // Power Node Fragment (Attic 1)
       {
-        "name": "Power Node Fragment (Absu top 3)",
-        "short_name": "Power Node Fragment (Absu ^ 3)",
+        "name": "Power Node Fragment (Attic 1)",
+        "short_name": "Power Node Fragment (Attic 1)",
+        "vgravmap": "PowerNodeFragment3",
         "access_rules": [
           "$canAirport2,highjump",
           "$canAirport3",
 					"$canUseRemoteDrone",
-          "addressdisruptor2,$canDroneTeleport,addressbomb",
-          "grapple"
+          "excavate,grapple",
+          "[progmasochist],excavate,$canAirport2",
+          "[progmasochist],grapple,$canAirport2",
+          "[progmasochist],grapple,addressbomb"
         ],
         "map_locations": [
           {
@@ -123,15 +138,18 @@
           }
         ]
       },
-      // Power Node Fragment (Absu top 4)
+      // Power Node Fragment (Attic 2)
       {
-        "name": "Power Node Fragment (Absu top 4)",
-        "short_name": "Power Node Fragment (Absu ^ 4)",
+        "name": "Power Node Fragment (Attic 2)",
+        "short_name": "Power Node Fragment (Attic 2)",
+        "vgravmap": "PowerNodeFragment4",
         "access_rules": [
           "$canTeleport2,highjump,addressbomb",
           "$canTeleport3,addressbomb",
-          "addressdisruptor2,$canDroneTeleport,addressbomb",
-          "grapple,addressbomb"
+          "$canDroneTeleport,addressbomb",
+          "grapple,addressbomb",
+          "[progadvanced],$canAirport2,addressbomb",
+          "[progmasochist],grapple,addressbomb"
         ],
         "map_locations": [
           {
@@ -156,10 +174,12 @@
       {
         "name": "Health Node Fragment (Absu middle 1)",
         "short_name": "Health Node Fragment (Absu = 1)",
+        "vgravmap": "HealthNodeFragment4",
         "access_rules": [
-          "{}",
           "$canTeleport1",
-          "wave"
+          "wave",
+          "[progmasochist],excavate,grapple",
+          "[progmasochist],grapple,addressbomb"
         ],
         "map_locations": [
           {
@@ -185,6 +205,7 @@
       {
         "name": "Health Node Fragment (Absu middle 2)",
         "short_name": "Health Node Fragment (Absu = 2)",
+        "vgravmap": "HealthNodeFragment1",
         "access_rules": [
           "excavate"
         ],
@@ -214,7 +235,9 @@
         "vgravmap": "AddressDisruptor1",
         "access_rules": [
           "$canTeleport1",
-          "wave"
+          "wave",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -266,10 +289,12 @@
       {
         "name": "Power Node Fragment (Absu middle left)",
         "short_name": "Power Node Fragment (Absu <=)",
+        "vgravmap": "PowerNodeFragment7",
         "access_rules": [
           "$canTeleport1,addressdisruptor",
           "$canTeleport3",
-          "addressdisruptor,wave"
+          "addressdisruptor,wave",
+          "addressdisruptor,grapple"
         ],
         "map_locations": [
           {
@@ -295,7 +320,10 @@
         "name": "Kilver",
         "short_name": "Kilver",
         "vgravmap": "Kilver",
-        "access_rules": [ ],
+        "access_rules": [ 
+          "excavate",
+          "[progmasochist],grapple"
+        ],
         "map_locations": [
           {
             "map": "sudra",
@@ -322,7 +350,10 @@
         "vgravmap": "HealthNode2",
         "access_rules": [
           "$canTeleport2",
-          "wave,addressdisruptor"
+          "wave,addressdisruptor",
+          "addressdisruptor,$canTeleport1",
+          "$canDroneTeleport",
+          "grapple"
         ],
         "map_locations": [
           {
@@ -349,9 +380,12 @@
         "short_name": "Inertial Pulse",
         "vgravmap": "IntertialPulse",
         "access_rules": [
-          "$canAirport2,addressdisruptor2,excavate",
           "$canAirport3",
-          "addressdisruptor2,excavate,highjump"
+          "addressdisruptor2,excavate,highjump",
+          "excavate,addressdisruptor2,wave",
+          "excavate,$canTeleport1,addressdisruptor2",
+          "[progadvanced],$canDroneTeleport,addressdisruptor2",
+          "[progmasochist],excavate,addressdisruptor2,grapple"
         ],
         "map_locations": [
           {
@@ -376,6 +410,7 @@
       {
         "name": "Digital Paper (Absu top)",
         "short_name": "Digital Paper (Absu ^)",
+        "vgravmap": "Note16",
         "access_rules": [
           "$canUseRemoteDrone"
         ],
@@ -402,9 +437,13 @@
       {
         "name": "Rusalka Tablet (Absu top right)",
         "short_name": "Rusalka Tablet (Absu ^>)",
+        "vgravmap": "Note24",
         "access_rules": [
           "$canTeleport2",
-          "wave,addressdisruptor"
+          "wave,addressdisruptor",
+          "addressdisruptor,$canTeleport1",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],excavate,grapple"
         ],
         "map_locations": [
           {
@@ -429,9 +468,11 @@
       {
         "name": "Rusalka Tablet (Absu top left)",
         "short_name": "Rusalka Tablet (Absu <^)",
+        "vgravmap": "Note14",
         "access_rules": [
           "{wave}",
-          "$canTeleport1"
+          "$canTeleport1",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -460,7 +501,11 @@
         "vgravmap": "SizeNode2",
         "access_rules": [
           "$canTeleport2",
-          "wave,addressdisruptor"
+          "wave,addressdisruptor",
+          "addressdisruptor,$canTeleport1",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],excavate,grapple",
+          "[progmasochist],addressdisruptor,grapple"
         ],
         "map_locations": [
           {
@@ -485,10 +530,15 @@
       {
         "name": "Health Node Fragment (Absu bottom)",
         "short_name": "Health Node Fragment (Absu v)",
+        "vgravmap": "HealthNodeFragment3",
         "access_rules": [
           "$canTeleport1,addressdisruptor",
           "$canTeleport2",
-          "wavelong,addressdisruptor"
+          "wavelong,addressdisruptor",
+          "[progadvanced],addressdisruptor,$canDroneTeleport",
+          "[progadvanced],$canTeleport1,$canDroneTeleport",
+          "[progadvanced],$canDroneteleport,wavelong",
+          "[progmasochist],excavate,grapple"
         ],
         "map_locations": [
           {
@@ -542,7 +592,8 @@
         "short_name": "Range Node (Absu <)",
         "access_rules": [
           "$canTeleport1,addressdisruptor2,$canUseRemoteDrone",
-          "$canTeleport1,addressbomb,$canUseRemoteDrone"
+          "$canTeleport1,addressbomb,$canUseRemoteDrone",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -567,14 +618,18 @@
       {
         "name": "Digital Paper (Absu bottom)",
         "short_name": "Digital Paper (Absu v)",
+        "vgravmap": "Note15",
         "access_rules": [
           "{wave}",
           "{$canTeleport1}",
-          "$canTeleport2,highjump",
-          "$canTeleport3",
+          "$canTeleport2",
           "addressbomb",
           "highjump,grapple",
-          "wave,addressdisruptor"
+          "wave,addressdisruptor",
+          "addressdisruptor,$canTeleport1",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],highjump",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -604,10 +659,15 @@
       {
         "name": "Range Node (Absu right)",
         "short_name": "Range Node (Absu >)",
+        "vgravmap": "RangeNode1",
         "access_rules": [
-          "$canTeleport1,addressdisruptor,$canUseRemoteDrone", // FIXME: I just needed teleport1 & highjump?
+          "addressdisruptor,$canUseRemoteDrone",
           "$canAirport2",
-          "wave,addressdisruptor,$canUseRemoteDrone" // FIXME: How?
+          "wave,addressdisruptor,$canUseRemoteDrone",
+          "wave,addressdisruptor,highjump,$canTeleport1",
+          "[progadvanced],$canDroneTeleport",
+          "[progadvanced],$canUseRemoteDrone,grapple",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -632,13 +692,17 @@
       {
         "name": "Rusalka Tablet (Absu bottom right)",
         "short_name": "Rusalka Tablet (Absu v>)",
+        "vgravmap": "Note28",
         "access_rules": [
           "{wave,addressdisruptor}",
           "{$canTeleport1,addressdisruptor}",
           "{$canTeleport2}",
           "$canTeleport1,addressdisruptor,$canUseRemoteDrone",
           "$canTeleport2,$canUseRemoteDrone",
-          "wave,addressdisruptor,$canUseRemoteDrone"
+          "wave,addressdisruptor,$canUseRemoteDrone",
+          "$canTeleport3",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],$canuseRemoteDrone,grapple"
         ],
         "map_locations": [
           {
@@ -668,7 +732,9 @@
         "access_rules": [
           "$canTeleport1,addressdisruptor",
           "$canTeleport2",
-          "wave,addressdisruptor"
+          "wave,addressdisruptor",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],excavate,grapple"
         ],
         "map_locations": [
           {
@@ -694,11 +760,14 @@
       {
         "name": "Power Node Fragment (Absu bottom)",
         "short_name": "Power Node Fragment (Absu v)",
+        "vgravmap": "PowerNodeFragment9",
         "access_rules": [
-          "$canTeleport2,highjump",
-          "$canTeleport2,grapple",
-          "$canTeleport2,$canDroneTeleport",
-          "$canTeleport3"
+          "$canAirport2,highjump",
+          "$canAirport2,grapple",
+          "$canAirport2,$canDroneTeleport",
+          "$canAirport3",
+          "[progadvanced],$canAirport2",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -723,8 +792,10 @@
       {
         "name": "Rusalka Tablet (Absu bottom left)",
         "short_name": "Rusalka Tablet (Absu <v)",
+        "vgravmap": "Note7",
         "access_rules": [
-          "$canTeleport1"
+          "$canTeleport1",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {

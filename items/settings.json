@@ -41,5 +41,22 @@
     "loop": true,
     "img": "images/settings/toggles/paths.png",
     "codes": "connections-setting,connections"
+  },
+  {
+    "name": "FPS Limiter",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/settings/fps/fps-min.png",
+        "codes": "fps,fps-min",
+        "size": 32
+      },
+      {
+        "img": "images/settings/fps/fps-max.png",
+        "codes": "fps,fps-max"
+      }
+    ]
   }
 ]

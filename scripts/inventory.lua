@@ -74,3 +74,32 @@ end
 function canTeleport1()
   return has("teleport1") or canAirport1() or canTeleport2()
 end
+
+-- Logic for GoMode activation
+function canGoMode()
+  -- Default/Advanced
+  --  Red Coat
+  --  Remote Drone
+  --  Enhanced Drone Launch
+  --  Remote Drone Teleport
+  if (has("progdefault") or has("progadvanced") or has("progmasochist")) and canAirport3() and canEnhancedDroneLaunch() and canDroneTeleport() then
+    return 1
+  end
+
+  -- Maso
+  --  Red Coat
+  --  Field Disruptor (Hi-Jump Boots)
+  --  Grapple
+  if (has("progmasochist")) and canAirport3() and has("hijump") and has("grapple") then
+    return 1
+  end
+
+  return 0
+end
+
+-- Actually check and set GoMode item
+function checkGoMode()
+  if canGoMode() then
+    -- set GoMode item
+  end
+end

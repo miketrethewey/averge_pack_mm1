@@ -295,7 +295,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/orbital-discharge.png",
-    "codes": "orbitaldischarge,rangelong,snakeshooter,snake"
+    "codes": "orbitaldischarge,rangelong,snakeshooter,snake,nova"
   },
   // Passcode Tool
   {
@@ -346,7 +346,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/inventory/reflector.png",
-    "codes": "reflector,rangelong,bounce"
+    "codes": "reflector,rangelong,bounce,nova"
   },
   // Reverse Slicer
   {

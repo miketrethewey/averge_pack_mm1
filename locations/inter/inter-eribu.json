@@ -77,8 +77,8 @@
       { // Eribu -> Absu
         "name": "Eribu -> Absu",
         "access_rules": [
-          "laserdrill",
-          "[progadvanced],excavate"
+          "excavate",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {

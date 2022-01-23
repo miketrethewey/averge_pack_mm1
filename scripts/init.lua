@@ -11,6 +11,8 @@ Tracker:AddItems("items/storymarkers.json")     -- Story Markers
 Tracker:AddItems("items/extras.json")           -- Extra items
 
 -- Custom Items
+print("")
+print("Loading Custom Items:")
 ScriptHost:LoadScript("scripts/items/class.lua")        -- Class Helper class
 ScriptHost:LoadScript("scripts/items/custom_item.lua")  -- Custom Item Helper class
 ScriptHost:LoadScript("scripts/items/gomode.lua")       -- Go Mode
@@ -23,6 +25,8 @@ Tracker:AddLayouts("layouts/grids/grids.json") -- Combined grid
 
 if string.find(Tracker.ActiveVariantUID, "map") then
   -- Inventory Logic
+  print("")
+  print("Loading Inventory Logic:")
   ScriptHost:LoadScript("scripts/inventory.lua")
 
   -- Grids
@@ -35,38 +39,34 @@ if string.find(Tracker.ActiveVariantUID, "map") then
 
   -- Locations
   --- Item Locations
-  Tracker:AddLocations("locations/sudra.json")                  -- Sudra
-  Tracker:AddLocations("locations/inter/inter-sudra.json")      -- Inter-Sudra
-  Tracker:AddLocations("locations/saves/saves-sudra.json")      -- Saves-Sudra
 
-  Tracker:AddLocations("locations/eribu.json")                  -- Eribu
-  Tracker:AddLocations("locations/inter/inter-eribu.json")      -- Inter-Eribu
-  Tracker:AddLocations("locations/saves/saves-eribu.json")      -- Saves-Eribu
-
-  Tracker:AddLocations("locations/absu.json")                   -- Absu
-  Tracker:AddLocations("locations/inter/inter-absu.json")       -- Inter-Absu
-
-  Tracker:AddLocations("locations/zi.json")                     -- Zi
-  Tracker:AddLocations("locations/inter/inter-zi.json")         -- Inter-Zi
-
-  Tracker:AddLocations("locations/kur.json")                    -- Kur
-  Tracker:AddLocations("locations/inter/inter-kur.json")        -- Inter-Kur
-
-  Tracker:AddLocations("locations/indi.json")                   -- Indi
-
-  Tracker:AddLocations("locations/ukkinna.json")                -- Ukkin-Na
-  Tracker:AddLocations("locations/inter/inter-ukkinna.json")    -- Inter-Ukkin-Na
-
-  Tracker:AddLocations("locations/edin.json")                   -- Edin
-
-  Tracker:AddLocations("locations/ekurmah.json")                -- E-Kur-Mah
-
-  Tracker:AddLocations("locations/maruru.json")                 -- Mar-Uru
-
-  --- Secret World Locations
-  Tracker:AddLocations("locations/secretworld/secret-maruru.json") -- Mar-Uru
+  print("")
+  print("Loading Item Location Data:")
+  for _,area in ipairs({
+    "sudra",
+    "eribu",
+    "absu",
+    "zi",
+    "kur",
+    "indi",
+    "ukkinna",
+    "edin",
+    "ekurmah",
+    "maruru"
+  }) do
+    for _,filename in ipairs({
+      "locations/" .. area .. ".json",                    -- Area
+      "locations/inter/inter-" .. area .. ".json",        -- Inter-Area
+      "locations/saves/saves-" .. area .. ".json",        -- Saves-Area
+      "locations/secretworld/secret-" .. area .. ".json"  -- Secret-Area
+    }) do
+      Tracker:AddLocations(filename)
+    end
+  end
 end
 
+print("")
+print("Loading Variant Data:")
 if Tracker.ActiveVariantUID == "items_only" then
   -- Default/Items-Only
   Tracker:AddLayouts("variants/" .. Tracker.ActiveVariantUID .. "/layouts/tracker.json")    -- Main Tracker

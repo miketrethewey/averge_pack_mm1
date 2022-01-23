@@ -6,7 +6,6 @@ function GoModeItem:init(name, code, imagePath)
     self:createItem(name)
     self.code = {}
     self.code[code]=true
-    print("Creating '" .. name .. "' [" .. tostring(code) .. "|" .. tostring(self.code[code]) .. "]")
     self:setProperty("active", false)
     self.activeImage = ImageReference:FromPackRelativePath(imagePath)
     self.disabledImage = ImageReference:FromImageReference(self.activeImage, "@disabled")
@@ -17,23 +16,19 @@ end
 
 -- Set state to Active
 function GoModeItem:setActive(active)
-    print(self.ItemInstance.Name .. " Value to " .. (active and "Active" or "Inactive"))
     self:setProperty("active", active)
 end
 
 -- Get if it's In/Active
 function GoModeItem:getActive()
-    print(self.ItemInstance.Name .. " State is " .. (self:getProperty("active") and "Active" or "Inactive"))
     return self:getProperty("active")
 end
 
 -- Update Icon
 function GoModeItem:updateIcon()
     if self:getActive() then
-        print(self.ItemInstance.Name .. " Icon to Active")
         self.ItemInstance.Icon = self.activeImage
     else
-        print(self.ItemInstance.Name .. " Icon to Inactive")
         self.ItemInstance.Icon = self.disabledImage
     end
 end
@@ -51,10 +46,8 @@ end
 -- True if code is present
 function GoModeItem:canProvideCode(code)
     if self.code[code] ~= nil then
-        print(self.ItemInstance.Name .. " can provide " .. code)
         return true
     else
-        print(self.ItemInstance.Name .. " can NOT provide " .. code)
         return false
     end
 end
@@ -62,7 +55,6 @@ end
 -- True if code is present and item is active
 function GoModeItem:providesCode(code)
     if self.code[code]~=nil and self:getActive() then
-        print(self.ItemInstance.Name .. " " .. tostring(self.code[code]) .. " is checking")
         return 1
     end
     return 0
@@ -100,7 +92,6 @@ end
 
 -- Update icon if property is changed
 function GoModeItem:propertyChanged(key, value)
-    print(self.ItemInstance.Name .. " '" .. key .. "' changed to [" .. tostring(value) .. ']')
     self:updateIcon()
 end
 

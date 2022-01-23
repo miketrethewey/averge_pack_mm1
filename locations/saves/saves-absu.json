@@ -1,0 +1,142 @@
+[
+  // Saves - Absu
+  {
+    "name": "Saves - Absu",
+    "color": "#6B09AE",
+    "parent": "Saves - Sudra",
+    "access_rules": [
+      "@Absu"
+    ],
+    "children": [
+      {
+        "name": "Eribu Save",
+        "access_rules": [
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 261,
+            "y": 927,
+            "size": 8
+          },
+          {
+            "map": "absu",
+            "x": 162,
+            "y": 143,
+            "size": 8
+          }
+        ],
+        "sections": [
+          {
+            "name": "Save Station",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Kilver Save",
+        "access_rules": [
+          "@Kilver/Item"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x":  387,
+            "y": 1035,
+            "size": 8
+          },
+          {
+            "map": "absu",
+            "x": 288,
+            "y": 251,
+            "size": 8
+          }
+        ],
+        "sections": [
+          {
+            "name": "Save Station",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Telal Save",
+        "access_rules": [
+          "@Telal/Boss"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 405,
+            "y": 963,
+            "size": 8
+          },
+          {
+            "map": "absu",
+            "x": 306,
+            "y": 179,
+            "size": 8
+          }
+        ],
+        "sections": [
+          {
+            "name": "Save Station",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Absu South Save",
+        "access_rules": [
+          "@Size Node (Absu)/Item"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x":  459,
+            "y": 1089,
+            "size": 8
+          },
+          {
+            "map": "absu",
+            "x": 360,
+            "y": 305,
+            "size": 8
+          }
+        ],
+        "sections": [
+          {
+            "name": "Save Station",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Absu East Save",
+        "access_rules": [
+          "@Health Node Fragment (Absu bottom)/Item"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x":  567,
+            "y": 1071,
+            "size": 8
+          },
+          {
+            "map": "absu",
+            "x": 468,
+            "y": 287,
+            "size": 8
+          }
+        ],
+        "sections": [
+          {
+            "name": "Save Station",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

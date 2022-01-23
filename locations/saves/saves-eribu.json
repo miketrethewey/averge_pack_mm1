@@ -1,0 +1,40 @@
+[
+  // Eribu
+  {
+    "name": "Saves - Eribu",
+    "color": "#A81468",
+    "parent": "Saves - Sudra",
+    "access_rules": [ // Eribu
+      "@Eribu"
+    ],
+    "children": [
+      // Health Node Fragment (Absu top)
+      {
+        "name": "Xedur Save",
+        "access_rules": [
+          "@Xedur/Boss"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 207,
+            "y": 729,
+            "size": 8
+          },
+          {
+            "map": "eribu",
+            "x": 386,
+            "y": 231,
+            "size": 8
+          }
+        ],
+        "sections": [
+          {
+            "name": "Save Station",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+[
+  // Sudra
+  {
+    "name": "Saves - Sudra",
+    "color": "#7372C0",
+    "parent": "Sudra",
+    "chest_unavailable_img": "images/chests/save.png",
+    "chest_unopened_img": "images/chests/save.png",
+    "chest_opened_img": "images/chests/save.png"
+  }
+]

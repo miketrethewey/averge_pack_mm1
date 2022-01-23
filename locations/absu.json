@@ -79,7 +79,7 @@
           "$canAirport3,addressbomb",
           "highjump,addressdisruptor2,$canUseRemoteDrone",
           "grapple,addressbomb",
-          "$canUseRemoteDrone,enhanceddronelaunch,addressdisruptor2",
+          "$canUseRemoteDrone,$canEnhancedDroneLaunch,addressdisruptor2",
           "$canAirport2,addressdisruptor2,$canUseRemoteDrone",
           "[progadvanced],highjump,addressdisruptor2,$canAirport2",
           "[progadvanced],addressdisruptor2,grapple,$canAirport2",
@@ -538,7 +538,7 @@
           "wavelong,addressdisruptor",
           "[progadvanced],addressdisruptor,$canDroneTeleport",
           "[progadvanced],$canTeleport1,$canDroneTeleport",
-          "[progadvanced],$canDroneteleport,wavelong",
+          "[progadvanced],$canDroneTeleport,wavelong",
           "[progmasochist],excavate,grapple"
         ],
         "map_locations": [
@@ -703,7 +703,7 @@
           "wave,addressdisruptor,$canUseRemoteDrone",
           "$canTeleport3",
           "[progadvanced],$canDroneTeleport",
-          "[progmasochist],$canuseRemoteDrone,grapple"
+          "[progmasochist],$canUseRemoteDrone,grapple"
         ],
         "map_locations": [
           {

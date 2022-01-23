@@ -10,10 +10,14 @@ Tracker:AddItems("items/storymarkers.json")     -- Story Markers
 -- Extras
 Tracker:AddItems("items/extras.json")           -- Extra items
 
+-- Custom Items
+ScriptHost:LoadScript("scripts/items/class.lua")        -- Class Helper class
+ScriptHost:LoadScript("scripts/items/custom_item.lua")  -- Custom Item Helper class
+ScriptHost:LoadScript("scripts/items/gomode.lua")       -- Go Mode
+
 -- Grids
 Tracker:AddLayouts("layouts/grids/upgrades.json")     -- Upgrades grid
 Tracker:AddLayouts("layouts/grids/weapons.json")      -- Weapons grid
-Tracker:AddLayouts("layouts/grids/extras.json")       -- Extras grid
 
 Tracker:AddLayouts("layouts/grids/grids.json") -- Combined grid
 

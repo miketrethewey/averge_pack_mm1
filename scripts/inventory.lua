@@ -82,7 +82,16 @@ function canGoMode()
   --  Remote Drone
   --  Enhanced Drone Launch
   --  Remote Drone Teleport
-  if (has("progdefault") or has("progadvanced") or has("progmasochist")) and canAirport3() and canEnhancedDroneLaunch() and canDroneTeleport() then
+  if
+    (
+      has("progdefault") or
+      has("progadvanced") or
+      has("progmasochist")
+    ) and
+    canAirport3() and
+    canEnhancedDroneLaunch() and
+    canDroneTeleport()
+    then
     return 1
   end
 
@@ -90,16 +99,16 @@ function canGoMode()
   --  Red Coat
   --  Field Disruptor (Hi-Jump Boots)
   --  Grapple
-  if (has("progmasochist")) and canAirport3() and has("hijump") and has("grapple") then
+  if
+    (
+      has("progmasochist")
+    ) and
+    canAirport3() and
+    has("fielddisruptor") and
+    has("grapple")
+    then
     return 1
   end
 
   return 0
-end
-
--- Actually check and set GoMode item
-function checkGoMode()
-  if canGoMode() then
-    -- set GoMode item
-  end
 end

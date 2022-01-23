@@ -28,10 +28,10 @@
       {
         "img": "images/settings/progression/advanced.png",
         "codes": "progadvanced"
-      // },
-      // {
-      //   "img": "images/settings/progression/masochist.png",
-      //   "codes": "progmasochist"
+      },
+      {
+        "img": "images/settings/progression/masochist.png",
+        "codes": "progmasochist"
       }
     ]
   },

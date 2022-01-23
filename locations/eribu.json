@@ -75,7 +75,7 @@
         "name": "Power Node Fragment (IKKIBU-LABIRU)",
         "short_name": "Power Node Fragment (IKKIBU-LABIRU)",
         "vgravmap": "PowerNodeFragment2",
-        "access_rules": [ 
+        "access_rules": [
           "{spazer,excavate,grapple}",
           "{wave,excavate,grapple}",
           "{$canUseRemoteDrone,grapple}",
@@ -88,7 +88,7 @@
           "$canDroneTeleport,fatbeam",
           "highjump,$canAirport3,,passcodetool",
           "grapple,$canAirport3,passcodetool",
-          "[progmasochist],drone"
+          "[progmasochist],$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -243,7 +243,7 @@
           "$canUseRemoteDrone,rangeshort",
           "drill,$canAirport2",
           "[progadvanced],$canAirport3",
-          "[progmasochist],grapple"          
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -385,7 +385,7 @@
         "name": "Lightning Gun",
         "short_name": "Lightning Gun",
         "vgravmap": "LightningGun",
-        "access_rules": [ 
+        "access_rules": [
           "$canAirport3,addressbomb",
           "addressbomb,$canUseRemoteDrone",
           "[progmasochist],$canUseRemoteDrone,grapple",

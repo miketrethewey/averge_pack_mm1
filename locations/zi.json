@@ -123,7 +123,10 @@
         "sections": [
           {
             "name": "Boss",
-            "item_count": 1
+            "item_count": 1,
+            "chest_unavailable_img": "images/chests/boss_unavailable.png",
+            "chest_unopened_img": "images/chests/boss_unopened.png",
+            "chest_opened_img": "images/chests/boss_opened.png"
           }
         ]
       },

@@ -1,1 +1,90 @@
-[]
+[
+  // Saves - Zi
+  {
+    "name": "Saves - Zi",
+    "color": "#2933FD",
+    "parent": "Saves - Sudra",
+    "access_rules": [
+      "@Zi"
+    ],
+    "children": [
+      {
+        "name": "Zi South Save",
+        "access_rules": [
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 729,
+            "y": 1107,
+            "size": 8
+          },
+          {
+            "map": "zi",
+            "x": 280,
+            "y": 332,
+            "size": 8
+          }
+        ],
+        "sections": [
+          {
+            "name": "Save Station",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Uruku Save",
+        "access_rules": [
+          "@Uruku/Boss"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 747,
+            "y": 927,
+            "size": 8
+          },
+          {
+            "map": "zi",
+            "x": 298,
+            "y": 152,
+            "size": 8
+          }
+        ],
+        "sections": [
+          {
+            "name": "Save Station",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Zi East Save",
+        "access_rules": [
+          "@Size Node (Zi)/Item"
+        ],
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x":  855,
+            "y": 1017,
+            "size": 8
+          },
+          {
+            "map": "zi",
+            "x": 406,
+            "y": 242,
+            "size": 8
+          }
+        ],
+        "sections": [
+          {
+            "name": "Save Station",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

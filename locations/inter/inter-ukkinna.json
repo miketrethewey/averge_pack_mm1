@@ -7,7 +7,8 @@
       { // Ukkin-Na -> Indi
         "name": "Ukkin-Na -> Indi",
         "access_rules": [
-          "$canAirport2"
+          "$canAirport2",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -39,7 +40,8 @@
       { // Ukkin-Na -> Edin
         "name": "Ukkin-Na -> Edin",
         "access_rules": [
-          "$canAirport2"
+          "$canAirport2",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -71,7 +73,8 @@
       { // Ukkin-Na -> Mar-Uru
         "name": "Ukkin-Na -> Mar-Uru",
         "access_rules": [
-          "$canAirport3"
+          "$canAirport3,$canDroneTeleport,enhanceddronelaunch",
+          "[progmasochist],grapple,highjump,$canAirport3"
         ],
         "map_locations": [
           {

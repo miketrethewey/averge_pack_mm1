@@ -46,7 +46,8 @@
         "access_rules": [ // FIXED
           "$canTeleport1,addressdisruptor",
           "$canTeleport2",
-          "wave,addressdisruptor"
+          "wave,addressdisruptor",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {

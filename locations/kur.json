@@ -15,10 +15,17 @@
       {
         "name": "Clay Tablet (Kur top)",
         "short_name": "Clay Tablet (Kur ^)",
+        "vgravmap": "Note12",
         "access_rules": [
           "$canAirport3,highjump,$canDroneTeleport",
           "$canAirport3,highjump,grapple",
-          "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch"
+          "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
+          "[progadvanced],$canDroneTeleport,$canTeleport1,drill",
+          "[progadvanced],$canDroneTeleport,$canTeleport1,addressdisruptor",
+          "[progadvanced],$canTeleport1,grapple,$canDroneTeleport",
+          "[progadvanced],excavate,highjump,grapple,$canTeleport2",
+          "[progadvanced],$canteleport3,grapple",
+          "[progmasochist],grapple,$canTeleport2"
         ],
         "map_locations": [
           {
@@ -39,14 +46,17 @@
           }
         ]
       },
-      // Power Node Fragment (Kur)
+      // Power Node Fragment (Snowy Kur)
       {
-        "name": "Power Node Fragment (Kur)",
-        "short_name": "Power Node Fragment (Kur)",
+        "name": "Power Node Fragment (Snowy Kur)",
+        "short_name": "Power Node Fragment (Snowy Kur)",
+        "vgravmap": "PowerNodeFragment14",
         "access_rules": [
           "$canDroneTeleport,grapple,addressdisruptor2",
           "$canAirport3,highjump,addressdisruptor2",
-          "highjump,grapple,addressdisruptor2"
+          "highjump,grapple,addressdisruptor2",
+          "[progadvanced],$canDroneTeleport,$canTeleport1,addressdisruptor",
+          "[progmasochist],highjump,$canTeleport3"
         ],
         "map_locations": [
           {
@@ -67,15 +77,19 @@
           }
         ]
       },
-      // Power Node (Kur top)
+      // Power Node (Zoo)
       {
-        "name": "Power Node (Kur top)",
-        "short_name": "Power Node (Kur ^)",
+        "name": "Power Node (Zoo)",
+        "short_name": "Power Node (Zoo)",
+        "vgravmap": "PowerNode4",
         "access_rules": [
-          "$canTeleport1,addressdisruptor2,highjump,$canUseRemoteDrone",
+          "$canTeleport1,addressdisruptor2,highjump",
           "$canTeleport1,addressdisruptor2,$canDroneTeleport",
-          "$canAirport2,$canUseRemoteDrone",
-          "$canAirport2,grapple"
+          "[progadvanced],$canAirport2,$canUseRemoteDrone",
+          "[progadvanced],addressdisruptor2,$canDroneTeleport",
+          "[progmasochist],$canAirport2,grapple",
+          "[progmasochist],highjump,addressdisruptor2,grapple",
+          "[progmasochist],$canDroneTeleport,grapple"
         ],
         "map_locations": [
           {
@@ -100,13 +114,16 @@
       {
         "name": "Journal Page (Kur middle)",
         "short_name": "Journal Page (Kur =)",
+        "vgravmap": "Note17",
         "access_rules": [
           "$canAirport3,highjump,$canEnhancedDroneLaunch",
           "$canAirport3,highjump,addressdisruptor2",
           "$canDroneTeleport,grapple,addressdisruptor2",
           "highjump,grapple,addressdisruptor2",
           "$canDroneTeleport,grapple,$canEnhancedDroneLaunch",
-          "highjump,grapple,$canEnhancedDroneLaunch"
+          "highjump,grapple,$canEnhancedDroneLaunch",
+          "[progadvanced],$canDroneTeleport,$canTeleport1",
+          "[progmasochist],$canTeleport3"
         ],
         "map_locations": [
           {
@@ -135,7 +152,10 @@
         "access_rules": [
           "$canAirport3,highjump,$canUseRemoteDrone",
           "$canDroneTeleport,grapple",
-          "highjump,grapple,$canUseRemoteDrone"
+          "[progadvanced],highjump,grapple,$canUseRemoteDrone",
+          "[progadvanced],addressdisruptor,$canTeleport1,$canDroneTeleport",
+          "[progadvanced],excavate,$canTeleport1,$canDroneTeleport",
+          "[progmasochist],highjump,$canUseRemoteDrone,grapple"
         ],
         "map_locations": [
           {
@@ -163,8 +183,9 @@
         "vgravmap": "EnhancedLaunch",
         "access_rules": [
           "$canAirport3,highjump",
-          "$canDroneTeleport,grapple",
-          "highjump,grapple"
+          "highjump,grapple",
+          "[progadvanced],$canDroneTeleport,$canTeleport2",
+          "[progmasochist],$canDroneTeleport,grapple"
         ],
         "map_locations": [
           {
@@ -185,15 +206,18 @@
           }
         ]
       },
-      // Health Node Fragment (Kur top right)
+      // Health Node Fragment (Zoo)
       {
-        "name": "Health Node Fragment (Kur top right)",
-        "short_name": "Health Node Fragment (Kur ^>)",
+        "name": "Health Node Fragment (Zoo)",
+        "short_name": "Health Node Fragment (Zoo)",
+        "vgravmap": "HealthNodefragment11",
         "access_rules": [
           "$canTeleport1,addressdisruptor2,highjump,$canUseRemoteDrone,grapple",
           "$canTeleport1,addressdisruptor2,$canDroneTeleport",
           "$canAirport2,highjump",
-          "$canAirport3"
+          "$canAirport3",
+          "[progadvanced],$canDroneTeleport,$canTeleport2",
+          "[progmasochist],$canDroneTeleport,grapple"
         ],
         "map_locations": [
           {
@@ -218,10 +242,14 @@
       {
         "name": "Health Node Fragment (Kur top left)",
         "short_name": "Health Node Fragment (Kur <^)",
+        "vgravmap": "HealthNodeFragment12",
         "access_rules": [
           "$canAirport3,highjump,$canUseRemoteDrone",
           "$canDroneTeleport,grapple",
-          "highjump,grapple,$canUseRemoteDrone"
+          "highjump,grapple,$canUseRemoteDrone",
+          "[progadvanced],highjump,$canTeleport1,$canUseRemoteDrone,grapple",
+          "[progadvanced],$canTeleport1,$canDroneTeleport",
+          "[progmasochist],highjump,$canUseRemoteDrone,grapple"
         ],
         "map_locations": [
           {
@@ -251,7 +279,9 @@
           "$canTeleport1,addressdisruptor2,highjump,$canUseRemoteDrone",
           "$canTeleport1,addressdisruptor2,$canDroneTeleport",
           "$canAirport2,highjump",
-          "$canAirport3"
+          "$canAirport3",
+          "[progadvanced],$canDroneTeleport,$canTeleport2",
+          "[progmasochist],$canDroneTeleport,grapple"
         ],
         "map_locations": [
           {
@@ -276,10 +306,14 @@
       {
         "name": "Clay Tablet (Kur bottom)",
         "short_name": "Clay Tablet (Kur v)",
+        "vgravmap": "Note13",
         "access_rules": [
           "$canAirport3,highjump,$canUseRemoteDrone",
           "$canDroneTeleport,grapple",
-          "highjump,grapple,$canUseRemoteDrone"
+          "highjump,grapple,$canUseRemoteDrone",
+          "[progadvanced],highjump,$canTeleport1,$canUseRemoteDrone,grapple",
+          "[progadvanced],$canteleport1,$canDroneTeleport",
+          "[progmasochist],highjump,$canUseRemoteDrone,grapple"
         ],
         "map_locations": [
           {
@@ -304,10 +338,15 @@
       {
         "name": "Health Node Fragment (Kur middle left)",
         "short_name": "Health Node Fragment (Kur <=)",
+        "vgravmap": "HealthNodeFragment8",
         "access_rules": [
-          "$canTeleport1,$canDroneTeleport,grapple",
           "$canAirport2,highjump,$canDroneTeleport",
-          "highjump,grapple"
+          "highjump,grapple",
+          "addressdisruptor,highjump,$canTeleport1,$canUseRemoteDrone",
+          "$canUseRemoteDrone,$canTeleport2",
+          "[progadvanced],$canTeleport1,$canDroneTeleport",
+          "[progmasochist],highjump,grapple",
+          "[progmasochist],$canAirport3"
         ],
         "map_locations": [
           {
@@ -392,7 +431,10 @@
         "access_rules": [
           "$canTeleport1,highjump",
           "$canTeleport1,$canDroneTeleport",
-          "$canTeleport3"
+          "$canTeleport3",
+          "[progadvanced],excavate,$canTeleport2",
+          "[progadvanced],$canTeleport1,$canDroneTeleport",
+          "[progmasochist],excavate,highjump,grapple"
         ],
         "map_locations": [
           {
@@ -417,9 +459,12 @@
       {
         "name": "Hypo-Atomizer",
         "short_name": "Hypo-Atomizer",
+        "vgravmap": "VerticalSpread",
         "access_rules": [
           "$canTeleport1,$canUseRemoteDrone",
-          "$canTeleport3"
+          "$canTeleport3",
+          "[progadvanced],$canTeleport1,$canDroneTeleport",
+          "[progmasochist],highjump,$canUseRemoteDrone,grapple"
         ],
         "map_locations": [
           {
@@ -444,9 +489,12 @@
       {
         "name": "Health Node Fragment (Kur middle right)",
         "short_name": "Health Node Fragment (Kur =>)",
+        "vgravmap": "HealthNodeFragment9",
         "access_rules": [
-          "$canTeleport2,$canUseRemoteDrone",
-          "addressdisruptor2,highjump,$canUseRemoteDrone"
+          "$canTeleport2,$canUseRemoteDrone,addressdisruptor2",
+          "addressdisruptor2,highjump,$canUseRemoteDrone,$canTeleport1",
+          "$canUseRemoteDrone,$canTeleport3",
+          "[progadvanced],$canUseRemoteDrone,$canTeleport2"
         ],
         "map_locations": [
           {
@@ -471,12 +519,14 @@
       {
         "name": "Power Node (Kur bottom)",
         "short_name": "Power Node (Kur v)",
+        "vgravmap": "PowerNode3",
         "access_rules": [
           "{}",
           "$canTeleport1,highjump",
-          "$canTeleport1,$canDroneTeleport",
-          "$canTeleport1,grapple",
-          "$canAirport2"
+          "[progadvanced],$canTeleport1,$canDroneTeleport",
+          "[progadvanced],$canTeleport1,grapple",
+          "$canAirport2",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -502,6 +552,7 @@
       {
         "name": "Health Node Fragment (Kur bottom)",
         "short_name": "Health Node Fragment (Kur v)",
+        "vgravmap": "HealthNodeFragment10",
         "access_rules": [
           "$canUseRemoteDrone"
         ],
@@ -533,7 +584,9 @@
           "$canAirport2",
           "highjump",
           "$canUseRemoteDrone",
-          "grapple"
+          "[progadvanced],excavate,grapple",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -563,7 +616,9 @@
           "$canTeleport1,$canUseRemoteDrone",
           "$canTeleport2,highjump",
           "$canTeleport3",
-          "addressdisruptor2,excavate"
+          "addressdisruptor2,excavate",
+          "$canTeleport2,$canUseRemoteDrone",
+          "[progadvanced],$canUseRemoteDrone,grapple",
         ],
         "map_locations": [
           {
@@ -593,7 +648,11 @@
           "$canTeleport1,excavate,addressdisruptor",
           "$canTeleport2,excavate",
           "$canTeleport3",
-          "excavate,wave,addressdisruptor"
+          "excavate,wave,addressdisruptor",
+          "[progadvanced],excavate,grapple",
+          "[progadvanced],excavate,$canTeleport2",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -622,7 +681,9 @@
         "access_rules": [
           "$canTeleport1,highjump,$canDroneTeleport,addressdisruptor",
           "$canTeleport2,fatbeam",
-          "$canTeleport3,addressdisruptor"
+          "$canTeleport3,addressdisruptor",
+          "excavate,addressdisruptor,grapple,$canTeleport2",
+          "[progadvanced],addressdisruptor,$canTeleport1,drone,grapple"
         ],
         "map_locations": [
           {

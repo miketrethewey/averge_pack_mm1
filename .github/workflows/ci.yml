@@ -198,6 +198,6 @@ jobs:
         with:
           workflow: Deploy Pages
           repo: miketrethewey/mm1s-packs
-          ref: testing
+          ref: publish
           token: ${{ secrets.MY_PAT }}
         # if: contains(github.ref, 'master')

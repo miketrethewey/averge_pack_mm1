@@ -194,14 +194,10 @@ jobs:
       # Update EmoTracker Pack Repository
       - name: Update EmoTracker Pack Repository
         id: update-pack-repo
-        uses: actions/github-script@v5
+        uses: benc-uk/workflow-dispatch@v1
         with:
-          github-token: ${{ secrets.MY_PAT }}
-          script: |
-            await github.rest.actions.createWorkflowDispatch({
-              'miketrethewey',    # username
-              'mm1s-packs',       # repository name
-              'workflows/ci.yml', # workflow path
-              'testing'           # branch name
-            });
+          workflow: Deploy Pages
+          repo: miketrethewey/mm1s-packs
+          ref: testing
+          token: ${{ secrets.MY_PAT }}
         # if: contains(github.ref, 'master')

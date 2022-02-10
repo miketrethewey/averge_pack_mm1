@@ -26,21 +26,21 @@ jobs:
 
       # get parent directory
       - name: Get Repo Name
-        uses: mad9000/actions-find-and-replace-string@1
+        uses: mad9000/actions-find-and-replace-string@2
         id: repoName
         with:
           source: ${{ github.repository }}
           find: '${{ github.repository_owner }}/'
           replace: ''
       - name: Get Parent Directory Path (!Windows)
-        uses: mad9000/actions-find-and-replace-string@1
+        uses: mad9000/actions-find-and-replace-string@2
         id: parentDirNotWin
         with:
           source: ${{ github.workspace }}
           find: '${{ steps.repoName.outputs.value }}/${{ steps.repoName.outputs.value }}'
           replace: ${{ steps.repoName.outputs.value }}
       - name: Get Parent Directory Path (Windows)
-        uses: mad9000/actions-find-and-replace-string@1
+        uses: mad9000/actions-find-and-replace-string@2
         id: parentDir
         with:
           source: ${{ steps.parentDirNotWin.outputs.value }}
@@ -122,21 +122,21 @@ jobs:
           python -m pip install pytz requests
       # get parent directory
       - name: Get Repo Name
-        uses: mad9000/actions-find-and-replace-string@1
+        uses: mad9000/actions-find-and-replace-string@2
         id: repoName
         with:
           source: ${{ github.repository }}
           find: '${{ github.repository_owner }}/'
           replace: ''
       - name: Get Parent Directory Path (!Windows)
-        uses: mad9000/actions-find-and-replace-string@1
+        uses: mad9000/actions-find-and-replace-string@2
         id: parentDirNotWin
         with:
           source: ${{ github.workspace }}
           find: '${{ steps.repoName.outputs.value }}/${{ steps.repoName.outputs.value }}'
           replace: ${{ steps.repoName.outputs.value }}
       - name: Get Parent Directory Path (Windows)
-        uses: mad9000/actions-find-and-replace-string@1
+        uses: mad9000/actions-find-and-replace-string@2
         id: parentDir
         with:
           source: ${{ steps.parentDirNotWin.outputs.value }}
@@ -191,3 +191,17 @@ jobs:
           asset_name: averge_pack_mm1.zip
           asset_content_type: application/zip
         if: contains(github.ref, 'master')
+      # Update EmoTracker Pack Repository
+      - name: Update EmoTracker Pack Repository
+        id: update-pack-repo
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.MY_PAT }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              'miketrethewey',    # username
+              'mm1s-packs',       # repository name
+              'workflows/ci.yml', # workflow path
+              'testing'           # branch name
+            });
+        # if: contains(github.ref, 'master')

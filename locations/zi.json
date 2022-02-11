@@ -12,6 +12,7 @@
       {
         "name": "Power Node Fragment (Zi top) #1",
         "short_name": "Power Node Fragment (Zi ^) #1",
+        "vgravmap": "PowerNodeFragment1",
         "access_rules": [
           "$canAirport2,$canGlitchGun1",
           "$canAirport2,highjump,$canDroneTeleport,grapple",
@@ -52,11 +53,11 @@
         "vgravmap": "HealthNode3",
         "access_rules": [
           "$canTeleport1,highjump,$canGlitchGun1",
-          "$canTeleport1,$canDroneTeleport,$canGlitchGun1",
           "$canAirport2,$canGlitchGun1",
-          "$canAirport2,highjump,$canDroneTeleport",
-          "$canAirport3,$canDroneTeleport",
-          "$canAirport3,$canGlitchGun1"
+          "[progadvanced],highjump,$canAirport2",
+          "[progadvanced],$canGlitchGun1,highjump,grapple",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],$canGlitchGun1,grapple"
         ],
         "map_locations": [
           {
@@ -83,10 +84,13 @@
         "short_name": "Modified Lab Coat",
         "vgravmap": "GlitchTeleport",
         "access_rules": [
-          "$canAirport2,highjump",
-          "$canAirport3",
+          "$canAirport2",
           "highjump,$canGlitchGun1",
-          "$canDroneTeleport"
+          "$canGlitchGun1,highjump,labcoat",
+          "[progadvanced],$canDroneTeleport",
+          "[progadvanced],$canGlitchGun1,$canTeleport1",
+          "[progadvanced],$canGlitchGun1,highjump,grapple",
+          "[progmasochist],$canGlitchGun1,grapple"
         ],
         "map_locations": [
           {
@@ -141,11 +145,13 @@
       {
         "name": "Digital Paper (Zi) #1",
         "short_name": "Digital Paper (Zi) #1",
+        "vgravmap": "Note10",
         "access_rules": [
           "$canAirport2,excavate",
           "$canAirport3",
           "highjump,excavate",
-          "$canUseRemoteDrone"
+          "[progadvanced],excavate,grapple",
+          "[progadvanced],$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -170,12 +176,14 @@
       {
         "name": "Health Node Fragment (Zi) #1",
         "short_name": "Health Node Fragment (Zi) #1",
+        "vgravmap": "HealthNodeFragment7",
         "access_rules": [
           "{highjump}",
           "{$canUseRemoteDrone}",
           "$canTeleport1,highjump",
-          "$canTeleport1,$canDroneTeleport",
-          "$canTeleport2"
+          "$canTeleport2",
+          "[progadvanced],$canTeleport1,$canDroneTeleport",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -201,9 +209,9 @@
       {
         "name": "Rusalka Tablet (Zi)",
         "short_name": "Rusalka Tablet (Zi)",
+        "vgravmap": "Note20",
         "access_rules": [
-          "$canAirport2,$canUseRemoteDrone",
-          "highjump,$canUseRemoteDrone"
+          "$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -230,7 +238,7 @@
         "short_name": "Voranj",
         "vgravmap": "Voranj",
         "access_rules": [
-          "$canUseRemoteDrone,highjump"
+          "$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -255,11 +263,16 @@
       {
         "name": "Power Node Fragment (Zi) #2",
         "short_name": "Power Node Fragment (Zi) #2",
+        "vgravmap": "PowerNodeFragment8",
         "access_rules": [
           "$canAirport2,highjump",
           "$canGlitchGun2,highjump",
           "$canGlitchGun2,$canUseRemoteDrone",
-          "$canGlitchGun2,grapple"
+          "$canGlitchGun2,grapple",
+          "$canTeleport1,$canGlitchGun2,highjump",
+          "$canAirport2,$canGlitchGun2",
+          "[progadvanced],$canAirport2",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -287,7 +300,10 @@
         "vgravmap": "SizeNode3",
         "access_rules": [
           "$canTeleport2",
-          "highjump"
+          "highjump",
+          "excavate,grapple",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -314,10 +330,11 @@
         "short_name": "Bioflux Accelerator #1",
         "vgravmap": "TendrilsTop",
         "access_rules": [
-          "$canTeleport1,highjump",
-          "$canTeleport1,$canDroneTeleport",
-          "$canAirport3",
-          "wave,highjump"
+          "$canAirport2",
+          "highjump",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],highjump,grapple",
+          "[progmasochist],$canAirport2,grapple"
         ],
         "map_locations": [
           {
@@ -342,9 +359,13 @@
       {
         "name": "Health Node Fragment (Zi middle)",
         "short_name": "Health Node Fragment (Zi =)",
+        "vgravmap": "HealthNodeFragment5",
         "access_rules": [
           "$canTeleport2",
-          "$canUseRemoteDrone"
+          "$canUseRemoteDrone",
+          "[progadvanced],grapple,$canUseRemoteDrone",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {
@@ -369,9 +390,13 @@
       {
         "name": "Health Node Fragment (Zi bottom)",
         "short_name": "Health Node Fragment (Zi v)",
+        "vgravmap": "HealthNodeFragement14",
         "access_rules": [
           "$canAirport2,excavate",
-          "highjump,excavate"
+          "highjump,excavate",
+          "[progadvanced],$canUseRemoteDrone,highjump,grapple",
+          "[progadvanced],$canDroneTeleport",
+          "[progmasochist],excavate,grapple"
         ],
         "map_locations": [
           {
@@ -399,9 +424,9 @@
         "vgravmap": "RangeNode2",
         "access_rules": [
           "$canTeleport1,highjump",
-          "$canTeleport1,$canDroneTeleport",
-          "$canTeleport1,grapple",
-          "$canAirport3"
+          "$canAirport2",
+          "[progadvanced],$canTeleport1,$canDroneTeleport",
+          "[progmasochist],$canTeleport1,grapple"
         ],
         "map_locations": [
           {
@@ -428,10 +453,8 @@
         "short_name": "Passcode Tool",
         "vgravmap": "PasswordTool",
         "access_rules": [
-          "$canTeleport2,grapple",
-          "$canTeleport2,highjump",
-          "$canTeleport3",
-          "$canUseRemoteDrone"
+          "$canAirport2",
+          "[progadvanced],$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -456,11 +479,10 @@
       {
         "name": "Digital Paper (Zi) #2",
         "short_name": "Digital Paper (Zi) #2",
+        "vgravmap": "Note19",
         "access_rules": [
-          "$canAirport2,grapple",
-          "$canAirport2,highjump",
-          "$canAirport3",
-          "$canUseRemoteDrone"
+          "$canAirport2",
+          "[progadvanced],$canUseRemoteDrone"
         ],
         "map_locations": [
           {

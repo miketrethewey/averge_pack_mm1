@@ -45,7 +45,8 @@
           "$canAirport2,laserdrill,highjump",
           "[progadvanced],excavate,grapple",
           "[progadvanced],$canAirport2,excavate,highjump",
-          "$canAirport3"
+          "$canAirport3",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {

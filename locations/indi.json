@@ -12,6 +12,7 @@
       {
         "name": "Rusalka Tablet (Indi)",
         "short_name": "Rusalka Tablet (Indi)",
+        "vgravmap": "Note9",
         "access_rules": [
           "{}",
           "$canAirport3",
@@ -70,9 +71,11 @@
       {
         "name": "Digital Paper (Indi)",
         "short_name": "Digital Paper (Indi)",
+        "vgravmap": "Note25",
         "access_rules": [
-          "$canAirport2,$canUseRemoteDrone",
-          "highjump,$canUseRemoteDrone"
+          "$canUseRemoteDrone,grapple",
+          "$canUseRemoteDrone,$canTeleport2",
+          "$canDroneTeleport"
         ],
         "map_locations": [
           {

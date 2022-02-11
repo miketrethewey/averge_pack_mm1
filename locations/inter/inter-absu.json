@@ -46,7 +46,8 @@
         "access_rules": [ // FIXED
           "$canTeleport1,$canGlitchGun1",
           "$canTeleport2",
-          "wave,$canGlitchGun1"
+          "wave,$canGlitchGun1",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {

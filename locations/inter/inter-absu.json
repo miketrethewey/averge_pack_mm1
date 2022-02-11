@@ -7,8 +7,8 @@
       { // Absu -> Indi
         "name": "Absu -> Indi",
         "access_rules": [ // FIXED
-          "$canTeleport1,addressdisruptor,grapple",
-          "$canTeleport1,addressdisruptor,$canDroneTeleport",
+          "$canTeleport1,$canGlitchGun1,grapple",
+          "$canTeleport1,$canGlitchGun1,$canDroneTeleport",
           "$canAirport2,highjump",
           "$canAirport2,grapple",
           "$canAirport2,$canDroneTeleport",
@@ -44,9 +44,9 @@
       { // Absu -> Zi
         "name": "Absu -> Zi",
         "access_rules": [ // FIXED
-          "$canTeleport1,addressdisruptor",
+          "$canTeleport1,$canGlitchGun1",
           "$canTeleport2",
-          "wave,addressdisruptor"
+          "wave,$canGlitchGun1"
         ],
         "map_locations": [
           {

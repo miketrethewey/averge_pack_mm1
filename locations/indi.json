@@ -45,7 +45,7 @@
         "short_name": "Health Node Fragment (Slug Glitch)",
         "vgravmap": "HealthNodeFragment15",
         "access_rules": [
-          "addressdisruptor"
+          "$canGlitchGun1"
         ],
         "map_locations": [
           {

@@ -14,11 +14,11 @@
         "short_name": "Health Node (Eribu ^)",
         "vgravmap": "HealthNode9",
         "access_rules": [
-          "{addressbomb,$canUseRemoteDrone}",
-          "addressbomb,highjump,grapple",
-          "$canAirport2,addressbomb",
-          "highjump,$canUseRemoteDrone,addressbomb",
-          "$canDroneTeleport,addressbomb"
+          "{$canGlitchBomb,$canUseRemoteDrone}",
+          "$canGlitchBomb,highjump,grapple",
+          "$canAirport2,$canGlitchBomb",
+          "highjump,$canUseRemoteDrone,$canGlitchBomb",
+          "$canDroneTeleport,$canGlitchBomb"
         ],
         "map_locations": [
           {
@@ -150,7 +150,7 @@
         "access_rules": [
           "$canAirport3,$canDroneTeleport,passcodetool,highjump",
           "highjump,grapple,$canAirport3,passcodetool",
-          "$canDroneTeleport,grapple,addressdisruptor2,$canAirport2,passcodetool",
+          "$canDroneTeleport,grapple,$canGlitchGun2,$canAirport2,passcodetool",
           "[progmasochist],grapple,$canAirport3,passcodetool"
         ],
         "map_locations": [
@@ -335,9 +335,9 @@
         "vgravmap": "HealthNodeFragment13",
         "access_rules": [
           "$canTeleport3",
-          "$canUseRemoteDrone,grapple,addressdisruptor2",
-          "$canDroneTeleport,addressdisruptor2",
-          "[progadvanced],drill,addressdisruptor2,$canAirport2"
+          "$canUseRemoteDrone,grapple,$canGlitchGun2",
+          "$canDroneTeleport,$canGlitchGun2",
+          "[progadvanced],drill,$canGlitchGun2,$canAirport2"
         ],
         "map_locations": [
           {
@@ -389,8 +389,8 @@
         "short_name": "Lightning Gun",
         "vgravmap": "LightningGun",
         "access_rules": [
-          "$canAirport3,addressbomb",
-          "addressbomb,$canUseRemoteDrone",
+          "$canAirport3,$canGlitchBomb",
+          "$canGlitchBomb,$canUseRemoteDrone",
           "[progmasochist],$canUseRemoteDrone,grapple",
           "[progmasochist],grapple,$canAirport3"
         ],
@@ -452,11 +452,11 @@
           "{laserdrill}",
           "[progadvanced],{excavate}",
           "$canAirport2",
-          "addressbomb",
-          "addressdisruptor,laserdrill",
+          "$canGlitchBomb",
+          "$canGlitchGun1,laserdrill",
           "grapple,laserdrill",
           "$canUseRemoteDrone",
-          "[progadvanced],addressdisruptor,excavate",
+          "[progadvanced],$canGlitchGun1,excavate",
           "[progadvanced],grapple,excavate"
         ],
         "map_locations": [

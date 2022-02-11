@@ -13,18 +13,18 @@
         "name": "Power Node Fragment (Zi top) #1",
         "short_name": "Power Node Fragment (Zi ^) #1",
         "access_rules": [
-          "$canAirport2,addressdisruptor",
+          "$canAirport2,$canGlitchGun1",
           "$canAirport2,highjump,$canDroneTeleport,grapple",
           "$canAirport3,$canDroneTeleport,grapple",
-          "highjump,addressdisruptor,grapple",
-          "$canDroneTeleport,addressdisruptor,grapple",
+          "highjump,$canGlitchGun1,grapple",
+          "$canDroneTeleport,$canGlitchGun1,grapple",
           "highjump,$canUseRemoteDrone,extendeddronelaunch,$canAirport2",
           "$canUseRemoteDrone,extendeddronelaunch,$canAirport3",
           "$canAirport3,grapple",
           "[progadvanced],$canUseRemoteDrone,extendeddronelaunch,$canAirport2",
-          "[progadvanced],addressdisruptor,grapple,excavate",
+          "[progadvanced],$canGlitchGun1,grapple,excavate",
           "[progadvanced],$canDroneTeleport",
-          "[progmasochist],addressdisruptor,grapple"
+          "[progmasochist],$canGlitchGun1,grapple"
         ],
         "map_locations": [
           {
@@ -51,12 +51,12 @@
         "short_name": "Health Node (Zi)",
         "vgravmap": "HealthNode3",
         "access_rules": [
-          "$canTeleport1,highjump,addressdisruptor",
-          "$canTeleport1,$canDroneTeleport,addressdisruptor",
-          "$canAirport2,addressdisruptor",
+          "$canTeleport1,highjump,$canGlitchGun1",
+          "$canTeleport1,$canDroneTeleport,$canGlitchGun1",
+          "$canAirport2,$canGlitchGun1",
           "$canAirport2,highjump,$canDroneTeleport",
           "$canAirport3,$canDroneTeleport",
-          "$canAirport3,addressdisruptor"
+          "$canAirport3,$canGlitchGun1"
         ],
         "map_locations": [
           {
@@ -85,7 +85,7 @@
         "access_rules": [
           "$canAirport2,highjump",
           "$canAirport3",
-          "highjump,addressdisruptor",
+          "highjump,$canGlitchGun1",
           "$canDroneTeleport"
         ],
         "map_locations": [
@@ -257,9 +257,9 @@
         "short_name": "Power Node Fragment (Zi) #2",
         "access_rules": [
           "$canAirport2,highjump",
-          "addressdisruptor2,highjump",
-          "addressdisruptor2,$canUseRemoteDrone",
-          "addressdisruptor2,grapple"
+          "$canGlitchGun2,highjump",
+          "$canGlitchGun2,$canUseRemoteDrone",
+          "$canGlitchGun2,grapple"
         ],
         "map_locations": [
           {

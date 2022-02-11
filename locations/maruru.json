@@ -66,7 +66,7 @@
         "short_name": "Reverse Slicer",
         "vgravmap": "Scythe",
         "access_rules": [
-          "$canTeleport3,addressdisruptor,$canEnhancedDroneLaunch,$canDroneTeleport,highjump",
+          "$canTeleport3,$canGlitchGun1,$canEnhancedDroneLaunch,$canDroneTeleport,highjump",
           "$canTeleport3,fatbeam,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
@@ -147,7 +147,7 @@
         "name": "Power Node Fragment (Mar-Uru top)",
         "short_name": "Power Node Fragment (Mar-Uru ^)",
         "access_rules": [
-          "$canTeleport3,addressdisruptor,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
+          "$canTeleport3,$canGlitchGun1,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
           {
@@ -173,7 +173,7 @@
         "name": "Clay Tablet (Mar-Uru) (2 items)",
         "short_name": "Clay Tablet (Mar-Uru) (2 items)",
         "access_rules": [
-          "$canTeleport3,addressdisruptor,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
+          "$canTeleport3,$canGlitchGun1,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
           {

@@ -15,8 +15,8 @@
         "vgravmap": "DroneTeleport",
         "access_rules": [
           "$canTeleport2,highjump,rangelong,$canUseRemoteDrone",
-          "$canTeleport2,addressbomb,$canDroneTeleport",
-          "$canTeleport3,addressbomb,rangelong,$canUseRemoteDrone"
+          "$canTeleport2,$canGlitchBomb,$canDroneTeleport",
+          "$canTeleport3,$canGlitchBomb,rangelong,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -42,7 +42,7 @@
         "name": "Clay Tablet (Edin)",
         "short_name": "Clay Tablet (Edin)",
         "access_rules": [
-          "$canTeleport2,addressbomb,$canDroneTeleport",
+          "$canTeleport2,$canGlitchBomb,$canDroneTeleport",
           "$canTeleport2,highjump,$canDroneTeleport",
           "$canTeleport3"
         ],
@@ -98,9 +98,9 @@
         "name": "Power Node Fragment (Edin top)",
         "short_name": "Power Node Fragment (Edin ^)",
         "access_rules": [
-          "$canTeleport2,highjump,$canDroneTeleport,addressbomb",
-          "$canTeleport3,$canDroneTeleport,addressbomb",
-          "addressbomb,$canEnhancedDroneLaunch,$canDroneTeleport"
+          "$canTeleport2,highjump,$canDroneTeleport,$canGlitchBomb",
+          "$canTeleport3,$canDroneTeleport,$canGlitchBomb",
+          "$canGlitchBomb,$canEnhancedDroneLaunch,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -155,9 +155,9 @@
         "short_name": "Health Node (Edin)",
         "vgravmap": "HealthNode6",
         "access_rules": [
-          "$canTeleport2,highjump,$canDroneTeleport,addressbomb",
-          "$canTeleport3,$canDroneTeleport,addressbomb",
-          "addressbomb,$canDroneTeleport"
+          "$canTeleport2,highjump,$canDroneTeleport,$canGlitchBomb",
+          "$canTeleport3,$canDroneTeleport,$canGlitchBomb",
+          "$canGlitchBomb,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -185,7 +185,7 @@
         "access_rules": [
           "$canTeleport2,highjump",
           "$canTeleport3",
-          "addressbomb,$canDroneTeleport"
+          "$canGlitchBomb,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -211,8 +211,8 @@
         "name": "Digital Paper (Edin top)",
         "short_name": "Digital Paper (Edin ^)",
         "access_rules": [
-          "$canTeleport2,highjump,addressdisruptor",
-          "$canTeleport2,$canDroneTeleport,addressdisruptor",
+          "$canTeleport2,highjump,$canGlitchGun1",
+          "$canTeleport2,$canDroneTeleport,$canGlitchGun1",
           "$canTeleport3"
         ],
         "map_locations": [
@@ -292,9 +292,9 @@
         "name": "Digital Paper (Edin bottom)",
         "short_name": "Digital Paper (Edin v)",
         "access_rules": [
-          "$canAirport2,highjump,addressdisruptor",
-          "$canAirport2,$canDroneTeleport,addressdisruptor",
-          "$canTeleport3,addressdisruptor"
+          "$canAirport2,highjump,$canGlitchGun1",
+          "$canAirport2,$canDroneTeleport,$canGlitchGun1",
+          "$canTeleport3,$canGlitchGun1"
         ],
         "map_locations": [
           {
@@ -320,7 +320,7 @@
         "name": "Health & Power Nodes (Edin right) (2 items)",
         "short_name": "Health & Power Nodes (Edin >) (2 items)",
         "access_rules": [
-          "$canTeleport2,addressbomb,highjump",
+          "$canTeleport2,$canGlitchBomb,highjump",
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport"
         ],
         "map_locations": [
@@ -352,8 +352,8 @@
         "short_name": "Shards",
         "vgravmap": "Shards",
         "access_rules": [
-          "$canTeleport2,addressbomb",
-          "$canEnhancedDroneLaunch,$canDroneTeleport,addressbomb"
+          "$canTeleport2,$canGlitchBomb",
+          "$canEnhancedDroneLaunch,$canDroneTeleport,$canGlitchBomb"
         ],
         "map_locations": [
           {

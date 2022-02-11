@@ -209,4 +209,4 @@ jobs:
           repo: ${{ matrix.packlist-username }}/${{ matrix.packlist-repository }}
           ref: ${{ matrix.packlist-branch }}
           token: ${{ secrets.MY_PAT }}
-        # if: contains(github.ref, 'master')
+        if: contains(github.ref, 'master')

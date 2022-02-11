@@ -14,7 +14,10 @@
         "short_name": "Rusalka Tablet (Indi)",
         "access_rules": [
           "{}",
-          "$canAirport2"
+          "$canAirport3",
+          "$canAirport2,excavate",
+          "[progmasochist],highjump,grapple",
+          "[progmasochist],$canTeleport2,grapple"
         ],
         "map_locations": [
           {

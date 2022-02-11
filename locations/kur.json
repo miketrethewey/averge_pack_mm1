@@ -474,9 +474,10 @@
         "access_rules": [
           "{}",
           "$canTeleport1,highjump",
-          "$canTeleport1,$canDroneTeleport",
-          "$canTeleport1,grapple",
-          "$canAirport2"
+          "$canAirport2",
+          "[progadvanced],$canTeleport1,$canDroneTeleport",
+          "[progadvanced],$canTeleport1,grapple",
+          "[progmasochist],grapple"
         ],
         "map_locations": [
           {

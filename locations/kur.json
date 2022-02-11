@@ -24,7 +24,7 @@
           "[progadvanced],$canDroneTeleport,$canTeleport1,addressdisruptor",
           "[progadvanced],$canTeleport1,grapple,$canDroneTeleport",
           "[progadvanced],excavate,highjump,grapple,$canTeleport2",
-          "[progadvanced],$canteleport3,grapple",
+          "[progadvanced],$canTeleport3,grapple",
           "[progmasochist],grapple,$canTeleport2"
         ],
         "map_locations": [
@@ -312,7 +312,7 @@
           "$canDroneTeleport,grapple",
           "highjump,grapple,$canUseRemoteDrone",
           "[progadvanced],highjump,$canTeleport1,$canUseRemoteDrone,grapple",
-          "[progadvanced],$canteleport1,$canDroneTeleport",
+          "[progadvanced],$canTeleport1,$canDroneTeleport",
           "[progmasochist],highjump,$canUseRemoteDrone,grapple"
         ],
         "map_locations": [

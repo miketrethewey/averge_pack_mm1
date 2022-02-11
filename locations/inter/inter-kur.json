@@ -7,7 +7,7 @@
       { // Kur -> Indi
         "name": "Kur -> Indi",
         "access_rules": [
-          "$canteleport1",
+          "$canTeleport1",
           "[progmasochist],grapple"
         ],
         "map_locations": [

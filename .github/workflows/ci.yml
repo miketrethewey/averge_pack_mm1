@@ -111,9 +111,6 @@ jobs:
         # release only on ubuntu
         os-name: [ubuntu-latest]
         python-version: [3.8]
-        packlist-username: [miketrethewey]
-        packlist-repository: [mm1s-packs]
-        packlist-branch: [publish]
 
     needs: [install-prepare-release]
     steps:
@@ -199,6 +196,30 @@ jobs:
           asset_name: averge_pack_mm1.zip
           asset_content_type: application/zip
         if: contains(github.ref, 'master')
+
+  # Update Pack Listing
+  update-packlisting:
+    name: Update Pack Listing
+    runs-on: ${{ matrix.os-name }}
+
+    # VM settings
+    #  os & python versions
+    strategy:
+      matrix:
+        # run only on ubuntu
+        os-name: [ubuntu-latest]
+        packlist-username: [miketrethewey]
+        packlist-repository: [mm1s-packs]
+        packlist-branch: [publish]
+
+    needs: [deploy-release]
+    steps:
+      # checkout commit
+      - name: Checkout commit
+        uses: actions/checkout@v2
+      - name: Install Dependencies via pip
+        run: |
+          python -m pip install pytz requests
 
       # Update EmoTracker Pack Repository
       - name: Update EmoTracker Pack Repository

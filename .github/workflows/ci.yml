@@ -208,9 +208,6 @@ jobs:
       matrix:
         # run only on ubuntu
         os-name: [ubuntu-latest]
-        packlist-username: [miketrethewey]
-        packlist-repository: [mm1s-packs]
-        packlist-branch: [publish]
 
     needs: [deploy-release]
     steps:
@@ -226,9 +223,9 @@ jobs:
         id: packlisting
         run: |
           PACKLISTING="$(head -n 1 ./resources/app/meta/manifests/repository.txt)"
-          PACKLISTING_USERNAME="$($PACKLISTING    | grep '([\w-_]*)\/(?:[\w-_]*):([\w-_]*)')"
-          PACKLISTING_REPOSITORY="$($PACKLISTING  | grep '(?:[\w-_]*)\/([\w-_]*):(?:[\w-_]*)')"
-          PACKLISTING_BRANCH="$($PACKLISTING      | grep '(?:[\w-_]*)\/(?:[\w-_]*):([\w-_]*)')"
+          PACKLISTING_USERNAME="$($PACKLISTING    | grep '([\w_-]*)\/(?:[\w_-]*):([\w_-]*)')"
+          PACKLISTING_REPOSITORY="$($PACKLISTING  | grep '(?:[\w_-]*)\/([\w_-]*):(?:[\w_-]*)')"
+          PACKLISTING_BRANCH="$($PACKLISTING      | grep '(?:[\w_-]*)\/(?:[\w_-]*):([\w_-]*)')"
           echo "::set-output name=packlisting_username::$PACKLISTING_USERNAME"
           echo "::set-output name=packlisting_repository::$PACKLISTING_REPOSITORY"
           echo "::set-output name=packlisting_branch::$PACKLISTING_BRANCH"

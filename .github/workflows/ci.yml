@@ -222,14 +222,14 @@ jobs:
       - name: Get Pack Listing Destination
         id: packlisting
         run: |
-          PACKLISTING_USER="$([[ $(head -n 1 ./resources/app/meta/manifests/repository.txt) =~ ([^\/]*)\/([^:]*)\:(.*) ]] && echo ${BASH_REMATCH[1]})"
-          echo "::set-output name=packlisting_username::${BASH_REMATCH[1]}"
+          PACKLISTING_USERNAME="$([[ $(head -n 1 ./resources/app/meta/manifests/repository.txt) =~ ([^\/]*)\/([^:]*)\:(.*) ]] && echo ${BASH_REMATCH[1]})"
+          echo "::set-output name=packlisting_username::$PACKLISTING_USERNAME"
 
-          PACKLISTING_REPO="$([[ $(head -n 1 ./resources/app/meta/manifests/repository.txt) =~ ([^\/]*)\/([^:]*)\:(.*) ]] && echo ${BASH_REMATCH[2]})"
-          echo "::set-output name=packlisting_repository::${BASH_REMATCH[2]}"
+          PACKLISTING_REPOSITORY="$([[ $(head -n 1 ./resources/app/meta/manifests/repository.txt) =~ ([^\/]*)\/([^:]*)\:(.*) ]] && echo ${BASH_REMATCH[2]})"
+          echo "::set-output name=packlisting_repository::$PACKLISTING_REPOSITORY"
 
-          PACKLISTING_BRAN="$([[ $(head -n 1 ./resources/app/meta/manifests/repository.txt) =~ ([^\/]*)\/([^:]*)\:(.*) ]] && echo ${BASH_REMATCH[3]})"
-          echo "::set-output name=packlisting_branch::${BASH_REMATCH[3]}"
+          PACKLISTING_BRANCH="$([[ $(head -n 1 ./resources/app/meta/manifests/repository.txt) =~ ([^\/]*)\/([^:]*)\:(.*) ]] && echo ${BASH_REMATCH[3]})"
+          echo "::set-output name=packlisting_branch::$PACKLISTING_BRANCH"
 
       # Update EmoTracker Pack Repository
       - name: Update EmoTracker Pack Repository

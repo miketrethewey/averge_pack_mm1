@@ -226,9 +226,9 @@ jobs:
         id: packlisting
         run: |
           PACKLISTING="$(head -n 1 ./resources/app/meta/manifests/repository.txt)"
-          PACKLISTING_BRANCH="$($PACKLISTING | sed 's|([\w-_]*)\/([\w-_]*):([\w-_]*)|\3|g')"
-          PACKLISTING_USERNAME="$($PACKLISTING | sed 's|([\w-_]*)\/([\w-_]*):([\w-_]*)|\1|g')"
-          PACKLISTING_REPOSITORY="$($PACKLISTING | sed 's|([\w-_]*)\/([\w-_]*):([\w-_]*)|\2|g')"
+          PACKLISTING_USERNAME="$($PACKLISTING    | grep '([\w-_]*)\/(?:[\w-_]*):([\w-_]*)')"
+          PACKLISTING_REPOSITORY="$($PACKLISTING  | grep '(?:[\w-_]*)\/([\w-_]*):(?:[\w-_]*)')"
+          PACKLISTING_BRANCH="$($PACKLISTING      | grep '(?:[\w-_]*)\/(?:[\w-_]*):([\w-_]*)')"
           echo "::set-output name=packlisting_username::$PACKLISTING_USERNAME"
           echo "::set-output name=packlisting_repository::$PACKLISTING_REPOSITORY"
           echo "::set-output name=packlisting_branch::$PACKLISTING_BRANCH"

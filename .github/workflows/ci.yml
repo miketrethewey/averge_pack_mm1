@@ -221,13 +221,25 @@ jobs:
         run: |
           python -m pip install pytz requests
 
+      # get packlisting destination
+      - name: Get Pack Listing Destination
+        id: packlisting
+        run: |
+          PACKLISTING="$(head -n 1 ./resources/app/meta/manifests/repository.txt)"
+          PACKLISTING_BRANCH="$($PACKLISTING | sed 's|([\w-_]*)\/([\w-_]*):([\w-_]*)|\3|g')"
+          PACKLISTING_USERNAME="$($PACKLISTING | sed 's|([\w-_]*)\/([\w-_]*):([\w-_]*)|\1|g')"
+          PACKLISTING_REPOSITORY="$($PACKLISTING | sed 's|([\w-_]*)\/([\w-_]*):([\w-_]*)|\2|g')"
+          echo "::set-output name=packlisting_username::$PACKLISTING_USERNAME"
+          echo "::set-output name=packlisting_repository::$PACKLISTING_REPOSITORY"
+          echo "::set-output name=packlisting_branch::$PACKLISTING_BRANCH"
+
       # Update EmoTracker Pack Repository
       - name: Update EmoTracker Pack Repository
         id: update-pack-repo
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: Deploy Pages
-          repo: ${{ matrix.packlist-username }}/${{ matrix.packlist-repository }}
-          ref: ${{ matrix.packlist-branch }}
+          repo: ${{ steps.update-packlisting.outputs.packlisting_username }}/${{ steps.update-packlisting.outputs.packlisting_repository }}
+          ref: ${{ steps.update-packlisting.outputs.packlisting_branch }}
           token: ${{ secrets.MY_PAT }}
         if: contains(github.ref, 'master')

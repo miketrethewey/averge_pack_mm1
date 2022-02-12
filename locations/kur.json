@@ -618,7 +618,7 @@
           "$canTeleport3",
           "$canGlitchGun2,excavate",
           "$canTeleport2,$canUseRemoteDrone",
-          "[progadvanced],$canUseRemoteDrone,grapple",
+          "[progadvanced],$canUseRemoteDrone,grapple"
         ],
         "map_locations": [
           {

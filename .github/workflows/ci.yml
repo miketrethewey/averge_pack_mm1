@@ -223,9 +223,9 @@ jobs:
         id: packlisting
         run: |
           PACKLISTING="$(head -n 1 ./resources/app/meta/manifests/repository.txt)"
-          PACKLISTING_USERNAME="$($PACKLISTING    | grep '([\w_-]*)\/(?:[\w_-]*):([\w_-]*)')"
-          PACKLISTING_REPOSITORY="$($PACKLISTING  | grep '(?:[\w_-]*)\/([\w_-]*):(?:[\w_-]*)')"
-          PACKLISTING_BRANCH="$($PACKLISTING      | grep '(?:[\w_-]*)\/(?:[\w_-]*):([\w_-]*)')"
+          PACKLISTING_USERNAME="$($PACKLISTING    | [[ $(head -n 1 ./resources/app/meta/manifests/repository.txt) =~ ([^\/]*)\/([^:]*)\:(.*) ]] && echo ${BASH_REMATCH[1]}"
+          PACKLISTING_REPOSITORY="$($PACKLISTING  | [[ $(head -n 1 ./resources/app/meta/manifests/repository.txt) =~ ([^\/]*)\/([^:]*)\:(.*) ]] && echo ${BASH_REMATCH[2]}"
+          PACKLISTING_BRANCH="$($PACKLISTING      | [[ $(head -n 1 ./resources/app/meta/manifests/repository.txt) =~ ([^\/]*)\/([^:]*)\:(.*) ]] && echo ${BASH_REMATCH[3]}"
           echo "::set-output name=packlisting_username::$PACKLISTING_USERNAME"
           echo "::set-output name=packlisting_repository::$PACKLISTING_REPOSITORY"
           echo "::set-output name=packlisting_branch::$PACKLISTING_BRANCH"

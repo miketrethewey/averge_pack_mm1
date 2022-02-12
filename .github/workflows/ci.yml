@@ -235,7 +235,7 @@ jobs:
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: Deploy Pages
-          repo: ${{ steps.update-packlisting.outputs.packlisting_username }}/${{ steps.update-packlisting.outputs.packlisting_repository }}
-          ref: ${{ steps.update-packlisting.outputs.packlisting_branch }}
+          repo: ${{ steps.packlisting.outputs.packlisting_username }}/${{ steps.packlisting.outputs.packlisting_repository }}
+          ref: ${{ steps.packlisting.outputs.packlisting_branch }}
           token: ${{ secrets.MY_PAT }}
         if: contains(github.ref, 'master')

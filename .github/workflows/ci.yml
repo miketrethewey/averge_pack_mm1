@@ -147,13 +147,13 @@ jobs:
         uses: actions/download-artifact@v3.0.0
         with:
           name: appversion-${{ matrix.os-name }}
-          path: ${{ steps.parentDir.outputs.value }}/build
+          path: ${{ steps.parentDir.outputs.parentDir }}/build
       # download archive artifact
       - name: 🔽Download Archive Artifact
         uses: actions/download-artifact@v3.0.0
         with:
           name: archive-${{ matrix.os-name }}
-          path: ${{ steps.parentDir.outputs.value }}/deploy
+          path: ${{ steps.parentDir.outputs.parentDir }}/deploy
 
       # debug info
       - name: Debug Info

@@ -20,7 +20,7 @@
           "$canAirport3,highjump,$canDroneTeleport",
           "$canAirport3,highjump,grapple",
           "$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
-          "[progadvanced],$canDroneTeleport,$canTeleport1,drill",
+          "[progadvanced],$canDroneTeleport,$canTeleport1,laserdrill",
           "[progadvanced],$canDroneTeleport,$canTeleport1,addressdisruptor",
           "[progadvanced],$canTeleport1,grapple,$canDroneTeleport",
           "[progadvanced],excavate,highjump,grapple,$canTeleport2",
@@ -683,7 +683,7 @@
           "$canTeleport2,fatbeam",
           "$canTeleport3,$canGlitchGun1",
           "excavate,$canGlitchGun1,grapple,$canTeleport2",
-          "[progadvanced],$canGlitchGun1,$canTeleport1,drone,grapple"
+          "[progadvanced],$canGlitchGun1,$canTeleport1,$canUseRemoteDrone,grapple"
         ],
         "map_locations": [
           {

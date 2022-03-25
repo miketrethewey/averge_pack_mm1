@@ -70,7 +70,7 @@
         "name": "Clay Tablet (E-Kur-Mah top right)",
         "short_name": "Clay Tablet (E-Kur-Mah ^>)",
         "access_rules": [
-          "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,",
+          "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
           "$canTeleport3,highjump,$canDroneTeleport"
         ],
         "map_locations": [

@@ -48,7 +48,7 @@
         "access_rules": [
           "$canTeleport1",
           "$canShootShort",
-          "drill",
+          "laserdrill",
           "[progmasochist],grapple"
         ],
         "map_locations": [
@@ -86,7 +86,7 @@
           "$canDroneTeleport,passcodetool",
           "excavate,grapple,fatbeam",
           "$canDroneTeleport,fatbeam",
-          "highjump,$canAirport3,,passcodetool",
+          "highjump,$canAirport3,passcodetool",
           "grapple,$canAirport3,passcodetool",
           "[progmasochist],$canUseRemoteDrone"
         ],
@@ -241,7 +241,7 @@
           "wave",
           "$canUseRemoteDrone,rangelong",
           "$canUseRemoteDrone,rangeshort",
-          "drill,$canAirport2",
+          "laserdrill,$canAirport2",
           "[progadvanced],$canAirport3",
           "[progmasochist],grapple"
         ],
@@ -337,7 +337,7 @@
           "$canTeleport3",
           "$canUseRemoteDrone,grapple,$canGlitchGun2",
           "$canDroneTeleport,$canGlitchGun2",
-          "[progadvanced],drill,$canGlitchGun2,$canAirport2"
+          "[progadvanced],laserdrill,$canGlitchGun2,$canAirport2"
         ],
         "map_locations": [
           {

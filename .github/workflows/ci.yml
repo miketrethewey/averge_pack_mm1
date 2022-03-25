@@ -4,15 +4,49 @@ name: Manage Release
 # fire on
 on: [push, pull_request]
 
+#########
+# actions
+#########
+# actions/checkout@v3.0.0
+# actions/download-artifact@v3.0.0
+# actions/create-release
+# actions/upload-release-asset
+# Artheau/SpriteSomething/get-parent-dir
+# Artheau/SpriteSomething/install
+# Artheau/SpriteSomething/test
+
 # stuff to do
 jobs:
-  # Clean EmoPack workspace & prepare release
-  install-prepare-release:
-    name: Install/Prepare Release
+  install-test:
+    name: 💿/⏱️
     runs-on: ${{ matrix.os-name }}
+    strategy:
+      matrix:
+        os-name: [ubuntu-latest]
+        python-version: [3.8]
+    steps:
+      # checkout commit
+      - name: ✔️Checkout commit
+        uses: actions/checkout@v3.0.0
+      # install
+      - name: 💿Call Install
+        uses: ./.github/actions/install
+        with:
+          os-name: ${{ matrix.os-name }}
+          python-version: ${{ matrix.python-version }}
+      # test
+      - name: ⏱️Call Test
+        uses: ./.github/actions/test
+        with:
+          os-name: ${{ matrix.os-name }}
+          python-version: ${{ matrix.python-version }}
 
-    # VM settings
-    #  os & python versions
+  # Clean EmoPack workspace & prepare release
+  install-release-prepare:
+    name: 💿/📀->📦
+    runs-on: ${{ matrix.os-name }}
+    needs: [install-test]
+
     strategy:
       matrix:
         # one OS
@@ -20,41 +54,17 @@ jobs:
         python-version: [3.8]
 
     steps:
-      # checkout commit
-      - name: Checkout commit
-        uses: actions/checkout@v2
-
-      # get parent directory
-      - name: Get Repo Name
-        uses: mad9000/actions-find-and-replace-string@2
-        id: repoName
+      # install
+      - name: 💿Call Install
+        uses: ./.github/actions/install
         with:
-          source: ${{ github.repository }}
-          find: '${{ github.repository_owner }}/'
-          replace: ''
-      - name: Get Parent Directory Path (!Windows)
-        uses: mad9000/actions-find-and-replace-string@2
-        id: parentDirNotWin
-        with:
-          source: ${{ github.workspace }}
-          find: '${{ steps.repoName.outputs.value }}/${{ steps.repoName.outputs.value }}'
-          replace: ${{ steps.repoName.outputs.value }}
-      - name: Get Parent Directory Path (Windows)
-        uses: mad9000/actions-find-and-replace-string@2
-        id: parentDir
-        with:
-          source: ${{ steps.parentDirNotWin.outputs.value }}
-          find: '${{ steps.repoName.outputs.value }}\${{ steps.repoName.outputs.value }}'
-          replace: ${{ steps.repoName.outputs.value }}
-
-      # install python
-      - name: Install python
-        uses: actions/setup-python@v2
-        with:
+          os-name: ${{ matrix.os-name }}
           python-version: ${{ matrix.python-version }}
-          architecture: x64
-      - run: |
-          python --version
+
+      # get parent dir
+      - name: 📁Get Parent Directory
+        id: parentDir
+        uses: ./.github/actions/get-parent-dir
 
       # Prepare AppVersion
       - name: Prepare AppVersion
@@ -83,25 +93,25 @@ jobs:
 
       # Upload AppVersion Artifact
       - name: Upload AppVersion Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3.0.0
         with:
           name: appversion-${{ matrix.os-name }}
-          path: ${{ steps.parentDir.outputs.value}}/build
+          path: ${{ steps.parentDir.outputs.parentDir}}/build
 
       # Upload Archive Artifact
       - name: Upload Archive Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3.0.0
         with:
           name: archive-${{ matrix.os-name }}
-          path: ${{ steps.parentDir.outputs.value}}/deploy
+          path: ${{ steps.parentDir.outputs.parentDir}}/deploy
 
   # Deploy to GitHub Releases
   #  Release Name:  SpriteSomething v${GITHUB_TAG}
   #  Release Body:  Inline content of RELEASENOTES.md
   #  Release Body:  Fallback to URL to RELEASENOTES.md
   #  Release Files: ../deploy
-  deploy-release:
-    name: Deploy GHReleases
+  release-deploy:
+    name: 📀->🚀
     runs-on: ${{ matrix.os-name }}
 
     # VM settings
@@ -112,47 +122,33 @@ jobs:
         os-name: [ubuntu-latest]
         python-version: [3.8]
 
-    needs: [install-prepare-release]
+    needs: [install-release-prepare]
     steps:
       # checkout commit
-      - name: Checkout commit
-        uses: actions/checkout@v2
-      - name: Install Dependencies via pip
+      # checkout commit
+      - name: ✔️Checkout commit
+        uses: actions/checkout@v3.0.0
+
+      # install dependencies via pip
+      - name: 💿Install Dependencies via pip
+        shell: bash
         run: |
           python -m pip install pytz requests
 
-      # get parent directory
-      - name: Get Repo Name
-        uses: mad9000/actions-find-and-replace-string@2
-        id: repoName
-        with:
-          source: ${{ github.repository }}
-          find: '${{ github.repository_owner }}/'
-          replace: ''
-      - name: Get Parent Directory Path (!Windows)
-        uses: mad9000/actions-find-and-replace-string@2
-        id: parentDirNotWin
-        with:
-          source: ${{ github.workspace }}
-          find: '${{ steps.repoName.outputs.value }}/${{ steps.repoName.outputs.value }}'
-          replace: ${{ steps.repoName.outputs.value }}
-      - name: Get Parent Directory Path (Windows)
-        uses: mad9000/actions-find-and-replace-string@2
+      # get parent dir
+      - name: 📁Get Parent Directory
         id: parentDir
-        with:
-          source: ${{ steps.parentDirNotWin.outputs.value }}
-          find: '${{ steps.repoName.outputs.value }}\${{ steps.repoName.outputs.value }}'
-          replace: ${{ steps.repoName.outputs.value }}
+        uses: ./.github/actions/get-parent-dir
 
       # download appversion artifact
-      - name: Download AppVersion Artifact
-        uses: actions/download-artifact@v2
+      - name: 🔽Download AppVersion Artifact
+        uses: actions/download-artifact@v3.0.0
         with:
           name: appversion-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.value }}/build
       # download archive artifact
-      - name: Download Archive Artifact
-        uses: actions/download-artifact@v2
+      - name: 🔽Download Archive Artifact
+        uses: actions/download-artifact@v3.0.0
         with:
           name: archive-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.value }}/deploy
@@ -209,12 +205,12 @@ jobs:
         # run only on ubuntu
         os-name: [ubuntu-latest]
 
-    needs: [deploy-release]
+    needs: [release-deploy]
     steps:
       # checkout commit
-      - name: Checkout commit
-        uses: actions/checkout@v2
-      - name: Install Dependencies via pip
+      - name: ✔️Checkout commit
+        uses: actions/checkout@v3.0.0
+      - name: 💿Install Dependencies via pip
         run: |
           python -m pip install pytz requests
 

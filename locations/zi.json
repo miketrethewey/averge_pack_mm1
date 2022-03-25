@@ -19,10 +19,10 @@
           "$canAirport3,$canDroneTeleport,grapple",
           "highjump,$canGlitchGun1,grapple",
           "$canDroneTeleport,$canGlitchGun1,grapple",
-          "highjump,$canUseRemoteDrone,extendeddronelaunch,$canAirport2",
-          "$canUseRemoteDrone,extendeddronelaunch,$canAirport3",
+          "highjump,$canEnhancedDroneLaunch,$canAirport2",
+          "$canEnhancedDroneLaunch,$canAirport3",
           "$canAirport3,grapple",
-          "[progadvanced],$canUseRemoteDrone,extendeddronelaunch,$canAirport2",
+          "[progadvanced],$canEnhancedDroneLaunch,$canAirport2",
           "[progadvanced],$canGlitchGun1,grapple,excavate",
           "[progadvanced],$canDroneTeleport",
           "[progmasochist],$canGlitchGun1,grapple"
@@ -86,7 +86,7 @@
         "access_rules": [
           "$canAirport2",
           "highjump,$canGlitchGun1",
-          "$canGlitchGun1,highjump,labcoat",
+          "$canGlitchGun1,highjump,coat",
           "[progadvanced],$canDroneTeleport",
           "[progadvanced],$canGlitchGun1,$canTeleport1",
           "[progadvanced],$canGlitchGun1,highjump,grapple",

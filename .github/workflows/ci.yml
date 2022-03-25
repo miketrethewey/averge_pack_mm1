@@ -229,6 +229,11 @@ jobs:
           PACKLISTING_BRANCH="$([[ $(head -n 1 ./resources/app/meta/manifests/repository.txt) =~ ([^\/]*)\/([^:]*)\:(.*) ]] && echo ${BASH_REMATCH[3]})"
           echo "::set-output name=packlisting_branch::$PACKLISTING_BRANCH"
 
+          echo "Pack Listing Username:    $PACKLISTING_USERNAME"
+          echo "Pack Listing Repository:  $PACKLISTING_REPOSITORY"
+          echo "Pack Listing Branch:      $PACKLISTING_BRANCH"
+          echo "Pack Listing Destination: $PACKLISTING_USERNAME/$PACKLISTING_REPOSITORY@refs/heads/$PACKLISTING_BRANCH"
+
       # Update EmoTracker Pack Repository
       - name: Update EmoTracker Pack Repository
         id: update-pack-repo

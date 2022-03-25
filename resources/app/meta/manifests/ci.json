@@ -2,18 +2,28 @@
   "common": {
     "cleanup": {
       "nuke": [
+        ".git",
         ".github",
         "resources",
         "schemas"
       ]
     },
     "common": {
+      "ubuntu": {
+        "latest": "focal",
+        "20.04": "focal",
+        "18.04": "bionic",
+        "16.04": "xenial"
+      },
       "repo": {
         "title": "Axiom Verge EmoTracker Pack",
         "username": "miketrethewey",
         "repository": "averge_pack_mm1"
       },
       "actor": "miketrethewey"
+    },
+    "get_get_pip": {
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
     },
     "git_clean": {
       "excludes": [
@@ -23,6 +33,9 @@
         "*app*version.*"
       ],
       "user_resources": "resources/user*"
+    },
+    "install": {
+      "pip_requirements": [ "resources", "app", "meta", "manifests", "pip_requirements.txt" ]
     },
     "prepare_appversion": {
       "app_version": [ "resources", "app", "meta", "manifests", "app_version.txt" ]

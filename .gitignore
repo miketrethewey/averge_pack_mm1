@@ -1,2 +1,23 @@
-.vscode
+# no pycache
+__pycache__/
+
+#do not include the upx compressor directory (you can get this utility from https://upx.github.io/)
+/upx
+
+# no IDE stuff
+/.vscode
+/.idea
+
+# But do keep tasks file
+!/.vscode/tasks.json
+
+# no get pip
+get-pip.py
+
+# no custom files
+custom/
+failures/
+resources/user/**/**
 resources/tests/output
+resources/tmp/*
+resources/**/stamped.png

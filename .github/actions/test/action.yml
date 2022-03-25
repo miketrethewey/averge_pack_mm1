@@ -30,9 +30,9 @@ runs:
       run: |
         mkdir -p ./failures
         echo "" > ./failures/errors.txt
-        python -m tests.items
-        python -m tests.functions
-        python -m tests.locations
+        python -m resources.tests.items
+        python -m resources.tests.functions
+        python -m resources.tests.locations
 
     # print failures
     - name: Print Failures

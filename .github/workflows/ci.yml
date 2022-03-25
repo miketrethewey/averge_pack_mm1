@@ -54,6 +54,9 @@ jobs:
         python-version: [3.8]
 
     steps:
+      # checkout commit
+      - name: ✔️Checkout commit
+        uses: actions/checkout@v3.0.0
       # install
       - name: 💿Call Install
         uses: ./.github/actions/install
@@ -124,7 +127,6 @@ jobs:
 
     needs: [install-release-prepare]
     steps:
-      # checkout commit
       # checkout commit
       - name: ✔️Checkout commit
         uses: actions/checkout@v3.0.0

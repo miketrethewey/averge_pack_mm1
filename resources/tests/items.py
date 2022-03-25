@@ -23,5 +23,8 @@ codes = set(codes)
 codes = list(codes)
 codes.sort()
 
-with open(os.path.join(".", "resources", "tests", "output", "items.json"), "w+") as itemsJSON:
+outputdir = os.path.join(".","resources","tests","output")
+if not os.path.exists(outputdir):
+    os.makedirs(outputdir)
+with open(os.path.join(outputdir, "items.json"), "w+") as itemsJSON:
     itemsJSON.write(commentjson.dumps(codes, indent=2))

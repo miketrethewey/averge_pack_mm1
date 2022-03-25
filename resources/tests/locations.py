@@ -35,12 +35,15 @@ for filename in os.listdir(dirname):
 
                                             if "$" in access_item:
                                                 err = access_item[1::] not in funcs
+                                                errType = "function"
                                             elif "@" in access_item:
                                                 err = access_item[1:access_item.find("/"):] not in locs
+                                                errType = "location"
                                             else:
                                                 err = access_item not in items
+                                                errType = "item"
 
                                             if err:
                                                 print(f"> {loc['name']}")
                                                 print(f">  {child['name']}")
-                                                print(f">   {access_item}")
+                                                print(f">   '{access_item}' not a valid {errType} code")

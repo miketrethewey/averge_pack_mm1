@@ -2,6 +2,10 @@
 
 This release of the Axiom Verge EmoTracker Pack includes many basic features of the main design of the interface.
 
+## Updates since last release
+
+* Making a test suite that caught some errors
+
 ## Features
 
 * Maps of each area

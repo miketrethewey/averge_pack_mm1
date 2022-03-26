@@ -206,6 +206,7 @@ jobs:
       matrix:
         # run only on ubuntu
         os-name: [ubuntu-latest]
+        python-version: [3.8]
 
     needs: [release-deploy]
     steps:

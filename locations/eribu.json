@@ -239,8 +239,8 @@
         "access_rules": [
           "nova",
           "wave",
-          "$canUseRemoteDrone,rangelong",
-          "$canUseRemoteDrone,rangeshort",
+          "$canUseRemoteDrone,$canShootLong",
+          "$canUseRemoteDrone,$canShootShort",
           "laserdrill,$canAirport2",
           "[progadvanced],$canAirport3",
           "[progmasochist],grapple"

@@ -14,9 +14,9 @@
         "short_name": "Turbine Pulse",
         "vgravmap": "TriCone",
         "access_rules": [
-          "$canAirport3",
-          "$canEnhancedDroneLaunch",
-          "$canDroneTeleport"
+          "deadvision,$canAirport3",
+          "deadvision,$canEnhancedDroneLaunch",
+          "deadvision,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -42,9 +42,9 @@
         "name": "Rusalka Tablet (Ukkin-Na top)",
         "short_name": "Rusalka Tablet (Ukkin-Na ^)",
         "access_rules": [
-          "$canTeleport3",
-          "highjump,grapple",
-          "$canDroneTeleport"
+          "deadvision,$canTeleport3",
+          "deadvision,highjump,grapple",
+          "deadvision,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -70,9 +70,9 @@
         "name": "Health Node Fragment (Ukkin-Na top)",
         "short_name": "Health Node Fragment (Ukkin-Na ^)",
         "access_rules": [
-          "$canTeleport2,highjump,$canUseRemoteDrone",
-          "$canTeleport2,$canDroneTeleport",
-          "$canTeleport3,$canUseRemoteDrone"
+          "deadvision,$canTeleport2,highjump,$canUseRemoteDrone",
+          "deadvision,$canTeleport2,$canDroneTeleport",
+          "deadvision,$canTeleport3,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -98,9 +98,9 @@
         "name": "Power Node Fragment (Ukkin-Na top)",
         "short_name": "Power Node Fragment (Ukkin-Na ^)",
         "access_rules": [
-          "$canTeleport2,$canDroneTeleport,$canGlitchGun2",
-          "$canTeleport3,$canUseRemoteDrone",
-          "highjump,$canGlitchGun2,$canUseRemoteDrone"
+          "deadvision,$canTeleport2,$canDroneTeleport,$canGlitchGun2",
+          "deadvision,$canTeleport3,$canUseRemoteDrone",
+          "deadvision,highjump,$canGlitchGun2,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -127,9 +127,9 @@
         "short_name": "Health Node (Ukkin-Na)",
         "vgravmap": "HealthNode6",
         "access_rules": [
-          "$canTeleport3",
-          "highjump",
-          "$canDroneTeleport"
+          "deadvision,$canTeleport3",
+          "deadvision,highjump",
+          "deadvision,$canDroneTeleport"
         ],
         "map_locations": [
           {
@@ -213,10 +213,10 @@
         "name": "Digital Paper (Ukkin-Na)",
         "short_name": "Digital Paper (Ukkin-Na)",
         "access_rules": [
-          "$canAirport2,highjump,$canUseRemoteDrone",
-          "$canAirport2,$canDroneTeleport",
-          "$canAirport2,grapple,$canUseRemoteDrone",
-          "$canAirport3,$canUseRemoteDrone"
+          "deadvision,$canAirport2,highjump,$canUseRemoteDrone",
+          "deadvision,$canAirport2,$canDroneTeleport",
+          "deadvision,$canAirport2,grapple,$canUseRemoteDrone",
+          "deadvision,$canAirport3,$canUseRemoteDrone"
         ],
         "map_locations": [
           {
@@ -281,8 +281,8 @@
         "name": "Power Node Fragment (Ukkin-Na bottom)",
         "short_name": "Power Node Fragment (Ukkin-Na v)",
         "access_rules": [
-          "$canTeleport2,highjump,$canGlitchGun1,rangelong",
-          "$canTeleport2,$canDroneTeleport,$canGlitchGun1,rangelong",
+          "$canTeleport2,highjump,$canGlitchGun1,$canShootLong",
+          "$canTeleport2,$canDroneTeleport,$canGlitchGun1,$canShootLong",
           "$canTeleport3"
         ],
         "map_locations": [

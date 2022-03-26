@@ -73,8 +73,8 @@
       { // Ukkin-Na -> Mar-Uru
         "name": "Ukkin-Na -> Mar-Uru",
         "access_rules": [
-          "$canAirport3,$canDroneTeleport,enhanceddronelaunch",
-          "[progmasochist],grapple,highjump,$canAirport3"
+          "deadvision,$canAirport3,$canDroneTeleport,$canEnhancedDroneLaunch",
+          "[progmasochist],deadvision,grapple,highjump,$canAirport3"
         ],
         "map_locations": [
           {

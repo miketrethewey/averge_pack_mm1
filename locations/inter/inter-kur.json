@@ -41,7 +41,7 @@
         "name": "Kur -> Edin",
         "access_rules": [
           "$canAirport2",
-          "$canTeleport1,highjump,addressdisruptor2"
+          "$canTeleport1,highjump,$canGlitchGun2"
         ],
         "map_locations": [
           {

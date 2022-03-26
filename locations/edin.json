@@ -14,9 +14,9 @@
         "short_name": "Drone Teleport",
         "vgravmap": "DroneTeleport",
         "access_rules": [
-          "$canTeleport2,highjump,rangelong,$canUseRemoteDrone",
+          "$canTeleport2,highjump,$canShootLong,$canUseRemoteDrone",
           "$canTeleport2,$canGlitchBomb,$canDroneTeleport",
-          "$canTeleport3,$canGlitchBomb,rangelong,$canUseRemoteDrone"
+          "$canTeleport3,$canGlitchBomb,$canShootLong,$canUseRemoteDrone"
         ],
         "map_locations": [
           {

@@ -1,24 +1,28 @@
 import commentjson
 import os
 
+itemToFunc = {}
 items = []
 funcs = []
 locs = []
 
-with open(os.path.join(".", "resources", "tests", "output", "items.json"), "r") as itemsFile:
+with open(os.path.join(".", "resources", "tests", "output", "itemToFunc.json"), "r") as itemToFuncFile:
+    itemToFunc = commentjson.load(itemToFuncFile)
+with open(os.path.join(".", "resources", "tests", "output", "itemCodes.json"), "r") as itemsFile:
     items = commentjson.load(itemsFile)
-with open(os.path.join(".", "resources", "tests", "output", "funcs.json"), "r") as funcsFile:
+with open(os.path.join(".", "resources", "tests", "output", "funcNames.json"), "r") as funcsFile:
     funcs = commentjson.load(funcsFile)
 
 dirname = os.path.join(".", "locations")
-for filename in os.listdir(dirname):
-    if os.path.isfile(os.path.join(dirname, filename)):
-        print(f"Reading {filename}")
-        with open(os.path.join(dirname, filename), "r") as locsFile:
-            locsManifest = commentjson.load(locsFile)
-            for loc in locsManifest:
-                if "access_rules" in loc:
-                    locs.append(loc["name"])
+for r,d,f in os.walk(dirname):
+    for filename in f:
+        if os.path.isfile(os.path.join(r, filename)):
+            print(f"Reading: {filename}")
+            with open(os.path.join(r, filename), "r") as locsFile:
+                locsManifest = commentjson.load(locsFile)
+                for loc in locsManifest:
+                    if "access_rules" in loc:
+                        locs.append(loc["name"])
                     if "children" in loc:
                         for child in loc["children"]:
                             locs.append(child["name"])
@@ -35,15 +39,18 @@ for filename in os.listdir(dirname):
 
                                             if "$" in access_item:
                                                 err = access_item[1::] not in funcs
-                                                errType = "function"
+                                                errMsg = "not a valid function"
                                             elif "@" in access_item:
                                                 err = access_item[1:access_item.find("/"):] not in locs
-                                                errType = "location"
-                                            else:
-                                                err = access_item not in items
-                                                errType = "item"
+                                                errMsg = "not a valid location"
+                                            elif access_item not in items:
+                                                err = True
+                                                errMsg = "not a valid item code"
+                                            elif access_item in itemToFunc:
+                                                err = True
+                                                errMsg = f"can be replaced with '{itemToFunc[access_item]}'"
 
                                             if err:
                                                 print(f"> {loc['name']}")
                                                 print(f">  {child['name']}")
-                                                print(f">   '{access_item}' not a valid {errType} code")
+                                                print(f">   '{access_item}' {errMsg}")

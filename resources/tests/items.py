@@ -6,7 +6,7 @@ codes = []
 dirname = os.path.join(".", "items")
 for filename in os.listdir(dirname):
     if os.path.isfile(os.path.join(dirname, filename)):
-        print(f"Reading {filename}")
+        print(f"Reading: {filename}")
         with open(os.path.join(dirname, filename), "r") as itemsFile:
             itemsManifest = commentjson.load(itemsFile)
             for item in itemsManifest:
@@ -26,5 +26,5 @@ codes.sort()
 outputdir = os.path.join(".","resources","tests","output")
 if not os.path.exists(outputdir):
     os.makedirs(outputdir)
-with open(os.path.join(outputdir, "items.json"), "w+") as itemsJSON:
+with open(os.path.join(outputdir, "itemCodes.json"), "w+") as itemsJSON:
     itemsJSON.write(commentjson.dumps(codes, indent=2))

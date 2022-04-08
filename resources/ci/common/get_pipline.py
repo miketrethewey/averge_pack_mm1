@@ -312,6 +312,22 @@ def install_modules():
     global PIPEXE
     global SUCCESS
 
+    # install wheel
+    ret = subprocess.run(
+        [
+            *args,
+            "-m",
+            PIPEXE,
+            "install",
+            "wheel"
+        ],
+        capture_output=True,
+        text=True
+    )
+    # if there's output
+    if ret.stdout.strip():
+        process_module_output(ret.stdout.strip().split("\n"))
+
     # install modules from list
     ret = subprocess.run(
         [
@@ -337,7 +353,10 @@ def install_modules():
     if ret.stdout.strip():
         process_module_output(ret.stdout.strip().split("\n"))
 
-        with open(os.path.join(".", "resources", "user", "meta", "manifests", "settings.json"), "w") as settings:
+        settingsPath = os.path.join(".", "resources", "user", "meta", "manifests")
+        if not os.path.isdir(settingsPath):
+            os.makedirs(settingsPath)
+        with open(os.path.join(settingsPath, "settings.json"), mode="w", encoding="utf-8") as settings:
             settings.write(
                 json.dumps(
                     {
@@ -349,7 +368,7 @@ def install_modules():
                     indent=2
                 )
             )
-        with open(os.path.join(".", "resources", "user", "meta", "manifests", "pipline.txt"), "w") as settings:
+        with open(os.path.join(".", "resources", "user", "meta", "manifests", "pipline.txt"), mode="w", encoding="utf-8") as settings:
             settings.write(" ".join(args) + " -m " + PIPEXE)
         SUCCESS = True
 

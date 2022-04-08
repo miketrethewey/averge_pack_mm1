@@ -12,7 +12,8 @@ def prepare_release():
   dirs = [
       os.path.join("..", "artifact"),   # temp dir for binary
       os.path.join("..", "build"),      # temp dir for other stuff
-      os.path.join("..", "deploy")      # dir for archive
+      os.path.join("..", "deploy"),     # dir for archive
+      os.path.join("..", "merge")       # dir to merge into archive
   ]
   for dirname in dirs:
       if not os.path.isdir(dirname):
@@ -90,6 +91,34 @@ def prepare_release():
                   dirname,
                   os.path.join("..", "build", dirname)
               )
+      curDir = os.getcwd()
+      mergeDirs = [os.path.join(curDir, "..", "merge")]
+      mergeList = {}
+      for idx, val in enumerate(mergeDirs):
+          p = os.path.join(curDir, val)
+          mergeList[ mergeDirs[idx] ] = os.listdir(p)
+      mergeDest = os.path.join(curDir, ".")
+      mergeDestPath = os.path.join(curDir, mergeDest)
+      for s in mergeList:
+          for c in mergeList[s]:
+              cPath = os.path.join(s, c)
+              mvPath = os.path.join(curDir, cPath)
+              mvC = os.path.join(mergeDestPath, c)
+              print(f"MVing Dir:  {mvPath} -> {mvC}")
+              if os.path.exists(mvC):
+                  print(f"Exists! {mvC}")
+                  for f in os.listdir(cPath):
+                      mvF = os.path.join(mvC, f)
+                      print(f"MVing File: {os.path.join(mvPath, f)} -> {mvF}")
+                      move(
+                          os.path.join(mvPath, f),
+                          mvF
+                      )
+              else:
+                  move(
+                      mvPath,
+                      mergeDestPath
+                  )
 
       # .zip if windows
       # .tar.gz otherwise

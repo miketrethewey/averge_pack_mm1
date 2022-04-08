@@ -11,9 +11,9 @@ on: [push, pull_request]
 # actions/download-artifact@v3.0.0
 # actions/create-release
 # actions/upload-release-asset
-# Artheau/SpriteSomething/get-parent-dir
-# Artheau/SpriteSomething/install
-# Artheau/SpriteSomething/test
+# ./.github/actions/get-parent-dir
+# ./.github/actions/install
+# ./.github/actions/test
 
 # stuff to do
 jobs:
@@ -78,11 +78,6 @@ jobs:
       - name: Prepare Manifest
         run: |
           python ./resources/ci/common/prepare_manifest.py
-
-      # Prepare Archive
-      - name: Prepare Archive
-        run: |
-          python ./resources/ci/common/prepare_archive.py
 
       # Prepare Release
       - name: Prepare Release

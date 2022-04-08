@@ -47,6 +47,13 @@ runs:
         ERR_STRING="${ERR_STRING//$'\r'/'%0D'}"
         echo "::error ::$ERR_STRING"
 
+    # upload output
+    - name: 🔼Upload Output
+      uses: actions/upload-artifact@v3.0.0
+      with:
+        name: testoutput-${{ inputs.os-name }}-${{ inputs.python-version }}
+        path: ./resources/tests/output
+
     # upload failures
     - name: 🔼Upload Failures
       if: failure()

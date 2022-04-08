@@ -39,3 +39,9 @@ runs:
         source: ${{ steps.parentDirNotWin.outputs.value }}
         find: '${{ steps.repoName.outputs.value }}\${{ steps.repoName.outputs.value }}'
         replace: ${{ steps.repoName.outputs.value }}
+    - name: Debug Info
+      shell: bash
+      run: |
+        echo "repoName: ${{ steps.repoName.outputs.value }}"
+        echo "!win: ${{ steps.parentDir.outputs.value }}"
+        echo "win: ${{ steps.parentDirNotWin.outputs.value }}"

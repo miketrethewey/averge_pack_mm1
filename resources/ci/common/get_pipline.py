@@ -13,16 +13,21 @@ WIDTH = 70  # width for labels
 
 args = []
 
-PIPEXE = ""
+PIPEXE = "" # executable for pip
 
-PYTHON_EXECUTABLE = os.path.splitext(sys.executable.split(os.path.sep).pop())[0]  # get command to run python
+# get command to run python
+PYTHON_EXECUTABLE = os.path.splitext(
+    sys.executable.split(os.path.sep).pop()
+)[0]
+
 # get python version
 PYTHON_VERSION = sys.version.split(" ")[0]
+
 # get python major.minor version
 PYTHON_MINOR_VERSION = '.'.join(PYTHON_VERSION.split(".")[:2])
 
-PIP_VERSION = ""
-PIP_FLOAT_VERSION = 0
+PIP_VERSION = ""  # pip version string
+PIP_FLOAT_VERSION = 0 # pip version for math
 
 SUCCESS = False
 VERSIONS = {}
@@ -208,6 +213,7 @@ def get_module_version(module):
 
 
 def python_info():
+    # print python info
     global args
     global PYTHON_VERSION
 
@@ -229,9 +235,18 @@ def python_info():
         print('.' * WIDTH)
 
 
-def pip_info():
+def save_pipline():
+    # save pipline document
     global args
     global PIPEXE
+
+    with open(os.path.join(".", "resources", "user", "meta", "manifests", "pipline.txt"), mode="w", encoding="utf-8") as settings:
+        settings.write(" ".join(args) + " -m " + PIPEXE)
+
+
+def pip_info():
+    # print pip info
+    global args
     global PIPEXE
     global VERSIONS
 
@@ -271,7 +286,12 @@ def pip_info():
                     "%s\t%s\t%s\t%s\t%s\t%s"
                     %
                     (
-                        ((isinstance(args[0], list) and " ".join(args[0])) or args[0]).strip(),
+                        (
+                            (
+                                isinstance(args[0], list) and " ".join(args[0])
+                            ) or
+                            args[0]
+                        ).strip(),
                         PYTHON_VERSION,
                         sys.platform,
                         PIPEXE,
@@ -281,11 +301,14 @@ def pip_info():
                 )
                 print(PIP_STRING)
                 print('.' * WIDTH)
+    save_pipline()
 
 
 def pip_upgrade():
+    # upgrade pip
     global args
     global PIPEXE
+    global SUCCESS
 
     # upgrade pip
     ret = subprocess.run(
@@ -303,11 +326,12 @@ def pip_upgrade():
     if ret.stdout.strip():
         # if it's not already satisfied, update it
         if "already satisfied" not in ret.stdout.strip():
-            print(ret.stdout.strip())
             pip_info()
+        SUCCESS = True
 
 
 def install_modules():
+    # install pip modules
     global args
     global PIPEXE
     global SUCCESS
@@ -353,7 +377,13 @@ def install_modules():
     if ret.stdout.strip():
         process_module_output(ret.stdout.strip().split("\n"))
 
-        settingsPath = os.path.join(".", "resources", "user", "meta", "manifests")
+        settingsPath = os.path.join(
+            ".",
+            "resources",
+            "user",
+            "meta",
+            "manifests"
+        )
         if not os.path.isdir(settingsPath):
             os.makedirs(settingsPath)
         with open(os.path.join(settingsPath, "settings.json"), mode="w", encoding="utf-8") as settings:
@@ -368,12 +398,10 @@ def install_modules():
                     indent=2
                 )
             )
-        with open(os.path.join(".", "resources", "user", "meta", "manifests", "pipline.txt"), mode="w", encoding="utf-8") as settings:
-            settings.write(" ".join(args) + " -m " + PIPEXE)
         SUCCESS = True
 
 
-def main():
+def build_pipline():
     global args
     global PIPEXE
     global SUCCESS
@@ -423,11 +451,28 @@ def main():
             for PIPEXE in ["pip3", "pip"]:
                 pip_info()
                 pip_upgrade()
-                install_modules()
-
         # if something else went fucky, print it
         except Exception as e:
             traceback.print_exc()
+
+
+def return_pipline():
+    # read and return pipline
+    with open(os.path.join(
+      ".",
+      "resources",
+      "user",
+      "meta",
+      "manifests",
+      "pipline.txt"
+    ), "r") as pipline:
+        return pipline.read().strip()
+
+def main():
+    build_pipline()
+    print(return_pipline())
+    print('.' * WIDTH)
+    install_modules()
 
 
 if __name__ == "__main__":

@@ -38,6 +38,11 @@
       "description": "Internal platform ID of package. Usually useful for identifying auto-tracking type.",
       "default": "",
       "enum": [
+        "gameboy",
+        "gba",
+        "nes",
+        "n64",
+        "pc",
         "snes"
       ],
       "examples": [

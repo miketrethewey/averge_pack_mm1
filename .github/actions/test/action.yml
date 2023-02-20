@@ -11,16 +11,16 @@ inputs:
 #########
 # actions
 #########
-# actions/checkout@v3.0.0
-# actions/download-artifact@v3.0.0
-# actions/upload-artifact@v3.0.0
+# actions/checkout@v3.3.0
+# actions/download-artifact@v3.0.2
+# actions/upload-artifact@v3.1.2
 
 runs:
   using: "composite"
   steps:
     # download pipline
     - name: 🔽Download PipLine
-      uses: actions/download-artifact@v3.0.0
+      uses: actions/download-artifact@v3.0.2
       with:
         name: pipline-${{ inputs.os-name }}-${{ inputs.python-version }}
         path: ./resources/user/meta/manifests
@@ -45,11 +45,11 @@ runs:
         ERR_STRING="${ERR_STRING//$'\r'/' | '}"
         ERR_STRING="${ERR_STRING//$'\n'/'%0A'}"
         ERR_STRING="${ERR_STRING//$'\r'/'%0D'}"
-        echo "::error ::$ERR_STRING"
+        echo "error=$ERR_STRING" >> $GITHUB_OUTPUT
 
     # upload output
     - name: 🔼Upload Output
-      uses: actions/upload-artifact@v3.0.0
+      uses: actions/upload-artifact@v3.1.2
       with:
         name: testoutput-${{ inputs.os-name }}-${{ inputs.python-version }}
         path: ./resources/tests/output
@@ -57,7 +57,7 @@ runs:
     # upload failures
     - name: 🔼Upload Failures
       if: failure()
-      uses: actions/upload-artifact@v3.0.0
+      uses: actions/upload-artifact@v3.1.2
       with:
         name: failures-${{ inputs.os-name }}-${{ inputs.python-version }}
         path: ./failures

@@ -29,4 +29,4 @@ This release of the Axiom Verge EmoTracker Pack includes many basic features of 
 ## Thanks!
 
 Thank you for your interest
-~[Seraphin Eveles](http://github.com/SeraphinEveles) & [Mike Trethewey](http://github.com/miketrethewey)
+~[Seraphin Eveles](http://github.com/SeraphinEveles) & [Minnie A. Trethewey](http://github.com/miketrethewey)

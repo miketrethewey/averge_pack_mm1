@@ -4,7 +4,7 @@
       "nuke": [
         ".git",
         "resources",
-        "schemas"
+        "schema"
       ]
     },
     "common": {

@@ -1,6 +1,6 @@
 # Axiom Verge EmoTracker Pack
 
-## *Designed & written by Seraphin Eveles & Mike Trethewey*
+## *Designed & written by Seraphin Eveles & Minnie A. Trethewey*
 
 ## Usage
 

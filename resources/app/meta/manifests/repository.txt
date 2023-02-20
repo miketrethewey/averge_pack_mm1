@@ -1,1 +1,1 @@
-miketrethewey/mm1s-packs:testing
+miketrethewey/mm1s-packs:publish

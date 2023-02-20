@@ -5,6 +5,7 @@ This release of the Axiom Verge EmoTracker Pack includes many basic features of 
 ## Updates since last release
 
 * Making a test suite that caught some errors
+* Updated developer name
 
 ## Features
 

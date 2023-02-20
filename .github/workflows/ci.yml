@@ -236,7 +236,7 @@ jobs:
         id: update-pack-repo
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
-          workflow: Deploy Pages
+          workflow: 🌎->🚀Deploy Pages
           repo: ${{ steps.packlisting.outputs.packlisting_username }}/${{ steps.packlisting.outputs.packlisting_repository }}
           ref: ${{ steps.packlisting.outputs.packlisting_branch }}
           token: ${{ secrets.MY_PAT }}

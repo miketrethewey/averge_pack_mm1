@@ -38,7 +38,7 @@ runs:
         echo "PipLine"
         cat ./resources/user/meta/manifests/pipline.txt
     # upload pipline
-    - name: Upload PipLine
+    - name: 🔼Upload PipLine
       uses: actions/upload-artifact@v3.1.2
       with:
         name: pipline-${{ inputs.os-name }}-${{ inputs.python-version }}

@@ -33,6 +33,7 @@ runs:
         python -m resources.tests.items
         python -m resources.tests.functions
         python -m resources.tests.locations
+        python -m resources.tests.asserts.validate
 
     # print failures
     - name: Print Failures

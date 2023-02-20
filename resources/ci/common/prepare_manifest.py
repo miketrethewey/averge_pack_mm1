@@ -3,7 +3,6 @@
 Prepare pack manifest
 '''
 import os                 # for env vars
-import common
 import commentjson
 
 
@@ -35,8 +34,8 @@ def prepare_manifest():
             manifestJSON["package_version"] = APPVERSION
 
         manifestFile.seek(0)
-        # manifestFile.truncate()
-        # manifestFile.write(commentjson.dumps(manifestJSON, indent=2))
+        manifestFile.truncate()
+        manifestFile.write(commentjson.dumps(manifestJSON, indent=2))
         print(commentjson.dumps(manifestJSON, indent=2))
 
 

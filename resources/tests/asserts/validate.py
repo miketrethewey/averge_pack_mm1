@@ -138,6 +138,8 @@ for [gameID, packData] in srcs.items():
             if os.path.isdir(varRoot):
                 layoutKeyMap = {}
                 resrcDirs = {
+                    os.path.join(varRoot, "manifest.json"),
+                    os.path.join(varRoot, "repository.json"),
                     os.path.join(varRoot, "items"),
                     os.path.join(varRoot, "layouts"),
                     os.path.join(varRoot, "locations"),

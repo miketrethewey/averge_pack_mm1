@@ -105,7 +105,7 @@ srcs = {
 for [gameID, packData] in srcs.items():
     if os.path.isdir(os.path.join(".", "variants")):
         srcs[gameID]["variants"] = os.listdir(os.path.join(".", "variants"))
-    else:
+    elif os.path.isdir(os.path.join(".", packUID)):
         for folder in os.listdir(os.path.join(".")):
             if "var_" in folder:
                 thisDir = folder

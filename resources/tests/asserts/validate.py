@@ -98,12 +98,18 @@ print("VALIDATE")
 srcs = {
     "averge": {
         "packUID": "averge_pack_mm1",
-        "variants": [
-            "items_only",
-            "standard_map"
-        ]
+        "variants": []
     }
 }
+
+for [gameID, packData] in srcs.items():
+    if os.path.isdir(os.path.join(".", "variants")):
+        srcs[gameID]["variants"] = os.listdir(os.path.join(".", "variants"))
+    else:
+        for folder in os.listdir(os.path.join(".")):
+            if "var_" in folder:
+                thisDir = folder
+                srcs[gameID]["variants"].append(thisDir)
 
 for [gameID, packData] in srcs.items():
     packUID = packData["packUID"]
@@ -124,12 +130,18 @@ for [gameID, packData] in srcs.items():
         check_files(resrcDirs)
 
         for variant in variants:
-            layoutKeyMap = {}
-            resrcDirs = {
-                os.path.join(packRoot, "variants", variant, "items"),
-                os.path.join(packRoot, "variants", variant, "layouts"),
-                os.path.join(packRoot, "variants", variant, "locations"),
-                os.path.join(packRoot, "variants", variant, "maps")
-            }
+            varRoot = packRoot
+            if "var_" in variant:
+                varRoot = os.path.join(varRoot, variant)
+            else:
+                varRoot = os.path.join(varRoot, "variants", variant)
+            if os.path.isdir(varRoot):
+                layoutKeyMap = {}
+                resrcDirs = {
+                    os.path.join(varRoot, "items"),
+                    os.path.join(varRoot, "layouts"),
+                    os.path.join(varRoot, "locations"),
+                    os.path.join(varRoot, "maps")
+                }
             # print(resrcDirs)
             check_files(resrcDirs)

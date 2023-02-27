@@ -6,6 +6,13 @@ if variant == "" then
   variant = "items_only"
 end
 
+function inTable(tbl, item)
+  for k,v in pairs(tbl) do
+    if v == item then return k end
+  end
+  return false
+end
+
 -- Items
 print("Loading Items")
 Tracker:AddItems("items/inventory.json")        -- All Inventory items
@@ -29,6 +36,7 @@ print("")
 print("Loading Grids")
 Tracker:AddLayouts("layouts/grids/upgrades.json")     -- Upgrades grid
 Tracker:AddLayouts("layouts/grids/weapons.json")      -- Weapons grid
+Tracker:AddLayouts("layouts/grids/secretworlds.json")
 
 Tracker:AddLayouts("layouts/grids/grids.json") -- Combined grid
 print("")
@@ -37,33 +45,52 @@ if string.find(variant, "map") then
   print("Map Variant; load map stuff")
 
   -- Grids
+  print("Loading Grids")
   Tracker:AddLayouts("layouts/grids/notes.json")        -- Notes grid
   Tracker:AddLayouts("layouts/grids/powerups.json")     -- Powerups grid
   Tracker:AddLayouts("layouts/grids/secretworlds.json") -- Secret Worlds grid
 
   -- Maps
+  print("Loading Maps")
   Tracker:AddMaps("maps/maps.json")
 
   -- Locations
   --- Item Locations
-  Tracker:AddLocations("locations/sudra.json")                  -- Sudra
-  Tracker:AddLocations("locations/inter/inter-sudra.json")      -- Inter-Sudra
-  Tracker:AddLocations("locations/eribu.json")                  -- Eribu
-  Tracker:AddLocations("locations/inter/inter-eribu.json")      -- Inter-Eribu
-  Tracker:AddLocations("locations/absu.json")                   -- Absu
-  Tracker:AddLocations("locations/inter/inter-absu.json")       -- Inter-Absu
-  Tracker:AddLocations("locations/zi.json")                     -- Zi
-  Tracker:AddLocations("locations/inter/inter-zi.json")         -- Inter-Zi
-  Tracker:AddLocations("locations/kur.json")                    -- Kur
-  Tracker:AddLocations("locations/inter/inter-kur.json")        -- Inter-Kur
-  Tracker:AddLocations("locations/indi.json")                   -- Indi
-  Tracker:AddLocations("locations/inter/inter-ukkinna.json")    -- Inter-Ukkin-Na
-  Tracker:AddLocations("locations/ukkinna.json")                -- Ukkin-Na
-  Tracker:AddLocations("locations/edin.json")                   -- Edin
-  Tracker:AddLocations("locations/ekurmah.json")                -- E-Kur-Mah
-  Tracker:AddLocations("locations/maruru.json")                 -- Mar-Uru
+  print("Loading Locations")
+  dir = ""
+  regions = {
+    "sudra",
+    "eribu",
+    "absu",
+    "zi",
+    "kur",
+    "indi",
+    "ukkinna",
+    "edin",
+    "ekurmah",
+    "maruru"
+  }
+  for _, region in ipairs(regions) do
+    Tracker:AddLocations("locations/" .. region .. ".json")
+    if not inTable({
+      "edin",
+      "ekurmah",
+      "indi",
+      "maruru"
+    }, region) then
+      Tracker:AddLocations("locations/inter/inter-" .. region .. ".json")
+    end
+  end
+
   --- Secret World Locations
-  Tracker:AddLocations("locations/secretworld/secret-maruru.json") -- Mar-Uru
+  print("Loading Secret World Locations")
+  for _, region in ipairs(regions) do
+    if not inTable({
+      "sudra"
+    }, region) then
+      Tracker:AddLocations("locations/secretworld/secret-" .. region .. ".json")
+    end
+  end
   print("")
 else
   -- Legacy
@@ -88,12 +115,16 @@ end
 if variant ~= "items_only" then
   print("Loading Variant")
   -- Layout Overrides
-  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")   -- Main Tracker
-  Tracker:AddLayouts("variants/" .. variant .. "/layouts/broadcast.json") -- Broadcast View
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker-horizontal.json")  -- Horizontal Tracker
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker-vertical.json")    -- Vertical Tracker
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/tracker.json")             -- Main Tracker
+  Tracker:AddLayouts("variants/" .. variant .. "/layouts/broadcast.json")           -- Broadcast View
   print("")
 else
   print("Not a Variant; load default stuff")
   -- Layout Defaults
-  Tracker:AddLayouts("layouts/tracker.json")
-  Tracker:AddLayouts("layouts/broadcast.json")
+  Tracker:AddLayouts("layouts/tracker-horizontal.json") -- Horizontal Tracker
+  Tracker:AddLayouts("layouts/tracker-vertical.json")   -- Vertical Tracker
+  Tracker:AddLayouts("layouts/tracker.json")            -- Main Tracker
+  Tracker:AddLayouts("layouts/broadcast.json")          -- Broadcast View
 end

@@ -1,4 +1,5 @@
 {
+  // Broadcast View: Press F2
   "tracker_broadcast": {
     "type": "container",
     "content": {

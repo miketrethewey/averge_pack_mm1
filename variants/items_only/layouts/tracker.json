@@ -1,6 +1,7 @@
 {
+  // Default tracker view
   "tracker_default": {
     "type": "layout",
-    "key": "shared_item_grid"
+    "key": "tracker_horizontal"
   }
 }

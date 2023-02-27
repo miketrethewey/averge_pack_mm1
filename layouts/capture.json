@@ -1,20 +1,25 @@
 {
+  // Capture View: Blue squares
   "tracker_capture_item": {
     "type": "layout",
     "key": "shared_item_grid"
   },
+  // Capture View: Secret Worlds
   "tracker_capture_secretworld": {
     "type": "layout",
     "key": "secretworlds_grid"
   },
+  // Capture View: Secret Worlds: Easy
   "tracker_capture_secretworld_easy": {
     "type": "layout",
     "key": "secretworlds_easy_grid"
   },
+  // Capture View: Secret Worlds: Medium
   "tracker_capture_secretworld_medium": {
     "type": "layout",
     "key": "secretworlds_medium_grid"
   },
+  // Capture View: Secret Worlds: Hard
   "tracker_capture_secretworld_hard": {
     "type": "layout",
     "key": "secretworlds_hard_grid"

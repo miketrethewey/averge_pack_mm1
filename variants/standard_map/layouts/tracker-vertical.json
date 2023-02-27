@@ -1,0 +1,7 @@
+{
+  // Vertical: When width of window is less than height
+  "tracker_vertical": {
+    "type": "layout",
+    "key": "tracker_horizontal"
+  }
+}

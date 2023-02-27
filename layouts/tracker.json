@@ -1,11 +1,7 @@
 {
+  // Default tracker view
   "tracker_default": {
-    "type": "container",
-    "width": 300,
-    "height": 450,
-    "content": {
-      "type": "layout",
-      "key": "shared_item_grid"
-    }
+    "type": "layout",
+    "key": "tracker_horizontal"
   }
 }

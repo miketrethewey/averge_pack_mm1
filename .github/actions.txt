@@ -1,7 +1,7 @@
 ci.yml
 ======
-actions/checkout@v3.3.0
-mad9000/actions-find-and-replace-string@3
+actions/checkout@v3.5.0
+mad9000/actions-find-and-replace-string@4
 actions/setup-python@v4.5.0
 actions/upload-artifact@v3.1.2
 actions/download-artifact@v3.0.2

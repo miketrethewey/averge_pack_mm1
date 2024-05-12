@@ -253,14 +253,8 @@ jobs:
         id: update-pack-repo-benc
         uses: benc-uk/workflow-dispatch@v1.2.3
         with:
-          workflow: 🌎->🚀Deploy Pages
+          workflow: ci.yml
           repo: ${{ steps.packlisting.outputs.packlisting_username }}/${{ steps.packlisting.outputs.packlisting_repository }}
           ref: ${{ steps.packlisting.outputs.packlisting_branch }}
           token: ${{ secrets.MY_PAT }}
-        if: contains(github.ref, 'master')
-
-  update-pack-repo:
-    name: 🖴Update EmoTracker Pack Repository
-    needs: [update-packlisting]
-    uses: miketrethewey/mm1s-packs/.github/workflows/ci.yml@testing
-    if: contains(github.ref, 'master') || contains(github.ref, 'unstable')
+        if: contains(github.ref, 'master') || contains(github.ref, 'unstable')

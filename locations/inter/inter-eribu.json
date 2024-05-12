@@ -1,46 +1,33 @@
 [
-  // Inter - Eribu
   {
     "name": "Inter - Eribu",
     "parent": "Eribu",
     "children": [
-      { // Eribu -> Ukkin-Na
+      {
         "name": "Eribu -> Ukkin-Na",
-        "access_rules": [ // FIXED
+        "access_rules": [
           "$canTeleport1,laserdrill,$canGlitchGun2,highjump",
           "$canTeleport2,laserdrill,grapple",
           "$canTeleport3"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 279,
-            "y": 801,
-            "size": 8
-          },
-          {
-            "map": "eribu",
-            "x": 458,
-            "y": 303,
-            "size": 8
-          }
+          {"map": "sudra", "x": 279, "y": 801, "size": 8},
+          {"map": "eribu", "x": 458, "y": 303, "size": 8}
         ],
         "sections": [
           {
             "name": "Connection",
             "item_count": 1,
-            "visibility_rules": [
-              "connections"
-            ],
+            "visibility_rules": ["connections"],
             "chest_unavailable_img": "images/connections/right.png",
             "chest_unopened_img": "images/connections/right.png",
             "chest_opened_img": "images/connections/right.png"
           }
         ]
       },
-      { // Eribu -> Indi
+      {
         "name": "Eribu -> Indi",
-        "access_rules": [ // FIXED
+        "access_rules": [
           "laserdrill,grapple",
           "$canAirport2,laserdrill,highjump",
           "[progadvanced],excavate,grapple",
@@ -49,59 +36,32 @@
           "[progmasochist],grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 279,
-            "y": 855,
-            "size": 8
-          },
-          {
-            "map": "eribu",
-            "x": 458,
-            "y": 357,
-            "size": 8
-          }
+          {"map": "sudra", "x": 279, "y": 855, "size": 8},
+          {"map": "eribu", "x": 458, "y": 357, "size": 8}
         ],
         "sections": [
           {
             "name": "Connection",
             "item_count": 1,
-            "visibility_rules": [
-              "connections"
-            ],
+            "visibility_rules": ["connections"],
             "chest_unavailable_img": "images/connections/right.png",
             "chest_unopened_img": "images/connections/right.png",
             "chest_opened_img": "images/connections/right.png"
           }
         ]
       },
-      { // Eribu -> Absu
+      {
         "name": "Eribu -> Absu",
-        "access_rules": [
-          "excavate",
-          "[progmasochist],grapple"
-        ],
+        "access_rules": ["excavate", "[progmasochist],grapple"],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 279,
-            "y": 891,
-            "size": 8
-          },
-          {
-            "map": "eribu",
-            "x": 458,
-            "y": 393,
-            "size": 8
-          }
+          {"map": "sudra", "x": 279, "y": 891, "size": 8},
+          {"map": "eribu", "x": 458, "y": 393, "size": 8}
         ],
         "sections": [
           {
             "name": "Connection",
             "item_count": 1,
-            "visibility_rules": [
-              "connections"
-            ],
+            "visibility_rules": ["connections"],
             "chest_unavailable_img": "images/connections/down.png",
             "chest_unopened_img": "images/connections/down.png",
             "chest_opened_img": "images/connections/down.png"

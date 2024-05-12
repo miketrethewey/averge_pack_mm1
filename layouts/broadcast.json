@@ -1,7 +1,5 @@
-{
-  // Broadcast View: Press F2
-  "tracker_broadcast": {
-    "type": "layout",
-    "key": "tracker_horizontal"
-  }
-}
+{"tracker_broadcast": {
+  "note": "Broadcast View: Press F2",
+  "type": "layout",
+  "key": "tracker_horizontal"
+}}

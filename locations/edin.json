@@ -1,14 +1,13 @@
 [
-  // Edin
   {
     "name": "Edin",
     "color": "#3A16A0",
     "parent": "Sudra",
-    "access_rules": [ // Eribu -> Ukkin-Na -> Edin
+    "access_rules": [
+      "@Eribu -> Ukkin-Na/Connection,@Ukkin-Na -> Edin/Connection",
       "$canTeleport2"
     ],
     "children": [
-      // Drone Teleport
       {
         "name": "Drone Teleport",
         "short_name": "Drone Teleport",
@@ -19,25 +18,11 @@
           "$canTeleport3,$canGlitchBomb,$canShootLong,$canUseRemoteDrone"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 585,
-            "y": 639
-          },
-          {
-            "map": "edin",
-            "x": 208,
-            "y": 186
-          }
+          {"map": "sudra", "x": 585, "y": 639},
+          {"map": "edin", "x": 208, "y": 186}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Clay Tablet (Edin)
       {
         "name": "Clay Tablet (Edin)",
         "short_name": "Clay Tablet (Edin)",
@@ -47,25 +32,11 @@
           "$canTeleport3"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 639,
-            "y": 675
-          },
-          {
-            "map": "edin",
-            "x": 262,
-            "y": 222
-          }
+          {"map": "sudra", "x": 639, "y": 675},
+          {"map": "edin", "x": 262, "y": 222}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Distortion Field
       {
         "name": "Distortion Field",
         "short_name": "Distortion Field",
@@ -75,25 +46,11 @@
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 729,
-            "y": 675
-          },
-          {
-            "map": "edin",
-            "x": 352,
-            "y": 222
-          }
+          {"map": "sudra", "x": 729, "y": 675},
+          {"map": "edin", "x": 352, "y": 222}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Power Node Fragment (Edin top)
       {
         "name": "Power Node Fragment (Edin top)",
         "short_name": "Power Node Fragment (Edin ^)",
@@ -103,25 +60,11 @@
           "$canGlitchBomb,$canEnhancedDroneLaunch,$canDroneTeleport"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 639,
-            "y": 693
-          },
-          {
-            "map": "edin",
-            "x": 262,
-            "y": 240
-          }
+          {"map": "sudra", "x": 639, "y": 693},
+          {"map": "edin", "x": 262, "y": 240}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Health Node Fragment (Edin top)
       {
         "name": "Health Node Fragment (Edin top)",
         "short_name": "Health Node Fragment (Edin ^)",
@@ -131,25 +74,11 @@
           "$canTeleport3,grapple,$canUseRemoteDrone"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 711,
-            "y": 693
-          },
-          {
-            "map": "edin",
-            "x": 334,
-            "y": 240
-          }
+          {"map": "sudra", "x": 711, "y": 693},
+          {"map": "edin", "x": 334, "y": 240}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Health Node (Edin)
       {
         "name": "Health Node (Edin)",
         "short_name": "Health Node (Edin)",
@@ -160,25 +89,11 @@
           "$canGlitchBomb,$canDroneTeleport"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 603,
-            "y": 711
-          },
-          {
-            "map": "edin",
-            "x": 226,
-            "y": 258
-          }
+          {"map": "sudra", "x": 603, "y": 711},
+          {"map": "edin", "x": 226, "y": 258}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Rusalka Tablet (Edin)
       {
         "name": "Rusalka Tablet (Edin)",
         "short_name": "Rusalka Tablet (Edin)",
@@ -188,25 +103,11 @@
           "$canGlitchBomb,$canDroneTeleport"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 657,
-            "y": 747
-          },
-          {
-            "map": "edin",
-            "x": 280,
-            "y": 294
-          }
+          {"map": "sudra", "x": 657, "y": 747},
+          {"map": "edin", "x": 280, "y": 294}
         ],
-        "sections": [
-          {
-            "name": "Hidden Wall",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Hidden Wall", "item_count": 1}]
       },
-      // Digital Paper (Edin top)
       {
         "name": "Digital Paper (Edin top)",
         "short_name": "Digital Paper (Edin ^)",
@@ -216,25 +117,11 @@
           "$canTeleport3"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 711,
-            "y": 747
-          },
-          {
-            "map": "edin",
-            "x": 334,
-            "y": 294
-          }
+          {"map": "sudra", "x": 711, "y": 747},
+          {"map": "edin", "x": 334, "y": 294}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Health Node Fragment (Edin left)
       {
         "name": "Health Node Fragment (Edin left)",
         "short_name": "Health Node Fragment (Edin <)",
@@ -242,25 +129,11 @@
           "$canEnhancedDroneLaunch,$canDroneTeleport,grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 531,
-            "y": 765
-          },
-          {
-            "map": "edin",
-            "x": 154,
-            "y": 312
-          }
+          {"map": "sudra", "x": 531, "y": 765},
+          {"map": "edin", "x": 154, "y": 312}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Bioflux Accelerator 2
       {
         "name": "Bioflux Accelerator 2",
         "short_name": "Bioflux Accelerator 2",
@@ -269,25 +142,11 @@
           "$canAirport2,$canEnhancedDroneLaunch,$canDroneTeleport"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 585,
-            "y": 765
-          },
-          {
-            "map": "edin",
-            "x": 208,
-            "y": 312
-          }
+          {"map": "sudra", "x": 585, "y": 765},
+          {"map": "edin", "x": 208, "y": 312}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Digital Paper (Edin bottom)
       {
         "name": "Digital Paper (Edin bottom)",
         "short_name": "Digital Paper (Edin v)",
@@ -297,25 +156,11 @@
           "$canTeleport3,$canGlitchGun1"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 729,
-            "y": 765
-          },
-          {
-            "map": "edin",
-            "x": 352,
-            "y": 312
-          }
+          {"map": "sudra", "x": 729, "y": 765},
+          {"map": "edin", "x": 352, "y": 312}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Health & Power Nodes (Edin right) (2 items)
       {
         "name": "Health & Power Nodes (Edin right) (2 items)",
         "short_name": "Health & Power Nodes (Edin >) (2 items)",
@@ -324,29 +169,14 @@
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 765,
-            "y": 765
-          },
-          {
-            "map": "edin",
-            "x": 388,
-            "y": 312
-          }
+          {"map": "sudra", "x": 765, "y": 765},
+          {"map": "edin", "x": 388, "y": 312}
         ],
         "sections": [
-          {
-            "name": "Power Node",
-            "item_count": 1
-          },
-          {
-            "name": "Health Node",
-            "item_count": 1
-          }
+          {"name": "Power Node", "item_count": 1},
+          {"name": "Health Node", "item_count": 1}
         ]
       },
-      // Shards
       {
         "name": "Shards",
         "short_name": "Shards",
@@ -356,52 +186,22 @@
           "$canEnhancedDroneLaunch,$canDroneTeleport,$canGlitchBomb"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 639,
-            "y": 801
-          },
-          {
-            "map": "edin",
-            "x": 262,
-            "y": 348
-          }
+          {"map": "sudra", "x": 639, "y": 801},
+          {"map": "edin", "x": 262, "y": 348}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Range Node (Edin)
       {
         "name": "Range Node (Edin)",
         "short_name": "Range Node (Edin)",
         "vgravmap": "RangeNode3",
-        "access_rules": [
-          "$canAirport2,highjump,$canUseRemoteDrone"
-        ],
+        "access_rules": ["$canAirport2,highjump,$canUseRemoteDrone"],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 675,
-            "y": 801
-          },
-          {
-            "map": "edin",
-            "x": 298,
-            "y": 348
-          }
+          {"map": "sudra", "x": 675, "y": 801},
+          {"map": "edin", "x": 298, "y": 348}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Address Bomb
       {
         "name": "Address Bomb",
         "short_name": "Address Bomb",
@@ -412,23 +212,10 @@
           "$canTeleport3"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 785,
-            "y": 801
-          },
-          {
-            "map": "edin",
-            "x": 406,
-            "y": 348
-          }
+          {"map": "sudra", "x": 785, "y": 801},
+          {"map": "edin", "x": 406, "y": 348}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       }
     ]
   }

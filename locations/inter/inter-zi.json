@@ -1,69 +1,43 @@
 [
-  // Inter - Zi
   {
     "name": "Inter - Zi",
     "parent": "Zi",
     "children": [
-      { // Zi -> Kur
+      {
         "name": "Zi -> Kur",
-        "access_rules": [
-        ],
+        "access_rules": [],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 891,
-            "y": 963,
-            "size": 8
-          },
-          {
-            "map": "zi",
-            "x": 442,
-            "y": 188,
-            "size": 8
-          }
+          {"map": "sudra", "x": 891, "y": 963, "size": 8},
+          {"map": "zi", "x": 442, "y": 188, "size": 8}
         ],
         "sections": [
           {
             "name": "Connection",
             "item_count": 1,
-            "visibility_rules": [
-              "connections"
-            ],
+            "visibility_rules": ["connections"],
             "chest_unavailable_img": "images/connections/right.png",
             "chest_unopened_img": "images/connections/right.png",
             "chest_opened_img": "images/connections/right.png"
           }
         ]
       },
-      { // Zi -> Indi
+      {
         "name": "Zi -> Indi",
-        "access_rules": [ // FIXED
+        "access_rules": [
           "$canTeleport2,highjump",
           "$canTeleport3",
           "highjump,grapple",
           "$canDroneTeleport"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 711,
-            "y": 909,
-            "size": 8
-          },
-          {
-            "map": "zi",
-            "x": 262,
-            "y": 134,
-            "size": 8
-          }
+          {"map": "sudra", "x": 711, "y": 909, "size": 8},
+          {"map": "zi", "x": 262, "y": 134, "size": 8}
         ],
         "sections": [
           {
             "name": "Connection",
             "item_count": 1,
-            "visibility_rules": [
-              "connections"
-            ],
+            "visibility_rules": ["connections"],
             "chest_unavailable_img": "images/connections/up.png",
             "chest_unopened_img": "images/connections/up.png",
             "chest_opened_img": "images/connections/up.png"

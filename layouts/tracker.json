@@ -1,7 +1,5 @@
-{
-  // Default tracker view
-  "tracker_default": {
-    "type": "layout",
-    "key": "tracker_horizontal"
-  }
-}
+{"tracker_default": {
+  "note": "Default Tracker View",
+  "type": "layout",
+  "key": "tracker_horizontal"
+}}

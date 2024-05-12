@@ -1,43 +1,25 @@
 [
-  //E-Kur-Mah
   {
     "name": "E-Kur-Mah",
     "color": "#2C6D59",
     "parent": "Sudra",
-    "access_rules": [ // Eribu -> Absu, Absu -> Zi -> North Kur -> E-Kur-Mah
+    "access_rules": [
+      "@Eribu -> Absu/Connection,@Absu -> Zi/Connection,@Zi -> North Kur/Connection,@North Kur -> E-Kur-Mah/Connection",
       "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
       "$canTeleport3"
     ],
     "children": [
-      // Power Node (E-Kur-Mah)
       {
         "name": "Power Node (E-Kur-Mah)",
         "short_name": "Power Node (E-Kur-Mah)",
         "vgravmap": "PowerNode6",
-        "access_rules": [
-          "$canAirport3,highjump,grapple",
-          "sudrankey"
-        ],
+        "access_rules": ["$canAirport3,highjump,grapple", "sudrankey"],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 1143,
-            "y": 459
-          },
-          {
-            "map": "ekurmah",
-            "x": 290,
-            "y": 79
-          }
+          {"map": "sudra", "x": 1143, "y": 459},
+          {"map": "ekurmah", "x": 290, "y": 79}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Sudran Key
       {
         "name": "Sudran Key",
         "short_name": "Sudran Key",
@@ -47,25 +29,11 @@
           "$canTeleport3,highjump,$canDroneTeleport"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 1215,
-            "y": 477
-          },
-          {
-            "map": "ekurmah",
-            "x": 362,
-            "y": 97
-          }
+          {"map": "sudra", "x": 1215, "y": 477},
+          {"map": "ekurmah", "x": 362, "y": 97}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Clay Tablet (E-Kur-Mah top right)
       {
         "name": "Clay Tablet (E-Kur-Mah top right)",
         "short_name": "Clay Tablet (E-Kur-Mah ^>)",
@@ -74,25 +42,11 @@
           "$canTeleport3,highjump,$canDroneTeleport"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 1233,
-            "y": 495
-          },
-          {
-            "map": "ekurmah",
-            "x": 380,
-            "y": 115
-          }
+          {"map": "sudra", "x": 1233, "y": 495},
+          {"map": "ekurmah", "x": 380, "y": 115}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Clay Tablet (E-Kur-Mah top left)
       {
         "name": "Clay Tablet (E-Kur-Mah top left)",
         "short_name": "Clay Tablet (E-Kur-Mah <^)",
@@ -102,25 +56,11 @@
           "$canAirport3,highjump,grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 1143,
-            "y": 513
-          },
-          {
-            "map": "ekurmah",
-            "x": 290,
-            "y": 133
-          }
+          {"map": "sudra", "x": 1143, "y": 513},
+          {"map": "ekurmah", "x": 290, "y": 133}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Clay Tablet (E-Kur-Mah bottom)
       {
         "name": "Clay Tablet (E-Kur-Mah bottom)",
         "short_name": "Clay Tablet (E-Kur-Mah v)",
@@ -130,16 +70,8 @@
           "$canAirport3,highjump,grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 1233,
-            "y": 585
-          },
-          {
-            "map": "ekurmah",
-            "x": 380,
-            "y": 205
-          }
+          {"map": "sudra", "x": 1233, "y": 585},
+          {"map": "ekurmah", "x": 380, "y": 205}
         ],
         "sections": [
           {
@@ -149,7 +81,6 @@
           }
         ]
       },
-      // Quantum Veriegator (ISKART-EHANZU)
       {
         "name": "Quantum Veriegator (ISKART-EHANZU)",
         "short_name": "Quantum Veriegator (ISKART-EHANZU)",
@@ -158,25 +89,11 @@
           "$canAirport3,passcodetool,$canDroneTeleport,highjump"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 1161,
-            "y": 729
-          },
-          {
-            "map": "ekurmah",
-            "x": 308,
-            "y": 349
-          }
+          {"map": "sudra", "x": 1161, "y": 729},
+          {"map": "ekurmah", "x": 308, "y": 349}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Health Node Fragment (E-Kur-Mah)
       {
         "name": "Health Node Fragment (E-Kur-Mah)",
         "short_name": "Health Node Fragment (E-Kur-Mah)",
@@ -186,25 +103,11 @@
           "highjump,$canEnhancedDroneLaunch,sudrankey"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 1197,
-            "y": 747
-          },
-          {
-            "map": "ekurmah",
-            "x": 344,
-            "y": 367
-          }
+          {"map": "sudra", "x": 1197, "y": 747},
+          {"map": "ekurmah", "x": 344, "y": 367}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Red Coat
       {
         "name": "Red Coat",
         "short_name": "Red Coat",
@@ -214,25 +117,11 @@
           "$canTeleport3"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 1161,
-            "y": 801
-          },
-          {
-            "map": "ekurmah",
-            "x": 308,
-            "y": 421
-          }
+          {"map": "sudra", "x": 1161, "y": 801},
+          {"map": "ekurmah", "x": 308, "y": 421}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Power Node Fragment (E-Kur-Mah)
       {
         "name": "Power Node Fragment (E-Kur-Mah)",
         "short_name": "Power Node Fragment (E-Kur-Mah)",
@@ -242,23 +131,10 @@
           "$canTeleport3"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 1179,
-            "y": 819
-          },
-          {
-            "map": "ekurmah",
-            "x": 326,
-            "y": 439
-          }
+          {"map": "sudra", "x": 1179, "y": 819},
+          {"map": "ekurmah", "x": 326, "y": 439}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       }
     ]
   }

@@ -1,14 +1,10 @@
 [
-  // Indi
   {
     "name": "Indi",
     "color": "#00AD8C",
     "parent": "Sudra",
-    "access_rules": [
-      "@Eribu -> Indi/Connection"
-    ],
+    "access_rules": ["@Eribu -> Indi/Connection"],
     "children": [
-      // Rusalka Tablet (Indi)
       {
         "name": "Rusalka Tablet (Indi)",
         "short_name": "Rusalka Tablet (Indi)",
@@ -21,16 +17,8 @@
           "[progmasochist],$canTeleport2,grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 711,
-            "y": 837
-          },
-          {
-            "map": "indi",
-            "x": 442,
-            "y": 232
-          }
+          {"map": "sudra", "x": 711, "y": 837},
+          {"map": "indi", "x": 442, "y": 232}
         ],
         "sections": [
           {
@@ -40,34 +28,17 @@
           }
         ]
       },
-      // Health Node Fragment (Slug Glitch)
       {
         "name": "Health Node Fragment (Slug Glitch)",
         "short_name": "Health Node Fragment (Slug Glitch)",
         "vgravmap": "HealthNodeFragment15",
-        "access_rules": [
-          "$canGlitchGun1"
-        ],
+        "access_rules": ["$canGlitchGun1"],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 837,
-            "y": 873
-          },
-          {
-            "map": "indi",
-            "x": 568,
-            "y": 268
-          }
+          {"map": "sudra", "x": 837, "y": 873},
+          {"map": "indi", "x": 568, "y": 268}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Digital Paper (Indi)
       {
         "name": "Digital Paper (Indi)",
         "short_name": "Digital Paper (Indi)",
@@ -78,23 +49,10 @@
           "$canDroneTeleport"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 297,
-            "y": 855
-          },
-          {
-            "map": "indi",
-            "x": 28,
-            "y": 250
-          }
+          {"map": "sudra", "x": 297, "y": 855},
+          {"map": "indi", "x": 28, "y": 250}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       }
     ]
   }

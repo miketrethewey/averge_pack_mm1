@@ -1,12 +1,34 @@
-{
-  "weapons_grid": {
-    "type": "itemgrid",
-    "rows": [
-      [ "axiomdisruptor", "nova", "multidisruptor", "kilver", "hypoatomizer" ],
-      [ "reflector", "inertialpulse", "voranj", "shards", "turbinepulse" ],
-      [ "quantumvariegator", "tetheredcharge", "databomb", "lightninggun", "reverseslicer" ],
-      [ "firewall", "ionbeam", "distortionfield", "heatseeker", "orbitaldischarge" ],
-      [ "flamethrower", "scissorbeam", "fatbeam" ]
-    ]
-  }
-}
+{"weapons_grid": {
+  "type": "itemgrid",
+  "rows": [
+    [
+      "axiomdisruptor",
+      "nova",
+      "multidisruptor",
+      "kilver",
+      "hypoatomizer"
+    ],
+    [
+      "reflector",
+      "inertialpulse",
+      "voranj",
+      "shards",
+      "turbinepulse"
+    ],
+    [
+      "quantumvariegator",
+      "tetheredcharge",
+      "databomb",
+      "lightninggun",
+      "reverseslicer"
+    ],
+    [
+      "firewall",
+      "ionbeam",
+      "distortionfield",
+      "heatseeker",
+      "orbitaldischarge"
+    ],
+    ["flamethrower", "scissorbeam", "fatbeam"]
+  ]
+}}

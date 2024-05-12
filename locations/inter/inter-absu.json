@@ -1,12 +1,11 @@
 [
-  // Inter - Absu
   {
     "name": "Inter - Absu",
     "parent": "Absu",
     "children": [
-      { // Absu -> Indi
+      {
         "name": "Absu -> Indi",
-        "access_rules": [ // FIXED
+        "access_rules": [
           "$canTeleport1,$canGlitchGun1,grapple",
           "$canTeleport1,$canGlitchGun1,$canDroneTeleport",
           "$canAirport2,highjump",
@@ -15,61 +14,37 @@
           "$canAirport3"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 459,
-            "y": 909,
-            "size": 8
-          },
-          {
-            "map": "absu",
-            "x": 360,
-            "y": 125,
-            "size": 8
-          }
+          {"map": "sudra", "x": 459, "y": 909, "size": 8},
+          {"map": "absu", "x": 360, "y": 125, "size": 8}
         ],
         "sections": [
           {
             "name": "Connection",
             "item_count": 1,
-            "visibility_rules": [
-              "connections"
-            ],
+            "visibility_rules": ["connections"],
             "chest_unavailable_img": "images/connections/right.png",
             "chest_unopened_img": "images/connections/right.png",
             "chest_opened_img": "images/connections/right.png"
           }
         ]
       },
-      { // Absu -> Zi
+      {
         "name": "Absu -> Zi",
-        "access_rules": [ // FIXED
+        "access_rules": [
           "$canTeleport1,$canGlitchGun1",
           "$canTeleport2",
           "wave,$canGlitchGun1",
           "[progmasochist],grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 639,
-            "y": 1143,
-            "size": 8
-          },
-          {
-            "map": "absu",
-            "x": 540,
-            "y": 359,
-            "size": 8
-          }
+          {"map": "sudra", "x": 639, "y": 1143, "size": 8},
+          {"map": "absu", "x": 540, "y": 359, "size": 8}
         ],
         "sections": [
           {
             "name": "Connection",
             "item_count": 1,
-            "visibility_rules": [
-              "connections"
-            ],
+            "visibility_rules": ["connections"],
             "chest_unavailable_img": "images/connections/right.png",
             "chest_unopened_img": "images/connections/right.png",
             "chest_opened_img": "images/connections/right.png"

@@ -8,10 +8,6 @@
       {
         "img": "images/settings/difficulty/normal.png",
         "codes": "difficulty,diffnormal"
-      // },
-      // {
-      //   "img": "images/settings/difficulty/hard.png",
-      //   "codes": "diffhard"
       }
     ]
   },

@@ -1,12 +1,10 @@
-{
-  // Horizontal: When width of window is greater than height
-  "tracker_horizontal": {
-    "type": "container",
-    "width": 300,
-    "height": 435,
-    "content": {
-      "type": "layout",
-      "key": "shared_item_grid"
-    }
+{"tracker_horizontal": {
+  "note": "Horizontal View: When width of window is greater than height",
+  "type": "container",
+  "width": 300,
+  "height": 435,
+  "content": {
+    "type": "layout",
+    "key": "shared_item_grid"
   }
-}
+}}

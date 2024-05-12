@@ -2,7 +2,7 @@
   "name": "Axiom Verge Randomizer",
   "author": "Seraphin Eveles & Minnie A. Trethewey",
   "game_name": "Axiom Verge",
-  "flags": [], // build from variants
+  "flags": [],
   "package_version": "1.0",
   "package_uid": "averge_pack_mm1",
   "platform": "pc",
@@ -10,17 +10,11 @@
   "variants": {
     "items_only": {
       "display_name": "Items-Only",
-      "flags": [
-        "chathud"
-      ]
+      "flags": ["chathud"]
     },
     "standard_map": {
       "display_name": "Standard with Map",
-      "flags": [
-        "chathud",
-        "map",
-        "pins"
-      ]
+      "flags": ["chathud", "map", "pins"]
     }
   }
 }

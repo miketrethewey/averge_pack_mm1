@@ -1,14 +1,12 @@
 [
-  // Zi
   {
     "name": "Zi",
     "color": "#2933FD",
     "parent": "Sudra",
-    "access_rules": [ // Eribu -> Absu, Absu -> Zi
-      "@Absu -> Zi/Connection"
+    "access_rules": [
+      "@Eribu -> Absu/Connection,@Absu -> Zi/Connection"
     ],
     "children": [
-      // Power Node Fragment (Zi top) #1
       {
         "name": "Power Node Fragment (Zi top) #1",
         "short_name": "Power Node Fragment (Zi ^) #1",
@@ -28,25 +26,11 @@
           "[progmasochist],$canGlitchGun1,grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 855,
-            "y": 909
-          },
-          {
-            "map": "zi",
-            "x": 406,
-            "y": 134
-          }
+          {"map": "sudra", "x": 855, "y": 909},
+          {"map": "zi", "x": 406, "y": 134}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Health Node (Zi)
       {
         "name": "Health Node (Zi)",
         "short_name": "Health Node (Zi)",
@@ -60,25 +44,11 @@
           "[progmasochist],$canGlitchGun1,grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 819,
-            "y": 927
-          },
-          {
-            "map": "zi",
-            "x": 370,
-            "y": 152
-          }
+          {"map": "sudra", "x": 819, "y": 927},
+          {"map": "zi", "x": 370, "y": 152}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Modified Lab Coat
       {
         "name": "Modified Lab Coat",
         "short_name": "Modified Lab Coat",
@@ -93,43 +63,19 @@
           "[progmasochist],$canGlitchGun1,grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 873,
-            "y": 927
-          },
-          {
-            "map": "zi",
-            "x": 424,
-            "y": 152
-          }
+          {"map": "sudra", "x": 873, "y": 927},
+          {"map": "zi", "x": 424, "y": 152}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Uruku
       {
         "name": "Uruku",
         "short_name": "Uruku",
         "vgravmap": "",
-        "access_rules": [
-          "@Modified Lab Coat/Item"
-        ],
+        "access_rules": ["@Modified Lab Coat/Item"],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 801,
-            "y": 927
-          },
-          {
-            "map": "zi",
-            "x": 352,
-            "y": 152
-          }
+          {"map": "sudra", "x": 801, "y": 927},
+          {"map": "zi", "x": 352, "y": 152}
         ],
         "sections": [
           {
@@ -141,7 +87,6 @@
           }
         ]
       },
-      // Digital Paper Zi #1
       {
         "name": "Digital Paper (Zi) #1",
         "short_name": "Digital Paper (Zi) #1",
@@ -154,25 +99,11 @@
           "[progadvanced],$canDroneTeleport"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 783,
-            "y": 963
-          },
-          {
-            "map": "zi",
-            "x": 334,
-            "y": 188
-          }
+          {"map": "sudra", "x": 783, "y": 963},
+          {"map": "zi", "x": 334, "y": 188}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Health Node Fragment (Zi) #1
       {
         "name": "Health Node Fragment (Zi) #1",
         "short_name": "Health Node Fragment (Zi) #1",
@@ -186,16 +117,8 @@
           "[progmasochist],grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 819,
-            "y": 981
-          },
-          {
-            "map": "zi",
-            "x": 370,
-            "y": 206
-          }
+          {"map": "sudra", "x": 819, "y": 981},
+          {"map": "zi", "x": 370, "y": 206}
         ],
         "sections": [
           {
@@ -205,61 +128,28 @@
           }
         ]
       },
-      // Rusalka Tablet (Zi)
       {
         "name": "Rusalka Tablet (Zi)",
         "short_name": "Rusalka Tablet (Zi)",
         "vgravmap": "Note20",
-        "access_rules": [
-          "$canUseRemoteDrone"
-        ],
+        "access_rules": ["$canUseRemoteDrone"],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 675,
-            "y": 999
-          },
-          {
-            "map": "zi",
-            "x": 226,
-            "y": 224
-          }
+          {"map": "sudra", "x": 675, "y": 999},
+          {"map": "zi", "x": 226, "y": 224}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Voranj
       {
         "name": "Voranj",
         "short_name": "Voranj",
         "vgravmap": "Voranj",
-        "access_rules": [
-          "$canUseRemoteDrone"
-        ],
+        "access_rules": ["$canUseRemoteDrone"],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 729,
-            "y": 1017
-          },
-          {
-            "map": "zi",
-            "x": 280,
-            "y": 242
-          }
+          {"map": "sudra", "x": 729, "y": 1017},
+          {"map": "zi", "x": 280, "y": 242}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Power Node Fragment (Zi) #2
       {
         "name": "Power Node Fragment (Zi) #2",
         "short_name": "Power Node Fragment (Zi) #2",
@@ -275,25 +165,11 @@
           "[progmasochist],grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 657,
-            "y": 1053
-          },
-          {
-            "map": "zi",
-            "x": 208,
-            "y": 278
-          }
+          {"map": "sudra", "x": 657, "y": 1053},
+          {"map": "zi", "x": 208, "y": 278}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Size Node (Zi)
       {
         "name": "Size Node (Zi)",
         "short_name": "Size Node (Zi)",
@@ -306,25 +182,11 @@
           "[progmasochist],grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 801,
-            "y": 1053
-          },
-          {
-            "map": "zi",
-            "x": 352,
-            "y": 278
-          }
+          {"map": "sudra", "x": 801, "y": 1053},
+          {"map": "zi", "x": 352, "y": 278}
         ],
-        "sections": [
-          {
-            "name": "Hidden Wall",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Hidden Wall", "item_count": 1}]
       },
-      // Bioflux Accelerator #1
       {
         "name": "Bioflux Accelerator #1",
         "short_name": "Bioflux Accelerator #1",
@@ -337,25 +199,11 @@
           "[progmasochist],$canAirport2,grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 693,
-            "y": 1071
-          },
-          {
-            "map": "zi",
-            "x": 244,
-            "y": 296
-          }
+          {"map": "sudra", "x": 693, "y": 1071},
+          {"map": "zi", "x": 244, "y": 296}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Health Node Fragment (Zi middle)
       {
         "name": "Health Node Fragment (Zi middle)",
         "short_name": "Health Node Fragment (Zi =)",
@@ -368,25 +216,11 @@
           "[progmasochist],grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 837,
-            "y": 1071
-          },
-          {
-            "map": "zi",
-            "x": 388,
-            "y": 296
-          }
+          {"map": "sudra", "x": 837, "y": 1071},
+          {"map": "zi", "x": 388, "y": 296}
         ],
-        "sections": [
-          {
-            "name": "Hidden Wall",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Hidden Wall", "item_count": 1}]
       },
-      // Health Node Fragment (Zi bottom)
       {
         "name": "Health Node Fragment (Zi bottom)",
         "short_name": "Health Node Fragment (Zi v)",
@@ -399,25 +233,11 @@
           "[progmasochist],excavate,grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 747,
-            "y": 1089
-          },
-          {
-            "map": "zi",
-            "x": 298,
-            "y": 314
-          }
+          {"map": "sudra", "x": 747, "y": 1089},
+          {"map": "zi", "x": 298, "y": 314}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Range Node (Zi)
       {
         "name": "Range Node (Zi)",
         "short_name": "Range Node (Zi)",
@@ -429,25 +249,11 @@
           "[progmasochist],$canTeleport1,grapple"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 711,
-            "y": 1107
-          },
-          {
-            "map": "zi",
-            "x": 262,
-            "y": 332
-          }
+          {"map": "sudra", "x": 711, "y": 1107},
+          {"map": "zi", "x": 262, "y": 332}
         ],
-        "sections": [
-          {
-            "name": "Hidden Wall",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Hidden Wall", "item_count": 1}]
       },
-      // Passcode Tool
       {
         "name": "Passcode Tool",
         "short_name": "Passcode Tool",
@@ -457,25 +263,11 @@
           "[progadvanced],$canUseRemoteDrone"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 801,
-            "y": 1125
-          },
-          {
-            "map": "zi",
-            "x": 352,
-            "y": 350
-          }
+          {"map": "sudra", "x": 801, "y": 1125},
+          {"map": "zi", "x": 352, "y": 350}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Digital Paper (Zi) #2
       {
         "name": "Digital Paper (Zi) #2",
         "short_name": "Digital Paper (Zi) #2",
@@ -485,23 +277,10 @@
           "[progadvanced],$canUseRemoteDrone"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 837,
-            "y": 1125
-          },
-          {
-            "map": "zi",
-            "x": 388,
-            "y": 350
-          }
+          {"map": "sudra", "x": 837, "y": 1125},
+          {"map": "zi", "x": 388, "y": 350}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       }
     ]
   }

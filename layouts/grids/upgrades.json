@@ -1,12 +1,45 @@
-{
-  "upgrades_grid": {
-    "type": "itemgrid",
-    "rows": [
-      [ "", "healthnode", "powernode", "rangenode", "remotedrone", "addressdisruptor-item" ],
-      [ "gomode-auto", "healthnodefragment", "powernodefragment", "sizenode", "enhanceddronelaunch", "addressbomb" ],
-      [ "", "coats", "fielddisruptor", "grapple", "droneteleport", "laserdrill" ],
-      [ "vision", "biofluxaccelerator1", "biofluxaccelerator2", "sudrankey", "passcodetool", "" ],
-      [ "", "digitalpaper", "rusalkatablet", "claytablet", "fadednote", "" ]
+{"upgrades_grid": {
+  "type": "itemgrid",
+  "rows": [
+    [
+      "",
+      "healthnode",
+      "powernode",
+      "rangenode",
+      "remotedrone",
+      "addressdisruptor-item"
+    ],
+    [
+      "gomode-auto",
+      "healthnodefragment",
+      "powernodefragment",
+      "sizenode",
+      "enhanceddronelaunch",
+      "addressbomb"
+    ],
+    [
+      "",
+      "coats",
+      "fielddisruptor",
+      "grapple",
+      "droneteleport",
+      "laserdrill"
+    ],
+    [
+      "vision",
+      "biofluxaccelerator1",
+      "biofluxaccelerator2",
+      "sudrankey",
+      "passcodetool",
+      ""
+    ],
+    [
+      "",
+      "digitalpaper",
+      "rusalkatablet",
+      "claytablet",
+      "fadednote",
+      ""
     ]
-  }
-}
+  ]
+}}

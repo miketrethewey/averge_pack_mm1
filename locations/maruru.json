@@ -1,14 +1,13 @@
 [
-  // Mar-Uru
   {
     "name": "Mar-Uru",
     "color": "#C72FFF",
     "parent": "Sudra",
-    "access_rules": [ // Eribu -> Ukkin-Na -> Mar-Uru
+    "access_rules": [
+      "@Eribu -> Ukkin-Na/Connection,@Ukkin-Na -> Mar-Uru/Connection",
       "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
     ],
     "children": [
-      // Digital Paper (Mar-Uru top)
       {
         "name": "Digital Paper (Mar-Uru top)",
         "short_name": "Digital Paper (Mar-Uru ^)",
@@ -16,25 +15,11 @@
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 387,
-            "y": 153
-          },
-          {
-            "map": "maruru",
-            "x": 325,
-            "y": 195
-          }
+          {"map": "sudra", "x": 387, "y": 153},
+          {"map": "maruru", "x": 325, "y": 195}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Digital Paper (Mar-Uru bottom)
       {
         "name": "Digital Paper (Mar-Uru bottom)",
         "short_name": "Digital Paper (Mar-Uru v)",
@@ -42,25 +27,11 @@
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 369,
-            "y": 207
-          },
-          {
-            "map": "maruru",
-            "x": 307,
-            "y": 231
-          }
+          {"map": "sudra", "x": 369, "y": 207},
+          {"map": "maruru", "x": 307, "y": 231}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Reverse Slicer
       {
         "name": "Reverse Slicer",
         "short_name": "Reverse Slicer",
@@ -70,25 +41,11 @@
           "$canTeleport3,fatbeam,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 351,
-            "y": 243
-          },
-          {
-            "map": "maruru",
-            "x": 289,
-            "y": 267
-          }
+          {"map": "sudra", "x": 351, "y": 243},
+          {"map": "maruru", "x": 289, "y": 267}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Size Node (Mar-Uru)
       {
         "name": "Size Node (Mar-Uru)",
         "short_name": "Size Node (Mar-Uru)",
@@ -97,25 +54,11 @@
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 423,
-            "y": 243
-          },
-          {
-            "map": "maruru",
-            "x": 361,
-            "y": 267
-          }
+          {"map": "sudra", "x": 423, "y": 243},
+          {"map": "maruru", "x": 361, "y": 267}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Health Node (Mar-Uru)
       {
         "name": "Health Node (Mar-Uru)",
         "short_name": "Health Node (Mar-Uru)",
@@ -124,25 +67,11 @@
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 369,
-            "y": 333
-          },
-          {
-            "map": "maruru",
-            "x": 307,
-            "y": 357
-          }
+          {"map": "sudra", "x": 369, "y": 333},
+          {"map": "maruru", "x": 307, "y": 357}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Power Node Fragment (Mar-Uru top)
       {
         "name": "Power Node Fragment (Mar-Uru top)",
         "short_name": "Power Node Fragment (Mar-Uru ^)",
@@ -150,25 +79,11 @@
           "$canTeleport3,$canGlitchGun1,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 405,
-            "y": 333
-          },
-          {
-            "map": "maruru",
-            "x": 343,
-            "y": 357
-          }
+          {"map": "sudra", "x": 405, "y": 333},
+          {"map": "maruru", "x": 343, "y": 357}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 1
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 1}]
       },
-      // Clay Tablet (Mar-Uru) (2 items)
       {
         "name": "Clay Tablet (Mar-Uru) (2 items)",
         "short_name": "Clay Tablet (Mar-Uru) (2 items)",
@@ -176,23 +91,10 @@
           "$canTeleport3,$canGlitchGun1,$canEnhancedDroneLaunch,$canDroneTeleport,highjump"
         ],
         "map_locations": [
-          {
-            "map": "sudra",
-            "x": 405,
-            "y": 351
-          },
-          {
-            "map": "maruru",
-            "x": 343,
-            "y": 375
-          }
+          {"map": "sudra", "x": 405, "y": 351},
+          {"map": "maruru", "x": 343, "y": 375}
         ],
-        "sections": [
-          {
-            "name": "Item",
-            "item_count": 2
-          }
-        ]
+        "sections": [{"name": "Item", "item_count": 2}]
       }
     ]
   }

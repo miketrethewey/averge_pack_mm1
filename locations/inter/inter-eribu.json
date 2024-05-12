@@ -18,6 +18,7 @@
           {
             "name": "Connection",
             "item_count": 1,
+            "#type": "connection-right",
             "visibility_rules": ["connections"],
             "chest_unavailable_img": "images/connections/right.png",
             "chest_unopened_img": "images/connections/right.png",
@@ -43,6 +44,7 @@
           {
             "name": "Connection",
             "item_count": 1,
+            "#type": "connection-right",
             "visibility_rules": ["connections"],
             "chest_unavailable_img": "images/connections/right.png",
             "chest_unopened_img": "images/connections/right.png",
@@ -62,6 +64,7 @@
             "name": "Connection",
             "item_count": 1,
             "visibility_rules": ["connections"],
+            "#type": "connection-down",
             "chest_unavailable_img": "images/connections/down.png",
             "chest_unopened_img": "images/connections/down.png",
             "chest_opened_img": "images/connections/down.png"

@@ -1,0 +1,64 @@
+{
+  "default": {
+    "chest_unavailable_img": "images/chests/unavailable.png",
+    "chest_unopened_img": "images/chests/available.png",
+    "chest_opened_img": "images/chests/opened.png",
+    "moo": "moo"
+  },
+  "boss": {
+    "chest_unavailable_img": "images/chests/boss_unavailable.png",
+    "chest_unopened_img": "images/chests/boss_unopened.png",
+    "chest_opened_img": "images/chests/boss_opened.png",
+    "moo": "moo"
+  },
+  "connection-start": {
+    "visibility_rules": ["connections"],
+    "chest_unavailable_img": "images/connections/start.png",
+    "chest_unopened_img": "images/connections/start.png",
+    "chest_opened_img": "images/connections/start.png",
+    "moo": "moo"
+  },
+  "connection-up": {
+    "visibility_rules": ["connections"],
+    "chest_unavailable_img": "images/connections/up.png",
+    "chest_unopened_img": "images/connections/up.png",
+    "chest_opened_img": "images/connections/up.png",
+    "moo": "moo"
+  },
+  "connection-left": {
+    "visibility_rules": ["connections"],
+    "chest_unavailable_img": "images/connections/left.png",
+    "chest_unopened_img": "images/connections/left.png",
+    "chest_opened_img": "images/connections/left.png",
+    "moo": "moo"
+  },
+  "connection-right": {
+    "visibility_rules": ["connections"],
+    "chest_unavailable_img": "images/connections/right.png",
+    "chest_unopened_img": "images/connections/right.png",
+    "chest_opened_img": "images/connections/right.png",
+    "moo": "moo"
+  },
+  "connection-down": {
+    "visibility_rules": ["connections"],
+    "chest_unavailable_img": "images/connections/down.png",
+    "chest_unopened_img": "images/connections/down.png",
+    "chest_opened_img": "images/connections/down.png",
+    "moo": "moo"
+  },
+  "secretworld-easy": {
+    "chest_unopened_img": "images/chests/secretworld-easy.png",
+    "chest_opened_img": "images/chests/secretworld-easy.png",
+    "moo": "moo"
+  },
+  "secretworld-medium": {
+    "chest_unopened_img": "images/chests/secretworld-medium.png",
+    "chest_opened_img": "images/chests/secretworld-medium.png",
+    "moo": "moo"
+  },
+  "secretworld-hard": {
+    "chest_unopened_img": "images/chests/secretworld-hard.png",
+    "chest_opened_img": "images/chests/secretworld-hard.png",
+    "moo": "moo"
+  }
+}

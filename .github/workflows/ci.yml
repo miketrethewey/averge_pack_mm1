@@ -1,5 +1,5 @@
 # workflow name
-name: Manage Release
+name: 🔨Build/📦Release/🚀Deploy
 
 # fire on
 on: [push, pull_request]

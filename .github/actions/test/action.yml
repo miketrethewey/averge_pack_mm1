@@ -22,7 +22,7 @@ runs:
     - name: 🔽Download PipLine
       uses: actions/download-artifact@v4.1.7
       with:
-        name: pipline-${{ inputs.os-name }}-${{ inputs.python-version }}
+        name: pipline-test-${{ inputs.os-name }}-${{ inputs.python-version }}
         path: ./resources/user/meta/manifests
     # start virtual display driver & run tests
     - name: ⏱️Test

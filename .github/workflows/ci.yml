@@ -210,7 +210,7 @@ jobs:
 
   # Update Pack Listing
   update-packlisting:
-    name: Update Pack Listing
+    name: 📝Update Pack Listing
     runs-on: ${{ matrix.os-name }}
 
     # VM settings
@@ -260,7 +260,7 @@ jobs:
         if: contains(github.ref, 'master')
 
   update-pack-repo:
-    name: Update EmoTracker Pack Repository
+    name: 🖴Update EmoTracker Pack Repository
     needs: [update-packlisting]
     uses: miketrethewey/mm1s-packs/.github/workflows/ci.yml@testing
     if: contains(github.ref, 'master') || contains(github.ref, 'unstable')

@@ -51,9 +51,8 @@ ZIP_FILENAME = ""
 # list executables
 BUILD_FILENAME = os.path.join(".")
 if BUILD_FILENAME == "":
-
-if isinstance(BUILD_FILENAME,str):
-  BUILD_FILENAME = list(BUILD_FILENAME)
+  if isinstance(BUILD_FILENAME,str):
+    BUILD_FILENAME = list(BUILD_FILENAME)
 
 BUILD_FILENAMES = BUILD_FILENAME
 

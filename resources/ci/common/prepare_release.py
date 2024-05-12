@@ -151,7 +151,8 @@ if len(BUILD_FILENAMES) > 0:
 for BUILD_FILENAME in BUILD_FILENAMES:
   if not BUILD_FILENAME == "":
     print("Build Filename: " + BUILD_FILENAME)
-    print("Build Filesize: " + common.file_size(BUILD_FILENAME))
+    if not BUILD_FILENAME in ["",".",".."]:
+      print("Build Filesize: " + common.file_size(BUILD_FILENAME))
   else:
     print("🟡No Build to prepare: " + BUILD_FILENAME)
 

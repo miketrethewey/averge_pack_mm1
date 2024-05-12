@@ -60,7 +60,7 @@ print(BUILD_FILENAMES)
 
 if len(BUILD_FILENAMES) > 0:
   for BUILD_FILENAME in BUILD_FILENAMES:
-    if not BUILD_FILENAME == "":
+    if not BUILD_FILENAME in ["",".",".."]:
       if not "artifact" in BUILD_FILENAME:
         # move the binary to temp folder
         move(

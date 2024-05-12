@@ -4,11 +4,19 @@ Validate JSON against provided schema
 '''
 import os
 import json
+import re
 import ssl
 import urllib.request
-from pathlib import Path
+
+import jsonschema.validators
 import pyjson5
+
+from pathlib import Path
+from jsonschema.validators import Draft7Validator
 from jsonschema import validate, RefResolver
+from jsonschema import exceptions as JSONSchemaExceptions
+
+global schemaURI
 
 def validate_file(r, filename, jsonType):
     '''
@@ -20,14 +28,14 @@ def validate_file(r, filename, jsonType):
         print("  " + filePath)
         with open(filePath, "r", encoding="utf-8") as jsonFile:
             fileJSON = pyjson5.decode_io(jsonFile)
-            validate(
-                instance=fileJSON,
+            validator = Draft7Validator(
                 schema=schemas["emo"][jsonType],
                 resolver=RefResolver(
                     base_uri=schemaURI,
                     referrer=schemas["emo"][jsonType]
                 )
             )
+            result = validator.validate(fileJSON)
 
 def check_files(dirs):
     '''
@@ -61,6 +69,8 @@ schemaSrcs = [
 ]
 
 schemaDir = os.path.join(".", "schema")
+schemaAbsPath = os.path.abspath(schemaDir)
+schemaURI = Path(schemaAbsPath).as_uri() + "/"
 print("DOWNLOAD SCHEMAS")
 if not os.path.isdir(schemaDir):
     os.makedirs(schemaDir)

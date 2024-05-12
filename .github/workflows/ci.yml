@@ -249,6 +249,19 @@ jobs:
           echo "Pack Listing Destination: $PACKLISTING_USERNAME/$PACKLISTING_REPOSITORY@refs/heads/$PACKLISTING_BRANCH"
 
       # Update EmoTracker Pack Repository
+      # Fine-grained personal access token
+      #  https://github.com/settings/tokens?type=beta
+      #  token needs perms:
+      #   actions:         read/write
+      #   contents:        read/write
+      #   pages:           read/write
+      #   workflows:       read/write
+      #  copy token
+      # Actions secrets and variables
+      # github.com/<owner>/<repo>/settings/secrets/actions
+      #  repository secret
+      #   name a new secret "EMOPACK_MANAGER"
+      #   value set to copied token
       - name: Update EmoTracker Pack Repository (MASTER)
         id: update-pack-repo-benc
         uses: benc-uk/workflow-dispatch@v1.2.3
@@ -256,5 +269,5 @@ jobs:
           workflow: ci.yml
           repo: ${{ steps.packlisting.outputs.packlisting_username }}/${{ steps.packlisting.outputs.packlisting_repository }}
           ref: ${{ steps.packlisting.outputs.packlisting_branch }}
-          token: ${{ secrets.MY_PAT }}
+          token: ${{ secrets.EMOPACK_MANAGER }}
         if: contains(github.ref, 'master') || contains(github.ref, 'unstable')

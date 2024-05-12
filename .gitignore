@@ -16,6 +16,7 @@ __pycache__/
 # But do keep layouts, manifest, repository schema
 !/schema/layouts.json
 !/schema/manifest.json
+!/schema/maps.json
 !/schema/repository.json
 
 # no get pip

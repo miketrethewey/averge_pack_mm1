@@ -11,16 +11,16 @@ inputs:
 #########
 # actions
 #########
-# actions/checkout@v3.5.0
-# actions/download-artifact@v3.0.2
-# actions/upload-artifact@v3.1.2
+# actions/checkout@v4.1.4
+# actions/download-artifact@v4.1.7
+# actions/upload-artifact@v4.3.3
 
 runs:
   using: "composite"
   steps:
     # download pipline
     - name: 🔽Download PipLine
-      uses: actions/download-artifact@v3.0.2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: pipline-${{ inputs.os-name }}-${{ inputs.python-version }}
         path: ./resources/user/meta/manifests
@@ -30,6 +30,7 @@ runs:
       run: |
         mkdir -p ./failures
         echo "" > ./failures/errors.txt
+        python -m resources.tests.images
         python -m resources.tests.items
         python -m resources.tests.functions
         python -m resources.tests.locations
@@ -50,7 +51,7 @@ runs:
 
     # upload output
     - name: 🔼Upload Output
-      uses: actions/upload-artifact@v3.1.2
+      uses: actions/upload-artifact@v4.3.3
       with:
         name: testoutput-${{ inputs.os-name }}-${{ inputs.python-version }}
         path: ./resources/tests/output
@@ -58,7 +59,7 @@ runs:
     # upload failures
     - name: 🔼Upload Failures
       if: failure()
-      uses: actions/upload-artifact@v3.1.2
+      uses: actions/upload-artifact@v4.3.3
       with:
         name: failures-${{ inputs.os-name }}-${{ inputs.python-version }}
         path: ./failures

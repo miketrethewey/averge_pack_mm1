@@ -7,11 +7,11 @@ on: [push, pull_request]
 #########
 # actions
 #########
-# actions/checkout@v3.5.0
-# actions/download-artifact@v3.0.2
+# actions/checkout@v4.1.4
+# actions/download-artifact@v4.1.7
 # actions/create-release@v1.1.4
 # actions/upload-release-asset@v1.0.2
-# benc-uk/workflow-dispatch@v1.2.2
+# benc-uk/workflow-dispatch@v1.2.3
 # ./.github/actions/get-parent-dir
 # ./.github/actions/install
 # ./.github/actions/test
@@ -28,7 +28,7 @@ jobs:
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v3.5.0
+        uses: actions/checkout@v4.1.4
       # install
       - name: 💿Call Install
         uses: ./.github/actions/install
@@ -36,7 +36,7 @@ jobs:
           os-name: ${{ matrix.os-name }}
           python-version: ${{ matrix.python-version }}
       # Analyze used GitHub Actions
-      - name: Analyze used GitHub Actions
+      - name: ⚙️Analyze used GitHub Actions
         shell: bash
         run: |
           python ./resources/ci/common/list_actions.py
@@ -62,7 +62,7 @@ jobs:
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v3.5.0
+        uses: actions/checkout@v4.1.4
       # install
       - name: 💿Call Install
         uses: ./.github/actions/install
@@ -76,12 +76,12 @@ jobs:
         uses: ./.github/actions/get-parent-dir
 
       # Prepare AppVersion
-      - name: Prepare AppVersion
+      - name: 💬Prepare AppVersion
         run: |
           python ./resources/ci/common/prepare_appversion.py
 
       # Prepare Manifest
-      - name: Prepare Manifest
+      - name: 💬Prepare Manifest
         run: |
           python ./resources/ci/common/prepare_manifest.py
 
@@ -97,14 +97,14 @@ jobs:
 
       # Upload AppVersion Artifact
       - name: 🔼Upload AppVersion Artifact
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4.3.3
         with:
           name: appversion-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.parentDir}}/build
 
       # Upload Archive Artifact
       - name: 🔼Upload Archive Artifact
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4.3.3
         with:
           name: archive-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.parentDir}}/deploy
@@ -130,7 +130,7 @@ jobs:
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v3.5.0
+        uses: actions/checkout@v4.1.4
 
       # install dependencies via pip
       - name: 💿Install Dependencies via pip
@@ -145,13 +145,13 @@ jobs:
 
       # download appversion artifact
       - name: 🔽Download AppVersion Artifact
-        uses: actions/download-artifact@v3.0.2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: appversion-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.parentDir }}/build
       # download archive artifact
       - name: 🔽Download Archive Artifact
-        uses: actions/download-artifact@v3.0.2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: archive-${{ matrix.os-name }}
           path: ${{ steps.parentDir.outputs.parentDir }}/deploy
@@ -163,12 +163,22 @@ jobs:
         #        git tag ${GITHUB_TAG}
         #        git push origin ${GITHUB_TAG}
         run: |
+          PROJECT_NAME="Axiom Verge Emotracker Pack"
+          echo "project_name=$PROJECT_NAME" >> $GITHUB_OUTPUT
+
           GITHUB_TAG="$(head -n 1 ../build/app_version.txt)"
           echo "github_tag=$GITHUB_TAG" >> $GITHUB_OUTPUT
-          GITHUB_TAG="v${GITHUB_TAG}"
-          RELEASE_NAME="Axiom Verge EmoTracker Pack ${GITHUB_TAG}"
-          echo "Release Name: ${RELEASE_NAME}"
-          echo "Git Tag:      ${GITHUB_TAG}"
+
+          RELEASE_NAME="${PROJECT_NAME} ${GITHUB_TAG}"
+          echo "release_name=$RELEASE_NAME" >> $GITHUB_OUTPUT
+
+          ASSET_PREFIX="${PROJECT_NAME}-${GITHUB_TAG}"
+          echo "asset_prefix=$ASSET_PREFIX" >> $GITHUB_OUTPUT
+
+          echo "Project Name:  ${PROJECT_NAME}"
+          echo "Release Name:  ${RELEASE_NAME}"
+          echo "Asset Prefix:  ${ASSET_PREFIX}"
+          echo "Git Tag:       ${GITHUB_TAG}"
 
       # create a release
       - name: 📀->🚀Create a Release (MASTER)
@@ -213,7 +223,7 @@ jobs:
     steps:
       # checkout commit
       - name: ✔️Checkout commit
-        uses: actions/checkout@v3.5.0
+        uses: actions/checkout@v4.1.4
       - name: 💿Install Dependencies via pip
         run: |
           python -m pip install pytz requests
@@ -239,7 +249,17 @@ jobs:
       # Update EmoTracker Pack Repository
       - name: Update EmoTracker Pack Repository (MASTER)
         id: update-pack-repo
-        uses: benc-uk/workflow-dispatch@v1.2.2
+        uses: miketrethewey/mm1s-packs/.github/workflows/ci.yml@testing
+        with:
+          repo: ${{ steps.packlisting.outputs.packlisting_username }}/${{ steps.packlisting.outputs.packlisting_repository }}
+          ref: ${{ steps.packlisting.outputs.packlisting_branch }}
+          token: ${{ secrets.MY_PAT }}
+        if: contains(github.ref, 'master') || contains(github.ref, 'unstable')
+
+      # Update EmoTracker Pack Repository
+      - name: Update EmoTracker Pack Repository (MASTER)
+        id: update-pack-repo-benc
+        uses: benc-uk/workflow-dispatch@v1.2.3
         with:
           workflow: 🌎->🚀Deploy Pages
           repo: ${{ steps.packlisting.outputs.packlisting_username }}/${{ steps.packlisting.outputs.packlisting_repository }}

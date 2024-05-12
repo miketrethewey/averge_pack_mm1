@@ -4,6 +4,7 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "difficulty",
     "stages": [
       {
         "img": "images/settings/difficulty/normal.png",
@@ -16,6 +17,7 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "progression",
     "stages": [
       {
         "img": "images/settings/progression/default.png",
@@ -43,6 +45,7 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
+    "codes": "fps",
     "stages": [
       {
         "img": "images/settings/fps/fps-min.png",

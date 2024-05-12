@@ -29,7 +29,6 @@ def validate_file(r, filename, jsonType):
                 )
             )
 
-
 def check_files(dirs):
     '''
     Check files recursively
@@ -38,11 +37,9 @@ def check_files(dirs):
     for resrcDir in dirs:
         # cycle through this dir
         jsonType = ""
-        for jsonTypeCheck in ["items", "layouts", "locations", "manifest.json", "repository.json"]:
+        for jsonTypeCheck in ["items", "layouts", "locations", "maps", "manifest.json", "repository.json"]:
             if jsonTypeCheck in resrcDir:
                 jsonType = jsonTypeCheck.replace(".json", "")
-        if "maps" in resrcDir:
-            continue
         if jsonType != "":
             if os.path.isdir(resrcDir):
                 for r, _, f in os.walk(resrcDir):
@@ -88,11 +85,12 @@ for schemaFileName in os.listdir(schemaDir):
             "r",
             encoding="utf-8"
         ) as schemaFile:
-            gameKey = "emo"
-            schemaKey = schemaFileName.replace(".json", "")
-            if gameKey not in schemas:
-                schemas[gameKey] = {}
-            schemas[gameKey][schemaKey] = json.load(schemaFile)
+            if schemaFileName.endswith(".json"):
+                gameKey = "emo"
+                schemaKey = schemaFileName.replace(".json", "")
+                if gameKey not in schemas:
+                    schemas[gameKey] = {}
+                schemas[gameKey][schemaKey] = json.load(schemaFile)
 
 print("VALIDATE")
 srcs = {
@@ -103,6 +101,7 @@ srcs = {
 }
 
 for [gameID, packData] in srcs.items():
+    packUID = packData["packUID"]
     if os.path.isdir(os.path.join(".", "variants")):
         srcs[gameID]["variants"] = os.listdir(os.path.join(".", "variants"))
     elif os.path.isdir(os.path.join(".", packUID)):
@@ -145,5 +144,5 @@ for [gameID, packData] in srcs.items():
                     os.path.join(varRoot, "locations"),
                     os.path.join(varRoot, "maps")
                 }
-            # print(resrcDirs)
-            check_files(resrcDirs)
+                # print(resrcDirs)
+                check_files(resrcDirs)

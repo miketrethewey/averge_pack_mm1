@@ -1,44 +1,51 @@
-import common                     # app common functions
+# import modules
+import common       # app common functions
 
-import json                       # json manipulation
-import os                         # for os data, filesystem manipulation
-import platform                   # for python data
-import subprocess                 # for running shell commands
-import sys                        # for system commands
-import traceback                  # for errors
+import json         # json manipulation
+import os           # for os data, filesystem manipulation
+import subprocess   # for running shell commands
+import sys          # for system commands
+import traceback    # for errors
 
+# get env
 env = common.prepare_env()  # get environment variables
 
-WIDTH = 70  # width for labels
+# width for labels
+WIDTH = 70
 
+# bucket for cli args
 args = []
 
-PIPEXE = "" # executable for pip
+# pip exe path
+PIPEXE = ""
 
-# get command to run python
-PYTHON_EXECUTABLE = os.path.splitext(
-    sys.executable.split(os.path.sep).pop()
-)[0]
-
-# get python version
+# py exe path
+# py version
+# py minor version
+PYTHON_EXECUTABLE = os.path.splitext(sys.executable.split(os.path.sep).pop())[0]  # get command to run python
 PYTHON_VERSION = sys.version.split(" ")[0]
-
-# get python major.minor version
 PYTHON_MINOR_VERSION = '.'.join(PYTHON_VERSION.split(".")[:2])
 
-PIP_VERSION = ""  # pip version string
-PIP_FLOAT_VERSION = 0 # pip version for math
+# pip string version
+# pip float version
+PIP_VERSION = ""
+PIP_FLOAT_VERSION = 0
 
+# success
 SUCCESS = False
+# bucket for versions
 VERSIONS = {}
 
-
+# process module output
+#  read output from installing
+#  print relevant info
+#  print unknown stuff
 def process_module_output(lines):
     for line in lines:
         # if there's an error, print it and bail
         if "status 'error'" in line.strip():
             print(
-                "[%s] %s"
+                "🔴[%s] %s"
                 %
                 (
                     "_",
@@ -46,7 +53,7 @@ def process_module_output(lines):
                 )
             )
             return
-            # exit(1)
+            # sys.exit(1)
         # if it's already satisfied or building a wheel, print version data
         elif "already satisfied" in line or \
             "Building wheel" in line or \
@@ -92,40 +99,47 @@ def process_module_output(lines):
             print(line.strip())
     print("")
 
-
+# print module line
+#  name, installed version, latest version
 def print_module_line(line):
     global VERSIONS
+    # is it already installed?
     satisfied = line.strip().split(" in ")
-    sver = ((len(satisfied) > 1) and satisfied[1].split(
-        "(").pop().replace(")", "")) or ""
+    # get the installed version
+    sver = ((len(satisfied) > 1) and satisfied[1].split("(").pop().replace(")", "")) or ""
 
+    # if we're making a wheel
     if "Created wheel" in line:
         line = line.strip().split(':')
         satisfied = [line[0]]
         sver = line[1].split('-')[1]
 
+    # get module name
     modulename = satisfied[0].replace("Requirement already satisfied: ", "")
+    # save info for later use
     VERSIONS[modulename] = {
         "installed": sver,
         "latest": (sver and get_module_version(satisfied[0].split(" ")[-1])).strip() or ""
     }
 
+    # print what we found
     print(
         (
             "[%s] %s\t%s\t%s"
             %
             (
                 "Building wheel" in line and '.' or "X",
-                satisfied[0].ljust(
-                    len("Requirement already satisfied: ") + len("python-bps-continued")),
+                satisfied[0].ljust(len("Requirement already satisfied: ") + len("python-bps-continued")),
                 VERSIONS[modulename]["installed"],
                 VERSIONS[modulename]["latest"]
             )
         )
     )
+    # return the name of this module
     return modulename
 
-
+# get module version
+#  get installed version
 def get_module_version(module):
     # pip index versions [module]                             // >= 21.2
     # pip install [module]==                                  // >= 21.1
@@ -138,6 +152,7 @@ def get_module_version(module):
     ret = ""
     ver = ""
 
+    # based on version of pip, get the installation status of a module
     if float(PIP_FLOAT_VERSION) >= 21.2:
         ret = subprocess.run(
             [
@@ -209,11 +224,11 @@ def get_module_version(module):
     # if ver == "" and ret.stderr.strip():
     #     ver = (ret.stderr.strip().split("\n")[0].split(",")[-1].replace(')', '')).strip()
 
+    # return what we found
     return ver
 
-
+# get python info
 def python_info():
-    # print python info
     global args
     global PYTHON_VERSION
 
@@ -234,19 +249,10 @@ def python_info():
         print(PY_STRING)
         print('.' * WIDTH)
 
-
-def save_pipline():
-    # save pipline document
+# get pip info
+def pip_info():
     global args
     global PIPEXE
-
-    with open(os.path.join(".", "resources", "user", "meta", "manifests", "pipline.txt"), mode="w", encoding="utf-8") as settings:
-        settings.write(" ".join(args) + " -m " + PIPEXE)
-
-
-def pip_info():
-    # print pip info
-    global args
     global PIPEXE
     global VERSIONS
 
@@ -286,12 +292,8 @@ def pip_info():
                     "%s\t%s\t%s\t%s\t%s\t%s"
                     %
                     (
-                        (
-                            (
-                                isinstance(args[0], list) and " ".join(args[0])
-                            ) or
-                            args[0]
-                        ).strip(),
+                        ((isinstance(args[0], list) and " ".join(
+                            args[0])) or args[0]).strip(),
                         PYTHON_VERSION,
                         sys.platform,
                         PIPEXE,
@@ -301,14 +303,11 @@ def pip_info():
                 )
                 print(PIP_STRING)
                 print('.' * WIDTH)
-    save_pipline()
 
-
+# upgrade pip
 def pip_upgrade():
-    # upgrade pip
     global args
     global PIPEXE
-    global SUCCESS
 
     # upgrade pip
     ret = subprocess.run(
@@ -326,31 +325,14 @@ def pip_upgrade():
     if ret.stdout.strip():
         # if it's not already satisfied, update it
         if "already satisfied" not in ret.stdout.strip():
+            print(ret.stdout.strip())
             pip_info()
-        SUCCESS = True
 
-
+# install modules
 def install_modules():
-    # install pip modules
     global args
     global PIPEXE
     global SUCCESS
-
-    # install wheel
-    ret = subprocess.run(
-        [
-            *args,
-            "-m",
-            PIPEXE,
-            "install",
-            "wheel"
-        ],
-        capture_output=True,
-        text=True
-    )
-    # if there's output
-    if ret.stdout.strip():
-        process_module_output(ret.stdout.strip().split("\n"))
 
     # install modules from list
     ret = subprocess.run(
@@ -376,17 +358,11 @@ def install_modules():
     # if there's output
     if ret.stdout.strip():
         process_module_output(ret.stdout.strip().split("\n"))
+        manifests_path = os.path.join(".", "resources", "user", "meta", "manifests")
+        if not os.path.isdir(manifests_path):
+            os.makedirs(manifests_path)
 
-        settingsPath = os.path.join(
-            ".",
-            "resources",
-            "user",
-            "meta",
-            "manifests"
-        )
-        if not os.path.isdir(settingsPath):
-            os.makedirs(settingsPath)
-        with open(os.path.join(settingsPath, "settings.json"), mode="w", encoding="utf-8") as settings:
+        with open(os.path.join(manifests_path, "settings.json"), "w+") as settings:
             settings.write(
                 json.dumps(
                     {
@@ -398,10 +374,12 @@ def install_modules():
                     indent=2
                 )
             )
+        with open(os.path.join(manifests_path, "pipline.txt"), "w+") as settings:
+            settings.write(" ".join(args) + " -m " + PIPEXE)
         SUCCESS = True
 
 
-def build_pipline():
+def main():
     global args
     global PIPEXE
     global SUCCESS
@@ -447,32 +425,15 @@ def build_pipline():
         try:
             python_info()
 
-            # foreach py executable
+            # foreach pip executable
             for PIPEXE in ["pip3", "pip"]:
                 pip_info()
                 pip_upgrade()
+                install_modules()
+
         # if something else went fucky, print it
         except Exception as e:
             traceback.print_exc()
-
-
-def return_pipline():
-    # read and return pipline
-    with open(os.path.join(
-      ".",
-      "resources",
-      "user",
-      "meta",
-      "manifests",
-      "pipline.txt"
-    ), "r") as pipline:
-        return pipline.read().strip()
-
-def main():
-    build_pipline()
-    print(return_pipline())
-    print('.' * WIDTH)
-    install_modules()
 
 
 if __name__ == "__main__":

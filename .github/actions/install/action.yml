@@ -1,6 +1,9 @@
 name: 💿Install
 description: Install app
 inputs:
+  calling-job:
+    required: true
+    description: Job that's calling this one
   os-name:
     required: true
     description: OS to run on
@@ -37,6 +40,7 @@ runs:
       run: |
         echo "PipLine"
         cat ./resources/user/meta/manifests/pipline.txt
+      if: contains(inputs.calling-job, 'test')
     # upload pipline
     - name: 🔼Upload PipLine
       uses: actions/upload-artifact@v4.3.3

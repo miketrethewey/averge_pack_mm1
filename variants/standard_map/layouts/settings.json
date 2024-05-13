@@ -48,6 +48,12 @@
           "item": "fps"
         }
       ]
+    },
+    {
+      "type": "group",
+      "header": "Secret Worlds",
+      "header_background": "#3e4b57",
+      "content": [{"type": "layout", "key": "secretworlds_grid"}]
     }
   ]
 }}

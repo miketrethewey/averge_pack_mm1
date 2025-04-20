@@ -9,8 +9,8 @@
     ],
     "children": [
       {
-        "name": "Drone Teleport",
-        "short_name": "Drone Teleport",
+        "name": "Drone Teleport: Edin - Ukhu Reward",
+        "short_name": "Drone Teleport: Edin - Ukhu Reward",
         "vgravmap": "DroneTeleport",
         "access_rules": [
           "$canTeleport2,highjump,$canShootLong,$canUseRemoteDrone",
@@ -24,8 +24,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Clay Tablet (Edin)",
-        "short_name": "Clay Tablet (Edin)",
+        "name": "Note (westtowerlevel3): Edin - Ukhu Path Ruins",
+        "short_name": "Note (westtowerlevel3): Edin - Ukhu Path Ruins",
         "access_rules": [
           "$canTeleport2,$canGlitchBomb,$canDroneTeleport",
           "$canTeleport2,highjump,$canDroneTeleport",
@@ -38,8 +38,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Distortion Field",
-        "short_name": "Distortion Field",
+        "name": "Distortion Field: Edin - Clone Path Before Save",
+        "short_name": "Distortion Field: Edin - Clone Path Before Save",
         "vgravmap": "DistortionField",
         "access_rules": [
           "$canTeleport2,highjump,$canEnhancedDroneLaunch,$canDroneTeleport",
@@ -52,8 +52,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Power Node Fragment (Edin top)",
-        "short_name": "Power Node Fragment (Edin ^)",
+        "name": "Power node fragment (westtowerlevel1): Edin - Ukhu Path Drone Tunnel",
+        "short_name": "Power node fragment (westtowerlevel1): Edin - Ukhu Path Drone Tunnel",
         "access_rules": [
           "$canTeleport2,highjump,$canDroneTeleport,$canGlitchBomb",
           "$canTeleport3,$canDroneTeleport,$canGlitchBomb",
@@ -66,8 +66,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node Fragment (Edin top)",
-        "short_name": "Health Node Fragment (Edin ^)",
+        "name": "Health node fragment (westernhangarentrance): Edin - Clone Path Rooftop Ledge",
+        "short_name": "Health node fragment (westernhangarentrance): Edin - Clone Path Rooftop Ledge",
         "access_rules": [
           "$canTeleport2,highjump,grapple,$canUseRemoteDrone",
           "$canTeleport2,$canDroneTeleport,grapple",
@@ -80,8 +80,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node (Edin)",
-        "short_name": "Health Node (Edin)",
+        "name": "Health node (distortionfieldroom): Edin - Ukhu Path Side Room",
+        "short_name": "Health node (distortionfieldroom): Edin - Ukhu Path Side Room",
         "vgravmap": "HealthNode6",
         "access_rules": [
           "$canTeleport2,highjump,$canDroneTeleport,$canGlitchBomb",
@@ -95,8 +95,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Rusalka Tablet (Edin)",
-        "short_name": "Rusalka Tablet (Edin)",
+        "name": "Note (level1secret): Edin - False Wall Shrine",
+        "short_name": "Note (level1secret): Edin - False Wall Shrine",
         "access_rules": [
           "$canTeleport2,highjump",
           "$canTeleport3",
@@ -109,8 +109,8 @@
         "sections": [{"name": "Hidden Wall", "item_count": 1}]
       },
       {
-        "name": "Digital Paper (Edin top)",
-        "short_name": "Digital Paper (Edin ^)",
+        "name": "Note (westernhangarentrance): Edin - Clone Path Inside Blocks",
+        "short_name": "Note (westernhangarentrance): Edin - Clone Path Inside Blocks",
         "access_rules": [
           "$canTeleport2,highjump,$canGlitchGun1",
           "$canTeleport2,$canDroneTeleport,$canGlitchGun1",
@@ -123,8 +123,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node Fragment (Edin left)",
-        "short_name": "Health Node Fragment (Edin <)",
+        "name": "Health node fragment (area6entrance): Edin - Ceiling Near Ukkin-Na",
+        "short_name": "Health node fragment (area6entrance): Edin - Ceiling Near Ukkin-Na",
         "access_rules": [
           "$canEnhancedDroneLaunch,$canDroneTeleport,grapple"
         ],
@@ -135,8 +135,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Bioflux Accelerator 2",
-        "short_name": "Bioflux Accelerator 2",
+        "name": "Bioflux Accelerator (2): Edin - Sky Cage",
+        "short_name": "Bioflux Accelerator (2): Edin - Sky Cage",
         "vgravmap": "TendrilsBottom",
         "access_rules": [
           "$canAirport2,$canEnhancedDroneLaunch,$canDroneTeleport"
@@ -148,8 +148,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Digital Paper (Edin bottom)",
-        "short_name": "Digital Paper (Edin v)",
+        "name": "Note (hangarbasemententrance): Edin - Before Clone Path",
+        "short_name": "Note (hangarbasemententrance): Edin - Before Clone Path",
         "access_rules": [
           "$canAirport2,highjump,$canGlitchGun1",
           "$canAirport2,$canDroneTeleport,$canGlitchGun1",
@@ -162,8 +162,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health & Power Nodes (Edin right) (2 items)",
-        "short_name": "Health & Power Nodes (Edin >) (2 items)",
+        "name": "Edin - Double Check Tunnel (2 items)",
+        "short_name": "Edin - Double Check Tunnel (2 items)",
         "access_rules": [
           "$canTeleport2,$canGlitchBomb,highjump",
           "$canTeleport3,$canEnhancedDroneLaunch,$canDroneTeleport"
@@ -178,8 +178,8 @@
         ]
       },
       {
-        "name": "Shards",
-        "short_name": "Shards",
+        "name": "Shards: Edin - Central Ruins Glitch Alcove",
+        "short_name": "Shards: Edin - Central Ruins Glitch Alcove",
         "vgravmap": "Shards",
         "access_rules": [
           "$canTeleport2,$canGlitchBomb",
@@ -192,8 +192,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Range Node (Edin)",
-        "short_name": "Range Node (Edin)",
+        "name": "Range node (area6entrance): Edin - Secret Tunnel Near Indi",
+        "short_name": "Range node (area6entrance): Edin - Secret Tunnel Near Indi",
         "vgravmap": "RangeNode3",
         "access_rules": ["$canAirport2,highjump,$canUseRemoteDrone"],
         "map_locations": [
@@ -203,8 +203,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Address Bomb",
-        "short_name": "Address Bomb",
+        "name": "Address Bomb: Edin - Main Hangar",
+        "short_name": "Address Bomb: Edin - Main Hangar",
         "vgravmap": "GlitchBomb",
         "access_rules": [
           "$canTeleport2,highjump",

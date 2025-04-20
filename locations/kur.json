@@ -12,8 +12,8 @@
     ],
     "children": [
       {
-        "name": "Clay Tablet (Kur top)",
-        "short_name": "Clay Tablet (Kur ^)",
+        "name": "Note (area8entrance): Kur - Peak Cliff Ledge",
+        "short_name": "Note (area8entrance): Kur - Peak Cliff Ledge",
         "vgravmap": "Note12",
         "access_rules": [
           "$canAirport3,highjump,$canDroneTeleport",
@@ -33,8 +33,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Power Node Fragment (Snowy Kur)",
-        "short_name": "Power Node Fragment (Snowy Kur)",
+        "name": "Power node fragment (icecrags): Kur - Snowy Cliffs Ledge Upper",
+        "short_name": "Power node fragment (icecrags): Kur - Snowy Cliffs Ledge Upper",
         "vgravmap": "PowerNodeFragment14",
         "access_rules": [
           "$canDroneTeleport,grapple,$canGlitchGun2",
@@ -50,8 +50,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Power Node (Zoo)",
-        "short_name": "Power Node (Zoo)",
+        "name": "Power node (mountainback): Kur - Cliffs Behind Gir-Tab Near Crumble Floor",
+        "short_name": "Power node (mountainback): Kur - Cliffs Behind Gir-Tab Near Crumble Floor",
         "vgravmap": "PowerNode4",
         "access_rules": [
           "$canTeleport1,$canGlitchGun2,highjump",
@@ -69,8 +69,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Journal Page (Kur middle)",
-        "short_name": "Journal Page (Kur =)",
+        "name": "Note (uruku): (icecrags): Kur - Snowy Cliffs Ledge Lower",
+        "short_name": "Note (uruku): (icecrags): Kur - Snowy Cliffs Ledge Lower",
         "vgravmap": "Note17",
         "access_rules": [
           "$canAirport3,highjump,$canEnhancedDroneLaunch",
@@ -89,8 +89,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Reflector",
-        "short_name": "Reflector",
+        "name": "Reflector: Kur - Drone Odyssey Reward",
+        "short_name": "Reflector: Kur - Drone Odyssey Reward",
         "vgravmap": "Reflect",
         "access_rules": [
           "$canAirport3,highjump,$canUseRemoteDrone",
@@ -107,8 +107,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Enhanced Drone Launch",
-        "short_name": "Enhanced Drone Launch",
+        "name": "Enhanced Drone Launch: Kur - Loop Room",
+        "short_name": "Enhanced Drone Launch: Kur - Loop Room",
         "vgravmap": "EnhancedLaunch",
         "access_rules": [
           "$canAirport3,highjump",
@@ -123,8 +123,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node Fragment (Zoo)",
-        "short_name": "Health Node Fragment (Zoo)",
+        "name": "Health node fragment (mountainback): Kur - Cliffs Behind Gir-Tab Above Shrine",
+        "short_name": "Health node fragment (mountainback): Kur - Cliffs Behind Gir-Tab Above Shrine",
         "vgravmap": "HealthNodefragment11",
         "access_rules": [
           "$canTeleport1,$canGlitchGun2,highjump,$canUseRemoteDrone,grapple",
@@ -141,8 +141,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node Fragment (Kur top left)",
-        "short_name": "Health Node Fragment (Kur <^)",
+        "name": "Health node fragment (hiddenstalagmite): Kur - Drone Odyssey Secret",
+        "short_name": "Health node fragment (hiddenstalagmite): Kur - Drone Odyssey Secret",
         "vgravmap": "HealthNodeFragment12",
         "access_rules": [
           "$canAirport3,highjump,$canUseRemoteDrone",
@@ -159,8 +159,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Grapple",
-        "short_name": "Grapple",
+        "name": "Grapple: Kur - Cliffs Behind Gir-Tab Shrine",
+        "short_name": "Grapple: Kur - Cliffs Behind Gir-Tab Shrine",
         "vgravmap": "Grapple",
         "access_rules": [
           "$canTeleport1,$canGlitchGun2,highjump,$canUseRemoteDrone",
@@ -177,8 +177,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Clay Tablet (Kur bottom)",
-        "short_name": "Clay Tablet (Kur v)",
+        "name": "Note (public notice): (icecrags): Kur - Shrine Before Drone Odyssey",
+        "short_name": "Note (public notice): (icecrags): Kur - Shrine Before Drone Odyssey",
         "vgravmap": "Note13",
         "access_rules": [
           "$canAirport3,highjump,$canUseRemoteDrone",
@@ -195,8 +195,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node Fragment (Kur middle left)",
-        "short_name": "Health Node Fragment (Kur <=)",
+        "name": "Health node fragment (mountainslope): Kur - Watch for Rolling Rocks",
+        "short_name": "Health node fragment (mountainslope): Kur - Watch for Rolling Rocks",
         "vgravmap": "HealthNodeFragment8",
         "access_rules": [
           "$canAirport2,highjump,$canDroneTeleport",
@@ -214,8 +214,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node (Kur)",
-        "short_name": "Health Node (Kur)",
+        "name": "Health node (secretlairshortcut): Kur - Gir-Tab Upper Entrance",
+        "short_name": "Health node (secretlairshortcut): Kur - Gir-Tab Upper Entrance",
         "vgravmap": "HealthNode4",
         "access_rules": [
           "$canTeleport1,$canGlitchGun2,highjump",
@@ -229,8 +229,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Ion Beam",
-        "short_name": "Ion Beam",
+        "name": "Ion Beam: Kur - Inside Cliff",
+        "short_name": "Ion Beam: Kur - Inside Cliff",
         "vgravmap": "IonBeam",
         "access_rules": ["$canAirport3"],
         "map_locations": [
@@ -240,8 +240,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Remote Drone",
-        "short_name": "Remote Drone",
+        "name": "Remote Drone: Kur - Above Twin Save Rooms",
+        "short_name": "Remote Drone: Kur - Above Twin Save Rooms",
         "vgravmap": "DroneGun",
         "access_rules": [
           "$canTeleport1,highjump",
@@ -258,8 +258,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Hypo-Atomizer",
-        "short_name": "Hypo-Atomizer",
+        "name": "Hypo-Atomizer: Kur - Drone Side Quest",
+        "short_name": "Hypo-Atomizer: Kur - Drone Side Quest",
         "vgravmap": "VerticalSpread",
         "access_rules": [
           "$canTeleport1,$canUseRemoteDrone",
@@ -274,8 +274,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node Fragment (Kur middle right)",
-        "short_name": "Health Node Fragment (Kur =>)",
+        "name": "Health node fragment (lairvestibule): Kur - Gir-Tab Lower Entrance Drone Tunnel",
+        "short_name": "Health node fragment (lairvestibule): Kur - Gir-Tab Lower Entrance Drone Tunnel",
         "vgravmap": "HealthNodeFragment9",
         "access_rules": [
           "$canTeleport2,$canUseRemoteDrone,$canGlitchGun2",
@@ -290,8 +290,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Power Node (Kur bottom)",
-        "short_name": "Power Node (Kur v)",
+        "name": "Power node (entranceroom1): Kur - Main Shaft",
+        "short_name": "Power node (entranceroom1): Kur - Main Shaft",
         "vgravmap": "PowerNode3",
         "access_rules": [
           "{}",
@@ -314,8 +314,8 @@
         ]
       },
       {
-        "name": "Health Node Fragment (Kur bottom)",
-        "short_name": "Health Node Fragment (Kur v)",
+        "name": "Health node fragment (cavernaccess): Kur - Drone Tunnel Before Gauntlet",
+        "short_name": "Health node fragment (cavernaccess): Kur - Drone Tunnel Before Gauntlet",
         "vgravmap": "HealthNodeFragment10",
         "access_rules": ["$canUseRemoteDrone"],
         "map_locations": [
@@ -325,8 +325,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Firewall",
-        "short_name": "Firewall",
+        "name": "Firewall: Kur - High Jump Shrine False Wall",
+        "short_name": "Firewall: Kur - High Jump Shrine False Wall",
         "vgravmap": "FireWall",
         "access_rules": [
           "$canAirport2",
@@ -343,8 +343,8 @@
         "sections": [{"name": "Hidden Wall", "item_count": 1}]
       },
       {
-        "name": "Address Disruptor 2",
-        "short_name": "Address Disruptor 2",
+        "name": "Address Disruptor (2): Kur - Above Lower Save",
+        "short_name": "Address Disruptor (2): Kur - Above Lower Save",
         "vgravmap": "$canGlitchGun2",
         "access_rules": [
           "$canTeleport1,$canUseRemoteDrone",
@@ -361,8 +361,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Field Disruptor",
-        "short_name": "Field Disruptor",
+        "name": "Field Disruptor: Kur - High Jump Shrine",
+        "short_name": "Field Disruptor: Kur - High Jump Shrine",
         "vgravmap": "HighJump",
         "access_rules": [
           "$canTeleport1,excavate,$canGlitchGun1",
@@ -381,8 +381,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Tethered Charge",
-        "short_name": "Tethered Charge",
+        "name": "Tethered Charge: Kur - Gauntlet Reward",
+        "short_name": "Tethered Charge: Kur - Gauntlet Reward",
         "vgravmap": "TetheredCharge",
         "access_rules": [
           "$canTeleport1,highjump,$canDroneTeleport,$canGlitchGun1",

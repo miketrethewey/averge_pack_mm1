@@ -1,13 +1,17 @@
 [
+  // Eribu
   {
     "name": "Eribu",
     "color": "#A81468",
     "parent": "Sudra",
-    "access_rules": ["@Start/Connection"],
+    "access_rules": [
+      "@Start/Connection"
+    ],
     "children": [
+      // Health Node (Eribu top)
       {
-        "name": "Health Node (Eribu top)",
-        "short_name": "Health Node (Eribu ^)",
+        "name": "Health node (reflectorroom): Eribu - Left Tower",
+        "short_name": "Health node (reflectorroom): Eribu - Left Tower",
         "vgravmap": "HealthNode9",
         "access_rules": [
           "{$canGlitchBomb,$canUseRemoteDrone}",
@@ -17,20 +21,29 @@
           "$canDroneTeleport,$canGlitchBomb"
         ],
         "map_locations": [
-          {"map": "sudra", "x": 243, "y": 603},
-          {"map": "eribu", "x": 422, "y": 105}
+          {
+            "map": "sudra",
+            "x": 243,
+            "y": 603
+          },
+          {
+            "map": "eribu",
+            "x": 422,
+            "y": 105
+          }
         ],
         "sections": [
           {
             "name": "Item",
             "item_count": 1,
-            "capture_item": true
+						"capture_item": true
           }
         ]
       },
+      // Nova
       {
-        "name": "Nova",
-        "short_name": "Nova",
+        "name": "Nova: Eribu - Right Tower",
+        "short_name": "Nova: Eribu - Right Tower",
         "vgravmap": "Nova",
         "access_rules": [
           "$canTeleport1",
@@ -39,14 +52,28 @@
           "[progmasochist],grapple"
         ],
         "map_locations": [
-          {"map": "sudra", "x": 279, "y": 639},
-          {"map": "eribu", "x": 458, "y": 141}
+          {
+            "map": "sudra",
+            "x": 279,
+            "y": 639
+          },
+          {
+            "map": "eribu",
+            "x": 458,
+            "y": 141
+          }
         ],
-        "sections": [{"name": "Item", "item_count": 1}]
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
       },
+      // Power Node Fragment (IKKIBU-LABIRU)
       {
-        "name": "Power Node Fragment (IKKIBU-LABIRU)",
-        "short_name": "Power Node Fragment (IKKIBU-LABIRU)",
+        "name": "Power node fragment (room14c): Eribu - Upper Passcode Room (IKKIBU-LABIRU)",
+        "short_name": "Power node fragment (room14c): Eribu - Upper Passcode Room (IKKIBU-LABIRU)",
         "vgravmap": "PowerNodeFragment2",
         "access_rules": [
           "{spazer,excavate,grapple}",
@@ -64,20 +91,29 @@
           "[progmasochist],$canUseRemoteDrone"
         ],
         "map_locations": [
-          {"map": "sudra", "x": 99, "y": 657},
-          {"map": "eribu", "x": 278, "y": 159}
+          {
+            "map": "sudra",
+            "x":  99,
+            "y": 657
+          },
+          {
+            "map": "eribu",
+            "x": 278,
+            "y": 159
+          }
         ],
         "sections": [
           {
             "name": "Item",
             "item_count": 1,
-            "capture_item": true
+						"capture_item": true
           }
         ]
       },
+      // Multi-Disruptor
       {
-        "name": "Multi-Disruptor",
-        "short_name": "Multi-Disruptor",
+        "name": "Multi Disruptor: Eribu - Outside Upper Passcode Room",
+        "short_name": "Multi Disruptor: Eribu - Outside Upper Passcode Room",
         "vgravmap": "MultiDisruptor",
         "access_rules": [
           "$canAirport2,excavate",
@@ -88,14 +124,28 @@
           "grapple,excavate"
         ],
         "map_locations": [
-          {"map": "sudra", "x": 153, "y": 657},
-          {"map": "eribu", "x": 332, "y": 159}
+          {
+            "map": "sudra",
+            "x": 153,
+            "y": 657
+          },
+          {
+            "map": "eribu",
+            "x": 332,
+            "y": 159
+          }
         ],
-        "sections": [{"name": "Item", "item_count": 1}]
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
       },
+      // Flamethrower (DINGER-GISBAR)
       {
-        "name": "Flamethrower (DINGER-GISBAR)",
-        "short_name": "Flamethrower (DINGER-GISBAR)",
+        "name": "Flamethrower: Eribu - Primordial Cave Upper (DINGER-GISBAR)",
+        "short_name": "Flamethrower: Eribu - Primordial Cave Upper (DINGER-GISBAR)",
         "vgravmap": "FlameThrower",
         "access_rules": [
           "$canAirport3,$canDroneTeleport,passcodetool,highjump",
@@ -104,14 +154,28 @@
           "[progmasochist],grapple,$canAirport3,passcodetool"
         ],
         "map_locations": [
-          {"map": "sudra", "x": 27, "y": 675},
-          {"map": "eribu", "x": 206, "y": 177}
+          {
+            "map": "sudra",
+            "x":  27,
+            "y": 675
+          },
+          {
+            "map": "eribu",
+            "x": 206,
+            "y": 177
+          }
         ],
-        "sections": [{"name": "Item", "item_count": 1}]
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
       },
+      // Size Node (Eribu)
       {
-        "name": "Size Node (Eribu)",
-        "short_name": "Size Node (Eribu)",
+        "name": "Size node (room11): Eribu - Bubble Shrine",
+        "short_name": "Size node (room11): Eribu - Bubble Shrine",
         "vgravmap": "SizeNode1",
         "access_rules": [
           "$canAirport2",
@@ -121,28 +185,56 @@
           "grapple"
         ],
         "map_locations": [
-          {"map": "sudra", "x": 135, "y": 693},
-          {"map": "eribu", "x": 314, "y": 195}
+          {
+            "map": "sudra",
+            "x": 135,
+            "y": 693
+          },
+          {
+            "map": "eribu",
+            "x": 314,
+            "y": 195
+          }
         ],
-        "sections": [{"name": "Item", "item_count": 1}]
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
       },
+      // Note (Eribu)
       {
-        "name": "Note (Eribu)",
-        "short_name": "Note (Eribu)",
+        "name": "Note (room2f): Eribu - Wheelchair Room",
+        "short_name": "Note (room2f): Eribu - Wheelchair Room",
         "vgravmap": "Note2",
         "access_rules": [
           "$canTeleport1,$canDroneTeleport",
           "[progmasochist],$canUseRemoteDrone"
         ],
         "map_locations": [
-          {"map": "sudra", "x": 135, "y": 729},
-          {"map": "eribu", "x": 314, "y": 231}
+          {
+            "map": "sudra",
+            "x": 135,
+            "y": 729
+          },
+          {
+            "map": "eribu",
+            "x": 314,
+            "y": 231
+          }
         ],
-        "sections": [{"name": "Item", "item_count": 1}]
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
       },
+      // Laser Drill
       {
-        "name": "Laser Drill",
-        "short_name": "Laser Drill",
+        "name": "Drill: Eribu - Xedur Reward",
+        "short_name": "Drill: Eribu - Xedur Reward",
         "vgravmap": "Drill",
         "access_rules": [
           "nova",
@@ -154,19 +246,43 @@
           "[progmasochist],grapple"
         ],
         "map_locations": [
-          {"map": "sudra", "x": 279, "y": 729},
-          {"map": "eribu", "x": 458, "y": 231}
+          {
+            "map": "sudra",
+            "x": 279,
+            "y": 729
+          },
+          {
+            "map": "eribu",
+            "x": 458,
+            "y": 231
+          }
         ],
-        "sections": [{"name": "Item", "item_count": 1}]
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
       },
+      // Xedur
       {
         "name": "Xedur",
         "short_name": "Xedur",
         "vgravmap": "",
-        "access_rules": ["@Laser Drill/Item"],
+        "access_rules": [
+          "@Laser Drill/Item"
+        ],
         "map_locations": [
-          {"map": "sudra", "x": 261, "y": 729},
-          {"map": "eribu", "x": 440, "y": 231}
+          {
+            "map": "sudra",
+            "x": 261,
+            "y": 729
+          },
+          {
+            "map": "eribu",
+            "x": 440,
+            "y": 231
+          }
         ],
         "sections": [
           {
@@ -178,13 +294,14 @@
           }
         ]
       },
+      // Power Node (Eribu) - Post Xedur
       {
-        "name": "Power Node (Eribu)",
-        "short_name": "Power Node (Eribu)",
+        "name": "Power node (drillsecret): Eribu - Under Xedur",
+        "short_name": "Power node (drillsecret): Eribu - Under Xedur",
         "vgravmap": "PowerNode1",
         "access_rules": [
-          "{nova}",
-          "{wave}",
+          "{nova}",                       // can see but can't get
+          "{wave}",                       // can see but can't get
           "nova,excavate",
           "grapple,excavate",
           "$canUseRemoteDrone",
@@ -192,8 +309,16 @@
           "$canAirport2,excavate"
         ],
         "map_locations": [
-          {"map": "sudra", "x": 243, "y": 747},
-          {"map": "eribu", "x": 422, "y": 249}
+          {
+            "map": "sudra",
+            "x": 243,
+            "y": 747
+          },
+          {
+            "map": "eribu",
+            "x": 422,
+            "y": 249
+          }
         ],
         "sections": [
           {
@@ -203,9 +328,10 @@
           }
         ]
       },
+      // Health Node Fragment (Eribu top)
       {
-        "name": "Health Node Fragment (Eribu top)",
-        "short_name": "Health Node Fragment (Eribu ^)",
+        "name": "Health node fragment (room2b): Eribu - Primordial Cave Lower",
+        "short_name": "Health node fragment (room2b): Eribu - Primordial Cave Lower",
         "vgravmap": "HealthNodeFragment13",
         "access_rules": [
           "$canTeleport3",
@@ -214,27 +340,53 @@
           "[progadvanced],laserdrill,$canGlitchGun2,$canAirport2"
         ],
         "map_locations": [
-          {"map": "sudra", "x": 27, "y": 765},
-          {"map": "eribu", "x": 206, "y": 267}
+          {
+            "map": "sudra",
+            "x":  27,
+            "y": 765
+          },
+          {
+            "map": "eribu",
+            "x": 206,
+            "y": 267
+          }
         ],
         "sections": [
-          {"name": "Hidden Wall in Water", "item_count": 1}
+          {
+            "name": "Hidden Wall in Water",
+            "item_count": 1
+          }
         ]
       },
+      // Axiom Disruptor
       {
-        "name": "Axiom Disruptor",
-        "short_name": "Axiom Disruptor",
+        "name": "Axiom Disruptor: Eribu - Starter Weapon",
+        "short_name": "Axiom Disruptor: Eribu - Starter Weapon",
         "vgravmap": "DataDisruptor",
-        "access_rules": [],
+        "access_rules": [ ],
         "map_locations": [
-          {"map": "sudra", "x": 81, "y": 765},
-          {"map": "eribu", "x": 260, "y": 267}
+          {
+            "map": "sudra",
+            "x":  81,
+            "y": 765
+          },
+          {
+            "map": "eribu",
+            "x": 260,
+            "y": 267
+          }
         ],
-        "sections": [{"name": "Item", "item_count": 1}]
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
       },
+      // Lightning Gun
       {
-        "name": "Lightning Gun",
-        "short_name": "Lightning Gun",
+        "name": "Lightning Gun: Eribu - Sentry Bot Tunnel",
+        "short_name": "Lightning Gun: Eribu - Sentry Bot Tunnel",
         "vgravmap": "LightningGun",
         "access_rules": [
           "$canAirport3,$canGlitchBomb",
@@ -243,14 +395,28 @@
           "[progmasochist],grapple,$canAirport3"
         ],
         "map_locations": [
-          {"map": "sudra", "x": 171, "y": 801},
-          {"map": "eribu", "x": 350, "y": 303}
+          {
+            "map": "sudra",
+            "x": 171,
+            "y": 801
+          },
+          {
+            "map": "eribu",
+            "x": 350,
+            "y": 303
+          }
         ],
-        "sections": [{"name": "Item", "item_count": 1}]
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
       },
+      // Orbital Discharge (DALKHU-SUBTUM)
       {
-        "name": "Orbital Discharge (DALKHU-SUBTUM)",
-        "short_name": "Orbital Discharge (DALKHU-SUBTUM)",
+        "name": "Orbital Discharge: Eribu - Lower Passcode Room (DALKHU-SUBTUM)",
+        "short_name": "Orbital Discharge: Eribu - Lower Passcode Room (DALKHU-SUBTUM)",
         "vgravmap": "WallTrace",
         "access_rules": [
           "$canAirport2,passcodetool,highjump",
@@ -259,14 +425,28 @@
           "$canDroneTeleport,passcodetool"
         ],
         "map_locations": [
-          {"map": "sudra", "x": 189, "y": 837},
-          {"map": "eribu", "x": 368, "y": 339}
+          {
+            "map": "sudra",
+            "x": 189,
+            "y": 837
+          },
+          {
+            "map": "eribu",
+            "x": 368,
+            "y": 339
+          }
         ],
-        "sections": [{"name": "Item", "item_count": 1}]
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
       },
+      // Health Node Fragment (Eribu bottom left)
       {
-        "name": "Health Node Fragment (Eribu bottom left)",
-        "short_name": "Health Node Fragment (Eribu <v)",
+        "name": "Health node fragment (secretchamber): Eribu - Outside Lower Passcode Room",
+        "short_name": "Health node fragment (secretchamber): Eribu - Outside Lower Passcode Room",
         "vgravmap": "HealthNodeFragment2",
         "access_rules": [
           "{laserdrill}",
@@ -280,8 +460,16 @@
           "[progadvanced],grapple,excavate"
         ],
         "map_locations": [
-          {"map": "sudra", "x": 207, "y": 873},
-          {"map": "eribu", "x": 386, "y": 375}
+          {
+            "map": "sudra",
+            "x": 207,
+            "y": 873
+          },
+          {
+            "map": "eribu",
+            "x": 386,
+            "y": 375
+          }
         ],
         "sections": [
           {
@@ -291,9 +479,10 @@
           }
         ]
       },
+      // Power Node Fragment (Eribu bottom)
       {
-        "name": "Power Node Fragment (Eribu bottom)",
-        "short_name": "Power Node Fragment (Eribu v)",
+        "name": "Power node fragment (area5entrance): Eribu - Path to Indi Ceiling",
+        "short_name": "Power node fragment (area5entrance): Eribu - Path to Indi Ceiling",
         "vgravmap": "PowerNodeFragment16",
         "access_rules": [
           "$canAirport3,highjump",
@@ -302,21 +491,51 @@
           "[progadvanced],$canUseRemoteDrone,grapple,$canAirport2"
         ],
         "map_locations": [
-          {"map": "sudra", "x": 261, "y": 855},
-          {"map": "eribu", "x": 440, "y": 357}
+          {
+            "map": "sudra",
+            "x": 261,
+            "y": 855
+          },
+          {
+            "map": "eribu",
+            "x": 440,
+            "y": 357
+          }
         ],
-        "sections": [{"name": "Item", "item_count": 1}]
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
       },
+      // Health Node (Eribu bottom)
       {
-        "name": "Health Node (Eribu bottom)",
-        "short_name": "Health Node (Eribu v)",
+        "name": "Health node (room24): Eribu - Path to Absu",
+        "short_name": "Health node (room24): Eribu - Path to Absu",
         "vgravmap": "HealthNode1",
-        "access_rules": ["excavate", "[progmasochist],grapple"],
-        "map_locations": [
-          {"map": "sudra", "x": 261, "y": 891},
-          {"map": "eribu", "x": 440, "y": 393}
+        "access_rules": [
+          "excavate",
+          "[progmasochist],grapple"
         ],
-        "sections": [{"name": "Item", "item_count": 1}]
+        "map_locations": [
+          {
+            "map": "sudra",
+            "x": 261,
+            "y": 891
+          },
+          {
+            "map": "eribu",
+            "x": 440,
+            "y": 393
+          }
+        ],
+        "sections": [
+          {
+            "name": "Item",
+            "item_count": 1
+          }
+        ]
       }
     ]
   }

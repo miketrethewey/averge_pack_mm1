@@ -6,8 +6,8 @@
     "access_rules": ["@Eribu -> Absu/Connection"],
     "children": [
       {
-        "name": "Health Node Fragment (Absu top)",
-        "short_name": "Health Node Fragment (Absu)",
+        "name": "Health node fragment (bosssecretaccess4): Absu - Path to Indi Side Room",
+        "short_name": "Health node fragment (bosssecretaccess4): Absu - Path to Indi Side Room",
         "vgravmap": "HealthNodeFragment6",
         "access_rules": [
           "$canTeleport1,$canGlitchGun1,grapple",
@@ -22,8 +22,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Power Node Fragment (Attic 3)",
-        "short_name": "Power Node Fragment (Attic 3)",
+        "name": "Power node fragment (prisonattic)(3): Absu - Attic Left Shrine",
+        "short_name": "Power node fragment (prisonattic)(3): Absu - Attic Left Shrine",
         "vgravmap": "PowerNodeFragment5",
         "access_rules": [
           "$canAirport2,highjump,$canGlitchGun2",
@@ -39,8 +39,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Power Node Fragment (Attic 4)",
-        "short_name": "Power Node Fragment (Attic 4)",
+        "name": "Power node fragment (prisonattic)(4): Absu - Attic Left Shrine",
+        "short_name": "Power node fragment (prisonattic)(4): Absu - Attic Left Shrine",
         "vgravmap": "PowerNodefragment6",
         "access_rules": [
           "$canAirport2,highjump,$canGlitchBomb",
@@ -61,8 +61,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Power Node Fragment (Attic 1)",
-        "short_name": "Power Node Fragment (Attic 1)",
+        "name": "Power node fragment (prisonattic)(1): Absu - Attic Left Shrine",
+        "short_name": "Power node fragment (prisonattic)(1): Absu - Attic Left Shrine",
         "vgravmap": "PowerNodeFragment3",
         "access_rules": [
           "$canAirport2,highjump",
@@ -80,8 +80,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Power Node Fragment (Attic 2)",
-        "short_name": "Power Node Fragment (Attic 2)",
+        "name": "Power node fragment (prisonattic)(2): Absu - Attic Left Shrine",
+        "short_name": "Power node fragment (prisonattic)(2): Absu - Attic Left Shrine",
         "vgravmap": "PowerNodeFragment4",
         "access_rules": [
           "$canTeleport2,highjump,$canGlitchBomb",
@@ -98,8 +98,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node Fragment (Absu middle 1)",
-        "short_name": "Health Node Fragment (Absu = 1)",
+        "name": "Health node fragment (ventilation): Absu - Switch Cage",
+        "short_name": "Health node fragment (ventilation): Absu - Switch Cage",
         "vgravmap": "HealthNodeFragment4",
         "access_rules": [
           "{excavate}",
@@ -121,8 +121,8 @@
         ]
       },
       {
-        "name": "Health Node Fragment (Absu middle 2)",
-        "short_name": "Health Node Fragment (Absu = 2)",
+        "name": "Health node fragment (entranceroom1): Absu - Entrance Shaft",
+        "short_name": "Health node fragment (entranceroom1): Absu - Entrance Shaft",
         "vgravmap": "HealthNodeFragment1",
         "access_rules": ["excavate"],
         "map_locations": [
@@ -132,8 +132,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Address Disruptor 1",
-        "short_name": "Address Disruptor 1",
+        "name": "Address Disruptor (1): Absu - Telal Reward",
+        "short_name": "Address Disruptor (1): Absu - Telal Reward",
         "vgravmap": "AddressDisruptor1",
         "access_rules": [
           "$canTeleport1",
@@ -167,8 +167,8 @@
         ]
       },
       {
-        "name": "Power Node Fragment (Absu middle left)",
-        "short_name": "Power Node Fragment (Absu <=)",
+        "name": "Power node fragment (deepcavern): Absu - Entrance Shaft Vault",
+        "short_name": "Power node fragment (deepcavern): Absu - Entrance Shaft Vault",
         "vgravmap": "PowerNodeFragment7",
         "access_rules": [
           "$canTeleport1,$canGlitchGun1",
@@ -183,8 +183,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Kilver",
-        "short_name": "Kilver",
+        "name": "Kilver: Absu - Elsenova",
+        "short_name": "Kilver: Absu - Elsenova",
         "vgravmap": "Kilver",
         "access_rules": ["excavate", "[progmasochist],grapple"],
         "map_locations": [
@@ -194,8 +194,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node (Absu)",
-        "short_name": "Health Node (Absu)",
+        "name": "Health node (bossexit): Absu - Shaft Behind Telal",
+        "short_name": "Health node (bossexit): Absu - Shaft Behind Telal",
         "vgravmap": "HealthNode2",
         "access_rules": [
           "$canTeleport2",
@@ -211,8 +211,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Inertial Pulse",
-        "short_name": "Inertial Pulse",
+        "name": "Inertial Pulse: Absu - Shrine Behind Glitch",
+        "short_name": "Inertial Pulse: Absu - Shrine Behind Glitch",
         "vgravmap": "IntertialPulse",
         "access_rules": [
           "$canAirport3",
@@ -229,8 +229,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Digital Paper (Absu top)",
-        "short_name": "Digital Paper (Absu ^)",
+        "name": "Note (entrancesecret1): Absu - Under Entrance Shaft",
+        "short_name": "Note (entrancesecret1): Absu - Under Entrance Shaft",
         "vgravmap": "Note16",
         "access_rules": ["$canUseRemoteDrone"],
         "map_locations": [
@@ -240,8 +240,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Rusalka Tablet (Absu top right)",
-        "short_name": "Rusalka Tablet (Absu ^>)",
+        "name": "Note (greenfungus1): Absu - Green Wall Alcove",
+        "short_name": "Note (greenfungus1): Absu - Green Wall Alcove",
         "vgravmap": "Note24",
         "access_rules": [
           "$canTeleport2",
@@ -257,8 +257,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Rusalka Tablet (Absu top left)",
-        "short_name": "Rusalka Tablet (Absu <^)",
+        "name": "Note (prison1): Absu - Cell Near Elsenova",
+        "short_name": "Note (prison1): Absu - Cell Near Elsenova",
         "vgravmap": "Note14",
         "access_rules": [
           "{wave}",
@@ -278,8 +278,8 @@
         ]
       },
       {
-        "name": "Size Node (Absu)",
-        "short_name": "Size Node (Absu)",
+        "name": "Size node (purplediatoms1): Absu - Trapped Diatoms",
+        "short_name": "Size node (purplediatoms1): Absu - Trapped Diatoms",
         "vgravmap": "SizeNode2",
         "access_rules": [
           "$canTeleport2",
@@ -296,8 +296,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node Fragment (Absu bottom)",
-        "short_name": "Health Node Fragment (Absu v)",
+        "name": "Health node fragment (fungusforest): Absu - Gated Alcove",
+        "short_name": "Health node fragment (fungusforest): Absu - Gated Alcove",
         "vgravmap": "HealthNodeFragment3",
         "access_rules": [
           "$canTeleport1,$canGlitchGun1",
@@ -315,8 +315,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Data Bomb",
-        "short_name": "Data Bomb",
+        "name": "Data Bomb: Absu - Deep Under Entrance Shaft",
+        "short_name": "Data Bomb: Absu - Deep Under Entrance Shaft",
         "vgravmap": "DataGrenade",
         "access_rules": ["$canTeleport2,$canDroneTeleport"],
         "map_locations": [
@@ -326,8 +326,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Range Node (Absu left)",
-        "short_name": "Range Node (Absu <)",
+        "name": "Range node (prisoncellarsecret): Absu - Behind Glitch Barrier",
+        "short_name": "Range node (prisoncellarsecret): Absu - Behind Glitch Barrier",
         "access_rules": [
           "$canTeleport1,$canGlitchGun2,$canUseRemoteDrone",
           "$canTeleport1,$canGlitchBomb,$canUseRemoteDrone",
@@ -340,8 +340,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Digital Paper (Absu bottom)",
-        "short_name": "Digital Paper (Absu v)",
+        "name": "Note (ducts2): Absu - Floating Platform",
+        "short_name": "Note (ducts2): Absu - Floating Platform",
         "vgravmap": "Note15",
         "access_rules": [
           "{wave}",
@@ -369,8 +369,8 @@
         ]
       },
       {
-        "name": "Range Node (Absu right)",
-        "short_name": "Range Node (Absu >)",
+        "name": "Range node (greenfungus1secret1): Absu - Hidden Shrine",
+        "short_name": "Range node (greenfungus1secret1): Absu - Hidden Shrine",
         "vgravmap": "RangeNode1",
         "access_rules": [
           "$canGlitchGun1,$canUseRemoteDrone",
@@ -388,8 +388,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Rusalka Tablet (Absu bottom right)",
-        "short_name": "Rusalka Tablet (Absu v>)",
+        "name": "Note (chasms): Absu - Chasm Room Tunnel",
+        "short_name": "Note (chasms): Absu - Chasm Room Tunnel",
         "vgravmap": "Note28",
         "access_rules": [
           "{wave,$canGlitchGun1}",
@@ -415,8 +415,8 @@
         ]
       },
       {
-        "name": "Power Node (Absu)",
-        "short_name": "Power Node (Absu)",
+        "name": "Power node (entranceroom2): Absu - Path to Zi",
+        "short_name": "Power node (entranceroom2): Absu - Path to Zi",
         "vgravmap": "PowerNode2",
         "access_rules": [
           "$canTeleport1,$canGlitchGun1",
@@ -438,8 +438,8 @@
         ]
       },
       {
-        "name": "Power Node Fragment (Absu bottom)",
-        "short_name": "Power Node Fragment (Absu v)",
+        "name": "Power node fragment (lavasecret): Absu - Lava Hall",
+        "short_name": "Power node fragment (lavasecret): Absu - Lava Hall",
         "vgravmap": "PowerNodeFragment9",
         "access_rules": [
           "$canAirport2,highjump",
@@ -456,8 +456,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Rusalka Tablet (Absu bottom left)",
-        "short_name": "Rusalka Tablet (Absu <v)",
+        "name": "Note (ducts1secret3): Absu - Lowest Point",
+        "short_name": "Note (ducts1secret3): Absu - Lowest Point",
         "vgravmap": "Note7",
         "access_rules": ["$canTeleport1", "[progmasochist],grapple"],
         "map_locations": [

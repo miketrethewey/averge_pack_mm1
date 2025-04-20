@@ -10,8 +10,8 @@
     ],
     "children": [
       {
-        "name": "Power Node (E-Kur-Mah)",
-        "short_name": "Power Node (E-Kur-Mah)",
+        "name": "Power node (transitionroom): E-Kur-Mah - Key Door on Quarry Path",
+        "short_name": "Power node (transitionroom): E-Kur-Mah - Key Door on Quarry Path",
         "vgravmap": "PowerNode6",
         "access_rules": ["$canAirport3,highjump,grapple", "sudrankey"],
         "map_locations": [
@@ -21,8 +21,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Sudran Key",
-        "short_name": "Sudran Key",
+        "name": "Sudran Key: E-Kur-Mah - Quarry Upper",
+        "short_name": "Sudran Key: E-Kur-Mah - Quarry Upper",
         "vgravmap": "BreachSuppressor",
         "access_rules": [
           "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
@@ -35,8 +35,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Clay Tablet (E-Kur-Mah top right)",
-        "short_name": "Clay Tablet (E-Kur-Mah ^>)",
+        "name": "Note (keychamber): E-Kur-Mah - Quarry Lower",
+        "short_name": "Note (keychamber): E-Kur-Mah - Quarry Lower",
         "access_rules": [
           "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
           "$canTeleport3,highjump,$canDroneTeleport"
@@ -48,8 +48,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Clay Tablet (E-Kur-Mah top left)",
-        "short_name": "Clay Tablet (E-Kur-Mah <^)",
+        "name": "Note (area4entrance): E-Kur-Mah - Entry Chamber Breakable Wall",
+        "short_name": "Note (area4entrance): E-Kur-Mah - Entry Chamber Breakable Wall",
         "access_rules": [
           "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
           "$canTeleport3,highjump,$canDroneTeleport",
@@ -62,8 +62,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Clay Tablet (E-Kur-Mah bottom)",
-        "short_name": "Clay Tablet (E-Kur-Mah v)",
+        "name": "Note (basementaccess1): E-Kur-Mah - East Shaft Wall Alcove",
+        "short_name": "Note (basementaccess1): E-Kur-Mah - East Shaft Wall Alcove",
         "access_rules": [
           "{}",
           "$canTeleport3,sudrankey",
@@ -82,8 +82,8 @@
         ]
       },
       {
-        "name": "Quantum Veriegator (ISKART-EHANZU)",
-        "short_name": "Quantum Veriegator (ISKART-EHANZU)",
+        "name": "Quantum Variegator: E-Kur-Mah - Passcode Alcove (ISKART-EHANZU)",
+        "short_name": "Quantum Variegator: E-Kur-Mah - Passcode Alcove (ISKART-EHANZU)",
         "access_rules": [
           "$canTeleport1,passcodetool,$canEnhancedDroneLaunch,$canDroneTeleport",
           "$canAirport3,passcodetool,$canDroneTeleport,highjump"
@@ -95,8 +95,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node Fragment (E-Kur-Mah)",
-        "short_name": "Health Node Fragment (E-Kur-Mah)",
+        "name": "Health node fragment (verdantcavern): E-Kur-Mah - Hidden Drone Tunnel",
+        "short_name": "Health node fragment (verdantcavern): E-Kur-Mah - Hidden Drone Tunnel",
         "vgravmap": "HealthNodeFragment17",
         "access_rules": [
           "$canAirport3,$canUseRemoteDrone",
@@ -109,8 +109,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Red Coat",
-        "short_name": "Red Coat",
+        "name": "Red Coat: E-Kur-Mah - Final Chamber Upper",
+        "short_name": "Red Coat: E-Kur-Mah - Final Chamber Upper",
         "vgravmap": "RedCoat",
         "access_rules": [
           "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch",
@@ -123,8 +123,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Power Node Fragment (E-Kur-Mah)",
-        "short_name": "Power Node Fragment (E-Kur-Mah)",
+        "name": "Power node fragment (breachsuppressorroom): E-Kur-Mah - Final Chamber Lower",
+        "short_name": "Power node fragment (breachsuppressorroom): E-Kur-Mah - Final Chamber Lower",
         "vgravmap": "PowerNodeFragment18",
         "access_rules": [
           "$canTeleport2,$canDroneTeleport,grapple,highjump,$canEnhancedDroneLaunch,sudrankey",

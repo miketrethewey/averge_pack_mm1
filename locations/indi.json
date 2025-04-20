@@ -6,8 +6,8 @@
     "access_rules": ["@Eribu -> Indi/Connection"],
     "children": [
       {
-        "name": "Rusalka Tablet (Indi)",
-        "short_name": "Rusalka Tablet (Indi)",
+        "name": "Note (area7entrance): Indi - Outside Save",
+        "short_name": "Note (area7entrance): Indi - Outside Save",
         "vgravmap": "Note9",
         "access_rules": [
           "{}",
@@ -29,8 +29,8 @@
         ]
       },
       {
-        "name": "Health Node Fragment (Slug Glitch)",
-        "short_name": "Health Node Fragment (Slug Glitch)",
+        "name": "Health node fragment (glitchyslug): Glitched Slug Item",
+        "short_name": "Health node fragment (glitchyslug): Glitched Slug Item",
         "vgravmap": "HealthNodeFragment15",
         "access_rules": ["$canGlitchGun1"],
         "map_locations": [
@@ -40,8 +40,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Digital Paper (Indi)",
-        "short_name": "Digital Paper (Indi)",
+        "name": "Note (area1entrance): Indi - Path to Eribu",
+        "short_name": "Note (area1entrance): Indi - Path to Eribu",
         "vgravmap": "Note25",
         "access_rules": [
           "$canUseRemoteDrone,grapple",

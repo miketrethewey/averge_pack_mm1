@@ -8,8 +8,8 @@
     ],
     "children": [
       {
-        "name": "Power Node Fragment (Zi top) #1",
-        "short_name": "Power Node Fragment (Zi ^) #1",
+        "name": "Power node fragment (filtration): Zi - Behind Uruku Ceiling Ledge",
+        "short_name": "Power node fragment (filtration): Zi - Behind Uruku Ceiling Ledge",
         "vgravmap": "PowerNodeFragment1",
         "access_rules": [
           "$canAirport2,$canGlitchGun1",
@@ -32,8 +32,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node (Zi)",
-        "short_name": "Health Node (Zi)",
+        "name": "Health node (boss room): Zi - Uruku Cage",
+        "short_name": "Health node (boss room): Zi - Uruku Cage",
         "vgravmap": "HealthNode3",
         "access_rules": [
           "$canTeleport1,highjump,$canGlitchGun1",
@@ -50,8 +50,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Modified Lab Coat",
-        "short_name": "Modified Lab Coat",
+        "name": "Modified Lab Coat: Zi - Uruku Reward",
+        "short_name": "Modified Lab Coat: Zi - Uruku Reward",
         "vgravmap": "GlitchTeleport",
         "access_rules": [
           "$canAirport2",
@@ -88,8 +88,8 @@
         ]
       },
       {
-        "name": "Digital Paper (Zi) #1",
-        "short_name": "Digital Paper (Zi) #1",
+        "name": "Note (arterialbypassentrance): Zi - Ceiling Secret above Preview Room",
+        "short_name": "Note (arterialbypassentrance): Zi - Ceiling Secret above Preview Room",
         "vgravmap": "Note10",
         "access_rules": [
           "$canAirport2,excavate",
@@ -105,8 +105,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node Fragment (Zi) #1",
-        "short_name": "Health Node Fragment (Zi) #1",
+        "name": "Health node fragment (arterialfiltration): Zi - Preview Room",
+        "short_name": "Health node fragment (arterialfiltration): Zi - Preview Room",
         "vgravmap": "HealthNodeFragment7",
         "access_rules": [
           "{highjump}",
@@ -129,8 +129,8 @@
         ]
       },
       {
-        "name": "Rusalka Tablet (Zi)",
-        "short_name": "Rusalka Tablet (Zi)",
+        "name": "Note (venousmaintenance3): Zi - Drone Quest Upper",
+        "short_name": "Note (venousmaintenance3): Zi - Drone Quest Upper",
         "vgravmap": "Note20",
         "access_rules": ["$canUseRemoteDrone"],
         "map_locations": [
@@ -140,8 +140,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Voranj",
-        "short_name": "Voranj",
+        "name": "Voranj: Zi - Drone Quest Lower",
+        "short_name": "Voranj: Zi - Drone Quest Lower",
         "vgravmap": "Voranj",
         "access_rules": ["$canUseRemoteDrone"],
         "map_locations": [
@@ -151,8 +151,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Power Node Fragment (Zi) #2",
-        "short_name": "Power Node Fragment (Zi) #2",
+        "name": "Power node fragment (eyestalksecret2): Zi - Furglot Tunnel",
+        "short_name": "Power node fragment (eyestalksecret2): Zi - Furglot Tunnel",
         "vgravmap": "PowerNodeFragment8",
         "access_rules": [
           "$canAirport2,highjump",
@@ -171,8 +171,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Size Node (Zi)",
-        "short_name": "Size Node (Zi)",
+        "name": "Size node (arterialaccess): Zi - False Ceiling Alcove",
+        "short_name": "Size node (arterialaccess): Zi - False Ceiling Alcove",
         "vgravmap": "SizeNode3",
         "access_rules": [
           "$canTeleport2",
@@ -188,8 +188,8 @@
         "sections": [{"name": "Hidden Wall", "item_count": 1}]
       },
       {
-        "name": "Bioflux Accelerator #1",
-        "short_name": "Bioflux Accelerator #1",
+        "name": "Bioflux Accelerator (1): Zi - Disappointment Hill",
+        "short_name": "Bioflux Accelerator (1): Zi - Disappointment Hill",
         "vgravmap": "TendrilsTop",
         "access_rules": [
           "$canAirport2",
@@ -205,8 +205,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Health Node Fragment (Zi middle)",
-        "short_name": "Health Node Fragment (Zi =)",
+        "name": "Health node fragment (arterialshaft): Zi - Above Veruska",
+        "short_name": "Health node fragment (arterialshaft): Zi - Above Veruska",
         "vgravmap": "HealthNodeFragment5",
         "access_rules": [
           "$canTeleport2",
@@ -222,8 +222,8 @@
         "sections": [{"name": "Hidden Wall", "item_count": 1}]
       },
       {
-        "name": "Health Node Fragment (Zi bottom)",
-        "short_name": "Health Node Fragment (Zi v)",
+        "name": "Health node fragment (centralaccess): Zi - Ceiling Secret Near Lower Save",
+        "short_name": "Health node fragment (centralaccess): Zi - Ceiling Secret Near Lower Save",
         "vgravmap": "HealthNodeFragement14",
         "access_rules": [
           "$canAirport2,excavate",
@@ -239,8 +239,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Range Node (Zi)",
-        "short_name": "Range Node (Zi)",
+        "name": "Range node (steamroom2): Zi - False Wall Near Lower Save",
+        "short_name": "Range node (steamroom2): Zi - False Wall Near Lower Save",
         "vgravmap": "RangeNode2",
         "access_rules": [
           "$canTeleport1,highjump",
@@ -255,8 +255,8 @@
         "sections": [{"name": "Hidden Wall", "item_count": 1}]
       },
       {
-        "name": "Passcode Tool",
-        "short_name": "Passcode Tool",
+        "name": "Passcode Tool: Zi - Below Veruska Left",
+        "short_name": "Passcode Tool: Zi - Below Veruska Left",
         "vgravmap": "PasswordTool",
         "access_rules": [
           "$canAirport2",
@@ -269,8 +269,8 @@
         "sections": [{"name": "Item", "item_count": 1}]
       },
       {
-        "name": "Digital Paper (Zi) #2",
-        "short_name": "Digital Paper (Zi) #2",
+        "name": "Note (veruskabasement): Zi - Below Veruska Right",
+        "short_name": "Note (veruskabasement): Zi - Below Veruska Right",
         "vgravmap": "Note19",
         "access_rules": [
           "$canAirport2",
